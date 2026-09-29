@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shasta Mountain Guides | The Original Guide Service on Mt. Shasta</title>
+<meta name="description" content="Shasta Mountain Guides - The original guides on Mt. Shasta. Climb, Ski, Hike and Explore Mount Shasta with local professionals with over 40 years of experience on the mountain.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --night:#0B1C2B;
+    --deep:#123049;
+    --glacier:#1F5D8C;
+    --glacier-lt:#3E86BC;
+    --ice:#BFDDF2;
+    --frost:#E9F3FA;
+    --snow:#FFFFFF;
+    --paper:#F7FAFC;
+    --ink:#12222F;
+    --gray:#54697A;
+    --line:#DCE7EF;
+    --line-dk:#1E3D57;
+    --sun:#E8A33D;
+    --display:"Anton", Impact, sans-serif;
+    --body:"Inter", Helvetica, Arial, sans-serif;
+    --gutter:clamp(1.1rem, 4vw, 4rem); --max:1280px; --radius:8px;
+  }
+  *,*::before,*::after{ box-sizing:border-box; margin:0; padding:0; }
+  html{ scroll-behavior:smooth; }
+  body{ background:var(--paper); color:#33475A; font-family:var(--body); font-size:1.02rem; line-height:1.7; -webkit-font-smoothing:antialiased; }
+  a{ color:inherit; text-decoration:none; }
+  a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{ outline:3px solid var(--glacier); outline-offset:3px; }
+  img,video{ display:block; width:100%; height:100%; object-fit:cover; }
+  .wrap{ max-width:var(--max); margin:0 auto; padding-inline:var(--gutter); }
+  h1,h2,h3{ font-family:var(--display); font-weight:400; color:var(--ink); line-height:1.06; text-transform:uppercase; letter-spacing:.015em; }
+  h2{ font-size:clamp(1.9rem, 4vw, 3rem); }
+  .label{ font-family:var(--body); font-size:.72rem; font-weight:700; letter-spacing:.24em; text-transform:uppercase; color:var(--glacier); }
+
+  .btn{
+    display:inline-block; font-family:var(--display); font-size:1rem; letter-spacing:.08em; text-transform:uppercase;
+    padding:.95rem 2.2rem; border-radius:6px; cursor:pointer; text-align:center;
+    background:var(--sun); color:#2A1C05; border:2px solid var(--sun); font-weight:400; line-height:1.4;
+    transition:background .2s, border-color .2s, transform .2s, box-shadow .2s;
+  }
+  .btn:hover{ background:#F4B95C; border-color:#F4B95C; transform:translateY(-2px); box-shadow:0 12px 30px rgba(232,163,61,.4); }
+  .btn--ghost{ background:transparent; color:var(--snow); border-color:rgba(255,255,255,.6); }
+  .btn--ghost:hover{ background:var(--snow); color:var(--deep); border-color:var(--snow); box-shadow:none; }
+  .btn--glacier{ background:var(--glacier); border-color:var(--glacier); color:#fff; }
+  .btn--glacier:hover{ background:var(--deep); border-color:var(--deep); box-shadow:0 12px 30px rgba(18,48,73,.35); }
+  .btn--outline{ background:transparent; color:var(--glacier); border-color:var(--glacier); }
+  .btn--outline:hover{ background:var(--glacier); color:#fff; border-color:var(--glacier); box-shadow:none; }
+  .btn--sm{ padding:.65rem 1.4rem; font-size:.9rem; }
+
+  /* nav */
+  .nav{ position:sticky; top:0; z-index:60; background:rgba(11,28,43,.92); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border-bottom:1px solid rgba(255,255,255,.08); }
+  .nav__inner{ display:flex; align-items:center; justify-content:space-between; gap:1.5rem; padding-block:.8rem; }
+  .nav__logo{ height:3.2rem; width:auto; object-fit:contain; }
+  .nav__links{ list-style:none; display:flex; align-items:center; gap:1.6rem; }
+  .nav__links a:not(.btn){ color:var(--ice); font-size:.86rem; font-weight:600; letter-spacing:.06em; text-transform:uppercase; position:relative; padding-block:.3rem; }
+  .nav__links a:not(.btn)::after{ content:""; position:absolute; left:0; bottom:0; width:0; height:2px; background:var(--sun); transition:width .25s; }
+  .nav__links a:not(.btn):hover{ color:#fff; }
+  .nav__links a:not(.btn):hover::after{ width:100%; }
+  .nav .btn{ padding:.5rem 1.3rem; font-size:.88rem; white-space:nowrap; }
+  @media (max-width:1060px){ .nav__links a:not(.btn){ display:none; } }
+
+  /* hero: three curated photos, back-to-back crossfade with a slow pan so it reads like video */
+  .hero{ position:relative; min-height:92vh; display:flex; align-items:flex-end; overflow:hidden; background:var(--night); color:#fff; }
+  .hero__bg{ position:absolute; inset:0; }
+  .hero__slide{ position:absolute; inset:0; opacity:0; animation:heroFade 24s ease-in-out infinite; will-change:opacity; }
+  .hero__slide img{ animation:heroPan 24s linear infinite; will-change:transform; }
+  .hero__slide:nth-child(1){ animation-delay:0s; }
+  .hero__slide:nth-child(1) img{ animation-delay:0s; transform-origin:70% 40%; }
+  .hero__slide:nth-child(2){ animation-delay:8s; }
+  .hero__slide:nth-child(2) img{ animation-delay:8s; transform-origin:30% 60%; animation-name:heroPanB; }
+  .hero__slide:nth-child(3){ animation-delay:16s; }
+  .hero__slide:nth-child(3) img{ animation-delay:16s; transform-origin:50% 30%; animation-name:heroPanC; }
+  /* each slide owns one third of the 24s cycle: fade in over 1.5s, hold, fade out into the next */
+  @keyframes heroFade{
+    0%{ opacity:0; } 6%{ opacity:1; } 33.34%{ opacity:1; } 39.5%{ opacity:0; } 100%{ opacity:0; }
+  }
+  @keyframes heroPan{  0%{ transform:scale(1.06) translate3d(0,0,0); } 40%{ transform:scale(1.16) translate3d(-2.2%,-1.2%,0); } 100%{ transform:scale(1.16) translate3d(-2.2%,-1.2%,0); } }
+  @keyframes heroPanB{ 0%{ transform:scale(1.14) translate3d(2%,1%,0); }  40%{ transform:scale(1.05) translate3d(0,0,0); }        100%{ transform:scale(1.05) translate3d(0,0,0); } }
+  @keyframes heroPanC{ 0%{ transform:scale(1.06) translate3d(-1.5%,1.5%,0); } 40%{ transform:scale(1.18) translate3d(1.5%,-1%,0); } 100%{ transform:scale(1.18) translate3d(1.5%,-1%,0); } }
+  .hero::after{ content:""; position:absolute; inset:0;
+    background:linear-gradient(to top, rgba(11,28,43,.92) 0%, rgba(11,28,43,.45) 42%, rgba(11,28,43,.18) 100%); }
+  .hero__content{ position:relative; z-index:2; width:100%; padding-block:clamp(3.4rem,7vw,5.4rem); }
+  .hero .elev{ font-family:var(--body); font-size:.78rem; font-weight:700; letter-spacing:.22em; text-transform:uppercase; color:var(--ice); }
+  .hero h1{ color:#fff; font-size:clamp(2.2rem, 5.6vw, 4.4rem); max-width:22ch; margin:.8rem 0 .5rem; text-shadow:0 4px 30px rgba(0,0,0,.4); }
+  .hero .native{ font-family:var(--body); font-weight:500; font-style:italic; color:var(--ice); font-size:clamp(1rem,2vw,1.25rem); margin-bottom:1.6rem; }
+  .hero__cta{ display:flex; gap:1rem; flex-wrap:wrap; align-items:center; }
+  .hero__dots{ position:absolute; right:var(--gutter); bottom:1.6rem; z-index:3; display:flex; gap:.5rem; }
+  .hero__dots span{ width:.55rem; height:.55rem; border-radius:50%; background:rgba(255,255,255,.35); animation:dot 24s linear infinite; }
+  .hero__dots span:nth-child(2){ animation-delay:8s; } .hero__dots span:nth-child(3){ animation-delay:16s; }
+  @keyframes dot{ 0%{ background:#fff; } 33.3%{ background:#fff; } 33.4%{ background:rgba(255,255,255,.35); } 100%{ background:rgba(255,255,255,.35); } }
+
+  section{ padding-block:clamp(3.4rem, 6.5vw, 5.8rem); }
+  .section-head{ margin-bottom:clamp(1.8rem,3.5vw,2.6rem); }
+  .section-head.center{ text-align:center; }
+  .section-head p{ color:var(--gray); margin-top:.55rem; }
+  .section-head.center p{ max-width:60ch; margin-inline:auto; }
+
+  /* trips */
+  .trips{ background:var(--paper); }
+  .trips .grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; }
+  .trip{ position:relative; border-radius:var(--radius); overflow:hidden; aspect-ratio:3/4; display:flex; align-items:flex-end;
+    background:var(--deep); box-shadow:0 8px 24px rgba(18,34,47,.12); transition:transform .25s ease, box-shadow .25s ease; }
+  .trip img{ position:absolute; inset:0; transition:transform .5s ease; }
+  .trip:hover{ transform:translateY(-6px); box-shadow:0 22px 48px rgba(18,34,47,.28); }
+  .trip:hover img{ transform:scale(1.07); }
+  .trip::after{ content:""; position:absolute; inset:0; background:linear-gradient(to top, rgba(11,28,43,.88), rgba(11,28,43,.05) 55%); }
+  .trip__body{ position:relative; z-index:2; padding:1.2rem 1.2rem 1.3rem; width:100%; }
+  .trip h3{ color:#fff; font-size:1.35rem; letter-spacing:.03em; }
+  .trip .go{ font-size:.8rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--sun); }
+  @media (max-width:1000px){ .trips .grid{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:520px){ .trips .grid{ grid-template-columns:1fr; } .trip{ aspect-ratio:4/3; } }
+
+  /* why */
+  .why{ background:var(--deep); color:var(--ice); position:relative; overflow:hidden; }
+  .why::before{ content:""; position:absolute; right:-8%; top:-30%; width:520px; height:520px;
+    background:radial-gradient(circle, rgba(62,134,188,.25), transparent 70%); border-radius:50%; }
+  .why .cols{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(2rem,5vw,4.5rem); align-items:center; position:relative; }
+  .why h2{ color:#fff; }
+  .why p{ margin-top:1rem; color:#CFE2F0; }
+  .why .season{ margin-top:1.2rem; font-weight:600; color:#fff; }
+  .why .btn{ margin-top:1.8rem; }
+  .stats{ list-style:none; display:grid; gap:1rem; }
+  .stats li{ background:rgba(11,28,43,.55); border:1px solid var(--line-dk); border-radius:var(--radius); padding:1.3rem 1.5rem; }
+  .stats b{ display:block; font-family:var(--display); font-size:1.9rem; color:var(--sun); letter-spacing:.02em; }
+  .stats span{ font-size:.9rem; color:var(--ice); }
+  .why__photo{ border-radius:var(--radius); overflow:hidden; aspect-ratio:4/3; box-shadow:0 24px 60px rgba(0,0,0,.35); margin-bottom:1rem; }
+  @media (max-width:880px){ .why .cols{ grid-template-columns:1fr; } }
+
+  /* guides */
+  .guides{ background:#fff; }
+  .guides .lead{ display:grid; grid-template-columns:1.1fr 1fr; gap:clamp(2rem,5vw,4rem); align-items:center; margin-bottom:clamp(2rem,4vw,3.2rem); }
+  .guides .lead p{ color:var(--gray); margin-top:1rem; }
+  .guides .lead .photo{ border-radius:var(--radius); overflow:hidden; aspect-ratio:4/3; box-shadow:0 18px 44px rgba(18,34,47,.18); }
+  .guide-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:1.2rem; }
+  .guide{ background:var(--paper); border:1px solid var(--line); border-radius:var(--radius); padding:1.5rem; display:grid; grid-template-columns:auto 1fr; gap:1rem 1.2rem; align-items:start; transition:transform .25s, box-shadow .25s; }
+  .guide:hover{ transform:translateY(-4px); box-shadow:0 18px 40px rgba(18,34,47,.14); }
+  .guide .avatar{ width:4.2rem; height:4.2rem; border-radius:50%; background:var(--deep); color:var(--sun); font-family:var(--display); font-size:1.5rem; display:flex; align-items:center; justify-content:center; letter-spacing:.04em; overflow:hidden; grid-row:span 2; }
+  .guide h3{ font-size:1.25rem; letter-spacing:.03em; }
+  .guide .role{ display:block; font-size:.72rem; font-weight:700; letter-spacing:.18em; text-transform:uppercase; color:var(--glacier); margin-top:.15rem; }
+  .guide p{ font-size:.93rem; color:var(--gray); grid-column:2; line-height:1.6; }
+  .guide .local{ display:inline-block; margin-top:.6rem; font-size:.72rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:#2A1C05; background:var(--sun); border-radius:4px; padding:.15rem .55rem; }
+  .guides .more{ text-align:center; margin-top:2.2rem; }
+  @media (max-width:1000px){ .guide-grid{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:880px){ .guides .lead{ grid-template-columns:1fr; } }
+  @media (max-width:620px){ .guide-grid{ grid-template-columns:1fr; } }
+
+  /* local */
+  .hometown{ position:relative; color:#fff; background:var(--night); overflow:hidden; padding-block:clamp(4rem,8vw,7rem); }
+  .hometown__bg{ position:absolute; inset:0; opacity:.55; }
+  .hometown::after{ content:""; position:absolute; inset:0; background:linear-gradient(90deg, rgba(11,28,43,.95) 0%, rgba(11,28,43,.75) 55%, rgba(11,28,43,.35) 100%); }
+  .hometown .wrap{ position:relative; z-index:2; }
+  .hometown h2{ color:#fff; max-width:18ch; }
+  .hometown .intro{ color:var(--ice); max-width:56ch; margin-top:1rem; }
+  .hometown ul{ list-style:none; display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin-top:2.2rem; max-width:980px; }
+  .hometown li{ background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.14); border-radius:var(--radius); padding:1.3rem 1.4rem; backdrop-filter:blur(4px); }
+  .hometown li b{ display:block; font-family:var(--display); font-size:1.35rem; letter-spacing:.03em; color:var(--sun); margin-bottom:.3rem; }
+  .hometown li span{ font-size:.92rem; color:var(--ice); }
+  @media (max-width:880px){ .hometown ul{ grid-template-columns:1fr; } .hometown::after{ background:rgba(11,28,43,.85); } }
+
+  /* surest band */
+  .surest{ background:var(--glacier); color:#fff; text-align:center; }
+  .surest h2{ color:#fff; max-width:24ch; margin-inline:auto; }
+  .surest .btn{ margin-top:1.8rem; }
+
+  /* articles */
+  .learn{ background:var(--paper); }
+  .learn .grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr; grid-template-rows:auto auto; gap:1.2rem; }
+  .article{ background:#fff; border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; display:flex; flex-direction:column; transition:transform .25s, box-shadow .25s; }
+  .article:hover{ transform:translateY(-5px); box-shadow:0 20px 44px rgba(18,34,47,.16); }
+  .article .img{ aspect-ratio:16/10; overflow:hidden; }
+  .article .img img{ transition:transform .5s; }
+  .article:hover .img img{ transform:scale(1.05); }
+  .article .body{ padding:1.3rem 1.4rem 1.5rem; display:flex; flex-direction:column; gap:.5rem; flex:1; }
+  .article .tag{ font-size:.7rem; font-weight:700; letter-spacing:.18em; text-transform:uppercase; color:var(--glacier); }
+  .article h3{ font-size:1.3rem; letter-spacing:.03em; }
+  .article p{ font-size:.93rem; color:var(--gray); }
+  .article .go{ margin-top:auto; padding-top:.6rem; font-size:.8rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--sun); }
+  .article--feature{ grid-row:span 2; }
+  .article--feature .img{ aspect-ratio:auto; flex:1; min-height:240px; }
+  .article--feature h3{ font-size:1.9rem; }
+  .article--feature .body{ flex:0; }
+  @media (max-width:1000px){ .learn .grid{ grid-template-columns:1fr 1fr; } .article--feature{ grid-column:span 2; grid-row:auto; } .article--feature .img{ aspect-ratio:16/8; } }
+  @media (max-width:600px){ .learn .grid{ grid-template-columns:1fr; } .article--feature{ grid-column:auto; } }
+
+  /* resources / lead capture */
+  .resources{ background:var(--frost); }
+  .res-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:1.2rem; align-items:start; }
+  .res{ background:#fff; border:1px solid var(--line); border-radius:var(--radius); padding:1.7rem 1.6rem; display:flex; flex-direction:column; gap:.7rem; }
+  .res .ic{ width:3rem; height:3rem; border-radius:8px; background:var(--deep); color:var(--sun); display:flex; align-items:center; justify-content:center; }
+  .res .ic svg{ width:1.5rem; height:1.5rem; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+  .res h3{ font-size:1.35rem; letter-spacing:.03em; }
+  .res .fmt{ font-size:.72rem; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:var(--glacier); }
+  .res p{ font-size:.93rem; color:var(--gray); }
+  .res .btn{ margin-top:.4rem; align-self:flex-start; }
+  .res form{ display:grid; gap:.6rem; margin-top:.4rem; }
+  .res .thanks{ background:var(--frost); border-radius:6px; padding:1rem; font-size:.93rem; color:var(--ink); }
+  .res .thanks b{ display:block; font-family:var(--display); font-size:1.15rem; letter-spacing:.03em; color:var(--glacier); margin-bottom:.2rem; }
+  [hidden]{ display:none !important; }
+  @media (max-width:900px){ .res-grid{ grid-template-columns:1fr; } }
+
+  /* form primitives */
+  .field{ display:grid; gap:.3rem; }
+  .field label{ font-size:.76rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--ink); }
+  .field input,.field select,.field textarea{ width:100%; font:inherit; font-size:.97rem; padding:.75rem .9rem; border:1px solid var(--line); border-radius:6px; background:#fff; color:var(--ink); }
+  .field textarea{ min-height:120px; resize:vertical; }
+  .field input::placeholder,.field textarea::placeholder{ color:#93A6B5; }
+  .row2{ display:grid; grid-template-columns:1fr 1fr; gap:.8rem; }
+  @media (max-width:520px){ .row2{ grid-template-columns:1fr; } }
+  .fine{ font-size:.78rem; color:var(--gray); }
+  .hp{ position:absolute; left:-9999px; }
+
+  /* quiz */
+  .quiz{ display:grid; gap:.9rem; }
+  .quiz fieldset{ border:0; display:grid; gap:.4rem; }
+  .quiz legend{ font-size:.76rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--ink); margin-bottom:.35rem; }
+  .quiz .opt{ display:flex; align-items:center; gap:.6rem; font-size:.93rem; padding:.55rem .75rem; border:1px solid var(--line); border-radius:6px; cursor:pointer; background:#fff; }
+  .quiz .opt:hover{ border-color:var(--glacier-lt); }
+  .quiz .opt input{ accent-color:var(--glacier); }
+  .quiz .result{ background:var(--deep); color:var(--ice); border-radius:6px; padding:1.1rem 1.2rem; }
+  .quiz .result b{ display:block; font-family:var(--display); font-size:1.4rem; color:var(--sun); letter-spacing:.03em; margin-bottom:.25rem; }
+  .quiz .result p{ color:var(--ice); font-size:.92rem; }
+  .quiz .result .trip-link{ display:inline-block; margin-top:.7rem; font-size:.78rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--sun); }
+
+  /* photo strip */
+  .strip{ background:var(--night); padding-block:0; }
+  .strip .grid{ display:grid; grid-template-columns:repeat(6,1fr); }
+  .strip figure{ aspect-ratio:1/1; overflow:hidden; }
+  .strip img{ transition:transform .45s ease, opacity .3s; }
+  .strip figure:hover img{ transform:scale(1.08); opacity:.85; }
+  @media (max-width:880px){ .strip .grid{ grid-template-columns:repeat(3,1fr); } }
+  @media (max-width:520px){ .strip .grid{ grid-template-columns:repeat(2,1fr); } }
+
+  /* contact: form first */
+  .contact{ background:var(--paper); }
+  .contact .cols{ display:grid; grid-template-columns:1.15fr 1fr; gap:clamp(2rem,5vw,4rem); align-items:start; }
+  .contact-form{ background:#fff; border:1px solid var(--line); border-radius:var(--radius); padding:clamp(1.4rem,3vw,2.2rem); box-shadow:0 18px 44px rgba(18,34,47,.10); display:grid; gap:.9rem; }
+  .contact-form h3{ font-size:1.5rem; letter-spacing:.03em; }
+  .contact-form .btn{ justify-self:start; }
+  .contact-form .thanks{ background:var(--frost); border-radius:6px; padding:1.4rem; }
+  .contact-form .thanks b{ display:block; font-family:var(--display); font-size:1.4rem; letter-spacing:.03em; color:var(--glacier); margin-bottom:.3rem; }
+  .contact .lines{ display:grid; gap:1rem; margin-top:1.6rem; }
+  .cl{ display:flex; align-items:center; gap:1rem; background:#fff; border:1px solid var(--line); border-radius:var(--radius); padding:1.1rem 1.3rem; }
+  .cl .ic{ width:2.6rem; height:2.6rem; border-radius:6px; background:var(--frost); color:var(--glacier); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+  .cl .ic svg{ width:1.3rem; height:1.3rem; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+  .cl b{ display:block; font-size:1rem; color:var(--ink); }
+  .cl span{ font-size:.82rem; color:var(--gray); text-transform:uppercase; letter-spacing:.08em; }
+  .map{ border-radius:var(--radius); overflow:hidden; box-shadow:0 18px 44px rgba(18,34,47,.16); border:1px solid var(--line); margin-top:1.4rem; }
+  .map iframe{ display:block; width:100%; height:260px; border:0; }
+  .socials{ display:flex; gap:.8rem; margin-top:1.4rem; }
+  .socials a{ width:2.8rem; height:2.8rem; border:1px solid var(--line); border-radius:50%; background:#fff;
+    display:flex; align-items:center; justify-content:center; color:var(--glacier); transition:background .2s, border-color .2s, color .2s, transform .2s; }
+  .socials a:hover{ background:var(--glacier); border-color:var(--glacier); color:#fff; transform:translateY(-3px); }
+  .socials svg{ width:1.1rem; height:1.1rem; fill:currentColor; }
+  .phone-note{ margin-top:1rem; font-size:.86rem; color:var(--gray); }
+  .phone-note a{ color:var(--glacier); font-weight:600; }
+  @media (max-width:880px){ .contact .cols{ grid-template-columns:1fr; } }
+
+  footer{ background:var(--night); color:#8FA6B8; font-size:.85rem; padding-block:2.6rem; }
+  .foot{ display:flex; align-items:flex-start; justify-content:space-between; gap:1.6rem; flex-wrap:wrap; padding-bottom:1.6rem; border-bottom:1px solid var(--line-dk); }
+  .foot .logo{ height:2.4rem; width:auto; object-fit:contain; }
+  .foot ul{ list-style:none; display:flex; gap:1.4rem; flex-wrap:wrap; }
+  .foot a:hover{ color:var(--ice); }
+  .permit{ margin-top:1.4rem; font-size:.8rem; line-height:1.7; color:#7C94A8; max-width:90ch; }
+  .foot__legal{ padding-top:1.3rem; display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap; font-size:.78rem; align-items:center; }
+  .foot__legal .mock{ background:var(--deep); color:var(--ice); border-radius:5px; padding:.35rem .85rem; font-weight:600; letter-spacing:.04em; }
+  .foot__legal .clay a{ color:#fff; font-weight:700; }
+  .foot__legal .clay a:hover{ color:var(--sun); }
+
+  .reveal{ opacity:0; transform:translateY(20px); transition:opacity .6s ease, transform .6s ease; }
+  .reveal.in{ opacity:1; transform:none; }
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    *{ transition:none !important; animation:none !important; }
+    .hero__slide{ opacity:0; } .hero__slide:first-child{ opacity:1; }
+    .reveal{ opacity:1; transform:none; }
+  }
+</style>
+</head>
+<body id="top">
+
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a href="#top" aria-label="Shasta Mountain Guides home">
+      <img class="nav__logo" src="assets/logos/SMG-logo-white.png" alt="Shasta Mountain Guides">
+    </a>
+    <ul class="nav__links">
+      <li><a href="#trips">Trips &amp; Courses</a></li>
+      <li><a href="#guides">Our Guides</a></li>
+      <li><a href="#learn">Learn</a></li>
+      <li><a href="#resources">Free Resources</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a class="btn" href="https://shastaguides.com/climbmtshasta">Book Now</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero__bg" aria-hidden="true">
+    <div class="hero__slide"><img src="assets/hero/hero-1.jpg" alt=""></div>
+    <div class="hero__slide"><img src="assets/hero/hero-2.jpg" alt="" loading="lazy"></div>
+    <div class="hero__slide"><img src="assets/hero/hero-3.jpg" alt="" loading="lazy"></div>
+  </div>
+  <div class="wrap hero__content">
+    <span class="elev">Mt Shasta, California &middot; 14,179 ft</span>
+    <h1>The Original Guide Service on Mt. Shasta</h1>
+    <p class="native">(Waka-nunee-Tuki-wuki)</p>
+    <div class="hero__cta">
+      <a class="btn" href="#contact">Plan My Climb</a>
+      <a class="btn btn--ghost" href="#trips">Find Your Trip</a>
+    </div>
+  </div>
+  <div class="hero__dots" aria-hidden="true"><span></span><span></span><span></span></div>
+</section>
+
+<section class="trips" id="trips">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="label">Trips &amp; Courses</span>
+      <h2>Find your trip</h2>
+      <p>Guided climbs, mountaineering courses, &amp; backcountry skiing trips on Mt Shasta.</p>
+    </div>
+    <div class="grid">
+      <a class="trip reveal" href="https://shastaguides.com/climbmtshasta">
+        <img src="assets/images/climb-gulch-sunrise.jpg" alt="Guided rope team climbs Avalanche Gulch at sunrise with the shadow of Mt. Shasta behind them" loading="lazy">
+        <div class="trip__body"><h3>Climb Shasta</h3><span class="go">Explore &rsaquo;</span></div>
+      </a>
+      <a class="trip reveal" href="https://shastaguides.com/skishasta">
+        <img src="assets/images/ski-gulch-powder.jpg" alt="Skier carving powder down Avalanche Gulch below the Red Banks" loading="lazy">
+        <div class="trip__body"><h3>Ski Shasta</h3><span class="go">Explore &rsaquo;</span></div>
+      </a>
+      <a class="trip reveal" href="https://shastaguides.com/avicourses">
+        <img src="assets/images/skintrack.jpg" alt="Skin track winding up a snowy ridge toward Mt. Shasta" loading="lazy">
+        <div class="trip__body"><h3>Avalanche Courses</h3><span class="go">Explore &rsaquo;</span></div>
+      </a>
+      <a class="trip reveal" href="https://shastaguides.com/mountaineeering">
+        <img src="assets/images/guide-teaching-crampons.jpg" alt="Shasta Mountain Guides instructor helps a climber fit crampons at camp" loading="lazy">
+        <div class="trip__body"><h3>Mountaineering Courses</h3><span class="go">Explore &rsaquo;</span></div>
+      </a>
+      <a class="trip reveal" href="https://shastaguides.com/backpack">
+        <img src="assets/images/northside-basecamp-stream.jpg" alt="Filling a water bottle from a spring at a north side basecamp below Mt. Shasta" loading="lazy">
+        <div class="trip__body"><h3>Backpacking</h3><span class="go">Explore &rsaquo;</span></div>
+      </a>
+      <a class="trip reveal" href="https://shastaguides.com/rockclimb">
+        <img src="assets/images/casaval-ridge-rock.jpg" alt="Climbers on the rock and snow of Casaval Ridge" loading="lazy">
+        <div class="trip__body"><h3>Rock Climbing</h3><span class="go">Explore &rsaquo;</span></div>
+      </a>
+      <a class="trip reveal" href="https://shastaguides.com/daytrips">
+        <img src="assets/images/trailhead-group.jpg" alt="A group raises their trekking poles at the trailhead with Mt. Shasta behind" loading="lazy">
+        <div class="trip__body"><h3>Day Trips</h3><span class="go">Explore &rsaquo;</span></div>
+      </a>
+      <a class="trip reveal" href="https://shastaguides.com/custom">
+        <img src="assets/images/north-side-sunrise-climb.jpg" alt="Climbers ascend the north side of Mt. Shasta as the sun rises" loading="lazy">
+        <div class="trip__body"><h3>Custom Trips</h3><span class="go">Explore &rsaquo;</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap cols">
+    <div class="reveal">
+      <span class="label" style="color:var(--ice);">Why Shasta Mountain Guides</span>
+      <h2>This is our home.</h2>
+      <p>Shasta Mountain Guides is the original climbing guide service on Mt. Shasta and leads the highest quality expeditions and courses on the mountain. For over 40 years we have shared this remarkable experience offering an unmatched level of service on Mount Shasta. This is our home and we have the ultimate respect for the mountain, the community, and our family of guides and staff who work diligently to help you achieve your goals. We are local professionals committed to your safety and enjoyment. This climb is ideal for new and experienced mountaineers and with the proper training and preparation, the summit is a very attainable goal. Be ready for the trip of a lifetime!</p>
+      <p class="season">We are taking reservations for the 2026 climbing season, our 43rd year leading climbs on Mt. Shasta.</p>
+      <a class="btn" href="#contact">Plan My Climb</a>
+    </div>
+    <div class="reveal">
+      <div class="why__photo"><img src="assets/images/team-headlamps.jpg" alt="A Shasta Mountain Guides team gathers by headlamp before an alpine start" loading="lazy"></div>
+      <ul class="stats">
+        <li><b>The Original</b><span>Guide service on Mt. Shasta</span></li>
+        <li><b>Over 40 Years</b><span>On the mountain</span></li>
+        <li><b>Local Professionals</b><span>Committed to your safety and enjoyment</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="guides" id="guides">
+  <div class="wrap">
+    <div class="lead">
+      <div class="reveal">
+        <span class="label">Meet Your Guides</span>
+        <h2>The people who will get you to the top.</h2>
+        <p>SMG was founded in the late 1970s by Michael Zanger. In 2003 longtime guides Chris and Jenn Carr took over and have grown the team to a seasonal staff of over 30. Our common bond is a pure passion for being in the mountains and sharing that with you. Between us we have thousands of Shasta summits and we have explored every route in every season.</p>
+        <p>You will know your guide before you clip in. Every trip is led by a certified professional who lives and works on this mountain, not a contractor flown in for the weekend.</p>
+      </div>
+      <div class="photo reveal"><img src="assets/images/team-summit-group.jpg" alt="A Shasta Mountain Guides team celebrates together on the summit of Mt. Shasta" loading="lazy"></div>
+    </div>
+
+    <div class="guide-grid">
+      <article class="guide reveal">
+        <div class="avatar" aria-hidden="true">CC</div>
+        <div><h3>Chris Carr</h3><span class="role">Co-Owner &middot; AIARE III, AMGA Alpine &amp; Ski</span></div>
+        <p>Living and climbing in Mt. Shasta since 1995 with over 180 summits and countless ski descents. Chris runs operations and you will still find him on the mountain checking conditions. <span class="local">Lives in Mt. Shasta</span></p>
+      </article>
+      <article class="guide reveal">
+        <div class="avatar" aria-hidden="true">JC</div>
+        <div><h3>Jenn Carr</h3><span class="role">Co-Owner &middot; EMT, WFR, AIARE III</span></div>
+        <p>A California native who started guiding on Shasta in 1998 with over 50 summits. Jenn runs the daily operations and is often the first voice you hear when you reach out. <span class="local">Lives in Mt. Shasta</span></p>
+      </article>
+      <article class="guide reveal">
+        <div class="avatar" aria-hidden="true">JK</div>
+        <div><h3>Jenna Kane</h3><span class="role">Guide &middot; AIARE I, OEC, WFR</span></div>
+        <p>Born and raised in Mt. Shasta City, Jenna patrols at Mt. Shasta Ski Park in winter and coaches the Mt. Shasta High School ski and snowboard team. <span class="local">Born here</span></p>
+      </article>
+      <article class="guide reveal">
+        <div class="avatar" aria-hidden="true">NC</div>
+        <div><h3>Nick Caselli</h3><span class="role">Senior Guide &middot; AAA I, EMT, OEC</span></div>
+        <p>Twenty years of rock, ice, alpine and ski routes across North America. Former Patrol Director at Mt. Shasta Ski Park and a firefighter EMT in the off-season. <span class="local">Mt. Shasta local</span></p>
+      </article>
+      <article class="guide reveal">
+        <div class="avatar" aria-hidden="true">DB</div>
+        <div><h3>Dane Brinkley</h3><span class="role">Senior Guide &middot; AIARE III Instructor, WFR</span></div>
+        <p>Over 200 Shasta summits, often on skis, plus three Denali expeditions. Dane guides year round on every major route and teaches our AIARE avalanche courses.</p>
+      </article>
+      <article class="guide reveal">
+        <div class="avatar" aria-hidden="true">CG</div>
+        <div><h3>Casey Glaubman</h3><span class="role">Lead Guide &middot; WEMT, NREMT</span></div>
+        <p>Cascade volcano climber and skier who has skied from the summit of Denali. Casey patrols at Mt. Shasta Ski Park and believes the most important piece of gear is a positive mental attitude. <span class="local">Mt. Shasta local</span></p>
+      </article>
+    </div>
+    <div class="more reveal"><a class="btn btn--outline" href="https://shastaguides.com/about">Meet the whole team</a></div>
+  </div>
+</section>
+
+<section class="hometown" id="community">
+  <div class="hometown__bg" aria-hidden="true"><img src="assets/images/lenticular-over-town.jpg" alt="" loading="lazy"></div>
+  <div class="wrap">
+    <div class="reveal">
+      <span class="label" style="color:var(--ice);">Rooted in Mt. Shasta</span>
+      <h2>We don't drive in for the season. We live here.</h2>
+      <p class="intro">Other outfits guide Shasta from out of the area. Our office is on Chestnut Street, our guides patrol the local ski park, coach the local kids, and read this mountain every single day. That local knowledge is what keeps you safe and gets you home with a story.</p>
+    </div>
+    <ul class="reveal">
+      <li><b>On the mountain daily</b><span>Live conditions from guides who were up there this morning, not a forecast from another state.</span></li>
+      <li><b>Sponsoring local youth</b><span>We back local youth ski, snowboard and climbing teams because the next generation of mountain people starts here.</span></li>
+      <li><b>305 Chestnut Street</b><span>Stop by the shop in town before your trip. Real people, real gear, real answers.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="surest">
+  <div class="wrap">
+    <h2 class="reveal">Climbing with a guide is the surest way to summit a mountain</h2>
+    <a class="btn reveal" href="#contact">Start Planning</a>
+  </div>
+</section>
+
+<section class="learn" id="learn">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="label">Learn Before You Climb</span>
+      <h2>Know the mountain before you meet it</h2>
+      <p>Our most-read guides, written by the people who climb Shasta every week. Start with the question everyone asks first.</p>
+    </div>
+    <div class="grid">
+      <a class="article article--feature reveal" href="https://shastaguides.com/articles/choosingaroute">
+        <div class="img"><img src="assets/images/west-face-shastina.jpg" alt="A rope team on a broad snow slope high on Mt. Shasta" loading="lazy"></div>
+        <div class="body">
+          <span class="tag">Most Popular &middot; Decision Guide</span>
+          <h3>Which route is right for you?</h3>
+          <p>Avalanche Gulch, Casaval Ridge, Clear Creek, the north side glaciers. Each has a season, a skill level and a personality. This guide walks you through choosing well.</p>
+          <span class="go">Read the guide &rsaquo;</span>
+        </div>
+      </a>
+      <a class="article reveal" href="https://shastaguides.com/articles/how-to-train-for-mountaineering">
+        <div class="img"><img src="assets/images/crampons-climbing.jpg" alt="Climber front-pointing up firm snow in crampons" loading="lazy"></div>
+        <div class="body">
+          <span class="tag">Preparation</span>
+          <h3>How to train for mountaineering</h3>
+          <p>What to do in the 12 weeks before your climb so summit day feels hard, not impossible.</p>
+          <span class="go">Read &rsaquo;</span>
+        </div>
+      </a>
+      <a class="article reveal" href="https://shastaguides.com/articles/whenisthebesttimetoclimbmtshasta">
+        <div class="img"><img src="assets/images/sunset-from-camp.jpg" alt="Sunset over the valley seen from a high camp on Mt. Shasta" loading="lazy"></div>
+        <div class="body">
+          <span class="tag">Planning</span>
+          <h3>When is the best time to climb?</h3>
+          <p>Snow, weather and crowds month by month, and how that changes the route we recommend.</p>
+          <span class="go">Read &rsaquo;</span>
+        </div>
+      </a>
+      <a class="article reveal" href="https://shastaguides.com/articles/whatbootsdoineedtoclimbmtshasta">
+        <div class="img"><img src="assets/images/putting-crampons-on.jpg" alt="Climbers strap crampons to their boots by headlamp" loading="lazy"></div>
+        <div class="body">
+          <span class="tag">Gear</span>
+          <h3>What boots do I need?</h3>
+          <p>The one piece of gear that makes or breaks a Shasta climb, and what we rent if you don't own it.</p>
+          <span class="go">Read &rsaquo;</span>
+        </div>
+      </a>
+      <a class="article reveal" href="https://shastaguides.com/articles/climbingshastawithaguide">
+        <div class="img"><img src="assets/images/guide-leading-night.jpg" alt="A guide leads a headlamp-lit team upward before dawn" loading="lazy"></div>
+        <div class="body">
+          <span class="tag">Why Guided</span>
+          <h3>Why climb Shasta with a guide?</h3>
+          <p>What a guide actually does on summit day, and why it changes the odds.</p>
+          <span class="go">Read &rsaquo;</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="resources" id="resources">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="label">Free Resources</span>
+      <h2>Show up ready</h2>
+      <p>Tools we hand every climber before they arrive. Tell us where to send them and they're yours.</p>
+    </div>
+    <div class="res-grid">
+
+      <div class="res reveal">
+        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 20V10M12 20V4M18 20v-7"/><path d="M3 20h18"/></svg></div>
+        <span class="fmt">PDF &middot; 12-week plan</span>
+        <h3>Shasta Training Program</h3>
+        <p>The week-by-week conditioning plan our guides recommend, built for people with jobs and no mountain out the back door.</p>
+        <form class="lead-form" name="resource-training" method="POST" data-netlify="true" netlify-honeypot="company">
+          <input type="hidden" name="form-name" value="resource-training">
+          <input type="hidden" name="resource" value="Training Program">
+          <p class="hp"><label>Company <input name="company" tabindex="-1" autocomplete="off"></label></p>
+          <div class="field"><label for="tr-name">Name</label><input id="tr-name" name="name" required autocomplete="name" placeholder="Your name"></div>
+          <div class="field"><label for="tr-email">Email</label><input id="tr-email" name="email" type="email" required autocomplete="email" placeholder="you@email.com"></div>
+          <button class="btn btn--glacier btn--sm" type="submit">Send me the plan</button>
+          <span class="fine">One email with your download. No spam, unsubscribe any time.</span>
+        </form>
+        <div class="thanks" hidden><b>On its way.</b>Check your inbox for the training program. See you on the mountain.</div>
+      </div>
+
+      <div class="res reveal">
+        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+        <span class="fmt">PDF &middot; Printable checklist</span>
+        <h3>Summit Gear Checklist</h3>
+        <p>Every item, layer by layer, with what you can rent from us in town and what you need to bring yourself.</p>
+        <form class="lead-form" name="resource-gear" method="POST" data-netlify="true" netlify-honeypot="company">
+          <input type="hidden" name="form-name" value="resource-gear">
+          <input type="hidden" name="resource" value="Gear Checklist">
+          <p class="hp"><label>Company <input name="company" tabindex="-1" autocomplete="off"></label></p>
+          <div class="field"><label for="gr-name">Name</label><input id="gr-name" name="name" required autocomplete="name" placeholder="Your name"></div>
+          <div class="field"><label for="gr-email">Email</label><input id="gr-email" name="email" type="email" required autocomplete="email" placeholder="you@email.com"></div>
+          <button class="btn btn--glacier btn--sm" type="submit">Send me the checklist</button>
+          <span class="fine">One email with your download. No spam, unsubscribe any time.</span>
+        </form>
+        <div class="thanks" hidden><b>On its way.</b>Check your inbox for the gear checklist. See you on the mountain.</div>
+      </div>
+
+      <div class="res reveal">
+        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 20l6-14 4 8 3-5 5 11z"/></svg></div>
+        <span class="fmt">Interactive &middot; 1 minute</span>
+        <h3>Which Route Quiz</h3>
+        <p>Three questions and we'll point you at the route and trip that fit your experience, timing and goals.</p>
+        <form class="quiz" id="route-quiz" name="route-quiz" method="POST" data-netlify="true" netlify-honeypot="company">
+          <input type="hidden" name="form-name" value="route-quiz">
+          <input type="hidden" name="recommended-route" id="quiz-route-field" value="">
+          <p class="hp"><label>Company <input name="company" tabindex="-1" autocomplete="off"></label></p>
+          <fieldset>
+            <legend>1. Your experience</legend>
+            <label class="opt"><input type="radio" name="experience" value="first" required> First big mountain</label>
+            <label class="opt"><input type="radio" name="experience" value="some"> Some snow &amp; crampon experience</label>
+            <label class="opt"><input type="radio" name="experience" value="expert"> Experienced mountaineer or skier</label>
+          </fieldset>
+          <fieldset>
+            <legend>2. When do you want to climb?</legend>
+            <label class="opt"><input type="radio" name="season" value="spring" required> April &ndash; June</label>
+            <label class="opt"><input type="radio" name="season" value="summer"> July &ndash; August</label>
+            <label class="opt"><input type="radio" name="season" value="late"> September or later</label>
+          </fieldset>
+          <fieldset>
+            <legend>3. What matters most?</legend>
+            <label class="opt"><input type="radio" name="goal" value="summit" required> The surest path to the summit</label>
+            <label class="opt"><input type="radio" name="goal" value="quiet"> Fewer people, more wild</label>
+            <label class="opt"><input type="radio" name="goal" value="ski"> Skiing or riding back down</label>
+            <label class="opt"><input type="radio" name="goal" value="technical"> A technical challenge</label>
+          </fieldset>
+          <div class="result" id="quiz-result" hidden></div>
+          <div class="field" id="quiz-email-wrap" hidden><label for="qz-email">Email me this recommendation</label><input id="qz-email" name="email" type="email" autocomplete="email" placeholder="you@email.com"></div>
+          <button class="btn btn--glacier btn--sm" type="submit" id="quiz-btn">Show my route</button>
+          <span class="fine" id="quiz-fine">Takes about a minute. Your email is optional.</span>
+        </form>
+        <div class="thanks" hidden><b>Got it.</b>We'll send your route recommendation and a trip suggestion. A guide will follow up if you have questions.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="grid">
+    <figure><img src="assets/images/headlamps-alpine-start.jpg" alt="A line of headlamps moves up the mountain in the dark on an alpine start" loading="lazy"></figure>
+    <figure><img src="assets/images/summit-ridge-snow.jpg" alt="Wind-carved snow along the summit ridge of Mt. Shasta" loading="lazy"></figure>
+    <figure><img src="assets/images/climb-shadow-dawn.jpg" alt="Climbers step onto sunlit snow as the mountain's shadow stretches across the valley" loading="lazy"></figure>
+    <figure><img src="assets/images/casaval-camp-tents.jpg" alt="Orange tents pitched at a snowy camp on Casaval Ridge" loading="lazy"></figure>
+    <figure><img src="assets/images/green-butte-ski.jpg" alt="A skier drops into a steep line off Green Butte" loading="lazy"></figure>
+    <figure><img src="assets/images/casaval-above-clouds.jpg" alt="A climber on Casaval Ridge above a sea of clouds" loading="lazy"></figure>
+  </div>
+</div>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="label">Plan Your Climb</span>
+      <h2>Tell us about your trip.</h2>
+      <p>Send us a few details and a guide will reply within one business day with a recommended trip, dates and next steps. No pressure, no phone tag.</p>
+    </div>
+    <div class="cols">
+      <form class="contact-form reveal" name="plan-my-climb" method="POST" data-netlify="true" netlify-honeypot="company">
+        <input type="hidden" name="form-name" value="plan-my-climb">
+        <p class="hp"><label>Company <input name="company" tabindex="-1" autocomplete="off"></label></p>
+        <h3>Plan my climb</h3>
+        <div class="row2">
+          <div class="field"><label for="c-name">Name</label><input id="c-name" name="name" required autocomplete="name" placeholder="Your name"></div>
+          <div class="field"><label for="c-email">Email</label><input id="c-email" name="email" type="email" required autocomplete="email" placeholder="you@email.com"></div>
+        </div>
+        <div class="row2">
+          <div class="field">
+            <label for="c-trip">I'm interested in</label>
+            <select id="c-trip" name="trip" required>
+              <option value="">Choose one</option>
+              <option>Climb Shasta</option>
+              <option>Ski Shasta</option>
+              <option>Avalanche Course</option>
+              <option>Mountaineering Course</option>
+              <option>Backpacking</option>
+              <option>Rock Climbing</option>
+              <option>Day Trip</option>
+              <option>Custom / Private Trip</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="field"><label for="c-dates">Ideal dates</label><input id="c-dates" name="dates" placeholder="e.g. late June 2026"></div>
+        </div>
+        <div class="row2">
+          <div class="field">
+            <label for="c-exp">Experience level</label>
+            <select id="c-exp" name="experience">
+              <option>First big mountain</option>
+              <option>Some snow &amp; crampon experience</option>
+              <option>Experienced mountaineer / skier</option>
+            </select>
+          </div>
+          <div class="field"><label for="c-group">Group size</label><input id="c-group" name="group" type="number" min="1" max="30" placeholder="1"></div>
+        </div>
+        <div class="field"><label for="c-msg">Anything else?</label><textarea id="c-msg" name="message" placeholder="Goals, questions, fitness, gear you already own..."></textarea></div>
+        <button class="btn" type="submit">Send my request</button>
+        <span class="fine">We reply by email within one business day. Prefer a call? Leave your number in the message and we'll ring you.</span>
+        <div class="thanks" hidden><b>Thanks, we've got it.</b>A guide will reply within one business day with a recommended trip and dates. Keep an eye on your inbox.</div>
+      </form>
+
+      <div class="reveal">
+        <span class="label">Find Us</span>
+        <h2 style="font-size:clamp(1.5rem,3vw,2.1rem);">Come find us in town.</h2>
+        <div class="lines">
+          <a class="cl" href="https://www.google.com/maps?q=305+Chestnut+St,+Mt+Shasta,+CA+96067">
+            <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+            <div><b>305 Chestnut Street</b><span>Mt. Shasta, California 96067</span></div>
+          </a>
+          <a class="cl" href="mailto:info@shastaguides.com">
+            <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h16a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1z"/><path d="m3 6 9 7 9-7"/></svg></span>
+            <div><b>info@shastaguides.com</b><span>Email us</span></div>
+          </a>
+        </div>
+        <p class="phone-note">Already booked and need us right now? Call <a href="tel:+15309263117">530.926.3117</a>.</p>
+        <div class="map">
+          <iframe title="Map to Shasta Mountain Guides, 305 Chestnut Street, Mt. Shasta CA" src="https://www.google.com/maps?q=305+Chestnut+St,+Mt+Shasta,+CA+96067&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+        <div class="socials">
+          <a href="https://www.instagram.com/shastamountainguides/" aria-label="Shasta Mountain Guides on Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.8.1-1.1.1-1.5.2-1.9.3-.5.2-.8.4-1.1.7-.3.3-.5.6-.7 1.1-.1.4-.3.8-.3 1.9-.1 1.3-.1 1.7-.1 4.8s0 3.5.1 4.8c.1 1.1.2 1.5.3 1.9.2.5.4.8.7 1.1.3.3.6.5 1.1.7.4.1.8.3 1.9.3 1.3.1 1.7.1 4.8.1s3.5 0 4.8-.1c1.1-.1 1.5-.2 1.9-.3.5-.2.8-.4 1.1-.7.3-.3.5-.6.7-1.1.1-.4.3-.8.3-1.9.1-1.3.1-1.7.1-4.8s0-3.5-.1-4.8c-.1-1.1-.2-1.5-.3-1.9-.2-.5-.4-.8-.7-1.1-.3-.3-.6-.5-1.1-.7-.4-.1-.8-.3-1.9-.3-1.3-.1-1.7-.1-4.8-.1zm0 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8zm0 1.8a3.1 3.1 0 1 0 0 6.2 3.1 3.1 0 0 0 0-6.2zm5.1-2.1a1.1 1.1 0 1 1 0 2.3 1.1 1.1 0 0 1 0-2.3z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/shastaguides" aria-label="Shasta Mountain Guides on Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-8.2h2.8l.4-3.2h-3.2V7.6c0-.9.3-1.6 1.6-1.6h1.7V3.2c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.3v3.2h2.8V21h3.4z"/></svg>
+          </a>
+          <a href="https://www.yelp.com/biz/shasta-mountain-guides-mount-shasta" aria-label="Shasta Mountain Guides on Yelp">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.9 2.6c.3-.6 1.1-.7 1.6-.3.6.5 1.6 1.6 2 3.3.4 1.7.2 3.1 0 3.9-.1.7-.9 1-1.5.7l-2.6-1.5c-.6-.3-.8-1-.5-1.6l1-4.5zM6.2 6.4c-.1-.7.5-1.2 1.2-1.1.8.2 2.2.7 3.3 2 1.1 1.3 1.5 2.7 1.6 3.5.1.7-.6 1.2-1.2 1l-3.9-1.4c-.6-.2-.9-.9-.7-1.5l-.3-2.5zM3.9 13.9c-.6-.2-.9-1-.5-1.5.4-.6 1.3-1.6 2.9-2.2 1.6-.6 3-.5 3.8-.3.7.2.9 1 .5 1.5l-2.3 3c-.4.5-1.1.6-1.6.2l-2.8-.7zM9.3 21.2c-.5.5-1.3.3-1.6-.3-.3-.7-.7-2.1-.3-3.8.4-1.7 1.3-2.8 1.9-3.4.5-.5 1.3-.3 1.6.4l1.3 3.9c.2.6-.1 1.3-.7 1.5l-2.2 1.7zM17.9 18.9c.1.7-.6 1.2-1.2 1-.8-.3-2.1-.9-3.1-2.3-1-1.4-1.3-2.8-1.3-3.6 0-.7.7-1.2 1.3-.9l3.8 1.7c.6.3.8 1 .6 1.6l-.1 2.5z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <img class="logo" src="assets/logos/SMG-logo-white.png" alt="Shasta Mountain Guides">
+      <ul>
+        <li><a href="https://shastaguides.com/tripdetails">Trip Details</a></li>
+        <li><a href="https://shastaguides.com/gear">Gear</a></li>
+        <li><a href="https://shastaguides.com/training">Training</a></li>
+        <li><a href="https://shastaguides.com/faq">FAQ</a></li>
+        <li><a href="https://shastaguides.com/articles">Articles</a></li>
+        <li><a href="https://shastaguides.com/policies">Policies</a></li>
+        <li><a href="https://shastaguides.com/s/SMG-Essential-Eligibility-Criteria.pdf">Essentials of Eligibility</a></li>
+        <li><a href="https://shastaguides.com/privacypolicy">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <p class="permit">This business operates under special use permit with the Shasta-Trinity National Forest. This institution is an equal opportunity provider.</p>
+    <div class="foot__legal">
+      <span>&copy; 2026 Shasta Mountain Guides</span>
+      <span class="mock">Concept mockup, not a live site</span>
+      <span class="clay">Site by <a href="https://theclaymedia.com">The Clay Media</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold:.1 });
+  document.querySelectorAll('.reveal').forEach(function(el){
+    if(reduce){ el.classList.add('in'); } else { io.observe(el); }
+  });
+
+  /* Forms: post to Netlify Forms when hosted there, then swap in the thank-you state.
+     In the mockup (or off Netlify) the thank-you still shows so the flow can be reviewed. */
+  function encode(form){
+    var pairs = [];
+    new FormData(form).forEach(function(v,k){ pairs.push(encodeURIComponent(k)+'='+encodeURIComponent(v)); });
+    return pairs.join('&');
+  }
+  function showThanks(form){
+    var wrap = form.closest('.res') || form;
+    var thanks = wrap.querySelector('.thanks');
+    if(form.classList.contains('contact-form')){
+      Array.prototype.forEach.call(form.children, function(c){ if(!c.classList.contains('thanks')) c.hidden = true; });
+    } else {
+      form.hidden = true;
+    }
+    if(thanks){ thanks.hidden = false; thanks.setAttribute('tabindex','-1'); thanks.focus(); }
+  }
+  function wire(form){
+    form.addEventListener('submit', function(ev){
+      ev.preventDefault();
+      if(!form.reportValidity()) return;
+      var done = function(){ showThanks(form); };
+      try{
+        fetch('/', { method:'POST', headers:{ 'Content-Type':'application/x-www-form-urlencoded' }, body:encode(form) }).then(done, done);
+      }catch(e){ done(); }
+    });
+  }
+  document.querySelectorAll('.lead-form, .contact-form').forEach(wire);
+
+  /* Route quiz: score the three answers, show a recommendation, then offer to email it. */
+  var ROUTES = {
+    gulch:   { name:'Avalanche Gulch', why:'The classic. Non-technical, well travelled and the route most first-time Shasta climbers summit on. Best April through June on a two-day guided climb.', href:'https://shastaguides.com/climbmtshasta', label:'See the Climb Shasta trip' },
+    clear:   { name:'Clear Creek', why:'The late-season choice once the Gulch melts out. Long, non-technical and quiet, with a huge view east. Best late July into September.', href:'https://shastaguides.com/climbmtshasta', label:'See the Climb Shasta trip' },
+    north:   { name:'Hotlum-Bolam Ridge', why:'The wild side. Real glaciers, far fewer people and a stronger sense of expedition. For climbers with some crampon and ice-axe experience, or on a glacier seminar. Best June and July.', href:'https://shastaguides.com/custom', label:'Ask about a north side climb' },
+    casaval: { name:'Casaval Ridge', why:'Shasta’s most aesthetic line. Exposed ridge climbing on snow and rock that rewards fit, experienced mountaineers. Prime in April and May.', href:'https://shastaguides.com/custom', label:'Ask about Casaval Ridge' },
+    ski:     { name:'Ski Mountaineering Descent', why:'Climb it, then ride it. Avalanche Gulch, the West Face or Green Butte depending on the snow. We match the line to your turns. Best April through June.', href:'https://shastaguides.com/skishasta', label:'See the Ski Shasta trip' },
+    course:  { name:'Mountaineering Course first', why:'For a late-season first climb we recommend a short skills course or a Clear Creek climb so you learn crampons and self-arrest before committing to a summit push.', href:'https://shastaguides.com/mountaineeering', label:'See mountaineering courses' }
+  };
+  function pickRoute(a){
+    if(a.goal === 'ski') return 'ski';
+    if(a.goal === 'technical') return a.experience === 'expert' && a.season !== 'late' ? 'casaval' : 'north';
+    if(a.goal === 'quiet') return a.experience === 'first' ? (a.season === 'late' ? 'clear' : 'gulch') : 'north';
+    if(a.season === 'late') return a.experience === 'first' ? 'course' : 'clear';
+    return 'gulch';
+  }
+  var quiz = document.getElementById('route-quiz');
+  if(quiz){
+    var stage = 0;
+    quiz.addEventListener('submit', function(ev){
+      ev.preventDefault();
+      if(!quiz.reportValidity()) return;
+      if(stage === 0){
+        var a = { experience: quiz.experience.value, season: quiz.season.value, goal: quiz.goal.value };
+        var r = ROUTES[pickRoute(a)];
+        var box = document.getElementById('quiz-result');
+        box.innerHTML = '<b>' + r.name + '</b><p>' + r.why + '</p><a class="trip-link" href="' + r.href + '">' + r.label + ' &rsaquo;</a>';
+        box.hidden = false;
+        document.getElementById('quiz-route-field').value = r.name;
+        document.getElementById('quiz-email-wrap').hidden = false;
+        document.getElementById('quiz-btn').textContent = 'Email me this';
+        document.getElementById('quiz-fine').textContent = 'We’ll include a trip suggestion and dates that fit.';
+        quiz.querySelectorAll('fieldset').forEach(function(f){ f.hidden = true; });
+        box.setAttribute('tabindex','-1'); box.focus();
+        stage = 1;
+        return;
+      }
+      var email = document.getElementById('qz-email');
+      if(!email.value){ email.setCustomValidity('Add your email so we can send it.'); email.reportValidity(); email.setCustomValidity(''); return; }
+      var done = function(){ showThanks(quiz); };
+      try{
+        fetch('/', { method:'POST', headers:{ 'Content-Type':'application/x-www-form-urlencoded' }, body:encode(quiz) }).then(done, done);
+      }catch(e){ done(); }
+    });
+  }
+</script>
+</body>
+</html>
