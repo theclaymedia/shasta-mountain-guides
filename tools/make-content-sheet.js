@@ -7,6 +7,7 @@ const {
 } = require('docx');
 
 const OUT = process.argv[2];
+const TRIPS = require('./trips-data.js').filter(t => t.slug);
 const NAVY = '0B1C2B', GLACIER = '1F5D8C', FROST = 'E9F3FA', LINE = 'DCE7EF', GRAY = '54697A', SUN = 'E8A33D';
 const FONT = 'Calibri';
 const TW = 9360; // 6.5in text width in DXA
@@ -56,14 +57,15 @@ const children = [];
 children.push(new Paragraph({ spacing: { after: 40 }, children: [new TextRun({ text: 'SHASTA MOUNTAIN GUIDES', font: FONT, size: 40, bold: true, color: NAVY })] }));
 children.push(new Paragraph({ spacing: { after: 40 }, children: [new TextRun({ text: 'Website Content Sheet — Round 3', font: FONT, size: 28, color: GLACIER })] }));
 children.push(new Paragraph({ spacing: { after: 60 }, children: [run('Homepage · prepared by The Clay Media · October 13, 2026', { color: GRAY })] }));
-children.push(new Paragraph({ spacing: { after: 240 }, border: { bottom: { style: BorderStyle.SINGLE, size: 8, color: SUN, space: 6 } }, children: [run('Round 3 applies every note Chris left on the Round 2 sheet, plus the gear lists, training plans and photos added to the shared Drive folder.', { color: GRAY })] }));
+children.push(new Paragraph({ spacing: { after: 240 }, border: { bottom: { style: BorderStyle.SINGLE, size: 8, color: SUN, space: 6 } }, children: [run('Round 3 applies every note Chris left on the Round 2 sheet, adds the gear lists, training plans and photos from the shared Drive folder, and introduces the eight program pages (Part 2).', { color: GRAY })] }));
 
 children.push(h2('How to use this document'));
 children.push(p('Everything below is the copy currently on the updated mockup. Nothing here is final.'));
 children.push(p('Use the right-hand column for changes, or highlight any line and leave a comment. Either works.'));
 children.push(p('If a section is good as-is, you can leave it blank. Silence means approved.'));
 children.push(p('Anything marked PLACEHOLDER needs a decision or content from you before we build.'));
-children.push(new Paragraph({ spacing: { before: 80, after: 200 }, children: [run('What changed since round 2: ', { bold: true }), run('45 years and the 2027 season throughout; trip cards reordered as requested; the guide roster rebuilt around the eleven guides you listed, with headshots pulled from your current site; the youth teams named; the new call-to-action headline; and the real gear lists and training plans now behind the Free Resources downloads. Rows marked “Done” in the notes column are your Round 2 requests as applied.')] }));
+children.push(new Paragraph({ spacing: { before: 80, after: 200 }, children: [run('What changed since round 2: ', { bold: true }), run('45 years and the 2027 season throughout; trip cards reordered as requested; the guide roster rebuilt around the eleven guides you listed, with headshots pulled from your current site; the youth teams named; the new call-to-action headline; and the real gear lists and training plans now behind the Free Resources downloads. Rows marked “Done” in the notes column are your Round 2 requests as applied. New in this round: Part 2 covers the eight program pages, one per trip card, so you can mark which trips to keep, cut or reprice.')] }));
+children.push(new Paragraph({ spacing: { before: 0, after: 240 }, children: [run('Part 1 · Homepage', { bold: true, size: 24, color: NAVY })] }));
 
 // 1 Page settings
 children.push(h1('1.  Page settings & search listing'));
@@ -274,11 +276,62 @@ children.push(...bullets([
   'PDFs — Summit Climb, Ski & Snowboard Mountaineering, Backcountry Ski Tour & Avalanche Course, Mountaineering Class & Day Hike and PCT Backpacking gear lists; Training for Mount Shasta guide; Casaval training plan',
 ]));
 
-// 15 Still need
-children.push(h1('15.  What we still need from you'));
+// ===== Part 2: program pages =====
+children.push(new Paragraph({ pageBreakBefore: true, spacing: { after: 60 }, children: [new TextRun({ text: 'Part 2 · Program pages', font: FONT, size: 34, bold: true, color: NAVY })] }));
+children.push(p('Each trip card on the homepage now opens its own page. Every page follows the same layout: a hero, an overview with at-a-glance facts, one card per trip or course, what is included, a photo strip, and an inquiry form with the matching gear list and training guide.'));
+children.push(p('Copy, prices and dates were taken from your current website in October 2026. For each trip, use the notes column to write KEEP, CUT, or the new 2027 price. Anything you leave blank we will keep as shown.'));
+children.push(new Paragraph({ spacing: { before: 60, after: 160 }, children: [run('Every page links Book Now to your current Climb Shasta page until we have the Flybook links.', { color: GRAY, italics: true, size: 18 })] }));
+
+TRIPS.forEach((t, i) => {
+  const n = 16 + i;
+  children.push(h1(`${n}.  ${t.title}  (${t.slug}.html)`));
+  const top = [
+    ['Eyebrow', t.eyebrow],
+    ['Headline', t.h1],
+    ['Sub-line', t.lede],
+    ['Buttons', 'Book Now  ·  Plan My Trip (scrolls to the inquiry form)'],
+    ['Hero photo', t.hero.alt + (t.heroNote ? '  —  ' + t.heroNote : ''), t.heroNote ? 'Please send a real rock climbing photo.' : ''],
+    ['Overview', t.intro],
+  ];
+  if (t.status) top.push(['Status line', t.status, 'Update each season.']);
+  top.push(['At a glance', t.glance.map(g => `${g[0]}: ${g[1]}`)]);
+  children.push(table3(top));
+  if (t.programs) {
+    children.push(gap());
+    children.push(small(`${t.programs.length} trip cards on this page, in order. Write KEEP, CUT or the 2027 price in the notes column.`));
+    children.push(table3(t.programs.map((pr, j) => [
+      `${j + 1}. ${pr.name}${pr.tag ? '  (' + pr.tag + ')' : ''}`,
+      [
+        [pr.length && 'Length: ' + pr.length, pr.route && 'Route: ' + pr.route, pr.cost && 'Cost: ' + pr.cost].filter(Boolean).join('  ·  '),
+        pr.blurb,
+        'Experience: ' + pr.experience,
+        'Physical demand: ' + pr.demand,
+      ],
+    ]), COLS3, ['Trip', 'As shown on the page', 'KEEP / CUT / 2027 price']));
+  }
+  if (t.pricing) {
+    children.push(gap());
+    children.push(small('Pricing tables on this page.'));
+    t.pricing.forEach(pt => {
+      children.push(table3(pt.rows.map(r => [r[0], pt.head ? pt.head.slice(1).map((h, k) => `${h}: ${r[k + 1]}`).join('  ·  ') : r[1]]), COLS3, [pt.title, 'As shown', 'KEEP / CUT / 2027 price']));
+      if (pt.note) children.push(small(pt.note));
+    });
+  }
+  const rest = [];
+  if (t.includes) rest.push(['What’s included', t.includes.concat(t.notIncluded ? ['Not included: ' + t.notIncluded] : [])]);
+  if (t.dates) rest.push([t.dates.title, t.dates.rows.map(r => r[0]).concat(t.dates.note ? [t.dates.note] : []), 'Please confirm, and send dates for the other routes.']);
+  if (t.extra) rest.push([t.extra.title, t.extra.text]);
+  rest.push(['Gear list offered', t.gear.label + (t.gear.alt ? '  ·  ' + t.gear.alt.label : '')]);
+  rest.push(['Article linked', t.article.title]);
+  rest.push(['Inquiry form', `Same Plan My Trip form as the homepage, with “${t.formOption}” pre-selected. “Ask about this trip” on any card adds that trip’s name to the message.`]);
+  if (rest.length) { children.push(gap()); children.push(table3(rest)); }
+});
+
+// Still need
+children.push(h1(`${16 + TRIPS.length}.  What we still need from you`));
 children.push(...bullets([
   'Flybook access: a login or the booking links so Book Now can open your reservation window.',
-  'Program changes: which programs are being retired, and 2027 pricing and dates, so we can finish the trip cards and start the inner pages.',
+  'Program changes: mark each trip in Part 2 as KEEP or CUT, and add 2027 prices and dates where they have changed.',
   'Three guide photos: John Michael McGinn, Lael Cashen and Rachel Foucher, plus a short bio for Rachel.',
   'A real rock climbing photo for the Rock Climbing card.',
   'Form routing: the email address (or CRM) that should receive contact-form and download leads.',
