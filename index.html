@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shasta Mountain Guides | The Original Guide Service on Mt. Shasta</title>
-<meta name="description" content="Shasta Mountain Guides - The original guides on Mt. Shasta. Climb, Ski, Hike and Explore Mount Shasta with local professionals with over 40 years of experience on the mountain.">
+<meta name="description" content="Shasta Mountain Guides - The original guides on Mt. Shasta. Climb, Ski, Hike and Explore Mount Shasta with local professionals with over 45 years of experience on the mountain.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -140,7 +140,8 @@
   .guide-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:1.2rem; }
   .guide{ background:var(--paper); border:1px solid var(--line); border-radius:var(--radius); padding:1.5rem; display:grid; grid-template-columns:auto 1fr; gap:1rem 1.2rem; align-items:start; transition:transform .25s, box-shadow .25s; }
   .guide:hover{ transform:translateY(-4px); box-shadow:0 18px 40px rgba(18,34,47,.14); }
-  .guide .avatar{ width:4.2rem; height:4.2rem; border-radius:50%; background:var(--deep); color:var(--sun); font-family:var(--display); font-size:1.5rem; display:flex; align-items:center; justify-content:center; letter-spacing:.04em; overflow:hidden; grid-row:span 2; }
+  .guide .avatar{ width:4.6rem; height:4.6rem; border-radius:50%; background:var(--deep); color:var(--sun); font-family:var(--display); font-size:1.5rem; display:flex; align-items:center; justify-content:center; letter-spacing:.04em; overflow:hidden; grid-row:span 2; flex-shrink:0; box-shadow:0 0 0 3px #fff, 0 0 0 4px var(--line); }
+  .guide .avatar img{ width:100%; height:100%; object-fit:cover; }
   .guide h3{ font-size:1.25rem; letter-spacing:.03em; }
   .guide .role{ display:block; font-size:.72rem; font-weight:700; letter-spacing:.18em; text-transform:uppercase; color:var(--glacier); margin-top:.15rem; }
   .guide p{ font-size:.93rem; color:var(--gray); grid-column:2; line-height:1.6; }
@@ -201,6 +202,7 @@
   .res form{ display:grid; gap:.6rem; margin-top:.4rem; }
   .res .thanks{ background:var(--frost); border-radius:6px; padding:1rem; font-size:.93rem; color:var(--ink); }
   .res .thanks b{ display:block; font-family:var(--display); font-size:1.15rem; letter-spacing:.03em; color:var(--glacier); margin-bottom:.2rem; }
+  .res .thanks a{ color:var(--glacier); font-weight:700; text-decoration:underline; text-underline-offset:3px; }
   [hidden]{ display:none !important; }
   @media (max-width:900px){ .res-grid{ grid-template-columns:1fr; } }
 
@@ -334,13 +336,17 @@
         <img src="assets/images/ski-gulch-powder.jpg" alt="Skier carving powder down Avalanche Gulch below the Red Banks" loading="lazy">
         <div class="trip__body"><h3>Ski Shasta</h3><span class="go">Explore &rsaquo;</span></div>
       </a>
-      <a class="trip reveal" href="https://shastaguides.com/avicourses">
-        <img src="assets/images/skintrack.jpg" alt="Skin track winding up a snowy ridge toward Mt. Shasta" loading="lazy">
-        <div class="trip__body"><h3>Avalanche Courses</h3><span class="go">Explore &rsaquo;</span></div>
-      </a>
       <a class="trip reveal" href="https://shastaguides.com/mountaineeering">
         <img src="assets/images/guide-teaching-crampons.jpg" alt="Shasta Mountain Guides instructor helps a climber fit crampons at camp" loading="lazy">
         <div class="trip__body"><h3>Mountaineering Courses</h3><span class="go">Explore &rsaquo;</span></div>
+      </a>
+      <a class="trip reveal" href="https://shastaguides.com/custom">
+        <img src="assets/images/north-side-sunrise-climb.jpg" alt="Climbers ascend the north side of Mt. Shasta as the sun rises" loading="lazy">
+        <div class="trip__body"><h3>Custom Trips</h3><span class="go">Explore &rsaquo;</span></div>
+      </a>
+      <a class="trip reveal" href="https://shastaguides.com/avicourses">
+        <img src="assets/images/skintrack.jpg" alt="Skin track winding up a snowy ridge toward Mt. Shasta" loading="lazy">
+        <div class="trip__body"><h3>Avalanche Courses</h3><span class="go">Explore &rsaquo;</span></div>
       </a>
       <a class="trip reveal" href="https://shastaguides.com/backpack">
         <img src="assets/images/northside-basecamp-stream.jpg" alt="Filling a water bottle from a spring at a north side basecamp below Mt. Shasta" loading="lazy">
@@ -354,10 +360,6 @@
         <img src="assets/images/trailhead-group.jpg" alt="A group raises their trekking poles at the trailhead with Mt. Shasta behind" loading="lazy">
         <div class="trip__body"><h3>Day Trips</h3><span class="go">Explore &rsaquo;</span></div>
       </a>
-      <a class="trip reveal" href="https://shastaguides.com/custom">
-        <img src="assets/images/north-side-sunrise-climb.jpg" alt="Climbers ascend the north side of Mt. Shasta as the sun rises" loading="lazy">
-        <div class="trip__body"><h3>Custom Trips</h3><span class="go">Explore &rsaquo;</span></div>
-      </a>
     </div>
   </div>
 </section>
@@ -367,15 +369,15 @@
     <div class="reveal">
       <span class="label" style="color:var(--ice);">Why Shasta Mountain Guides</span>
       <h2>This is our home.</h2>
-      <p>Shasta Mountain Guides is the original climbing guide service on Mt. Shasta and leads the highest quality expeditions and courses on the mountain. For over 40 years we have shared this remarkable experience offering an unmatched level of service on Mount Shasta. This is our home and we have the ultimate respect for the mountain, the community, and our family of guides and staff who work diligently to help you achieve your goals. We are local professionals committed to your safety and enjoyment. This climb is ideal for new and experienced mountaineers and with the proper training and preparation, the summit is a very attainable goal. Be ready for the trip of a lifetime!</p>
-      <p class="season">We are taking reservations for the 2026 climbing season, our 43rd year leading climbs on Mt. Shasta.</p>
+      <p>Shasta Mountain Guides is the original climbing guide service on Mt. Shasta and leads the highest quality expeditions and courses on the mountain. For over 45 years we have shared this remarkable experience offering an unmatched level of service on Mount Shasta. This is our home and we have the ultimate respect for the mountain, the community, and our family of guides and staff who work diligently to help you achieve your goals. We are local professionals committed to your safety and enjoyment. This climb is ideal for new and experienced mountaineers and with the proper training and preparation, the summit is a very attainable goal. Be ready for the trip of a lifetime!</p>
+      <p class="season">We are taking reservations for the 2027 climbing season, our 45th year leading climbs on Mt. Shasta.</p>
       <a class="btn" href="#contact">Plan My Climb</a>
     </div>
     <div class="reveal">
       <div class="why__photo"><img src="assets/images/team-headlamps.jpg" alt="A Shasta Mountain Guides team gathers by headlamp before an alpine start" loading="lazy"></div>
       <ul class="stats">
         <li><b>The Original</b><span>Guide service on Mt. Shasta</span></li>
-        <li><b>Over 40 Years</b><span>On the mountain</span></li>
+        <li><b>Over 45 Years</b><span>On the mountain</span></li>
         <li><b>Local Professionals</b><span>Committed to your safety and enjoyment</span></li>
       </ul>
     </div>
@@ -396,34 +398,74 @@
 
     <div class="guide-grid">
       <article class="guide reveal">
-        <div class="avatar" aria-hidden="true">CC</div>
+        <div class="avatar"><img src="assets/guides/chris-carr.jpg" alt="Chris Carr" loading="lazy"></div>
         <div><h3>Chris Carr</h3><span class="role">Co-Owner &middot; AIARE III, AMGA Alpine &amp; Ski</span></div>
         <p>Living and climbing in Mt. Shasta since 1995 with over 180 summits and countless ski descents. Chris runs operations and you will still find him on the mountain checking conditions. <span class="local">Lives in Mt. Shasta</span></p>
       </article>
       <article class="guide reveal">
-        <div class="avatar" aria-hidden="true">JC</div>
+        <div class="avatar"><img src="assets/guides/jenn-carr.jpg" alt="Jenn Carr" loading="lazy"></div>
         <div><h3>Jenn Carr</h3><span class="role">Co-Owner &middot; EMT, WFR, AIARE III</span></div>
         <p>A California native who started guiding on Shasta in 1998 with over 50 summits. Jenn runs the daily operations and is often the first voice you hear when you reach out. <span class="local">Lives in Mt. Shasta</span></p>
       </article>
       <article class="guide reveal">
-        <div class="avatar" aria-hidden="true">JK</div>
-        <div><h3>Jenna Kane</h3><span class="role">Guide &middot; AIARE I, OEC, WFR</span></div>
-        <p>Born and raised in Mt. Shasta City, Jenna patrols at Mt. Shasta Ski Park in winter and coaches the Mt. Shasta High School ski and snowboard team. <span class="local">Born here</span></p>
+        <div class="avatar"><img src="assets/guides/rich-meyer.jpg" alt="Rich Meyer" loading="lazy"></div>
+        <div><h3>Rich Meyer</h3><span class="role">Senior Guide &middot; AMGA Certified Ski Guide, AIARE Lead Instructor</span></div>
+        <p>Twenty-five years guiding peaks from the Alps to Antarctica and close to 150 Shasta summits. Rich runs our guide training, special events and avalanche seminars.</p>
       </article>
       <article class="guide reveal">
-        <div class="avatar" aria-hidden="true">NC</div>
-        <div><h3>Nick Caselli</h3><span class="role">Senior Guide &middot; AAA I, EMT, OEC</span></div>
-        <p>Twenty years of rock, ice, alpine and ski routes across North America. Former Patrol Director at Mt. Shasta Ski Park and a firefighter EMT in the off-season. <span class="local">Mt. Shasta local</span></p>
-      </article>
-      <article class="guide reveal">
-        <div class="avatar" aria-hidden="true">DB</div>
+        <div class="avatar"><img src="assets/guides/dane-brinkley.jpg" alt="Dane Brinkley" loading="lazy"></div>
         <div><h3>Dane Brinkley</h3><span class="role">Senior Guide &middot; AIARE III Instructor, WFR</span></div>
-        <p>Over 200 Shasta summits, often on skis, plus three Denali expeditions. Dane guides year round on every major route and teaches our AIARE avalanche courses.</p>
+        <p>Over 200 Shasta summits, often on skis, plus three Denali expeditions. Dane guides year round on every major route and wrote our training plan.</p>
       </article>
       <article class="guide reveal">
-        <div class="avatar" aria-hidden="true">CG</div>
-        <div><h3>Casey Glaubman</h3><span class="role">Lead Guide &middot; WEMT, NREMT</span></div>
-        <p>Cascade volcano climber and skier who has skied from the summit of Denali. Casey patrols at Mt. Shasta Ski Park and believes the most important piece of gear is a positive mental attitude. <span class="local">Mt. Shasta local</span></p>
+        <div class="avatar"><img src="assets/guides/david-reichel.jpg" alt="David Reichel" loading="lazy"></div>
+        <div><h3>David Reichel</h3><span class="role">Senior Guide &middot; AIARE III, AAA Pro Trainer</span></div>
+        <p>A California Cascades native and avalanche educator who founded the California Avalanche Workshop. Happiest leading ski and splitboard trips in powder.</p>
+      </article>
+      <article class="guide reveal">
+        <div class="avatar"><img src="assets/guides/katie-wry.jpg" alt="Katie Wry" loading="lazy"></div>
+        <div><h3>Katie Wry</h3><span class="role">Senior Guide &middot; AIARE II, EMT, AMGA Alpine Skills</span></div>
+        <p>Ten years of ski patrol at Kirkwood before guiding. Katie is as passionate about teaching people as she is about the mountains themselves.</p>
+      </article>
+      <article class="guide reveal">
+        <div class="avatar"><img src="assets/guides/tailer-spinney.jpg" alt="Tailer Spinney" loading="lazy"></div>
+        <div><h3>Tailer Spinney</h3><span class="role">Lead Guide &middot; AIARE II, WFR, AMGA SPI</span></div>
+        <p>Leads our mountaineering trips, glacier seminars and backpacking program. Tailer's always-positive attitude makes any trip with her a fun one.</p>
+      </article>
+      <article class="guide reveal">
+        <div class="avatar"><img src="assets/guides/greg-cunningham.jpg" alt="Greg Cunningham" loading="lazy"></div>
+        <div><h3>Greg Cunningham</h3><span class="role">Senior Guide &middot; AAI III, OEC, AMGA Ski &amp; Alpine</span></div>
+        <p>Lead avalanche forecaster at Kirkwood in winter and a fixture on Shasta every spring and summer. Calm, decisive and always learning.</p>
+      </article>
+      <article class="guide reveal">
+        <div class="avatar" aria-hidden="true">JM</div>
+        <div><h3>John Michael McGinn</h3><span class="role">Senior Guide &middot; AMGA Certified Ski Guide, AAA Pro 2</span></div>
+        <p>Honed in the Tetons' steep couloirs and alpine routes, with seasons in the Alps and Canadian Rockies. Working toward full international certification.</p>
+      </article>
+      <article class="guide reveal">
+        <div class="avatar"><img src="assets/guides/ethan-atkins.jpg" alt="Ethan Atkins" loading="lazy"></div>
+        <div><h3>Ethan Atkins</h3><span class="role">Guide &middot; AIARE I, WFR</span></div>
+        <p>Rock and alpine climber across the western U.S. and Canada who also leads outdoor education trips for underserved youth in Big Sur.</p>
+      </article>
+      <article class="guide reveal">
+        <div class="avatar"><img src="assets/guides/travis-soares.jpg" alt="Travis Soares" loading="lazy"></div>
+        <div><h3>Travis Soares</h3><span class="role">Guide &middot; Adventure Education, Prescott College</span></div>
+        <p>Thru-hiked the Appalachian Trail and climbed all 247 Sierra Peaks Section summits in 117 days. Loves the mountains at whatever pace gets you there.</p>
+      </article>
+      <article class="guide reveal">
+        <div class="avatar"><img src="assets/guides/daniel-ross.jpg" alt="Daniel Ross" loading="lazy"></div>
+        <div><h3>Daniel Ross</h3><span class="role">Lead Guide &middot; AMGA Assistant Rock Guide, AAI Pro 1</span></div>
+        <p>Guiding on Shasta since 2023 with teaching at the heart of everything he does. Ask him "why?" about anything in the mountains and he'll light up.</p>
+      </article>
+      <article class="guide reveal">
+        <div class="avatar" aria-hidden="true">LC</div>
+        <div><h3>Lael Cashen</h3><span class="role">Lead Guide &middot; WFR, OEC, CAA Operations</span></div>
+        <p>Studied guiding at Thompson Rivers University and splits her seasons between Northern California and British Columbia ski patrol and touring lodges.</p>
+      </article>
+      <article class="guide reveal">
+        <div class="avatar" aria-hidden="true">RF</div>
+        <div><h3>Rachel Foucher</h3><span class="role">Guide</span></div>
+        <p>Photo and bio coming soon.</p>
       </article>
     </div>
     <div class="more reveal"><a class="btn btn--outline" href="https://shastaguides.com/about">Meet the whole team</a></div>
@@ -440,7 +482,7 @@
     </div>
     <ul class="reveal">
       <li><b>On the mountain daily</b><span>Live conditions from guides who were up there this morning, not a forecast from another state.</span></li>
-      <li><b>Sponsoring local youth</b><span>We back local youth ski, snowboard and climbing teams because the next generation of mountain people starts here.</span></li>
+      <li><b>Sponsoring local youth</b><span>Proud sponsors of Mt. Shasta Youth Soccer, the Mt. Shasta Ski Team and the Mt. Shasta Swim Team, because the next generation of mountain people starts here.</span></li>
       <li><b>305 Chestnut Street</b><span>Stop by the shop in town before your trip. Real people, real gear, real answers.</span></li>
     </ul>
   </div>
@@ -448,7 +490,7 @@
 
 <section class="surest">
   <div class="wrap">
-    <h2 class="reveal">Climbing with a guide is the surest way to summit a mountain</h2>
+    <h2 class="reveal">Climbing with a guide will enhance your experience and increase your margin for safety</h2>
     <a class="btn reveal" href="#contact">Start Planning</a>
   </div>
 </section>
@@ -521,36 +563,46 @@
 
       <div class="res reveal">
         <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 20V10M12 20V4M18 20v-7"/><path d="M3 20h18"/></svg></div>
-        <span class="fmt">PDF &middot; 12-week plan</span>
-        <h3>Shasta Training Program</h3>
-        <p>The week-by-week conditioning plan our guides recommend, built for people with jobs and no mountain out the back door.</p>
+        <span class="fmt">PDF &middot; 24-page guide + training plan</span>
+        <h3>Train for Mt. Shasta</h3>
+        <p>Our guide to getting fit for the mountain, plus a week-by-week training plan written by senior guide Dane Brinkley. Built for people with jobs and no mountain out the back door.</p>
         <form class="lead-form" name="resource-training" method="POST" data-netlify="true" netlify-honeypot="company">
           <input type="hidden" name="form-name" value="resource-training">
           <input type="hidden" name="resource" value="Training Program">
           <p class="hp"><label>Company <input name="company" tabindex="-1" autocomplete="off"></label></p>
           <div class="field"><label for="tr-name">Name</label><input id="tr-name" name="name" required autocomplete="name" placeholder="Your name"></div>
           <div class="field"><label for="tr-email">Email</label><input id="tr-email" name="email" type="email" required autocomplete="email" placeholder="you@email.com"></div>
-          <button class="btn btn--glacier btn--sm" type="submit">Send me the plan</button>
-          <span class="fine">One email with your download. No spam, unsubscribe any time.</span>
+          <button class="btn btn--glacier btn--sm" type="submit">Send me the training guide</button>
+          <span class="fine">One email with your downloads. No spam, unsubscribe any time.</span>
         </form>
-        <div class="thanks" hidden><b>On its way.</b>Check your inbox for the training program. See you on the mountain.</div>
+        <div class="thanks" hidden><b>On its way.</b>Check your inbox, or grab them now: <a href="assets/downloads/smg-training-for-mount-shasta.pdf" target="_blank" rel="noopener">Training for Mount Shasta</a> &middot; <a href="assets/downloads/smg-casaval-training-plan.pdf" target="_blank" rel="noopener">Week-by-week plan</a></div>
       </div>
 
       <div class="res reveal">
         <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
         <span class="fmt">PDF &middot; Printable checklist</span>
-        <h3>Summit Gear Checklist</h3>
-        <p>Every item, layer by layer, with what you can rent from us in town and what you need to bring yourself.</p>
+        <h3>Gear Checklist</h3>
+        <p>Every item, layer by layer, for your specific trip, with what you can rent in town from The Fifth Season and what to bring yourself.</p>
         <form class="lead-form" name="resource-gear" method="POST" data-netlify="true" netlify-honeypot="company">
           <input type="hidden" name="form-name" value="resource-gear">
           <input type="hidden" name="resource" value="Gear Checklist">
           <p class="hp"><label>Company <input name="company" tabindex="-1" autocomplete="off"></label></p>
+          <div class="field">
+            <label for="gr-trip">Which trip?</label>
+            <select id="gr-trip" name="trip-type" required>
+              <option value="assets/downloads/smg-summit-climb-gear-list.pdf">Summit Climb</option>
+              <option value="assets/downloads/smg-ski-snowboard-mountaineering-gear-list.pdf">Ski &amp; Snowboard Mountaineering</option>
+              <option value="assets/downloads/smg-backcountry-ski-avalanche-gear-list.pdf">Backcountry Ski Tour &amp; Avalanche Course</option>
+              <option value="assets/downloads/smg-mountaineering-class-day-hike-gear-list.pdf">Mountaineering Class &amp; Day Hike</option>
+              <option value="assets/downloads/smg-pct-backpacking-gear-list.pdf">PCT Backpacking</option>
+            </select>
+          </div>
           <div class="field"><label for="gr-name">Name</label><input id="gr-name" name="name" required autocomplete="name" placeholder="Your name"></div>
           <div class="field"><label for="gr-email">Email</label><input id="gr-email" name="email" type="email" required autocomplete="email" placeholder="you@email.com"></div>
           <button class="btn btn--glacier btn--sm" type="submit">Send me the checklist</button>
           <span class="fine">One email with your download. No spam, unsubscribe any time.</span>
         </form>
-        <div class="thanks" hidden><b>On its way.</b>Check your inbox for the gear checklist. See you on the mountain.</div>
+        <div class="thanks" hidden><b>On its way.</b>Check your inbox, or <a id="gear-link" href="assets/downloads/smg-summit-climb-gear-list.pdf" target="_blank" rel="noopener">download your gear list now</a>.</div>
       </div>
 
       <div class="res reveal">
@@ -742,6 +794,8 @@
     form.addEventListener('submit', function(ev){
       ev.preventDefault();
       if(!form.reportValidity()) return;
+      var pick = form.querySelector('select[name="trip-type"]');
+      if(pick){ var link = document.getElementById('gear-link'); if(link){ link.href = pick.value; link.textContent = 'download the ' + pick.options[pick.selectedIndex].text + ' gear list now'; } }
       var done = function(){ showThanks(form); };
       try{
         fetch('/', { method:'POST', headers:{ 'Content-Type':'application/x-www-form-urlencoded' }, body:encode(form) }).then(done, done);
