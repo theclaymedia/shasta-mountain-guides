@@ -56,7 +56,7 @@ const children = [];
 // Title block
 children.push(new Paragraph({ spacing: { after: 40 }, children: [new TextRun({ text: 'SHASTA MOUNTAIN GUIDES', font: FONT, size: 40, bold: true, color: NAVY })] }));
 children.push(new Paragraph({ spacing: { after: 40 }, children: [new TextRun({ text: 'Website Content Sheet — Round 3', font: FONT, size: 28, color: GLACIER })] }));
-children.push(new Paragraph({ spacing: { after: 60 }, children: [run('Homepage · prepared by The Clay Media · October 13, 2026', { color: GRAY })] }));
+children.push(new Paragraph({ spacing: { after: 60 }, children: [run('Homepage + program pages · prepared by The Clay Media · revised October 14, 2026 with Chris’s Round 3 notes applied', { color: GRAY })] }));
 children.push(new Paragraph({ spacing: { after: 240 }, border: { bottom: { style: BorderStyle.SINGLE, size: 8, color: SUN, space: 6 } }, children: [run('Round 3 applies every note Chris left on the Round 2 sheet, adds the gear lists, training plans and photos from the shared Drive folder, and introduces the eight program pages (Part 2).', { color: GRAY })] }));
 
 children.push(h2('How to use this document'));
@@ -153,14 +153,14 @@ children.push(table3([
   ['Katie Wry', ['Senior Guide · AIARE II, EMT, AMGA Alpine Skills', 'Ten years of ski patrol at Kirkwood before guiding. Katie is as passionate about teaching people as she is about the mountains themselves.', 'Headshot: yes']],
   ['Tailer Spinney', ['Lead Guide · AIARE II, WFR, AMGA SPI', 'Leads our mountaineering trips, glacier seminars and backpacking program. Tailer’s always-positive attitude makes any trip with her a fun one.', 'Headshot: yes']],
   ['Greg Cunningham', ['Senior Guide · AAI III, OEC, AMGA Ski & Alpine', 'Lead avalanche forecaster at Kirkwood in winter and a fixture on Shasta every spring and summer. Calm, decisive and always learning.', 'Headshot: yes']],
-  ['John Michael McGinn', ['Senior Guide · AMGA Certified Ski Guide, AAA Pro 2', 'Honed in the Tetons’ steep couloirs and alpine routes, with seasons in the Alps and Canadian Rockies. Working toward full international certification.', 'Headshot: NONE on current site — shows initials'], 'Please send a photo.'],
+  ['John Michael McGinn', ['Senior Guide · AMGA Certified Ski Guide, AAA Pro 2', 'Honed in the Tetons’ steep couloirs and alpine routes, with seasons in the Alps and Canadian Rockies. Working toward full international certification.', 'Headshot: NONE on current site — shows initials'], 'Chris: photo not found. Initials stay until one arrives.'],
   ['Ethan Atkins', ['Guide · AIARE I, WFR', 'Rock and alpine climber across the western U.S. and Canada who also leads outdoor education trips for underserved youth in Big Sur.', 'Headshot: yes']],
   ['Travis Soares', ['Guide · Adventure Education, Prescott College', 'Thru-hiked the Appalachian Trail and climbed all 247 Sierra Peaks Section summits in 117 days. Loves the mountains at whatever pace gets you there.', 'Headshot: yes']],
   ['Daniel Ross', ['Lead Guide · AMGA Assistant Rock Guide, AAI Pro 1', 'Guiding on Shasta since 2023 with teaching at the heart of everything he does. Ask him “why?” about anything in the mountains and he’ll light up.', 'Headshot: yes']],
-  ['Lael Cashen', ['Lead Guide · WFR, OEC, CAA Operations', 'Studied guiding at Thompson Rivers University and splits her seasons between Northern California and British Columbia ski patrol and touring lodges.', 'Headshot: NONE on current site — shows initials'], 'Please send a photo.'],
-  ['Rachel Foucher', ['Guide', 'Photo and bio coming soon.', 'Headshot: NONE — not on current site'], 'Please send a photo, role, certifications and a short bio.'],
+  ['Lael Cashen', ['Lead Guide · WFR, OEC, CAA Operations', 'Studied guiding at Thompson Rivers University and splits her seasons between Northern California and British Columbia ski patrol and touring lodges.', 'Headshot: NONE on current site — shows initials'], 'Chris: photo not found. Initials stay until one arrives.'],
+  ['Rachel Foucher', ['Guide', 'Photo and bio coming soon.', 'Headshot: NONE — not on current site'], 'Chris: photo not found, needs more information. Confirm whether to keep her on the homepage.'],
 ], COLS3, ['Guide', 'Role, blurb and badge as shown', 'Your notes / changes']));
-children.push(placeholder('Three guides still need photos (John Michael, Lael, Rachel) and Rachel needs a bio. Square photos, at least 800 px. If you send a full current roster we will also refresh the team page.'));
+children.push(placeholder('Still open: photos for John Michael and Lael, and a decision plus photo and bio for Rachel. Square photos, at least 800 px.'));
 
 // 7 Local
 children.push(h1('7.  Rooted in Mt. Shasta'));
@@ -189,7 +189,7 @@ children.push(table3([
   ['Eyebrow', 'Learn Before You Climb'],
   ['Heading', 'Know the mountain before you meet it'],
   ['Intro', 'Our most-read guides, written by the people who climb Shasta every week. Start with the question everyone asks first.'],
-  ['Featured article', ['Which route is right for you?  (Most Popular · Decision Guide)', 'Avalanche Gulch, Casaval Ridge, Clear Creek, the north side glaciers. Each has a season, a skill level and a personality. This guide walks you through choosing well.', 'Links to /articles/choosingaroute · Photo: “West Face Shastina”'], 'The new route map in the Drive folder would suit this card well. Say the word.'],
+  ['Featured article', ['Which route is right for you?  (Most Popular · Decision Guide)', 'Avalanche Gulch, Casaval Ridge, Clear Creek, the north side glaciers. Each has a season, a skill level and a personality. This guide walks you through choosing well.', 'Links to /articles/choosingaroute · Photo: your Mt. Shasta route map'], 'Done — route map added per your note.'],
   ['Article 2', ['How to train for mountaineering  (Preparation)', 'What to do in the 12 weeks before your climb so summit day feels hard, not impossible.', 'Photo: “crampons climbing”']],
   ['Article 3', ['When is the best time to climb?  (Planning)', 'Snow, weather and crowds month by month, and how that changes the route we recommend.', 'Photo: “view from camp”']],
   ['Article 4', ['What boots do I need?  (Gear)', 'The one piece of gear that makes or breaks a Shasta climb, and what we rent if you don’t own it.', 'Photo: “crampons on”']],
@@ -204,13 +204,13 @@ children.push(table3([
   ['Eyebrow', 'Free Resources'],
   ['Heading', 'Show up ready'],
   ['Intro', 'Tools we hand every climber before they arrive. Tell us where to send them and they’re yours.'],
-  ['Resource 1', ['Train for Mt. Shasta  (PDF · 24-page guide + training plan)', 'Our guide to getting fit for the mountain, plus a week-by-week training plan written by senior guide Dane Brinkley. Built for people with jobs and no mountain out the back door.', 'Form: Name, Email → button “Send me the training guide”', 'Delivers: “Training for Mount Shasta” (24 pp, compressed to 3.8 MB) and the Casaval training plan (15 pp)'], 'Done — both files from the Drive folder. Confirm you are happy crediting Dane and Casaval Personal Training.'],
+  ['Resource 1', ['Train for Mt. Shasta  (PDF · 24-page guide + training plan)', 'Our guide to getting fit for the mountain, plus a week-by-week training plan by senior guide Dane Brinkley of Casaval Personal Training. Built for people with jobs and no mountain out the back door.', 'Form: Name, Email → button “Send me the training guide”', 'Delivers: “Training for Mount Shasta” (24 pp) and Dane’s plan (15 pp). The thank-you links to Casaval Personal Training for coaching.'], 'Done — Dane and Casaval PT credited and linked, per your note.'],
   ['Resource 2', ['Gear Checklist  (PDF · Printable checklist)', 'Every item, layer by layer, for your specific trip, with what you can rent in town from The Fifth Season and what to bring yourself.', 'Form: Which trip? (dropdown), Name, Email → button “Send me the checklist”', 'Dropdown: Summit Climb · Ski & Snowboard Mountaineering · Backcountry Ski Tour & Avalanche Course · Mountaineering Class & Day Hike · PCT Backpacking'], 'Done — all five gear lists from the Drive folder, matched to the trip chosen.'],
   ['Resource 3', ['Which Route Quiz  (Interactive · 1 minute)', 'Three questions and we’ll point you at the route and trip that fit your experience, timing and goals.', 'Q1 experience · Q2 month · Q3 goal → recommendation → optional email']],
   ['Quiz outcomes', ['Avalanche Gulch · Clear Creek · Hotlum-Bolam Ridge · Casaval Ridge · Ski Mountaineering Descent · “Mountaineering course first”', 'Each result has a two-sentence rationale and a link to the matching trip page.'], 'Please sanity-check the route logic and seasons.'],
   ['Thank-you text', 'On its way. Check your inbox, or grab them now: [direct download links]'],
 ]));
-children.push(placeholder('We still need the email address (or CRM) where lead notifications should go.'));
+children.push(small('Lead notifications for all forms go to info@shastaguides.com, per your note.'));
 
 // 11 Photo strip
 children.push(h1('11.  Photo strip'));
@@ -243,7 +243,7 @@ children.push(table3([
   ['Map', 'Google map embed of 305 Chestnut St'],
   ['Social', 'Instagram · Facebook · Yelp'],
 ]));
-children.push(placeholder('Where should form submissions go? An email inbox, a CRM, or both? We can also add SMS or Slack notifications.'));
+children.push(small('Submissions go to info@shastaguides.com, per your note. SMS or Slack notifications can be added later.'));
 
 // 13 Footer
 children.push(h1('13.  Footer'));
@@ -266,7 +266,7 @@ children.push(...bullets([
   'Why SMG — shasta team',
   'Meet Your Guides — BCPP_2026_CATO (team summit photo) plus eleven headshots from shastaguides.com/about',
   'Rooted in Mt. Shasta — Shasta.lentics',
-  'Articles — West Face Shastina, crampons climbing, view from camp, crampons on, rachel leading shasta',
+  'Articles — shastaroutemap, crampons climbing, view from camp, crampons on, rachel leading shasta',
   'Photo strip — headlamps alpine start, Shasta one, CATO climb shadow, casavalcamp2, GB ski, climb.casaval1',
 ]));
 children.push(gap());
@@ -279,7 +279,7 @@ children.push(...bullets([
 // ===== Part 2: program pages =====
 children.push(new Paragraph({ pageBreakBefore: true, spacing: { after: 60 }, children: [new TextRun({ text: 'Part 2 · Program pages', font: FONT, size: 34, bold: true, color: NAVY })] }));
 children.push(p('Each trip card on the homepage now opens its own page. Every page follows the same layout: a hero, an overview with at-a-glance facts, one card per trip or course, what is included, a photo strip, and an inquiry form with the matching gear list and training guide.'));
-children.push(p('Copy, prices and dates were taken from your current website in October 2026. For each trip, use the notes column to write KEEP, CUT, or the new 2027 price. Anything you leave blank we will keep as shown.'));
+children.push(p('Copy, prices and dates were taken from your current website in October 2026. Your Round 3 notes are applied: the 4-Day Advanced Ski Seminar and OAT x SMG Backpacking are cut, the 3-Day Expedition Style climb stays at $1,595, and the Casaval Ridge text is yours. For anything else, write KEEP, CUT, or the new 2027 price in the notes column. Blank means keep.'));
 children.push(new Paragraph({ spacing: { before: 60, after: 160 }, children: [run('Every page links Book Now to your current Climb Shasta page until we have the Flybook links.', { color: GRAY, italics: true, size: 18 })] }));
 
 TRIPS.forEach((t, i) => {
@@ -332,9 +332,9 @@ children.push(h1(`${16 + TRIPS.length}.  What we still need from you`));
 children.push(...bullets([
   'Flybook access: a login or the booking links so Book Now can open your reservation window.',
   'Program changes: mark each trip in Part 2 as KEEP or CUT, and add 2027 prices and dates where they have changed.',
-  'Three guide photos: John Michael McGinn, Lael Cashen and Rachel Foucher, plus a short bio for Rachel.',
+  'Guide photos for John Michael McGinn and Lael Cashen, and a decision on Rachel Foucher (keep, with photo and bio, or drop).',
   'A real rock climbing photo for the Rock Climbing card.',
-  'Form routing: the email address (or CRM) that should receive contact-form and download leads.',
+  'A heads-up if the Expedition Style price moves to $1,695 in spring or summer.',
   'Route quiz check: a quick read of the six quiz outcomes for accuracy on routes and seasons.',
   'GoDaddy access for team@theclaymedia.com so we can prepare hosting.',
 ]));
