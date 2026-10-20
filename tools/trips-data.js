@@ -60,7 +60,7 @@ module.exports = [
         experience: 'Prior experience and strong physical ability required, such as a previous Shasta route, any route on Rainier or the Grand Teton, or a technical route on Whitney. Contact us to see if you qualify.',
         demand: "Must be in prime physical condition and training diligently for the challenge. This is Shasta's longest, most demanding route.",
         learn: LIVE + '/cacavalridgeclimb' },
-      { name: 'Clear Creek Summit Climb', tag: 'Late season', img: 'assets/images/summit-ridge-snow.jpg', alt: 'Wind-carved snow along the summit ridge', length: '3 days', cost: '$1,595 per person', route: 'Clear Creek',
+      { name: 'Clear Creek Summit Climb', tag: 'Late season', img: 'assets/images/clear-creek-route.jpg', alt: 'Mt. Shasta from the Clear Creek side in summer', length: '3 days', cost: '$1,595 per person', route: 'Clear Creek',
         blurb: 'The late-season route once the Gulch melts out. Long, non-technical and quiet, with a huge view east. Runs July into September.',
         experience: 'No mountaineering experience is required. Previous hiking experience is required.',
         demand: 'Proper conditioning and preparation are crucial to summit success.',
@@ -85,7 +85,7 @@ module.exports = [
     includes: OVERNIGHT_INCLUDES, notIncluded: NOT_INCLUDED,
     gear: { label: 'Summit Climb Gear List', href: 'assets/downloads/smg-summit-climb-gear-list.pdf' },
     article: { title: 'Which route is right for you?', href: LIVE + '/articles/choosingaroute' },
-    strip: ['assets/images/headlamps-alpine-start.jpg', 'assets/images/avalanche-gulch-climbers.jpg', 'assets/images/misery-hill.jpg', 'assets/images/glissade-fun.jpg', 'assets/images/casaval-camp-tents.jpg', 'assets/images/team-summit-four.jpg'],
+    strip: ['assets/images/headlamps-alpine-start.jpg', 'assets/images/avalanche-gulch-climbers.jpg', 'assets/images/misery-hill.jpg', 'assets/images/glissade-fun.jpg', 'assets/images/clear-creek-sunrise-hike.jpg', 'assets/images/team-summit-four.jpg'],
   },
 
   {
@@ -188,7 +188,7 @@ module.exports = [
         experience: 'No mountaineering experience is required. Previous hiking experience is required.',
         demand: 'Prospective climbers should be in excellent physical condition.',
         learn: LIVE + '/womensglacier' },
-      { name: 'Glacier II: Glacier Travel & Crevasse Rescue', tag: 'Intermediate', img: 'assets/images/hotlum-ridge-climb.jpg', alt: 'A roped climber on a steep snow ridge', length: '5 days', cost: '$1,795 per person',
+      { name: 'Glacier II: Glacier Travel & Crevasse Rescue', tag: 'Intermediate', img: 'assets/images/glacier-rope-training.jpg', alt: 'A guide teaches rope and crevasse rescue skills on the glacier', length: '5 days', cost: '$1,795 per person',
         blurb: 'Anchors, crevasse rescue, roped glacier travel and a technical summit. For climbers ready to lead themselves.',
         experience: 'Mountaineering experience including crampon and ice axe use is required. Basic rope skills are highly recommended, plus time at similar elevations.',
         demand: 'Must be in good physical condition.',
@@ -299,7 +299,7 @@ module.exports = [
     ],
     formOption: 'Backpacking',
     programs: [
-      { name: 'Pacific Crest Trail Backpacking Trip', img: 'assets/images/alpine-hut-packs.jpg', alt: 'Backpacks lined up outside a stone hut', length: '3 days', cost: '$1,295 per person',
+      { name: 'Pacific Crest Trail Backpacking Trip', img: 'assets/images/porcupine-lake.jpg', alt: 'Porcupine Lake, a clear alpine lake below a granite ridge', length: '3 days', cost: '$1,295 per person',
         blurb: 'A taste of the legendary Mexico-to-Canada route on an iconic Mt. Shasta section, with alpine lake camps.',
         experience: 'No previous experience is required.',
         demand: 'Expect high altitudes. Hikers should be in good physical condition.',
@@ -327,8 +327,7 @@ module.exports = [
     eyebrow: 'Guided Rock Climbing',
     h1: 'Rock Climbing',
     lede: 'Easy-access crags for first-timers and big alpine routes in Castle Crags for climbers who want more.',
-    hero: { src: 'assets/images/casaval-ridge-rock.jpg', alt: 'Climbers on the rock and snow of Casaval Ridge' },
-    heroNote: 'Placeholder photo. Needs a real rock climbing shot.',
+    hero: { src: 'assets/images/cosmic-wall-spire.jpg', alt: 'A climber high on a granite spire in Castle Crags' },
     intro: [
       'The Mt. Shasta area has several classics that will entertain rock climbers from beginner to advanced. Easily accessible local crags for the first-timer and big alpine routes in Castle Crags provide endless opportunities to challenge and inspire.',
     ],
@@ -340,12 +339,12 @@ module.exports = [
     ],
     formOption: 'Rock Climbing',
     programs: [
-      { name: 'Fun Climbing Day at Cantara Crag', tag: 'All ages', img: 'assets/images/trailhead-group.jpg', alt: 'A group raises their poles at the trailhead', length: '1 day', cost: '$450 for 1 · $495 for 2 · $550 for 3 · $595 for 4',
+      { name: 'Fun Climbing Day at Cantara Crag', tag: 'All ages', img: 'assets/images/cosmic-wall-climber.jpg', alt: 'A climber on sunny granite near Mt. Shasta', length: '1 day', cost: '$450 for 1 · $495 for 2 · $550 for 3 · $595 for 4',
         blurb: 'Top-rope climbing on a sunny crag five minutes from the car. Perfect for families and first-timers.',
         experience: 'For climbers with little or no climbing experience. All ages welcome.',
         demand: 'Cantara Crag is a five-minute walk from the parking area.',
         learn: LIVE + '/funclimb' },
-      { name: 'Climb Cosmic Wall, Castle Crags', tag: 'Multi-pitch', img: 'assets/images/casaval-ridge-rock.jpg', alt: 'Climbers on rock and snow', length: '1 day', cost: '$595 for 1 · $695 for 2 (1:2 ratio)',
+      { name: 'Climb Cosmic Wall, Castle Crags', tag: 'Multi-pitch', img: 'assets/images/cosmic-wall-racking.jpg', alt: 'A climber racks gear on the granite of Cosmic Wall', length: '1 day', cost: '$595 for 1 · $695 for 2 (1:2 ratio)',
         blurb: 'The classic south ridge of Castle Dome: a long alpine rock route with a huge summit view of Shasta.',
         experience: 'Previous climbing experience, ages 16 and up. Requires multi-pitch experience or a skills day before the climb.',
         demand: 'A strenuous two to three hour uphill hike to reach the rock. Climbers should be in good physical condition.',
@@ -354,7 +353,7 @@ module.exports = [
     extra: { title: 'Want to learn to lead?', text: 'We teach trad, sport and multi-pitch skills on custom technical days. Ask about a private course.' },
     gear: { label: 'Mountaineering Class & Day Hike Gear List', href: 'assets/downloads/smg-mountaineering-class-day-hike-gear-list.pdf' },
     article: { title: 'Why climb with a guide?', href: LIVE + '/articles/climbingshastawithaguide' },
-    strip: ['assets/images/casaval-ridge-rock.jpg', 'assets/images/casaval-ridge-line.jpg', 'assets/images/red-banks-ice-axe.jpg', 'assets/images/trailhead-group.jpg', 'assets/images/lenticular-over-town.jpg', 'assets/images/shasta-northeast-side.jpg'],
+    strip: ['assets/images/cosmic-wall-spire.jpg', 'assets/images/cosmic-wall-climber.jpg', 'assets/images/cosmic-wall-racking.jpg', 'assets/images/castle-crags-day-hike.jpg', 'assets/images/lenticular-over-town.jpg', 'assets/images/shasta-northeast-side.jpg'],
   },
 
   {
@@ -363,7 +362,7 @@ module.exports = [
     eyebrow: 'Single-Day Adventures',
     h1: 'Day Trips',
     lede: 'Low-stress single-day tours for visitors who want to explore the mountain, learn something new and be back in town for dinner.',
-    hero: { src: 'assets/images/trailhead-group.jpg', alt: 'A group raises their trekking poles at the trailhead with Mt. Shasta behind' },
+    hero: { src: 'assets/images/castle-crags-day-hike.jpg', alt: 'A hiker on a trail facing the spires of Castle Crags' },
     intro: [
       'For visitors to the Mount Shasta area who are looking for fun and low-stress activities to suit whatever your objectives are. These single-day tours are a perfect way to explore the region while learning new skills and discovering local gems.',
     ],
@@ -385,7 +384,7 @@ module.exports = [
         experience: 'None. For skiers and riders who want to experience the Mt. Shasta backcountry.',
         demand: 'Moderate. Most of the day is spent climbing to earn the descent.',
         learn: LIVE + '/intoski' },
-      { name: 'Fun Climbing Day', img: 'assets/images/trailhead-group.jpg', alt: 'A group at the trailhead', length: '6 to 8 hours', cost: '$450 for 1 · $495 for 2 · $550 for 3 · $595 for 4',
+      { name: 'Fun Climbing Day', img: 'assets/images/cosmic-wall-climber.jpg', alt: 'A climber on sunny granite near Mt. Shasta', length: '6 to 8 hours', cost: '$450 for 1 · $495 for 2 · $550 for 3 · $595 for 4',
         blurb: 'Rock climbing at Cantara Crag for little or no experience. All ages welcome.',
         experience: 'None.',
         demand: 'Easy. The crag is a five-minute walk from the car.',

@@ -56,7 +56,7 @@ const children = [];
 // Title block
 children.push(new Paragraph({ spacing: { after: 40 }, children: [new TextRun({ text: 'SHASTA MOUNTAIN GUIDES', font: FONT, size: 40, bold: true, color: NAVY })] }));
 children.push(new Paragraph({ spacing: { after: 40 }, children: [new TextRun({ text: 'Website Content Sheet — Round 3', font: FONT, size: 28, color: GLACIER })] }));
-children.push(new Paragraph({ spacing: { after: 60 }, children: [run('Homepage + program pages · prepared by The Clay Media · revised October 14, 2026 with Chris’s Round 3 notes applied', { color: GRAY })] }));
+children.push(new Paragraph({ spacing: { after: 60 }, children: [run('Homepage + program pages · prepared by The Clay Media · revised October 21, 2026 with Chris’s Round 3 notes and October 13 photos applied', { color: GRAY })] }));
 children.push(new Paragraph({ spacing: { after: 240 }, border: { bottom: { style: BorderStyle.SINGLE, size: 8, color: SUN, space: 6 } }, children: [run('Round 3 applies every note Chris left on the Round 2 sheet, adds the gear lists, training plans and photos from the shared Drive folder, and introduces the eight program pages (Part 2).', { color: GRAY })] }));
 
 children.push(h2('How to use this document'));
@@ -113,7 +113,7 @@ children.push(table3([
   ['4. Custom Trips', 'Photo: “Climb.north2” — climbers on the north side at sunrise', 'Done — moved to fourth.'],
   ['5. Avalanche Courses', 'Photo: “skintrack” — skin track winding up a snowy ridge', 'Done — moved to fifth.'],
   ['6. Backpacking', 'Photo: “Northside basecamp” — filling a bottle from a spring at basecamp', 'Done — moved to sixth.'],
-  ['7. Rock Climbing', 'Photo: “climbcasavalridge” — climbers on the rock and snow of Casaval Ridge', 'Done — moved to seventh. Still needs a true rock climbing photo; none in the Drive folder yet.'],
+  ['7. Rock Climbing', 'Photo: “mz.cosmic” — a climber on the granite of Cosmic Wall in Castle Crags', 'Done — moved to seventh, and now uses your Cosmic Wall photo. Is this Michael Zanger? We can caption it.'],
   ['8. Day Trips', 'Photo: “Shasta trailhead” — group raising poles at the trailhead'],
 ], COLS3, ['Card', 'Image now used', 'Your notes / swap']));
 children.push(placeholder('Each card still needs a destination page and one short line of description. Tell us which programs are being retired and we will draft the lines for the ones that remain.'));
@@ -270,6 +270,7 @@ children.push(...bullets([
   'Photo strip — headlamps alpine start, Shasta one, CATO climb shadow, casavalcamp2, GB ski, climb.casaval1',
 ]));
 children.push(gap());
+children.push(small('Added from the Drive folder on October 13 and now in use: cosmic (Rock Climbing hero), mz.cosmic (Rock Climbing card and Fun Climbing Day), cosmicgear (Cosmic Wall), glacier training (Glacier II), clear creek (Clear Creek climb), hikeclearcreek (Climb Shasta photo strip), Porcupine Lake (PCT Backpacking), dayhike (Day Trips hero).'));
 children.push(small('New in the Drive folder since Round 2, held for inner pages or swaps:'));
 children.push(...bullets([
   'shastaroutemap (route map — ideal for the “Which route?” article and the quiz), smgadmin (team group), basecampdinner, campwater, glissadehorns, miseryhill, redbanksiceaxe, redbanksfisheye, pow ski, approachhike, avalanche climbers gully, casaval.ridge, climbhotlumguides, Helen switchbacks, shasta northeast side, shasta south side, uptrack south side',
@@ -333,7 +334,6 @@ children.push(...bullets([
   'Flybook access: a login or the booking links so Book Now can open your reservation window.',
   'Program changes: mark each trip in Part 2 as KEEP or CUT, and add 2027 prices and dates where they have changed.',
   'Guide photos for John Michael McGinn and Lael Cashen, and a decision on Rachel Foucher (keep, with photo and bio, or drop).',
-  'A real rock climbing photo for the Rock Climbing card.',
   'A heads-up if the Expedition Style price moves to $1,695 in spring or summer.',
   'Route quiz check: a quick read of the six quiz outcomes for accuracy on routes and seasons.',
   'GoDaddy access for team@theclaymedia.com so we can prepare hosting.',
