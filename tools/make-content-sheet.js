@@ -262,7 +262,7 @@ children.push(gap());
 children.push(small('Photos used, by section:'));
 children.push(...bullets([
   'Hero slideshow — CATO high5, CATO flags, AGskintrack (your three USE_IN_HERO files)',
-  'Trip cards — shasta climb gulch shadow, Shastaski.gulch, guide helping, Climb.north2, skintrack, Northside basecamp, climbcasavalridge, Shasta trailhead',
+  'Trip cards — shasta climb gulch shadow, Shastaski.gulch, guide helping, Climb.north2, skintrack, Northside basecamp, mz.cosmic, Shasta trailhead',
   'Why SMG — shasta team',
   'Meet Your Guides — BCPP_2026_CATO (team summit photo) plus eleven headshots from shastaguides.com/about',
   'Rooted in Mt. Shasta — Shasta.lentics',
@@ -327,18 +327,6 @@ TRIPS.forEach((t, i) => {
   rest.push(['Inquiry form', `Same Plan My Trip form as the homepage, with “${t.formOption}” pre-selected. “Ask about this trip” on any card adds that trip’s name to the message.`]);
   if (rest.length) { children.push(gap()); children.push(table3(rest)); }
 });
-
-// Still need
-children.push(h1(`${16 + TRIPS.length}.  What we still need from you`));
-children.push(...bullets([
-  'Flybook access: a login or the booking links so Book Now can open your reservation window.',
-  'Program changes: mark each trip in Part 2 as KEEP or CUT, and add 2027 prices and dates where they have changed.',
-  'Guide photos for John Michael McGinn and Lael Cashen, and a decision on Rachel Foucher (keep, with photo and bio, or drop).',
-  'A heads-up if the Expedition Style price moves to $1,695 in spring or summer.',
-  'Route quiz check: a quick read of the six quiz outcomes for accuracy on routes and seasons.',
-  'GoDaddy access for team@theclaymedia.com so we can prepare hosting.',
-]));
-children.push(gap());
 children.push(p('Once you have been through this, send it back with your notes and we will fold everything into the build.', { run: { color: GRAY } }));
 
 const doc = new Document({
