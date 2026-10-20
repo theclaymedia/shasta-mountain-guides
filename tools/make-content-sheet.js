@@ -327,7 +327,6 @@ TRIPS.forEach((t, i) => {
   rest.push(['Inquiry form', `Same Plan My Trip form as the homepage, with “${t.formOption}” pre-selected. “Ask about this trip” on any card adds that trip’s name to the message.`]);
   if (rest.length) { children.push(gap()); children.push(table3(rest)); }
 });
-children.push(p('Once you have been through this, send it back with your notes and we will fold everything into the build.', { run: { color: GRAY } }));
 
 const doc = new Document({
   creator: 'The Clay Media',
