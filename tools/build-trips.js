@@ -10,6 +10,11 @@ const fbClasses = (entity) => `flybook-book-now-button fb-widget-type-frontend f
 const fbButton = (label, entity, cls = 'btn') => `<button type="button" class="${cls} ${fbClasses(entity)}">${label}</button>`;
 const FLYBOOK_ASSETS = `<link rel="stylesheet" href="https://${FB.domain}/content/bootstrapper/flybookbootstrap.css">\n<script src="https://${FB.domain}/custom/bootstrapper/flybookbootstrap.js"></script>`;
 const ROOT = path.join(__dirname, '..');
+// Trip detail pages (tools/trip-details.json): "Full details" links go to the local page when one exists.
+const DETAILS = require('./trip-details.json');
+const DETAIL_SLUGS = new Set(DETAILS.trips.map(t => t.slug));
+const detailSlug = (learn) => { const s = (learn || '').split('/').pop(); const c = DETAILS.redirects[s] || s; return DETAIL_SLUGS.has(c) ? c : null; };
+const detailHref = (learn) => { const c = detailSlug(learn); return c ? `${c}.html` : learn; };
 
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
@@ -78,7 +83,7 @@ function programCard(pr, pageOption) {
           <div class="program__cta">
             ${pr.fb ? `${fbButton('Book Now', pr.fb, 'btn btn--sm')}
             <a class="btn btn--outline btn--sm" href="#inquire" data-trip="${esc(pr.name)}">Ask about this trip</a>` : `<a class="btn btn--sm" href="#inquire" data-trip="${esc(pr.name)}">Request this trip</a>`}
-            ${pr.learn ? `<a class="more" href="${pr.learn}">Full details &rsaquo;</a>` : ''}
+            ${pr.learn ? `<a class="more" href="${detailHref(pr.learn)}">Full details &rsaquo;</a>` : ''}
           </div>
         </div>
       </article>`;
@@ -236,22 +241,7 @@ ${p.pricing.map(pricingTable).join('\n')}
   </div>
 </div>`;
 
-  return `<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>${esc(p.h1)} | Shasta Mountain Guides</title>
-<meta name="description" content="${esc(p.lede)} Guided by Shasta Mountain Guides, the original guide service on Mt. Shasta.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css">
-</head>
-<body id="top">
-
-${nav(p.slug)}
-
+  return docShell({ title: p.h1, description: `${p.lede} Guided by Shasta Mountain Guides, the original guide service on Mt. Shasta.`, current: p.slug, body: `
 <section class="page-hero">
   <div class="page-hero__bg" aria-hidden="true"><img src="${p.hero.src}" alt=""></div>
   <div class="wrap page-hero__content">
@@ -279,14 +269,35 @@ ${nav(p.slug)}
 </section>
 ${programs}${pricing}${includes}${extra}${strip}
 
-${inquire(p)}
+${inquire(p)}` });
+}
+
+// Full HTML document: head, sitewide header and footer, shared scripts, Flybook.
+function docShell({ title, description, current, body }) {
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${esc(title)} | Shasta Mountain Guides</title>
+<meta name="description" content="${esc(description)}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body id="top">
+
+${nav(current)}
+
+${body}
 
 ${footer()}
 
 <script src="assets/js/site.js"></script>
 ${FLYBOOK_ASSETS}
 <script>
-  /* "Ask about this trip" buttons preload the form with the specific program. */
+  /* "Ask about this trip" / "Request this trip" buttons preload the form with the specific program. */
   document.querySelectorAll('[data-trip]').forEach(function(a){
     a.addEventListener('click', function(){
       var name = a.getAttribute('data-trip');
@@ -303,9 +314,13 @@ ${FLYBOOK_ASSETS}
 `;
 }
 
-let n = 0;
-for (const p of pages) {
-  fs.writeFileSync(path.join(ROOT, p.slug + '.html'), page(p));
-  n++;
+module.exports = { pages, esc, nav, footer, inquire, fbButton, FB, LIVE, ROOT, docShell, detailHref, detailSlug };
+
+if (require.main === module) {
+  let n = 0;
+  for (const p of pages) {
+    fs.writeFileSync(path.join(ROOT, p.slug + '.html'), page(p));
+    n++;
+  }
+  console.log('built', n, 'pages:', pages.map(p => p.slug + '.html').join(', '));
 }
-console.log('built', n, 'pages:', pages.map(p => p.slug + '.html').join(', '));

@@ -1,0 +1,3892 @@
+{
+ "redirects": {
+  "glacierseminar": "glacier1",
+  "womensglacierseminar": "womensglacier",
+  "advanced-ski": "skishasta",
+  "oatsmgbackpacking": "backpack"
+ },
+ "trips": [
+  {
+   "slug": "expedition-style",
+   "name": "3-Day Mt. Shasta Climb, Expedition Style",
+   "program": "climb-shasta",
+   "programTitle": "Climb Shasta",
+   "formOption": "Climb Shasta",
+   "fb": 781,
+   "length": "3 days",
+   "route": "Avalanche Gulch, with the West Face or Clear Creek as alternates",
+   "card_cost": "$1,595 per person",
+   "eyebrow": "Mt Shasta, California · 14,179 ft",
+   "route_line": "Avalanche Gulch Route · Alternate Routes | West Face or Clear Creek",
+   "hero": {
+    "src": "assets/trips/524100-smg.redbanks.jpg",
+    "alt": "3-Day Mt. Shasta Climb, Expedition Style on Mt. Shasta"
+   },
+   "gallery": [
+    {
+     "src": "assets/trips/ff37ff-nick-climb-team.jpg",
+     "alt": "SMG guide Nick Caselli guides a group of mountaineers of Avalanche gulch on the south face of mt shasta"
+    },
+    {
+     "src": "assets/trips/2cd72c-mtshastaavgulch.jpg",
+     "alt": "Mt shasta covered in snow"
+    },
+    {
+     "src": "assets/trips/079776-helen-switchbacks.jpg",
+     "alt": "Climbing trail on mt shasta"
+    },
+    {
+     "src": "assets/trips/9f83d0-180603-ckrumholz-1600.jpg",
+     "alt": "Climbers pose at a ridge on mt shasta"
+    },
+    {
+     "src": "assets/trips/dcb548-180603-ckrumholz-1741.jpg",
+     "alt": "Mountaineers climb together toward the summit of mt shasta"
+    },
+    {
+     "src": "assets/trips/791a3c-180602-ckrumholz-0639.jpg",
+     "alt": "Mountaineers glissade down mt shasta after summiting"
+    },
+    {
+     "src": "assets/trips/3138e0-climbteam.jpg",
+     "alt": "Climbers pose together at 50/50 base camp"
+    },
+    {
+     "src": "assets/trips/ef6134-mt.-shasta-summit-climbers.jpg",
+     "alt": "Mountaineers hug and pose at the summit of mt shasta"
+    }
+   ],
+   "overview": [
+    {
+     "p": "The three-day ascent of Mt. Shasta is the recommended climb for summit success. There is ample time for skills instruction and a climb schedule to best suit the conditions. This is the classic summit expedition on Mt. Shasta. The plan is to climb the Avalanche Gulch route. We may choose to use alternate routes as conditions require; this could be the West Face or Clear Creek."
+    },
+    {
+     "p": "The success rate of a three-day Mt Shasta climb is much higher than on the quicker two-day trips. Mountaineering instruction includes:"
+    },
+    {
+     "ul": [
+      "Ice axe and crampon use",
+      "Ice axe self-arrest",
+      "Snow climbing technique",
+      "Basic rope travel"
+     ]
+    },
+    {
+     "p": "On this climb, we aim to create personal connections with Mt. Shasta and the surrounding land, lasting connections to your new climbing community."
+    },
+    {
+     "p": "We bring over 45 years of experience guiding on Mount Shasta and are the original guiding company for this special mountain. We know Shasta better than anyone and aim to provide a professional and positive experience for all climbers."
+    }
+   ],
+   "requirements": [
+    "No mountaineering experience is required.",
+    "Previous hiking experience is required.",
+    "Previous backpacking experience is helpful.",
+    "Prospective climbers should be in excellent physical condition and train diligently for a big challenge.",
+    "Climbing Mt Shasta is strenuous. For the best chances of summiting please train ahead of time. Feel free to contact us for any training recommendations. Check out our training page to get started."
+   ],
+   "dates_title": "2026-2027 Dates",
+   "dates": [
+    "Clear Creek 2026",
+    "August 21-24",
+    "2027",
+    "April 30-May 2",
+    "May 7-9, 14-16, 21-23, 28-30",
+    "June 1-, 4-6, 8-10, 11-13, 18-20, 22-24, 25-27",
+    "Clear Creek",
+    "July 2-4, 9-11, 16-18, 23-25, 30-August 1",
+    "August 6-8, 13-15"
+   ],
+   "cost": [
+    "$1595 per person"
+   ],
+   "includes": [
+    "Professional instruction and mountain guiding with a guide-to-client summit-day ratio of 1:3",
+    "Breakfast & dinner while in the backcountry",
+    "Group camping equipment, tents, stoves, kitchen equipment",
+    "Mt. Shasta summit passes"
+   ],
+   "cost_notes": [
+    "Boots are not included but rentals are available in the town."
+   ],
+   "gear": {
+    "href": "assets/downloads/smg-summit-climb-gear-list.pdf",
+    "label": "Summit Climb Gear List"
+   },
+   "guides_title": "The difference is in our guides",
+   "guides": [
+    "The Shasta Mountain Guides® staff is a diverse, skilled, and fun group of individuals. Their common bond is a pure passion for being in the mountains and sharing it with friends, both old and new. We strongly believe in providing the highest level of service and quality of experience while climbing Mt. Shasta. We are local professionals and are committed to your safety and enjoyment.",
+    "SMG is the original guide service on Mt. Shasta, and we are on the mountain daily. We specialize in Mount Shasta and the Shasta-Trinity National Forest. When you climb with us, your trip is supported by our collective experience and knowledge of the mountain. Our combined experience includes thousands of Shasta summits and many years spent on the mountain. Together we’ve explored all its’ routes during all conditions and seasons. Join us for the trip of your lifetime!"
+   ],
+   "itinerary_title": "MT SHASTA 3-DAY SUMMIT ITINERARY",
+   "itinerary": [
+    {
+     "day": "Day 1",
+     "items": [
+      {
+       "time": "9:00 am",
+       "text": "Meet guides and group at the SMG Shop located at 305 Chestnut Street, Mt Shasta, CA. Please be punctual to allow time for gear rentals, packing, and a group briefing. Please note: your guides will do a thorough gear check and pass out group gear before packing your backpack. We recommend that you reserve your rental equipment through the Fifth Season in advance: 530-926-3606"
+      },
+      {
+       "time": "10:00am-12:30am",
+       "text": "Drive to the Bunny Flat trailhead (6,950’) for a group briefing and start the approach to base camp at Horse Camp (8000’) Depending on weather and trail conditions, the moderate/ low angle approach to base camp may take anywhere from 1.5 to 2.0 hours. Distance: 2 miles, Vertical gain: 1,000’"
+      },
+      {
+       "time": "12:30pm-2:00pm",
+       "text": "At base camp your group will set up camp, snack on trail food and prepare for snow school."
+      },
+      {
+       "time": "2:00pm-4:00pm",
+       "text": "Snow School. The purpose of snow school is to prepare you and the climbing team for a safe, efficient, and enjoyable climb. Topics covered include fundamental climbing techniques, ice axe and crampon use, team rope travel, and team arrest."
+      },
+      {
+       "time": "4:00pm-6:00pm",
+       "text": "After snow school you will return to camp for an early dinner and evening briefing."
+      }
+     ]
+    },
+    {
+     "day": "Day 2",
+     "items": [
+      {
+       "time": "7:00am",
+       "text": "Wake-up, hot breakfast, and pack up camp."
+      },
+      {
+       "time": "9:00am-1:00pm",
+       "text": "We will hike to approximately 9500-10,000ft and set up our high camp between 50/50 Flat and Lake Helen. Distance: approx 2 miles, Vertical Gain: 2,000’"
+      },
+      {
+       "time": "2:00-5:00pm",
+       "text": "We will continue with an additional skills session and advanced training and review."
+      },
+      {
+       "time": "5:00-7:00pm",
+       "text": "Dinner and pre-climb briefing"
+      }
+     ]
+    },
+    {
+     "day": "Day 3",
+     "items": [
+      {
+       "time": "Alpine Start",
+       "text": "Depending on our team abilities, weather, and route conditions we will begin our climb between 2:00- 3:00am. Distance: ~2 miles (one way) Vertical Gain 4,000’ Descent: 7,000’ 7 miles"
+      },
+      {
+       "time": "Turn around time",
+       "text": "For safety purposes, our turn around time on the mountain may be as early as 11:00 am-12:00 pm. We use these time frames to avoid hazards such as rock fall and afternoon storms. Depending on route conditions, the descent back to camp may take 2.5-4.5 hours."
+      },
+      {
+       "time": "Back at base camp",
+       "text": "Back at base camp the team will pack up and descend to the trail head. We expect to be back to the Bunny Flat Trailhead between 5:00 and 7:00pm."
+      }
+     ],
+     "note": "Itinerary subject to change & the summit of Mount Shasta is subject to safe weather and snow conditions."
+    }
+   ],
+   "notes": [
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and Cold Creek Inn. They offer a discount to our climbers and guests."
+   ],
+   "source": "https://shastaguides.com/expedition-style"
+  },
+  {
+   "slug": "aplinestyleclimb",
+   "name": "2-Day Alpine Style Summit Climb",
+   "program": "climb-shasta",
+   "programTitle": "Climb Shasta",
+   "formOption": "Climb Shasta",
+   "fb": 783,
+   "length": "2 days",
+   "route": "Avalanche Gulch",
+   "card_cost": "$1,395 per person",
+   "eyebrow": "Mt Shasta, California · 14,179 ft",
+   "route_line": "Avalanche Gulch Route · Alternate Routes | Clear Creek",
+   "hero": {
+    "src": "assets/trips/ae74cc-climb-cloud.jpg",
+    "alt": "2-Day Alpine Style Summit Climb on Mt. Shasta"
+   },
+   "gallery": [
+    {
+     "src": "assets/trips/761ab1-180630-ckrumholz-0496.jpg",
+     "alt": "Climbers prepare to climb mt shasta in the dark"
+    },
+    {
+     "src": "assets/trips/193fa9-180714-ckrumholz-0565--281-29.jpg",
+     "alt": "Mt Shasta climbers use crampons to climb mt shasta"
+    },
+    {
+     "src": "assets/trips/ce218b-mt.-shasta-climbers.jpg",
+     "alt": "Mountaineers on mt shasta short rope to the summit"
+    },
+    {
+     "src": "assets/trips/dcb548-180603-ckrumholz-1741.jpg",
+     "alt": "Mt Shasta mountaineers with mt shasta beauty in the background"
+    },
+    {
+     "src": "assets/trips/5e2ba4-180601-ckrumholz-0218.jpg",
+     "alt": "Mount Shasta in the dark with stars all around"
+    },
+    {
+     "src": "assets/trips/ddd5aa-180708-ckrumholz-2044.jpg",
+     "alt": "Shasta climber admires the beauty of mt shasta"
+    }
+   ],
+   "overview": [
+    {
+     "p": "An alpine schedule is a 36 hour push with an aggressive and challenging itinerary and should only be considered if you are in very good physical condition with previous mountaineering experience. Proper conditioning and preparation and understanding of the objective are crucial to summit success."
+    },
+    {
+     "p": "The first day’s hike to basecamp (approx. 9,500′) will prepare us for a very early alpine start on summit day. A midnight wake up, 8-9 hour ascent, 3-4 hour descent, and return to the trailhead make for a big challenge!"
+    },
+    {
+     "p": "On this climb, we aim to create personal connections with Mt. Shasta and the surrounding land, lasting connections to your new climbing community."
+    },
+    {
+     "p": "We have over 45 years of experience guiding on Mount Shasta and are the original guiding company for this special mountain. We know Shasta better than anyone and aim to provide a professional and positive experience for all climbers."
+    }
+   ],
+   "requirements": [
+    "Previous mountaineering experience is required.",
+    "Previous ice axe/crampon climbing experience is required.",
+    "Previous time spent at elevations similar to Shasta is required.",
+    "This schedule is an aggressive and challenging itinerary and should be considered if have previous mountaineering experience. You must be in very good physical condition and training diligently for the challenge. Proper conditioning and preparation are crucial to summit success.",
+    "Climbing Mt Shasta is strenuous. For the best chances of summiting proper training is essential. Feel free to contact us for recommendations. Check out our training page to get started."
+   ],
+   "dates_title": "2027 Dates",
+   "dates": [
+    "All dates are subject to route change in the event of adverse conditions.",
+    "May 15-16",
+    "May 22-23",
+    "June 29-30",
+    "June 5-6",
+    "June 12-13"
+   ],
+   "cost": [
+    "$1495 per person"
+   ],
+   "includes": [
+    "Guide-to-client summit-day ratio of 1:3",
+    "Group gear and logistics; tents, stoves, kitchen and main meals",
+    "Mt. Shasta summit passes and permits"
+   ],
+   "cost_notes": [
+    "Boots, crampons, and ice axes are available to rent locally"
+   ],
+   "gear": {
+    "href": "assets/downloads/smg-summit-climb-gear-list.pdf",
+    "label": "Summit Climb Gear List"
+   },
+   "guides_title": "The difference is in our guides",
+   "guides": [
+    "The Shasta Mountain Guides® staff is a diverse, skilled, and fun group of individuals. Their common bond is a pure passion for being in the mountains and sharing that desire with friends, both old and new. We strongly believe in providing the highest level of service and quality of experience while climbing Mt. Shasta.",
+    "We are local professionals and are committed to your safety and enjoyment. SMG is the original guide service on Mt. Shasta and we are on the mountain daily. We specialize in Mount Shasta and the Shasta-Trinity National Forest. When you climb with us, your trip is supported by our collective experience and knowledge of the mountain.",
+    "Our combined experience includes thousands of Shasta summits and many years spent on the mountain. Together we’ve explored all its’ routes during all conditions and seasons. Join us for a trip of your lifetime!"
+   ],
+   "itinerary_title": "2-DAY Alpine Style SUMMIT ITINERARY",
+   "itinerary": [
+    {
+     "day": "Day 1",
+     "items": [
+      {
+       "time": "8:00 am",
+       "text": "Meet guides and group at the SMG Shop 305 Chestnut St. Mt. Shasta, CA. Please be punctual to allow time for gear rentals, packing, and a group briefing. We will conduct a thorough gear check and distribute group gear to each participant (5-8lbs.) We recommend that you reserve your rental equipment through the Fifth Season in advance. Phone:530-926-3606"
+      },
+      {
+       "time": "10:00-10:30am",
+       "text": "Drive to the Bunny Flat trailhead (6950’) for a group briefing and start the approach to base camp (location may vary). Distance: 2.5-3.5 miles, vertical gain: 1,500-2,500’"
+      },
+      {
+       "time": "10:30-2:30pm",
+       "text": "Depending on weather and trail conditions, the moderate/ low angle approach to base camp may take anywhere from 1.5 to 5.0 hours."
+      },
+      {
+       "time": "3:00-5:00pm",
+       "text": "At base camp your group will snack, set up camp, and prepare for snow school. The purpose of snow school is to prepare you and the climbing team for a safe, efficient, and enjoyable climb. Topics covered include crampon and ice axe use, team rope travel, and team arrest."
+      },
+      {
+       "time": "5:00-6:00pm",
+       "text": "Return to camp for an early dinner and evening briefing. Your guides will discuss climb day logistics and what to pack. Generally, we like to be resting in the tents by 7:00-8:00pm."
+      }
+     ]
+    },
+    {
+     "day": "Day 2",
+     "items": [
+      {
+       "time": "Alpine Start",
+       "text": "Depending on route conditions, weather, and group strengths, wake-up call will occur between 12:00am-1:00am. We start early for safety and best climbing conditions. Distance: 3 miles (1 way) Vertical gain approx 5,000’"
+      },
+      {
+       "time": "Turn around time",
+       "text": "For safety purposes, our turn around time on the mountain may be as early as 11:00 am-12:00 pm. We use these time frames to avoid hazards such as rock fall and afternoon storms and to allow plenty of time for the strenuous descent and hike out to the trailhead. Depending on route conditions, the descent back to base camp is about 2.5-4.5 hours."
+      },
+      {
+       "time": "Back at base camp",
+       "text": "you will have time for a quick break and pack up for the descent to Bunny Flat. The descent takes about 1-3 hours."
+      }
+     ],
+     "note": "Itinerary subject to change & the summit of Mount Shasta is subject to safe weather and snow conditions."
+    }
+   ],
+   "notes": [
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and LOGE Mt. Shasta. They offer a discount to our climbers and guests."
+   ],
+   "source": "https://shastaguides.com/aplinestyleclimb"
+  },
+  {
+   "slug": "westfaceclimb",
+   "name": "3-Day West Face Climb",
+   "program": "climb-shasta",
+   "programTitle": "Climb Shasta",
+   "formOption": "Climb Shasta",
+   "fb": 785,
+   "length": "3 days",
+   "route": "West Face",
+   "card_cost": "$1,695 per person",
+   "eyebrow": "Mt Shasta, California · 14,179 ft",
+   "route_line": "",
+   "hero": {
+    "src": "assets/trips/1ddc43-hidden-valley-mt.-shasta.jpg",
+    "alt": "3-Day West Face Climb on Mt. Shasta"
+   },
+   "gallery": [
+    {
+     "src": "assets/trips/d8a79b-d572d4ef-8236-4b48-bf5a-38498d1b7797.jpg",
+     "alt": "mount shasta in dark with the milky way in the sky"
+    },
+    {
+     "src": "assets/trips/47dbbb-180707-ckrumholz-0005.jpg",
+     "alt": "Mountaineering group poses at 50/50 base camp"
+    },
+    {
+     "src": "assets/trips/816d65-westface.jpg",
+     "alt": "mount shasta covered in snow in the spring"
+    },
+    {
+     "src": "assets/trips/bbebb1-mount-shasta-hidden-valley.jpg",
+     "alt": "Panoramic of mt shasta and shastina"
+    },
+    {
+     "src": "assets/trips/4dac93-hidden-valley.jpg",
+     "alt": "Mt shasta mid summer, still covered in snow"
+    },
+    {
+     "src": "assets/trips/ff37ff-nick-climb-team.jpg",
+     "alt": "Mountaineers short rope to the summit of mt shasta"
+    },
+    {
+     "src": "assets/trips/0e1eec-180708-ckrumholz-2018.jpg",
+     "alt": "Climbers push their way to the summit of mt shasta"
+    },
+    {
+     "src": "assets/trips/355bcc-west-face-shastina.jpg",
+     "alt": "Climbers push up mt shasta with shastina in the background"
+    }
+   ],
+   "overview": [
+    {
+     "p": "This route is an excellent climb for mountaineers looking for a challenging and more remote climb to Shasta’s summit. Our base camp in Hidden Valley (9,200′) is spectacular and well positioned for the summit push. The route is a sustained effort that will test your endurance and is a comparable technical challenge to Avalanche Gulch. The schedule is alpine style so good training is essential for reaching the summit."
+    },
+    {
+     "p": "The West Face climb is a good alternate on the south side of the mountain. Conditions vary dramatically season to season, check with us for more details. Although similar to Avalanche Gulch, the West Face is a more strenuous summit climb due to added length and distance."
+    },
+    {
+     "p": "On this climb, we aim to create personal connections with Mt. Shasta and the surrounding land and to your new climbing community."
+    },
+    {
+     "p": "We have over 45 years of experience guiding on Mount Shasta and are the original guiding company for this special mountain. We know Shasta and aim to provide a professional and positive experience for all climbers."
+    }
+   ],
+   "requirements": [
+    "No mountaineering experience is required, but is highly recommended – this route is more sustained and difficult than Avalanche Gulch.",
+    "Previous hiking experience is required.",
+    "Previous backpacking experience is helpful.",
+    "Must be in good physical condition and training diligently for the challenge. Check out our training page to get started. Proper conditioning and preparation are crucial to summit success.",
+    "Climbing Mt Shasta is strenuous. For the best chances of summiting, proper training is essential. Feel free to contact us for any training recommendations. Check out our training page to get started."
+   ],
+   "dates_title": "2027 Dates",
+   "dates": [
+    "All dates are subject to route change in the event of adverse conditions.",
+    "June 4-6",
+    "June 25-27"
+   ],
+   "cost": [
+    "$1695 per person"
+   ],
+   "includes": [
+    "Professional mountain guiding with a guide-to-client summit-day ratio of 1:3",
+    "Breakfast & dinner while in the backcountry",
+    "Group equipment; tents, ropes, harnesses, main meals, and cooking equipment",
+    "Mt. Shasta summit passes and permits"
+   ],
+   "cost_notes": [
+    "rentals are available in the town of Mt. Shasta at the Fifth Season"
+   ],
+   "gear": {
+    "href": "assets/downloads/smg-summit-climb-gear-list.pdf",
+    "label": "Summit Climb Gear List"
+   },
+   "guides_title": "The difference is in our guides",
+   "guides": [
+    "The Shasta Mountain Guides® staff is a diverse, skilled, and fun group of individuals. Their common bond is a pure passion for being in the mountains and sharing that desire with friends, both old and new. We strongly believe in providing the highest level of service and quality of experience while climbing Mt. Shasta.",
+    "We are local professionals and are committed to your safety and enjoyment. SMG is the original guide service on Mt. Shasta and we are on the mountain daily. We specialize in Mount Shasta and the Shasta-Trinity National Forest. When you climb with us, your trip is supported by our collective experience and knowledge of the mountain.",
+    "Our combined experience includes thousands of Shasta summits and many years spent on the mountain. Together we’ve explored all its’ routes during all conditions and seasons. Join us for a trip of your lifetime!"
+   ],
+   "itinerary_title": "MT SHASTA 3-DAY SUMMIT ITINERARY",
+   "itinerary": [
+    {
+     "day": "Day 1",
+     "items": [
+      {
+       "time": "8:00am",
+       "text": "Meet guides and group at The SMG Shop 305 Chestnut St, Mt. Shasta, CA. Please be punctual to allow time for gear rentals, packing, and a group briefing. Your guides will do a thorough equipment check and pass out group gear before packing your backpacks. We recommend that you reserve your rental equipment through the Fifth Season 530-926-3606 in advance."
+      },
+      {
+       "time": "10:00am-10:30am",
+       "text": "Drive to the Bunny Flat trailhead (6,950 ft.) for a briefing and start the approach to base camp (9,200ft). Depending on weather and trail conditions, the approach to base camp may take anywhere from 4-6 hours from Bunny Flat."
+      },
+      {
+       "time": "11:00am-12:00pm",
+       "text": "Horse Camp (8,000 ft.) Rest break to snack and fill water bottles at fresh spring."
+      },
+      {
+       "time": "12:30-3:00pm",
+       "text": "Continue to Hidden Valley. The route to base camp at 9,200’ is rough, variable terrain. Snow and loose scree will be the hiking surface. Once at base camp you will set up and prepare for snow school. Distance: 3 miles, 2,300’"
+      },
+      {
+       "time": "4:00pm-5:00pm",
+       "text": "Snow School. The purpose of snow school is to prepare you and the climbing team for a safe, efficient and enjoyable climb. Topics covered include ice axe use, crampon technique, team rope travel, and team arrest."
+      },
+      {
+       "time": "5:00pm-7:00pm",
+       "text": "After snow school you will return to camp for an early dinner and evening briefing. Your guides will discuss climb day logistics and what to pack. We will be resting in tents by 8:00pm"
+      }
+     ]
+    },
+    {
+     "day": "Day 2",
+     "items": [
+      {
+       "time": "Alpine Start",
+       "text": "Depending on group size and route conditions, wake-up call will occur between 1:00am-2:00am. We will be climbing by 2:00 or 3:00am"
+      },
+      {
+       "time": "Turn around time",
+       "text": "For safety purposes, our turn around time on the mountain may be as early as 11:00 am-12:00 pm. Most groups reach the summit in 6-8 hours of climbing. The summit is only half way. We use these time frames to avoid hazards such as rock fall and afternoon storms. The descent back to camp may take 3-4 hours."
+      },
+      {
+       "time": "Back at base camp",
+       "text": "Rest and relax, reflect on the day, and enjoy another dinner and sunset in Hidden Valley. Distance 8 miles, Climbing/Descending 10,000’"
+      }
+     ]
+    },
+    {
+     "day": "Day 3",
+     "items": [
+      {
+       "time": "Return to trail head",
+       "text": "we will enjoy a leisurely breakfast, pack up camp, and descend back to Bunny Flat. The descent takes 3-4 hours and we can expect to be back in the town of Mount Shasta in the early afternoon. Distance 3 miles, 2,300’ descent"
+      }
+     ],
+     "note": "There may be factors that would make a third day summit climb an option. If this is the case, we will return between 5 and 6pm on day three. The summit of Mount Shasta is subject to safe weather and snow conditions."
+    }
+   ],
+   "notes": [
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and LOGE Mt. Shasta. They offer a discount to our climbers and guests."
+   ],
+   "source": "https://shastaguides.com/westfaceclimb"
+  },
+  {
+   "slug": "northsideclimb",
+   "name": "3-Day North Side Climb",
+   "program": "climb-shasta",
+   "programTitle": "Climb Shasta",
+   "formOption": "Climb Shasta",
+   "fb": 787,
+   "length": "3 days",
+   "route": "Hotlum-Bolam Ridge",
+   "card_cost": "$1,695 per person",
+   "eyebrow": "Mt Shasta, California · 14,179 ft",
+   "route_line": "Hotlum Bolam Route",
+   "hero": {
+    "src": "assets/trips/958977-hotlum-bolam.jpg",
+    "alt": "3-Day North Side Climb on Mt. Shasta"
+   },
+   "gallery": [
+    {
+     "src": "assets/trips/d7a46b-basecamp-northside.jpg",
+     "alt": "Mountaineer hikes up to base camp"
+    },
+    {
+     "src": "assets/trips/74dd6a-180713-ckrumholz-0325.jpg",
+     "alt": "North side base camp and views of surrounding valley"
+    },
+    {
+     "src": "assets/trips/148131-180714-ckrumholz-0401.jpg",
+     "alt": "North side of mt shasta, glacier travel"
+    },
+    {
+     "src": "assets/trips/3ed216-180714-ckrumholz-0530.jpg",
+     "alt": "Glacier travel on the north side of mt shasta"
+    },
+    {
+     "src": "assets/trips/d76e8f-mt.-shasta-hotlum-bolam-ridge.jpg",
+     "alt": "Mountaineers short rope of the glaciers of mt shasta"
+    },
+    {
+     "src": "assets/trips/445f40-hbstep.jpg",
+     "alt": "View to the summit of mt shasta as seen from the north side"
+    }
+   ],
+   "overview": [
+    {
+     "p": "Climb Mt. Shasta on what Outside Magazine calls a “Life Changing Adventure Trip”. Shasta’s northeast side is a vast and scenic glaciated wilderness. The climbing routes follow long, steep snow pitches between the Hotlum, Bolam, and Wintun glaciers. Basecamp is pitched by snowmelt springs at 9,500’ on large glacial moraines."
+    },
+    {
+     "p": "This route is for climbers looking for a moderate glacier climb and is best June-August. Proper conditioning and preparation are crucial to summit success – this is an aggressive itinerary for this route and previous experience is required."
+    },
+    {
+     "p": "The three day north side climb is an alpine itinerary for climbers with previous experience. There will be time for a brief review of skills but the focus is on climbing the route alpine style. For more in depth instruction and skills, the Glacier I course is recommended."
+    },
+    {
+     "p": "On this climb, we aim to create personal connections with Mt. Shasta and the surrounding land and lasting connections to your new climbing community."
+    },
+    {
+     "p": "We bring over 45 years of experience guiding on Mount Shasta and are the original guiding company for this special mountain. We know Shasta better than anyone and aim to provide a professional and positive experience for all climbers."
+    }
+   ],
+   "requirements": [
+    "Previous mountaineering experience including ice axe/crampon climbing is required.",
+    "Previous time spent at elevations similar to Shasta is required.",
+    "A great route for returning climbers and those looking for an introductory glacier climb. Proper conditioning and preparation are crucial to summit success – this is an aggressive itinerary for this route!",
+    "Climbing Mt Shasta is strenuous. For the best chances of summiting please train ahead of time. Feel free to contact us for any training recommendations. Check out our training page to get started."
+   ],
+   "dates_title": "2027 Dates",
+   "dates": [
+    "All dates are subject to route change in the event of adverse conditions.",
+    "July 2-4",
+    "July 16-18",
+    "July 30-August 1"
+   ],
+   "cost": [
+    "$1695 per person"
+   ],
+   "includes": [
+    "Professional mountain guiding with a guide-to-client summit-day ratio of 1:3",
+    "Breakfast & dinner while on the mountain",
+    "Group logistics; tents, kitchen, ropes, harnesses",
+    "Mt. Shasta summit passes"
+   ],
+   "cost_notes": [
+    "rentals are available in the town of Mt. Shasta at the Fifth Season"
+   ],
+   "gear": {
+    "href": "assets/downloads/smg-summit-climb-gear-list.pdf",
+    "label": "Summit Climb Gear List"
+   },
+   "guides_title": "The difference is in our guides",
+   "guides": [
+    "The Shasta Mountain Guides® staff is a diverse, skilled, and fun group of individuals. Their common bond is a pure passion for being in the mountains and sharing that desire with friends, both old and new. We strongly believe in providing the highest level of service and quality of experience while climbing Mt. Shasta.",
+    "We are local professionals and are committed to your safety and enjoyment. SMG is the original guide service on Mt. Shasta and we are on the mountain daily. We specialize in Mount Shasta and the Shasta-Trinity National Forest. When you climb with us, your trip is supported by our collective experience and knowledge of the mountain.",
+    "Our combined experience includes thousands of Shasta summits and many years spent on the mountain. Together we’ve explored all its’ routes during all conditions and seasons. Join us for a trip of your lifetime!"
+   ],
+   "itinerary_title": "North Side Climb ITINERARY",
+   "itinerary": [
+    {
+     "day": "Day 1",
+     "items": [
+      {
+       "time": "8:00 am",
+       "text": "Meet guides and group at the SMG Shop: 305 Chestnut Street. Please be punctual to allow time for gear rentals, packing, and a group briefing. Your guides will do a thorough gear check and pass out group items before packing your backpacks. Rental equipment is available from the Fifth Season 530-926-3606"
+      },
+      {
+       "time": "10:00am-11:30am",
+       "text": "Drive to the North Gate trailhead (7,000’) for a group briefing and start the approach to base camp (9,500’) The road to the trailhead is rough, high clearance and/or four wheel drive is recommended. We do not provide transportation."
+      },
+      {
+       "time": "11:30am-3:30pm",
+       "text": "Depending on weather and trail conditions the approach to basecamp will take from 4-6 hours. Distance: 3.5 miles with 2,500’ vertical gain. The terrain starts on a good trail in alpine forests and travels to the base of the glacier with loose rock, scree, and snow possible."
+      },
+      {
+       "time": "3:30pm-6:00pm",
+       "text": "Once at basecamp the group will set up camp and prepare for snow school. The purpose of snow school is to prepare you and the climbing team for a safe, efficient, and enjoyable climb. Topics covered include crampon technique and ice axe use, team rope travel and team arrest."
+      },
+      {
+       "time": "6:00pm-7:30pm",
+       "text": "After snow school you will return to camp for an early dinner and evening briefing. Your guides will discuss climb day logistics and what to pack. Generally, climbers will be resting in tents by 7:30-8:00pm."
+      }
+     ]
+    },
+    {
+     "day": "Day 2",
+     "items": [
+      {
+       "time": "Alpine Start",
+       "text": "Wake-up call will occur between 2:00am-3:00am. The ascent usually takes 6-9 hours. We will climb the lower snowfields under starlight and rope up once we reach the lower glacier at about 10,500’. Distance: 3.5 miles, 4,500’ vertical gain. The terrain will start on low angle snow fields and progress to 45 degree steep snow and ice on the glacier. We will be roped for the ascent and descent for safety and group pacing."
+      },
+      {
+       "time": "Turn around time",
+       "text": "For safety purposes, our turn around time on the mountain may be as early as 11:00 am-12:00 pm. We use these time frames to avoid hazards such as rock fall and afternoon storms. Depending on route conditions, the descent back to camp may take 3-4 hours."
+      },
+      {
+       "time": "Back at base camp",
+       "text": "The team will have the rest of the afternoon to rest, hydrate, and relax. Hot drinks will be provided and an early dinner will be prepared by the guides."
+      }
+     ]
+    },
+    {
+     "day": "Day 3",
+     "items": [
+      {
+       "time": "8:00am-2:00pm",
+       "text": "We will sleep in and enjoy a leisurely breakfast, pack camp and descend back to the trailhead. The descent takes 3-4 hours. We usually return to town between 12:00 and 2:00pm"
+      }
+     ],
+     "note": "On occasion if weather prevents us from making a summit attempt on day two, we may opt to change the summit climb to day three. If this occurs, we will be back to town between 5:00-7:00pm on day three."
+    }
+   ],
+   "notes": [
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and LOGE Mt. Shasta. They offer a discount to our climbers and guests."
+   ],
+   "source": "https://shastaguides.com/northsideclimb"
+  },
+  {
+   "slug": "cacavalridgeclimb",
+   "name": "Casaval Ridge Climb",
+   "program": "climb-shasta",
+   "programTitle": "Climb Shasta",
+   "formOption": "Climb Shasta",
+   "fb": 784,
+   "length": "3 days",
+   "route": "Casaval Ridge",
+   "card_cost": "$1,895 per person",
+   "eyebrow": "Mt Shasta, California · 14,179 ft",
+   "route_line": "",
+   "hero": {
+    "src": "assets/trips/705e24-casavalridge.jpg",
+    "alt": "Casaval Ridge Climb on Mt. Shasta"
+   },
+   "gallery": [
+    {
+     "src": "assets/trips/ef9f46-casa-2.jpg",
+     "alt": "Mountaineers pose at the start of the casaval ridge climb"
+    },
+    {
+     "src": "assets/trips/b1b8a1-casa-4.jpg",
+     "alt": "Views of snow covered features on mt shasta"
+    },
+    {
+     "src": "assets/trips/cbbe8c-casaval-climb.jpg",
+     "alt": "Skier climbs up the casaval ridge route"
+    },
+    {
+     "src": "assets/trips/ab32bc-casavalcamp2.jpg",
+     "alt": "Mt shasta base camp"
+    }
+   ],
+   "overview": [
+    {
+     "p": "This is the classic alpine ridge climb on Mt. Shasta for winter and spring ascents. Dramatic rock spires and steep, exposed climbing make for a challenging and technical ascent. This route is for experienced climbers who want a more challenging route to the summit. Best in winter and spring as this climb requires ample snow and fitness for ideal climbing."
+    },
+    {
+     "p": "This route requires previous mountaineering experience and is for strong climbers who want an early season challenging route to the summit. Suitable experience would include successful previous ascents on Shasta like the West Face or Hotlum-Bolam Ridge; any route on Mt Rainier or the Grand Teton; multiple Cascade and Sierra peaks"
+    },
+    {
+     "p": "Contact us to see if you qualify."
+    },
+    {
+     "p": "We bring over 45 years of experience guiding on Mount Shasta and are the original guiding company for this special mountain. We know Shasta better than anyone and aim to provide a professional and positive experience for all climbers."
+    }
+   ],
+   "requirements": [
+    "Prior experience and strong physical ability are required.",
+    "Suitable experience would include successful previous ascents on Shasta like Avalanche Gulch, the West Face or Hotlum-Bolam Ridge; any route on Mt Rainier or the Grand Teton; a technical route on Mt Whitney like the East Face or East Buttress; or similar. Contact us to see if you qualify.",
+    "Must be in excellent physical condition and training diligently for the challenge. Proper conditioning and preparation are crucial to summit success.",
+    "Climbing Mt Shasta is strenuous. For the best chances of summiting please train ahead of time. Feel free to contact us for any training recommendations. Check out our training page to get started."
+   ],
+   "dates_title": "2026 Dates",
+   "dates": [
+    "All dates are subject to route change in the event of adverse conditions.",
+    "May 8-10, 2026",
+    "Casaval Ridge available by custom booking to experienced parties. Contact us for details"
+   ],
+   "cost": [
+    "$1795 per person"
+   ],
+   "includes": [
+    "Professional guiding, coaching, and instruction with a guide-to-client ratio of 1:2",
+    "Breakfast & dinner while in the backcountry",
+    "All Group logistics and gear; tents, stoves, main meals, summit passes and permits",
+    "DOES NOT INCLUDE: Personal clothing and equipment; you are responsible for your own equipment, you should possess all of the required items"
+   ],
+   "cost_notes": [],
+   "gear": {
+    "href": "assets/downloads/smg-summit-climb-gear-list.pdf",
+    "label": "Summit Climb Gear List"
+   },
+   "guides_title": "The difference is in our guides",
+   "guides": [
+    "The Shasta Mountain Guides® staff is a diverse, skilled, and fun group of individuals. Their common bond is a pure passion for being in the mountains and sharing that desire with friends, both old and new. We strongly believe in providing the highest level of service and quality of experience while climbing Mt. Shasta.",
+    "We are local professionals and are committed to your safety and enjoyment. SMG is the original guide service on Mt. Shasta and we are on the mountain daily. We specialize in Mount Shasta and the Shasta-Trinity National Forest. When you climb with us, your trip is supported by our collective experience and knowledge of the mountain.",
+    "Our combined experience includes thousands of Shasta summits and many years spent on the mountain. Together we’ve explored all its’ routes during all conditions and seasons. Join us for a trip of your lifetime!"
+   ],
+   "itinerary_title": "Casaval ITINERARY",
+   "itinerary": [
+    {
+     "day": "Day 1",
+     "items": [
+      {
+       "time": "",
+       "text": "Meet and basecamp approach"
+      },
+      {
+       "time": "8:00 am",
+       "text": "Meet guides and group at the SMG Shop located at 305 Chestnut St. Please be punctual to allow time for gear check and packing, and a group briefing. Please note; your guides will do a thorough gear check and pass out group gear before packing your backpack. We recommend that you reserve any rental equipment through the Fifth Season in advance: 530-926-3606"
+      },
+      {
+       "time": "10:00am-2:30pm",
+       "text": "Drive to the Bunny Flat trailhead (6,950’) for a group briefing and start the approach to base camp. Depending on weather and route conditions, the moderate/ low angle approach to base camp may take anywhere from 3 to 5 hours. Distance: 2 miles, Vertical gain: 2,000’"
+      },
+      {
+       "time": "2:30pm-5:00pm",
+       "text": "At base camp your group will set up camp, snack on trail food, review mountain skills, and prepare for an early dinner and bedtime."
+      },
+      {
+       "time": "5:00pm-6:00pm",
+       "text": "dinner and evening briefing for the planned summit attempt"
+      }
+     ]
+    },
+    {
+     "day": "Day 2",
+     "items": [
+      {
+       "time": "",
+       "text": "Summit Climb"
+      },
+      {
+       "time": "Alpine Start",
+       "text": "Depending on our team abilities, weather, and route conditions we will begin our climb between 2:00- 3:00am. Distance: ~2 miles (one way) Vertical Gain 5,000’"
+      },
+      {
+       "time": "Turn around time",
+       "text": "For safety purposes, our turn around time on the mountain may be as early as 11:00 am-12:00 pm. We use these time frames to avoid hazards such as rock fall and afternoon storms. Depending on route conditions, the descent back to camp may take 2.5-4.5 hours."
+      },
+      {
+       "time": "5:00-7:00pm",
+       "text": "Dinner and tall tales"
+      }
+     ]
+    },
+    {
+     "day": "Day 3",
+     "items": [
+      {
+       "time": "",
+       "text": "Return to trailhead"
+      },
+      {
+       "time": "",
+       "text": "We will wake at our leisure, pack up camp, and make the return hike to the trailhead. We can expect to be back in town between 11:00am-1:00pm"
+      }
+     ],
+     "note": "Itinerary subject to change & the summit of Mount Shasta is subject to safe weather and snow conditions."
+    }
+   ],
+   "notes": [
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and LOGE Mt. Shasta. They offer a discount to our climbers and guests."
+   ],
+   "source": "https://shastaguides.com/cacavalridgeclimb"
+  },
+  {
+   "slug": "clearcreekclimb",
+   "name": "Clear Creek Summit Climb",
+   "program": "climb-shasta",
+   "programTitle": "Climb Shasta",
+   "formOption": "Climb Shasta",
+   "fb": 788,
+   "length": "3 days",
+   "route": "Clear Creek",
+   "card_cost": "$1,595 per person",
+   "eyebrow": "Mt Shasta, California · 14,179 ft",
+   "route_line": "Clear Creek Route",
+   "hero": {
+    "src": "assets/trips/b98cdb-clearcreekhike.jpg",
+    "alt": "Clear Creek Summit Climb on Mt. Shasta"
+   },
+   "gallery": [
+    {
+     "src": "assets/trips/c0a2c9-7fbbcbc8-d67f-4b27-98f9-4aa5e1aca4cc.jpg",
+     "alt": "Mt Shasta climber hikes up the rocky terrain of the clear creek route"
+    },
+    {
+     "src": "assets/trips/038817-mt.-shasta-late-season-north-side.jpg",
+     "alt": "Mountaineers hike up the trail of the clear creek route"
+    },
+    {
+     "src": "assets/trips/8dbd42-f50e1234-a747-460b-919b-0a45f674b194.jpg",
+     "alt": "Clear creek basecamp views on mt shasta"
+    },
+    {
+     "src": "assets/trips/4ff4b7-fabc6ed6-0a5e-4f97-869c-cf8d087bf574.jpg",
+     "alt": "Lenticular clouds from the clear creek route on mt shasta"
+    },
+    {
+     "src": "assets/trips/077450-clearcreekcamp.jpg",
+     "alt": "Basecamp on mt shasta on the clear creek route"
+    }
+   ],
+   "overview": [
+    {
+     "p": "Clear Creek is the broad open slopes on Mt. Shasta’s east side. Considered one of the least technical routes to the summit; its challenge lies in overcoming long sections of loose rock and scree. Most of the climb traverses on loose scree and talus. There are also snow fields encountered and will require ice axe and crampons for a portion of the climb. This is a good choice late in the season or dry years for a strenuous yet non-technical summit ascent."
+    },
+    {
+     "p": "The success rate of a three-day Mt. Shasta climb is much higher than on the quicker two-day trips. Mountaineering instruction includes appropriate skills necessary for the route. Clear Creek’s challenges are less technical and more physical. Long sections of loose rock, scree, and sand add to the difficulty. Less technical does not mean less difficult. Instruction will include:"
+    },
+    {
+     "ul": [
+      "Ice axe and crampon use",
+      "Efficient movement in the mountains",
+      "Pacing and climbing at altitude",
+      "Basic rope travel"
+     ]
+    },
+    {
+     "p": "On this climb, we aim to create personal connections with Mt. Shasta and the surrounding land, lasting connections to your new climbing community."
+    },
+    {
+     "p": "We have over 45 years of experience guiding on Mount Shasta and are the original guiding company for this special mountain. We know Mt. Shasta and aim to provide a professional and positive experience for all climbers."
+    }
+   ],
+   "requirements": [
+    "No mountaineering experience is required.",
+    "Previous hiking experience is required.",
+    "Previous backpacking experience is helpful.",
+    "Proper conditioning and preparation are crucial to summit success.",
+    "Climbing Mt Shasta is strenuous. For the best chances of summiting please train ahead of time. Feel free to contact us for any training recommendations. Check out our training page to get started."
+   ],
+   "dates_title": "2026 Dates",
+   "dates": [
+    "All dates are subject to route change in the event of adverse conditions.",
+    "July 3-5",
+    "July 17-19",
+    "July 31-August 2",
+    "August 7-9",
+    "August 21-23",
+    "September 4-6",
+    "*Additional dates may be available as a private/custom arrangement"
+   ],
+   "cost": [
+    "$1595 per person"
+   ],
+   "includes": [
+    "Professional mountain guiding and instruction with a guide-to-client summit-day ratio of 1:3",
+    "Breakfast & dinner while on the mountain",
+    "Group equipment; tents and cooking equipment",
+    "Mt. Shasta summit passes"
+   ],
+   "cost_notes": [
+    "Boots are not included but rentals are available in the town of Mt. Shasta."
+   ],
+   "gear": {
+    "href": "assets/downloads/smg-summit-climb-gear-list.pdf",
+    "label": "Summit Climb Gear List"
+   },
+   "guides_title": "The difference is in our guides",
+   "guides": [
+    "The Shasta Mountain Guides® staff is a diverse, skilled, and fun group of individuals. Their common bond is a pure passion for being in the mountains and sharing that desire with friends, both old and new. We strongly believe in providing the highest level of service and quality of experience while climbing Mt. Shasta.",
+    "We are local professionals and are committed to your safety and enjoyment. SMG is the original guide service on Mt. Shasta and we are on the mountain daily. We specialize in Mount Shasta and the Shasta-Trinity National Forest. When you climb with us, your trip is supported by our collective experience and knowledge of the mountain.",
+    "Our combined experience includes thousands of Shasta summits and many years spent on the mountain. Together we’ve explored all its’ routes during all conditions and seasons. Join us for a trip of your lifetime!"
+   ],
+   "itinerary_title": "Clear Creek 3-DAY SUMMIT ITINERARY",
+   "itinerary": [
+    {
+     "day": "Day 1",
+     "items": [
+      {
+       "time": "9:00 am",
+       "text": "Meet guides and group at the Shasta Mountain Guides shop 305 Chestnut St, Mt. Shasta, CA. Please be punctual to allow time for gear rentals, packing, and a group briefing with your guides. Please note: your guides will do a thorough gear check and pass out group gear before packing your backpacks. In addition, we recommend that you reserve your rental equipment in advance through the Fifth Season 530-926-3606."
+      },
+      {
+       "time": "10:00am-3:00pm",
+       "text": "Drive to the Clear Creek trailhead (6500 ft.) We do not provide transportation. It is about an hour drive, with the last 8 miles on well graded dirt, suitable for passenger vehicles. We will have a group briefing and start the approach to base camp at timberline (8,500’) Depending on weather and trail conditions, the moderate/ low angle approach to base camp may take anywhere from 3 to 4 hours. Distance: ~3 miles, Vertical gain: 2,000’"
+      },
+      {
+       "time": "3:00pm",
+       "text": "At base camp your group will set up camp, snack on trail food and prepare for snow school training."
+      },
+      {
+       "time": "4:00pm-5:00pm",
+       "text": "Snow School. The purpose of snow school is to prepare you and the climbing team for a safe, efficient, and enjoyable climb. Topics covered include fundamental climbing techniques, ice axe and crampon use and altitude issues."
+      },
+      {
+       "time": "5:00pm-6:00pm",
+       "text": "After snow school you will return to camp for an early dinner and evening briefing."
+      }
+     ]
+    },
+    {
+     "day": "Day 2",
+     "items": [
+      {
+       "time": "Alpine Start",
+       "text": "Depending on our group size, weather and route conditions we will begin our climb between 2:00am and 3:00am. Distance: ~4.5 miles one way, vertical gain 5,500’"
+      },
+      {
+       "time": "Turn around time",
+       "text": "For safety purposes, our turn around time on the mountain may be as early as 11:00 am-12:00 pm. We use these time frames to avoid hazards such as rock fall and afternoon storms. Depending on route conditions, the descent back to camp may take 4-5 hours."
+      },
+      {
+       "time": "Back at camp",
+       "text": "We will rest and recover from the climb. Your guides will prepare a post climb meal and we will spend a leisurely evening at camp."
+      }
+     ]
+    },
+    {
+     "day": "Day 3",
+     "items": [
+      {
+       "time": "",
+       "text": "We will wake and have breakfast, pack camp and descend to the trailhead. We will be back in town in the early afternoon."
+      }
+     ],
+     "note": "Itinerary subject to change & the summit of Mount Shasta is subject to safe weather and snow conditions."
+    }
+   ],
+   "notes": [
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and LOGE Mt. Shasta. They offer a discount to our climbers and guests."
+   ],
+   "source": "https://shastaguides.com/clearcreekclimb"
+  },
+  {
+   "slug": "glacier1",
+   "name": "4-Day Glacier I Seminar",
+   "program": "climb-shasta",
+   "programTitle": "Climb Shasta",
+   "formOption": "Climb Shasta",
+   "fb": 782,
+   "length": "4 days",
+   "route": "North side glaciers",
+   "card_cost": "$1,895 per person",
+   "eyebrow": "Mt Shasta, California · 14,179 ft",
+   "route_line": "North Side · Alternate Routes | West Face",
+   "hero": {
+    "src": "assets/trips/8c384f-snow-school.jpg",
+    "alt": "4-Day Glacier I Seminar on Mt. Shasta"
+   },
+   "gallery": [
+    {
+     "src": "assets/trips/2ce2ff-basecamp-northside.jpg",
+     "alt": "Mountaineers hike to base camp of mt shasta"
+    },
+    {
+     "src": "assets/trips/958977-hotlum-bolam.jpg",
+     "alt": "Mount Shasta covered in snow in the sping time"
+    },
+    {
+     "src": "assets/trips/14d9e8-climb.north2.jpg",
+     "alt": "mountaineers climb in the sun rise on mt shasta."
+    },
+    {
+     "src": "assets/trips/ce2fac-mountaineering-boots-with-crampons.jpg",
+     "alt": "Crampons and boots in the snow."
+    },
+    {
+     "src": "assets/trips/288d26-180629-ckrumholz-1408.jpg",
+     "alt": "Mountaineers learn the ins and outs of rope systems"
+    },
+    {
+     "src": "assets/trips/1d6af3-180707-ckrumholz-0086.jpg",
+     "alt": "Course participants learn how to use an ice axe on mt shasta"
+    },
+    {
+     "src": "assets/trips/955b26-180630-ckrumholz-1601.jpg",
+     "alt": "Mountaineers pose together on their summit attempt of mt shasta"
+    }
+   ],
+   "overview": [
+    {
+     "p": "This is a summit climb with an extra day for skills training, glacier school, and acclimation. The 4-day course and summit climb is for the mountaineer who wants to build a solid foundation of mountain skills and the opportunity to climb a snow route on Mt. Shasta. This is an ideal schedule with more time to learn skills, build a strong climbing team, and enjoy the mountain while increasing the odds of summit success."
+    },
+    {
+     "p": "We’ll thoroughly instruct in snow movement, crampon use, ice axe techniques, rope travel, snow anchors, and more. With an optimal schedule for success and skill building, this seminar is ideal for a summit climb and skills building."
+    },
+    {
+     "p": "Due to the popularity of this course, and high summit success rates on our 4-day vs. our shorter trips, we will be offering these as long as conditions allow. Depending on trailhead access, early season trips will be on the southwest aspect of Mt. Shasta and climb the West Face or Avalanche Gulch routes. Once the road to the North Side trailhead is snow-free and accessible, we will move the venue to the north side Hotlum-Bolam route. Often this occurs in Mid-May, or sometimes not until Mid-June."
+    },
+    {
+     "p": "Mountaineering instruction includes:"
+    },
+    {
+     "ul": [
+      "Ice axe and crampon use",
+      "Ice axe self-arrest",
+      "Snow climbing technique",
+      "Basic rope travel",
+      "Snow movement",
+      "Snow anchors & more"
+     ]
+    },
+    {
+     "p": "On this climb, we aim to create personal connections with Mt. Shasta and the surrounding land as well as lasting connections to your new climbing community."
+    },
+    {
+     "p": "We bring over 45 years of experience guiding on Mount Shasta and are the original guiding company for this special mountain. We know Shasta better than anyone and aim to provide a professional and positive experience for all climbers."
+    }
+   ],
+   "requirements": [
+    "No mountaineering experience is required.",
+    "Previous hiking experience is required.",
+    "Previous backpacking experience is required.",
+    "Prospective climbers should be in excellent physical condition and train diligently for a big challenge.",
+    "Climbing Mt Shasta is strenuous. For the best chances of summiting please train ahead of time. Feel free to contact us for any training recommendations. Check out our training page to get started."
+   ],
+   "dates_title": "2027 Dates",
+   "dates": [
+    "June 25-28",
+    "July 2-5",
+    "July 9-12",
+    "July 16-19",
+    "July 23-26",
+    "July 20-August 2",
+    "August 6-9",
+    "August 13-16"
+   ],
+   "cost": [
+    "$1895 per person"
+   ],
+   "includes": [
+    "Professional instruction and mountain guiding with a guest to guide ratio of 3:1",
+    "Breakfast & dinner while in the backcountry",
+    "All Group equipment; tents, stoves, kitchen",
+    "Mt. Shasta summit passes and permits"
+   ],
+   "cost_notes": [],
+   "gear": {
+    "href": "assets/downloads/smg-summit-climb-gear-list.pdf",
+    "label": "Summit Climb Gear List"
+   },
+   "guides_title": "The difference is in our guides",
+   "guides": [
+    "The Shasta Mountain Guides® staff is a diverse, skilled, and fun group of individuals. Their common bond is a pure passion for being in the mountains and sharing that desire with friends, both old and new. We strongly believe in providing the highest level of service and quality of experience while climbing Mt. Shasta.",
+    "We are local professionals and are committed to your safety and enjoyment. SMG is the original guide service on Mt. Shasta and we are on the mountain daily. We specialize in Mount Shasta and the Shasta-Trinity National Forest. When you climb with us, your trip is supported by our collective experience and knowledge of the mountain.",
+    "Our combined experience includes thousands of Shasta summits and many years spent on the mountain. Together we’ve explored all its’ routes during all conditions and seasons. Join us for a trip of your lifetime!"
+   ],
+   "itinerary_title": "Glacier 1Intro ITINERARY",
+   "itinerary": [
+    {
+     "day": "Day 1",
+     "items": [
+      {
+       "time": "9:00 am",
+       "text": "Meet guides and group at the SMG Shop located at 305 Chestnut St, Mt. Shasta CA. Please be punctual to allow time for gear rentals, packing, and a group briefing. Please note: your guides will do a thorough gear check and pass out group gear before packing your backpack. We recommend that you reserve your rental equipment through the Fifth Season in advance: 530-926-3606"
+      },
+      {
+       "time": "10:00am-11:30am",
+       "text": "Drive to the North Gate trailhead (7000’) and start the approach to base camp (9,500’). Be aware the final 10 miles to the Northgate trailhead is dirt and rough in places. AWD or high clearance is recommended. If we are using the Bunny Flat trailhead the road is paved and take about 20 minutes to drive."
+      },
+      {
+       "time": "11:30am-3:30pm",
+       "text": "Hike to base camp. The trail ascends through the forest and steepens just below camp and may be snow covered in places. Depending on weather and conditions the approach to base camp may take 4-6 hours with heavy packs. Vertical gain: 2,500’, Distance: 3.4 miles"
+      },
+      {
+       "time": "3:30pm-8:00pm",
+       "text": "At base camp the group will set up camp, discuss some basic skills, and enjoy delicious, organic dinner prepared by your guides. We’ll prepare for the following day of mountain instruction."
+      }
+     ]
+    },
+    {
+     "day": "Day 2",
+     "items": [
+      {
+       "time": "6:30am-7:30am",
+       "text": "Day two you will rise early and prepare for a full day of skills instruction on the glacier."
+      },
+      {
+       "time": "7:30am-8:30am",
+       "text": "Breakfast and hot drinks"
+      },
+      {
+       "time": "9:00am-3:00pm",
+       "text": "Snow and glacier skills training. Guides will choose an area on the glacier between 10,000’-11,000’ and are prepared to format instruction according to group and individual goals. Emphasis will be placed on movement skills, ice axe and crampon use, team rope travel and team arrest, basic glacier travel and crevasse rescue techniques may be introduced as well."
+      },
+      {
+       "time": "3:00pm-7:30pm",
+       "text": "The team will return to camp for an early dinner and evening briefing. Guides will discuss climb day logistics and summit day plan. Climbers will be resting in tents by 7:30-8:00pm."
+      }
+     ]
+    },
+    {
+     "day": "Day 3",
+     "items": [
+      {
+       "time": "Alpine Start",
+       "text": "Depending on group size, season, and route conditions, wake-up call will occur between 2:00am-3:00am"
+      },
+      {
+       "time": "Summit Climb",
+       "text": "The ascent is 7-9 hours up and 4-5 hours down. For safety purposes, our turn around time on the mountain will be 12:00 pm. We use these time frames to avoid hazards and allow time for a safe descent."
+      },
+      {
+       "time": "Back at base camp",
+       "text": "Back at base camp the team will have the remaining afternoon to rest and relax and enjoy dinner."
+      }
+     ],
+     "note": "Itinerary subject to change & the summit of Mount Shasta is subject to safe weather and snow conditions."
+    },
+    {
+     "day": "Day 4",
+     "items": [
+      {
+       "time": "7:00am-1:00pm",
+       "text": "Day four you will enjoy a leisurely breakfast and pack up camp. Additional skills instruction before the descent is recommended but not mandatory. This is a time to review the course material and answer any remaining questions. The descent back to the trailhead takes about 3 hours."
+      }
+     ],
+     "note": "projected itinerary starting at the North Gate trailhead may vary due to weather and trail conditions."
+    }
+   ],
+   "notes": [
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and LOGE Mt. Shasta. They offer a discount to our climbers and guests."
+   ],
+   "source": "https://shastaguides.com/glacier1"
+  },
+  {
+   "slug": "womensglacier",
+   "name": "4-Day Women's Glacier Seminar",
+   "program": "climb-shasta",
+   "programTitle": "Climb Shasta",
+   "formOption": "Climb Shasta",
+   "fb": 18481,
+   "length": "4 days",
+   "route": "North side glaciers",
+   "card_cost": "$1,895 per person",
+   "eyebrow": "Mt Shasta, California · 14,179 ft",
+   "route_line": "Hotlum-Bolam or a similar route (dependent on the season’s conditions)",
+   "hero": {
+    "src": "assets/trips/965204-190609-ckrumholz-1799.jpg",
+    "alt": "4-Day Women's Glacier Seminar on Mt. Shasta"
+   },
+   "gallery": [
+    {
+     "src": "assets/trips/a00630-senior-guide-katie-wry-leading-her-group-to-the-summit.jpg",
+     "alt": "Shasta Mountain Guide- Kaite Wry poses with group of all women climbers"
+    },
+    {
+     "src": "assets/trips/70dff2-mt.-shasta-snow-climbers.jpg",
+     "alt": "Female climbers push on to the summit of mt shasta"
+    },
+    {
+     "src": "assets/trips/5ca890-180628-ckrumholz-0168.jpg",
+     "alt": "Climber walks around camp during sunset"
+    },
+    {
+     "src": "assets/trips/63a7e8-mt.-shasta-basecamp-stretching.jpg",
+     "alt": "Morning yoga during all womens mountaineering course"
+    },
+    {
+     "src": "assets/trips/31ad31-img-20180624-060206.jpg",
+     "alt": "Female climber walks ridge on mt shasta"
+    },
+    {
+     "src": "assets/trips/0b34b1-senior-guide-tailer-spinney-whipping-up-a-feast-for-her-clients.jpg",
+     "alt": "Shasta mountains guide- Tailor prepares a meal in the tent at base camp"
+    }
+   ],
+   "overview": [
+    {
+     "p": "At 14,179’ Mt Shasta is the second highest peak in the Cascades and provides an ideal introduction to the sport of mountaineering. Our most popular climb and course, this female friendly group is especially conducive to a positive and challenging learning experience."
+    },
+    {
+     "p": "Glacier School on Mt. Shasta means a North side summit climb with time for skills training and snow school on the glacier. This is a 4 day course and climb designed for the female mountaineer who wants to build a solid foundation of mountain skills with the opportunity to climb a glacier route on Mt. Shasta’s remote northern aspect. Our time will be spent on a full curriculum of glacier skills and acclimating prior to the summit climb on the Hotlum-Bolam or a similar route (route selection is dependent on the season’s conditions)."
+    },
+    {
+     "p": "Mountaineering instruction includes:"
+    },
+    {
+     "ul": [
+      "Ice axe and crampon use",
+      "Ice axe self-arrest",
+      "Snow climbing technique",
+      "Basic rope travel"
+     ]
+    },
+    {
+     "p": "On this climb, we aim to create personal connections with Mt. Shasta and the surrounding land, and lasting connections to your new climbing community,"
+    },
+    {
+     "p": "We have logged over 45 years of experience guiding on Mount Shasta and are the original guiding company for this special mountain. We know Shasta better than anyone and aim to provide a professional and positive experience for all climbers."
+    }
+   ],
+   "requirements": [
+    "No mountaineering experience is required.",
+    "Previous hiking experience is required.",
+    "Previous backpacking experience is helpful.",
+    "Prospective climbers should be in excellent physical condition and train diligently for a big challenge.",
+    "Climbing Mt Shasta is strenuous. For the best chances of summiting please train ahead of time. Feel free to contact us for any training recommendations. Check out our training page to get started."
+   ],
+   "dates_title": "2027 Dates",
+   "dates": [
+    "All dates are subject to route change in the event of adverse conditions.",
+    "July 16-19"
+   ],
+   "cost": [
+    "$1895 per person"
+   ],
+   "includes": [
+    "Professional instruction and mountain guiding with a guest to guide ratio of 3:1",
+    "Breakfast & dinner while in the backcountry",
+    "All Group camping equipment such as tents, kitchen, main meals",
+    "Mt. Shasta summit passes"
+   ],
+   "cost_notes": [],
+   "gear": {
+    "href": "assets/downloads/smg-summit-climb-gear-list.pdf",
+    "label": "Summit Climb Gear List"
+   },
+   "guides_title": "The difference is in our guides",
+   "guides": [
+    "The Shasta Mountain Guides® staff is a diverse, skilled, and fun group of individuals. Their common bond is a pure passion for being in the mountains and sharing that desire with friends, both old and new. We strongly believe in providing the highest level of service and quality of experience while climbing Mt. Shasta.",
+    "We are local professionals and are committed to your safety and enjoyment. SMG is the original guide service on Mt. Shasta and we are on the mountain daily. We specialize in Mount Shasta and the Shasta-Trinity National Forest. When you climb with us, your trip is supported by our collective experience and knowledge of the mountain.",
+    "Our combined experience includes thousands of Shasta summits and many years spent on the mountain. Together we’ve explored all its’ routes during all conditions and seasons. Join us for a trip of your lifetime!"
+   ],
+   "itinerary_title": "Glacier 1Intro ITINERARY",
+   "itinerary": [
+    {
+     "day": "Day 1",
+     "items": [
+      {
+       "time": "9:00 am",
+       "text": "Meet guides and group at the SMG Shop located at 305 Chestnut Street, Mt. Shasta, CA, Please be punctual to allow time for gear rentals, packing, and a group briefing. Note; your guides will do a thorough gear check and pass out group gear before packing your backpack. We recommend that you reserve your rental equipment through the Fifth Season in advance: 530-926-3606. They are conveniently located next to our shop."
+      },
+      {
+       "time": "10:00am-11:30am",
+       "text": "Drive to the North Gate trailhead (7000’) and start the approach to base camp (9,500’). Be aware the final 10 miles to the Northgate trailhead is dirt and rough in places. Four wheel drive or high clearance is recommended."
+      },
+      {
+       "time": "11:30am-3:30pm",
+       "text": "Hike to base camp. The trail ascends through the forest and steepens just below camp and may be snow covered in places. Depending on weather and conditions the approach to base camp may take 4-6 hours with heavy packs. Vertical gain: 2,500’, Distance: 3.4 miles"
+      },
+      {
+       "time": "3:30pm-8:00pm",
+       "text": "At base camp the group will set up camp, discuss some basic skills, and enjoy a delicious dinner prepared by your guides. After dinner we will prepare for the following day of mountain instruction"
+      }
+     ]
+    },
+    {
+     "day": "Day 2",
+     "items": [
+      {
+       "time": "6:30am-7:30am",
+       "text": "we will rise early and prepare for a full day of skills instruction on the glacier."
+      },
+      {
+       "time": "7:30am-8:30am",
+       "text": "Breakfast and hot drinks"
+      },
+      {
+       "time": "9:00am-3:00pm",
+       "text": "Snow and glacier skills training. Guides will choose an area on the glacier between 10,000’-11,000’ and are prepared to format instruction according to group and individual goals. Emphasis will be placed on movement skills, ice axe and crampon use, team rope travel and team arrest, basic glacier travel and crevasse rescue techniques may be introduced as well."
+      },
+      {
+       "time": "3:00pm-7:30pm",
+       "text": "The team will return to camp for an early dinner and evening briefing. Guides will discuss climb day logistics and the summit day plan. Climbers will be resting in tents by 7:30-8:00pm."
+      }
+     ]
+    },
+    {
+     "day": "Day 3",
+     "items": [
+      {
+       "time": "Alpine Start",
+       "text": "Depending on group size, season, and route conditions, wake-up call will occur between 2:00am-3:00am"
+      },
+      {
+       "time": "Summit Climb",
+       "text": "The ascent is 7-9 hours up and 4-5 hours down. For safety purposes, our turn around time on the mountain will be 12:00 pm. We use these time frames to avoid hazards and allow time for a safe descent."
+      },
+      {
+       "time": "Back at base camp",
+       "text": "Back at base camp the team will have the remaining afternoon to rest and relax and enjoy dinner."
+      }
+     ],
+     "note": "Itinerary subject to change & the summit of Mount Shasta is subject to safe weather and snow conditions."
+    },
+    {
+     "day": "Day 4",
+     "items": [
+      {
+       "time": "7:00am-1:00pm",
+       "text": "We will enjoy a leisurely breakfast and pack up camp. Additional skills instruction before the descent is recommended but not mandatory. This is a time to review the course material and answer any remaining questions. The descent back to the trailhead takes about 3 hours."
+      }
+     ],
+     "note": "projected itinerary starting at the North Gate trailhead may vary due to weather and trail conditions."
+    }
+   ],
+   "notes": [
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and LOGE Mt. Shasta. They offer a discount to our climbers and guests."
+   ],
+   "source": "https://shastaguides.com/womensglacier"
+  },
+  {
+   "slug": "climbandski",
+   "name": "3-Day Shasta Summit Climb & Ski Descent",
+   "program": "ski-shasta",
+   "programTitle": "Ski Shasta",
+   "formOption": "Ski Shasta",
+   "fb": 789,
+   "length": "3 days",
+   "route": "",
+   "card_cost": "$1,595 per person",
+   "eyebrow": "Mt Shasta, California · 14,179 ft",
+   "route_line": "",
+   "hero": {
+    "src": "assets/trips/42f36d-pchu.jpg",
+    "alt": "3-Day Shasta Summit Climb & Ski Descent on Mt. Shasta"
+   },
+   "gallery": [
+    {
+     "src": "assets/trips/84c274-seanski1.jpg",
+     "alt": "Skier rips down mt shasta"
+    },
+    {
+     "src": "assets/trips/dbe396-mt.-shasta-ski-mountaineering.jpg",
+     "alt": "Group of skiers hikes up the slopes of mt shasta"
+    },
+    {
+     "src": "assets/trips/98bea2-ski-up-gulch.jpg",
+     "alt": "Mt shasta backcountry skier uses the skin track of their guide"
+    },
+    {
+     "src": "assets/trips/e71ff7-img-9141.jpg",
+     "alt": "Group of skiers poses at the summit of mt shasta"
+    },
+    {
+     "src": "assets/trips/ad9d78-chris-davenport-ski-shasta.jpg",
+     "alt": "Skiing down the trinity shoots of mt shasta"
+    },
+    {
+     "src": "assets/trips/b324b3-caleb.rbanks.jpg",
+     "alt": "Skiing down the slopes of mt shasta"
+    },
+    {
+     "src": "assets/trips/f5a353-ski.gulc.jpg",
+     "alt": "beautiful clean slopes of mt shasta"
+    },
+    {
+     "src": "assets/trips/ac64d1-west-face-ski.jpg",
+     "alt": "Skiing down mt shasta with the peak of mt shasta in the background"
+    }
+   ],
+   "overview": [
+    {
+     "p": "Ski a 14er! Experience the challenge and excitement of this ultimate trip on Mt. Shasta with Shasta Mountain Guides. A classic ski descent on a classic peak. To ski or ride from high on Mt. Shasta is one of North America’s greatest adventures. The three day format provides time for conditions assessment, route optimization, and training en route to the summit and descent. Ski mountaineering skis and splitboard rentals are locally available. Guests should have advanced to expert downhill ability in all conditions, and some previous experience with uphill skiing and backcountry touring. Must be in excellent physical condition and training diligently for a big challenge."
+    },
+    {
+     "p": "We will practice and instruct in the following skills but all participants are expected to be capable downhill skiers and riders."
+    },
+    {
+     "p": "Ice axe and crampon use"
+    },
+    {
+     "p": "Ice axe self-arrest"
+    },
+    {
+     "p": "Snow climbing technique"
+    },
+    {
+     "p": "Basic rope travel"
+    },
+    {
+     "p": "Avalanche Awareness"
+    },
+    {
+     "p": "Transceiver Practice"
+    },
+    {
+     "p": "On this ski and climb, we aim to create personal connections with Mt. Shasta and the surrounding land and build lasting connections to your new climbing community."
+    },
+    {
+     "p": "We bring over 45 years of experience guiding on Mount Shasta and are the original guiding company for this special mountain. We know Shasta better than anyone and aim to provide a professional and positive experience for all climbers."
+    }
+   ],
+   "requirements": [
+    "Backcountry touring experience is essential to tackling this major objective.",
+    "For ski/board ability, guests should have expert downhill ability in all conditions. And previous experience with backcountry skiing/riding",
+    "Prospective climbers should be in excellent physical condition and train diligently for a big challenge.",
+    "Climbing Mt Shasta is strenuous. For the best chances of summiting please train ahead of time. Feel free to contact us for any training recommendations. Check out our training page to get started."
+   ],
+   "dates_title": "2027 Dates",
+   "dates": [
+    "All dates are subject to route change in the event of adverse conditions.",
+    "April 30-May 1",
+    "May 7-9",
+    "May 14-16",
+    "May 21-23",
+    "May 28-30"
+   ],
+   "cost": [
+    "$1695 per person"
+   ],
+   "includes": [
+    "Professional instruction and mountain guiding with a guide-to-client summit-day ratio of 1:3",
+    "Breakfast & dinner while in the backcountry",
+    "Group camp and logistics; tents and cooking equipment",
+    "Mt. Shasta summit passes and permits"
+   ],
+   "cost_notes": [
+    "Ski gear is not included but rentals are available in the town of Mt. Shasta."
+   ],
+   "gear": {
+    "href": "assets/downloads/smg-ski-snowboard-mountaineering-gear-list.pdf",
+    "label": "Ski & Snowboard Mountaineering Gear List"
+   },
+   "guides_title": "The difference is in our guides",
+   "guides": [
+    "The Shasta Mountain Guides® staff is a diverse, skilled, and fun group of individuals. Their common bond is a pure passion for being in the mountains and sharing that desire with friends, both old and new. We strongly believe in providing the highest level of service and quality of experience while climbing Mt. Shasta.",
+    "We are local professionals and are committed to your safety and enjoyment. SMG is the original guide service on Mt. Shasta and we are on the mountain daily. We specialize in Mount Shasta and the Shasta-Trinity National Forest. When you climb with us, your trip is supported by our collective experience and knowledge of the mountain.",
+    "Our combined experience includes thousands of Shasta summits and many years spent on the mountain. Together we’ve explored all its’ routes during all conditions and seasons. Join us for a trip of your lifetime!"
+   ],
+   "itinerary_title": "3-DAY climb & ski/board Descent ITINERARY",
+   "itinerary": [
+    {
+     "day": "Day 1",
+     "items": [
+      {
+       "time": "8:00am-10:00am",
+       "text": "Meet guides and group at 8:00am at The SMG Shop 305 Chestnut Street, Mt. Shasta, CA. We will conduct a thorough equipment check and pass out communal group gear. Rental equipment is available, please reserve through the Fifth Season in advance 530-926-3606. The Fifth Season is conveniently located next to us."
+      },
+      {
+       "time": "10:00am-10:30am",
+       "text": "Drive to the Bunny Flat trailhead (6950’) for a group briefing and start the ski approach to base camp (8,000’). Distance 2.5 miles, gain 1,000’. We choose a low camp to allow access to several ski tours and climbing routes."
+      },
+      {
+       "time": "12:00pm-1:30pm",
+       "text": "At base camp the group will set up camp, snack, and prepare for an afternoon ski tour and snow school training. We’ll plan an afternoon of ski touring for snow assessment and skill development."
+      },
+      {
+       "time": "2:00pm-4:00pm",
+       "text": "The purpose of snow school is to prepare you and the climbing team for a safe, efficient, and enjoyable climb/ski. Topics covered include, avalanche awareness, transceiver practice, ice axe and crampon use, ski mountaineering techniques, rope travel and self arrest."
+      },
+      {
+       "time": "4:00pm-6:00pm",
+       "text": "After snow school you will return to camp for dinner and evening briefing. Your guides will discuss route plan, weather and conditions and what to pack for the following day. Dinner is provided and prepared by the guides. We take great pride in the quality of organic meals we supply. Most dietary restrictions can be accommodated. A selection of hot drinks is available as well."
+      }
+     ]
+    },
+    {
+     "day": "Day 2",
+     "items": [
+      {
+       "time": "7:00am",
+       "text": "Wake up and breakfast, hot breakfast of oatmeal and granola, coffee, tea. Briefing for the day’s tour"
+      },
+      {
+       "time": "8:00am-3:00pm",
+       "text": "Ski/Snowboard tour and continued snow school. This will give us a chance to assess and refine our ski skills and look at the present snow conditions. We can expect to gain 3,000-4,000’ covered over 3 miles. This will aid in acclimating as well as provide an opportunity for some great backcountry turns. There will be ample opportunity to assess conditions, equipment, and discuss and practice technical skills. Afternoon rest and hydration. Pack and organize gear. Dry equipment and preparation for summit climb."
+      },
+      {
+       "time": "4:00pm-6:00pm",
+       "text": "Dinner and briefing for next day’s climb. Dinner and hot drinks provided by guides. Early to bed in preparation of alpine start and summit climb."
+      }
+     ]
+    },
+    {
+     "day": "Day 3",
+     "items": [
+      {
+       "time": "Alpine Start",
+       "text": "Depending on group size, season and route conditions, wake-up call will occur between 1:00am-2:00am. Hot cereal and drinks provided"
+      },
+      {
+       "time": "2:00am-10:00am",
+       "text": "Summit climb. We will attach ski and boards to our packs and climb with crampons on our boots, ice axes, and be roped together for sections of the climb. 6,000’ elevation gain, 5 miles."
+      },
+      {
+       "time": "Turn around time",
+       "text": "For safety and ski purposes, our turn-around time on the mountain may be as early as 9:00-10:00am. We use these time frames to avoid hazards such as rock fall and afternoon storms and to optimize ideal snow conditions."
+      },
+      {
+       "time": "Ski/Board Descent",
+       "text": "We will ride from our high point and descend either the West Face route or Avalanche Gulch. With such great vertical relief we can expect a variety of snow conditions on the descent. It can be firm up high and soft down low and everything in between. A ski mountaineering objective relies on careful route selection and timing for best conditions."
+      },
+      {
+       "time": "Back at base camp",
+       "text": "Hydrate, pack camp, and fill our packs. Prepare for the ski/hike back to the trailhead. Return to trailhead between 4:00-6:00pm"
+      }
+     ],
+     "note": "Itinerary subject to change & the summit of Mount Shasta is subject to safe weather and snow conditions"
+    }
+   ],
+   "notes": [
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and LOGE Mt. Shasta. They offer a discount to our climbers and guests."
+   ],
+   "source": "https://shastaguides.com/climbandski"
+  },
+  {
+   "slug": "intoski",
+   "name": "Intro to Backcountry Skiing & Snowboarding",
+   "program": "ski-shasta",
+   "programTitle": "Ski Shasta",
+   "formOption": "Ski Shasta",
+   "fb": null,
+   "length": "1 day",
+   "route": "",
+   "card_cost": "$495 for 1 · +$100 per additional skier (up to 1:4)",
+   "eyebrow": "Mt Shasta, California",
+   "route_line": "",
+   "hero": {
+    "src": "assets/trips/20b897-190517-ckrumholz-0294.jpg",
+    "alt": "Intro to Backcountry Skiing & Snowboarding on Mt. Shasta"
+   },
+   "gallery": [
+    {
+     "src": "assets/trips/e28899-snapinsta.app-326480564-572760287723171-3918832102302832344-n-1080.jpg",
+     "alt": "Shasta mountain guides co-owner Jenn Carr stands near the horse camp cabin, you can only see the roof due to so much snow."
+    },
+    {
+     "src": "assets/trips/8990c6-snapinsta.app-314946760-2963449950625625-5043142992681465778-n-1080.jpg",
+     "alt": "Backcountry skiers skin up the slopes of mt shasta"
+    },
+    {
+     "src": "assets/trips/a3db92-snapinsta.app-326316088-829409321488972-7996609323830067164-n-1080.jpg",
+     "alt": "Backcountry skier in deep snow on a tree run on mt shasta"
+    },
+    {
+     "src": "assets/trips/1e5d3a-snapinsta.app-320031728-1145283486121632-4397591440084761167-n-1080.jpg",
+     "alt": "backcountry skier puffs through deep powder"
+    }
+   ],
+   "overview": [
+    {
+     "p": "This day tour is the place to start to get you in the backcountry. Randonne, Alpine Touring, Telemark, Snowboard, and Splitboards are all suitable for uphill skinning and downhill sliding. If you are interested in backcountry skiing or riding, this is where it all begins."
+    },
+    {
+     "p": "During this tour, we aim to create personal connections with Mt. Shasta and the surrounding land, and lasting connections to your new climbing community."
+    },
+    {
+     "p": "We have logged over 45 years of experience guiding on Mount Shasta and are the original guiding company for this special mountain. We know Shasta better than anyone and aim to provide a professional and positive experience for all climbers."
+    },
+    {
+     "p": "Custom Scheduling.\nContact to book."
+    }
+   ],
+   "requirements": [
+    "No prior backcountry experience required",
+    "Some experience boarding/skiing is required",
+    "Participants should be able to make turns on intermediate-level terrain at a ski resort",
+    "Being in good physical condition is helpful."
+   ],
+   "dates_title": "2027 Dates",
+   "dates": [
+    "All dates are subject to route change in the event of adverse conditions.",
+    "Custom scheduling - contact to book"
+   ],
+   "cost": [
+    "$495 per person"
+   ],
+   "includes": [
+    "Professional instruction and mountain guiding with a guide-to-guest ratio of 1:4"
+   ],
+   "cost_notes": [
+    "add 100/per person for additional skiers",
+    "Ski equipment is not included but rentals are available in the town of Mt. Shasta."
+   ],
+   "gear": {
+    "href": "assets/downloads/smg-backcountry-ski-avalanche-gear-list.pdf",
+    "label": "Backcountry Ski Tour & Avalanche Course Gear List"
+   },
+   "guides_title": "The difference is in our guides",
+   "guides": [
+    "The Shasta Mountain Guides® staff is a diverse, skilled, and fun group of individuals. Their common bond is a pure passion for being in the mountains and sharing that desire with friends, both old and new. We strongly believe in providing the highest level of service and quality of experience while climbing Mt. Shasta.",
+    "We are local professionals and are committed to your safety and enjoyment. SMG is the original guide service on Mt. Shasta and we are on the mountain daily. We specialize in Mount Shasta and the Shasta-Trinity National Forest. When you climb with us, your trip is supported by our collective experience and knowledge of the mountain.",
+    "Our combined experience includes thousands of Shasta summits and many years spent on the mountain. Together we’ve explored all its’ routes during all conditions and seasons. Join us for a trip of your lifetime!"
+   ],
+   "itinerary_title": "",
+   "itinerary": [],
+   "notes": [
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and LOGE Mt. Shasta. They offer a discount to our climbers and guests."
+   ],
+   "source": "https://shastaguides.com/intoski"
+  },
+  {
+   "slug": "bestski",
+   "name": "Backcountry Best Day Ski Tour",
+   "program": "ski-shasta",
+   "programTitle": "Ski Shasta",
+   "formOption": "Ski Shasta",
+   "fb": null,
+   "length": "1 day",
+   "route": "",
+   "card_cost": "$495 for 1 · +$100 per additional skier (up to 1:3)",
+   "eyebrow": "Mt Shasta, California",
+   "route_line": "",
+   "hero": {
+    "src": "assets/trips/191efc-skitoshasta.jpg",
+    "alt": "Backcountry Best Day Ski Tour on Mt. Shasta"
+   },
+   "gallery": [
+    {
+     "src": "assets/trips/a3db92-snapinsta.app-326316088-829409321488972-7996609323830067164-n-1080.jpg",
+     "alt": "backcountry skier expresses joy on the mellow slopes on mt shasta"
+    },
+    {
+     "src": "assets/trips/8990c6-snapinsta.app-314946760-2963449950625625-5043142992681465778-n-1080.jpg",
+     "alt": "backcountry skiers skin to a mellow ski run on mt shasta"
+    },
+    {
+     "src": "assets/trips/e28899-snapinsta.app-326480564-572760287723171-3918832102302832344-n-1080.jpg",
+     "alt": "SMG co owner- Jenn Carr stands next to horse camp cabin covered in snow"
+    },
+    {
+     "src": "assets/trips/1e5d3a-snapinsta.app-320031728-1145283486121632-4397591440084761167-n-1080.jpg",
+     "alt": "Skiing down between the tall lichen covered shasta trees"
+    },
+    {
+     "src": "assets/trips/96fd32-snapinsta.app-320063021-148246127967787-1361541624230464874-n-1080.jpg",
+     "alt": "Backcountry skier uses guides skin track"
+    }
+   ],
+   "overview": [
+    {
+     "p": "This is a day ski or splitboard tour that can be suited for all levels through winter and spring. Mt. Shasta offers endless terrain for backcountry skiing near and above treeline. Conditions are optimal December – May from the trailhead at 7,000′. As locals we ski almost daily on Mt. Shasta and in the Shasta-Trinity National Forest. We know where to find the best conditions and will share our experience and help you have a great day skiing in the backcountry!"
+    },
+    {
+     "p": "These custom day tours are small group focused and can be scheduled throughout the season, please contact us for to register."
+    },
+    {
+     "p": "On this tour, we aim to create personal connections with Mt. Shasta and the surrounding land, and lasting connections to your backcountry community."
+    },
+    {
+     "p": "We have logged over 45 years of experience guiding on Mount Shasta and are the original guiding company for this special mountain. We know Shasta better than anyone and aim to provide a professional and positive experience for all climbers."
+    },
+    {
+     "p": "Custom scheduling - contact to book"
+    }
+   ],
+   "requirements": [
+    "Participants should be able to ski intermediate to advanced terrain at a resort in variable conditions, otherwise Intro to BC Skiing is a better choice."
+   ],
+   "dates_title": "2027 Dates",
+   "dates": [
+    "Custom scheduling - contact us to book",
+    "All dates are subject to route change in the event of adverse conditions."
+   ],
+   "cost": [
+    "$495 per person"
+   ],
+   "includes": [
+    "Professional instruction and mountain guiding with a guide-to-client ratio of 1:3"
+   ],
+   "cost_notes": [
+    "add 100/per person for additional skiers.",
+    "Ski equipment is not included but rentals are available in the town of Mt. Shasta."
+   ],
+   "gear": {
+    "href": "assets/downloads/smg-backcountry-ski-avalanche-gear-list.pdf",
+    "label": "Backcountry Ski Tour & Avalanche Course Gear List"
+   },
+   "guides_title": "The difference is in our guides",
+   "guides": [
+    "The Shasta Mountain Guides® staff is a diverse, skilled, and fun group of individuals. Their common bond is a pure passion for being in the mountains and sharing that desire with friends, both old and new. We strongly believe in providing the highest level of service and quality of experience while climbing Mt. Shasta.",
+    "We are local professionals and are committed to your safety and enjoyment. SMG is the original guide service on Mt. Shasta and we are on the mountain daily. We specialize in Mount Shasta and the Shasta-Trinity National Forest. When you climb with us, your trip is supported by our collective experience and knowledge of the mountain.",
+    "Our combined experience includes thousands of Shasta summits and many years spent on the mountain. Together we’ve explored all its’ routes during all conditions and seasons. Join us for a trip of your lifetime!"
+   ],
+   "itinerary_title": "",
+   "itinerary": [],
+   "notes": [],
+   "source": "https://shastaguides.com/bestski"
+  },
+  {
+   "slug": "shasta-ski-descent",
+   "name": "2-Day Shasta Ski Descent",
+   "program": "ski-shasta",
+   "programTitle": "Ski Shasta",
+   "formOption": "Ski Shasta",
+   "fb": null,
+   "length": "2 days",
+   "route": "",
+   "card_cost": "$1,395 per person",
+   "eyebrow": "Mt Shasta, California · 14,179 ft",
+   "route_line": "",
+   "hero": {
+    "src": "assets/trips/079776-helen-switchbacks.jpg",
+    "alt": "2-Day Shasta Ski Descent on Mt. Shasta"
+   },
+   "gallery": [
+    {
+     "src": "assets/trips/57fde2-tipsongreenbutte.jpg",
+     "alt": "Skis on a ridge of Mt shasta"
+    },
+    {
+     "src": "assets/trips/346fe1-img-9148--281-29.jpg",
+     "alt": "backcountry skiers get an alpine start"
+    },
+    {
+     "src": "assets/trips/2cd72c-mtshastaavgulch.jpg",
+     "alt": "Mt shasta covered in a fresh blanket of snow"
+    },
+    {
+     "src": "assets/trips/ac64d1-west-face-ski.jpg",
+     "alt": "backcountry skier enjoys the corn snow."
+    },
+    {
+     "src": "assets/trips/3797bb-ski-gulch-casaval.jpg",
+     "alt": "Sping skiing in the backcountry on mt shasta"
+    },
+    {
+     "src": "assets/trips/49942a-ivy3.jpg",
+     "alt": "Backcountry skiers enjoy the best slopes in California"
+    }
+   ],
+   "overview": [
+    {
+     "p": "This is a more ambitious fast & light approach to ski the ultra-classic Avalanche Gulch route on Mount Shasta. On day one we establish a high camp partway up the route, as conditions and fitness allow. We do a quick tour for some afternoon turns and a review of climbing technique, then get some rest to prepare for an early AM alpine start and climb, culminating with a thrilling descent of one of the USA’s most sought-after ski objectives. Please contact us prior to booking to discuss your training program and experience and assure that you meet the requirements."
+    },
+    {
+     "p": "The two day itinerary doesn’t leave time for skills practice, acclimation, or recovery. You should be in very good condition and have some ski touring experience to consider this aggressive schedule."
+    },
+    {
+     "p": "We bring over 45 years of experience guiding on Mount Shasta and are the original guiding company for this special mountain. We know Shasta better than anyone and aim to provide a professional and positive experience for all climbers."
+    }
+   ],
+   "requirements": [
+    "Previous mountaineering experience along with significant ski/splitboard touring experience is required.",
+    "Advanced-level downhill skiing ability in all conditions is required.",
+    "Come with excellent fitness and recent experience climbing at least 2500-6000′ per day on skis.",
+    "Climbing Mt. Shasta is strenuous. For the best chances of summiting please train ahead of time. Feel free to contact us for any training recommendations. Check out our training page to get started."
+   ],
+   "dates_title": "2026 Dates",
+   "dates": [
+    "All dates are subject to route change in the event of adverse conditions.",
+    "May 9-10",
+    "May 23-24",
+    "Or By custom arrangement. Contact us to book."
+   ],
+   "cost": [
+    "$1395 per person\n*2 person minimum, otherwise private 2-day solo fee ($2195) applies"
+   ],
+   "includes": [
+    "Professional instruction and mountain guiding",
+    "Breakfast & dinner while in the backcountry",
+    "Group camping equipment; tents, cooking equipment, main meals",
+    "All permits and summit passes"
+   ],
+   "cost_notes": [],
+   "gear": {
+    "href": "assets/downloads/smg-ski-snowboard-mountaineering-gear-list.pdf",
+    "label": "Ski & Snowboard Mountaineering Gear List"
+   },
+   "guides_title": "The difference is in our guides",
+   "guides": [
+    "The Shasta Mountain Guides® staff is a diverse, skilled, and fun group of individuals. Their common bond is a pure passion for being in the mountains and sharing that desire with friends, both old and new. We strongly believe in providing the highest level of service and quality of experience while climbing Mt. Shasta.",
+    "We are local professionals and are committed to your safety and enjoyment. SMG is the original guide service on Mt. Shasta and we are on the mountain daily. We specialize in Mount Shasta and the Shasta-Trinity National Forest. When you climb with us, your trip is supported by our collective experience and knowledge of the mountain.",
+    "Our combined experience includes thousands of Shasta summits and many years spent on the mountain. Together we’ve explored all its’ routes during all conditions and seasons. Join us for a trip of your lifetime!"
+   ],
+   "itinerary_title": "MT SHASTA 2-DAY Ski descent ITINERARY",
+   "itinerary": [
+    {
+     "day": "Day 1",
+     "items": [
+      {
+       "time": "8:00 am",
+       "text": "Meet guides and group at the SMG Shop 305 Chestnut Street, Mt. Shasta, CA. Please be punctual to allow time for gear rentals, packing, and a group briefing. We will conduct a thorough gear check and distribute group gear to each participant (5-8lbs.) We recommend that you reserve your rental equipment through the Fifth Season in advance 530-926-3606. They are conveniently located next door to our shop."
+      },
+      {
+       "time": "10:00-10:30am",
+       "text": "Drive to the Bunny Flat trailhead (6950’) for a group briefing and start the ski approach to base camp (location may vary). Distance: 2.5-3.5 miles, vertical gain: 1,500-2,500’"
+      },
+      {
+       "time": "10:30-2:30pm",
+       "text": "Depending on weather and trail conditions, the moderate/ low angle approach to base camp may take anywhere from 1.5 to 4.0 hours."
+      },
+      {
+       "time": "3:00-5:00pm",
+       "text": "At base camp your group will snack, set up camp, and prepare for snow school. The purpose of snow school is to prepare you and the team team for a safe, efficient, and enjoyable climb. Topics covered include crampon and ice axe use, team rope travel, and team arrest. Time permitting, we typically climb a little above camp to conduct snow school, then ski back down to both get a few turns in and allow the guide to assess skiing/snowboarding ability."
+      },
+      {
+       "time": "5:00-6:00pm",
+       "text": "Return to camp for an early dinner and evening briefing. Your guides will discuss climb day logistics and what to pack. Generally, we like to be resting in the tents by 7:00- 8:00pm."
+      }
+     ]
+    },
+    {
+     "day": "Day 2",
+     "items": [
+      {
+       "time": "Alpine Start",
+       "text": "Depending on route conditions, weather, and group strengths, wake-up call will occur between 12:00am-1:00am. We start early for safety and best climbing conditions. Distance: 3 miles (1 way) Vertical gain approx 5,000’"
+      },
+      {
+       "time": "Turn around time",
+       "text": "For safety purposes, our turn around time on the mountain may be as early as 11:00 am-12:00 pm. We use these time frames to avoid hazards such as rock fall and afternoon storms, and time our ski descent for optimal conditions. Depending on route conditions, the descent back to base camp is about 2-3 hours."
+      },
+      {
+       "time": "Back at base camp",
+       "text": "you will have time for a quick break and pack up for the ski descent to Bunny Flat. The descent takes about 1-2 hours."
+      }
+     ],
+     "note": "Itinerary subject to change & the summit of Mount Shasta is subject to safe weather and snow conditions."
+    }
+   ],
+   "notes": [
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and LOGE Mt. Shasta. They offer a discount to our climbers and guests."
+   ],
+   "source": "https://shastaguides.com/shasta-ski-descent"
+  },
+  {
+   "slug": "single-day",
+   "name": "Single-Day Ski Push",
+   "program": "ski-shasta",
+   "programTitle": "Ski Shasta",
+   "formOption": "Ski Shasta",
+   "fb": null,
+   "length": "1 day",
+   "route": "",
+   "card_cost": "$1,295 per person",
+   "eyebrow": "Mt Shasta, California · 14,179 ft",
+   "route_line": "Avalanche Gulch Route",
+   "hero": {
+    "src": "assets/trips/ac64d1-west-face-ski.jpg",
+    "alt": "Single-Day Ski Push on Mt. Shasta"
+   },
+   "gallery": [
+    {
+     "src": "assets/trips/3ecee3-agskintrack.jpg",
+     "alt": "Fresh snow covers mt shasta"
+    },
+    {
+     "src": "assets/trips/2c9ee6-180603-ckrumholz-1458.jpg",
+     "alt": "The shadow of mt shasta"
+    },
+    {
+     "src": "assets/trips/98bea2-ski-up-gulch.jpg",
+     "alt": "Skier follows guide laid ski track"
+    },
+    {
+     "src": "assets/trips/dcb548-180603-ckrumholz-1741.jpg",
+     "alt": "Ski mountaineers push to the summit of mount shasta in one day"
+    },
+    {
+     "src": "assets/trips/c0d5ff-snapinsta.app-47040614-273367439966027-7161295548949585036-n-1080.jpg",
+     "alt": "backcountry skiers enjoy the slopes to themselves on mt shasta"
+    },
+    {
+     "src": "assets/trips/42f36d-pchu.jpg",
+     "alt": "Skier enjoys the empty slopes of mt shasta"
+    }
+   ],
+   "overview": [
+    {
+     "p": "This is our most ambitious itinerary and only single-day summit attempt offering. Previous ski mountaineering experience along with significant ski/splitboard touring experience is required. This itinerary does not allow time for acclimatization, so please come with excellent fitness and recent experience climbing at least 3500-5000′ per day on skis to be successful. Expert-level downhill skiing ability in all conditions is required."
+    },
+    {
+     "p": "Please contact us prior to booking to discuss your training program and experience and ensure that you meet the requirements."
+    },
+    {
+     "p": "On this climb, we aim to create personal connections with Mt. Shasta and the surrounding land, and lasting connections to your new climbing community."
+    },
+    {
+     "p": "We bring over 45 years of experience guiding on Mount Shasta and are the original guiding company for this special mountain. We know Mt. Shasta better than anyone and aim to provide a professional and positive experience for all our guests."
+    },
+    {
+     "p": "By custom arrangement only. Contact us to Book."
+    }
+   ],
+   "requirements": [
+    "Previous ski mountaineering experience along with ski/splitboard touring experience is required.",
+    "This itinerary does not allow time for acclimatization, so plan to have excellent fitness and recent experience climbing at least 3500-5000′ per day on skis to be successful",
+    "Expert-level downhill skiing ability in all conditions is required.",
+    "Climbing Mt Shasta is strenuous. For the best chances of summiting, proper training and preparation is essential. Feel free to contact us for recommendations. Check out our training page to get started."
+   ],
+   "dates_title": "2026 Dates",
+   "dates": [
+    "All dates are subject to route change in the event of adverse conditions.",
+    "By custom arrangement only. Some dates may not be available. Contact us to book."
+   ],
+   "cost": [
+    "$1295 per person"
+   ],
+   "includes": [
+    "Professional mountain guiding, instruction, and coaching at a 2: 1 ratio",
+    "Mt. Shasta summit passes and permits"
+   ],
+   "cost_notes": [
+    "2 person minimum, otherwise private solo fee ($1995) applies."
+   ],
+   "gear": {
+    "href": "assets/downloads/smg-single-push-ski-descent-gear-list.pdf",
+    "label": "Single-Push Ski Descent Gear List"
+   },
+   "guides_title": "The difference is in our guides",
+   "guides": [
+    "The Shasta Mountain Guides® staff is a diverse, skilled, and fun group of individuals. Their common bond is a pure passion for being in the mountains and sharing that desire with friends, both old and new. We strongly believe in providing the highest level of service and quality of experience while climbing Mt. Shasta.",
+    "We are local professionals and are committed to your safety and enjoyment. SMG is the original guide service on Mt. Shasta and we are on the mountain daily. We specialize in Mount Shasta and the Shasta-Trinity National Forest. When you climb with us, your trip is supported by our collective experience and knowledge of the mountain.",
+    "Our combined experience includes thousands of Shasta summits and many years spent on the mountain. Together we’ve explored all its’ routes during all conditions and seasons. Join us for a trip of your lifetime!"
+   ],
+   "itinerary_title": "Single Day Ski ITINERARY",
+   "itinerary": [
+    {
+     "day": "Day 1",
+     "items": [
+      {
+       "time": "Flexible",
+       "text": "Meet guide at the SMG Shop located at 305 Chestnut Street, Mt. Shasta, CA. This will serve as a gear check and briefing prior to the single day summit attempt."
+      },
+      {
+       "time": "Afternoon",
+       "text": "Drive to the Bunny Flat trailhead (6,950’) for a short ski tour and skills clinic, followed by a thorough review of equipment and our plan for the following day."
+      },
+      {
+       "time": "5:00pm",
+       "text": "We stay in a local hotel or camp that night (accommodations not included). Summit Lofts, Cold Creek Inn offer discount to our guests."
+      }
+     ]
+    },
+    {
+     "day": "Day 2",
+     "items": [
+      {
+       "time": "1:00am",
+       "text": "Meet at trail head, begin summit bid"
+      },
+      {
+       "time": "Turn around time",
+       "text": "For safety purposes, our turn around time on the mountain will be determined by current weather and conditions. The goal is to return to the trailhead by 3:00-4:00pm"
+      }
+     ],
+     "note": "Itinerary subject to change & the summit of Mount Shasta is subject to safe weather and snow conditions."
+    }
+   ],
+   "notes": [
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and Cold Creek Inn. They offer a discount to our climbers and guests."
+   ],
+   "source": "https://shastaguides.com/single-day"
+  },
+  {
+   "slug": "skimountaineeringseminar",
+   "name": "4-Day Ski Mountaineering Seminar",
+   "program": "ski-shasta",
+   "programTitle": "Ski Shasta",
+   "formOption": "Ski Shasta",
+   "fb": 15539,
+   "length": "4 days",
+   "route": "",
+   "card_cost": "$1,795 per person",
+   "eyebrow": "Mt Shasta, California · 14,179 ft",
+   "route_line": "",
+   "hero": {
+    "src": "assets/trips/d3693a-sargentspow.jpg",
+    "alt": "4-Day Ski Mountaineering Seminar on Mt. Shasta"
+   },
+   "gallery": [
+    {
+     "src": "assets/trips/816d65-westface.jpg",
+     "alt": "Mt shasta covered in a thick blanket of snow."
+    },
+    {
+     "src": "assets/trips/738e5f-avalanche-gulch-ski-tour.jpg",
+     "alt": "Skin track up the slopes of mt shasta"
+    },
+    {
+     "src": "assets/trips/542813-img-9146.jpg",
+     "alt": "ski mountaineers pose at the summit of mt shasta"
+    },
+    {
+     "src": "assets/trips/babf20-gbski1.jpg",
+     "alt": "Perfect turns dow the slopes of mt shasta"
+    },
+    {
+     "src": "assets/trips/ac64d1-west-face-ski.jpg",
+     "alt": "Skier makes beautiful turns down the slopes of mt shasta"
+    },
+    {
+     "src": "assets/trips/49942a-ivy3.jpg",
+     "alt": "Skier ascends the slopes on mt shasta"
+    }
+   ],
+   "overview": [
+    {
+     "p": "This ski and board expedition will explore what Mt. Shasta is famous for: Big lines of endless spring skiing and riding. We plan to make our basecamp in Hidden Valley, a high alpine cirque surrounded by ski terrain to suit any appetite. With big objectives to ski both the West Face Gully of Mt. Shasta and the south face of Shastina, reaching the summits of 2 classic Cascade volcanoes. This is a North American ski bucket list trip and one to satisfy those with a desire for big vertical and endless turns in stunning terrain."
+    },
+    {
+     "p": "We will spend time reviewing ski mountaineering skills including:"
+    },
+    {
+     "ul": [
+      "Ice axe and crampon use",
+      "Ice axe self-arrest",
+      "Snow climbing and skinning technique",
+      "Basic rope travel",
+      "Avalanche Awareness",
+      "Transceiver Practice"
+     ]
+    },
+    {
+     "p": "In this Seminar, we aim to create personal connections with Mt. Shasta and build lasting connections to your new snow sliding community."
+    },
+    {
+     "p": "We bring over 45 years of experience guiding on Mount Shasta and are the original guiding company for this special mountain. We know Shasta better than anyone and aim to provide a professional and positive experience for all climbers."
+    }
+   ],
+   "requirements": [
+    "Guests should be advanced to expert downhill riders in all conditions. Previous experience with backcountry ski touring and climbing is required.",
+    "Must be in excellent physical condition and training diligently.",
+    "Climbing Mt Shasta is strenuous. For the best chances of summiting please train ahead of time. Feel free to contact us for any training recommendations. Check out our training page to get started."
+   ],
+   "dates_title": "2026 Dates",
+   "dates": [
+    "All dates are subject to route change in the event of adverse conditions.",
+    "May 15-18"
+   ],
+   "cost": [
+    "$1795 per person"
+   ],
+   "includes": [
+    "Professional instruction and mountain guiding",
+    "Breakfast & dinner while in the backcountry",
+    "Group equipment and logistics; tents, stoves, main meals, ropes, first aid",
+    "Mt. Shasta summit passes"
+   ],
+   "cost_notes": [
+    "Ski equipment is not included but rentals are available in the town of Mt. Shasta."
+   ],
+   "gear": {
+    "href": "assets/downloads/smg-ski-snowboard-mountaineering-gear-list.pdf",
+    "label": "Ski & Snowboard Mountaineering Gear List"
+   },
+   "guides_title": "The difference is in our guides",
+   "guides": [
+    "The Shasta Mountain Guides® staff is a diverse, skilled, and fun group of individuals. Their common bond is a pure passion for being in the mountains and sharing that desire with friends, both old and new. We strongly believe in providing the highest level of service and quality of experience while climbing Mt. Shasta.",
+    "We are local professionals and are committed to your safety and enjoyment. SMG is the original guide service on Mt. Shasta and we are on the mountain daily. We specialize in Mount Shasta and the Shasta-Trinity National Forest. When you climb with us, your trip is supported by our collective experience and knowledge of the mountain.",
+    "Our combined experience includes thousands of Shasta summits and many years spent on the mountain. Together we’ve explored all its’ routes during all conditions and seasons. Join us for a trip of your lifetime!"
+   ],
+   "itinerary_title": "Planned ITINERARY",
+   "itinerary": [
+    {
+     "day": "Day 1",
+     "items": [
+      {
+       "time": "8:00am",
+       "text": "Meet guides and group at SMG shop 305 Chestnut St Mt. Shasta. We will conduct a thorough gear check and distribute group equipment. Plan to add 8-10 pounds of group gear to your personal kit; this includes food and tents."
+      },
+      {
+       "time": "10:00am",
+       "text": "Drive to the Bunny Flat trailhead (6,950’) for a group briefing and start the approach to base camp in Hidden Valley (9,200’)"
+      },
+      {
+       "time": "2:00pm",
+       "text": "At base camp your group will set up camp, snack on trail food and prepare for a light ski tour or afternoon skills session"
+      },
+      {
+       "time": "5:00pm",
+       "text": "Return to camp for an early dinner and evening briefing."
+      }
+     ]
+    },
+    {
+     "day": "Day 2",
+     "items": [
+      {
+       "time": "7:00am",
+       "text": "Wake-up, hot breakfast, and pack for day tour and skills clinics."
+      },
+      {
+       "time": "9:00am-2:00pm",
+       "text": "We will tour on the lower flanks of the mountain looking for the best ski terrain and conditions while refining our ski mountaineering techniques"
+      },
+      {
+       "time": "2:00-5:00pm",
+       "text": "We will continue with an additional skills session and advanced training and review at camp while we rehydrate and prepeare for the big days ahead."
+      },
+      {
+       "time": "5:00-7:00pm",
+       "text": "Dinner and climb briefing"
+      }
+     ]
+    },
+    {
+     "day": "Day 3",
+     "items": [
+      {
+       "time": "Shastina Summit Climb",
+       "text": "Alpine Start | Shastina South Face. Depending on our team abilities, weather, and route conditions we will begin our climb between 3:00am-4:00am."
+      },
+      {
+       "time": "Turn around time",
+       "text": "For safety purposes, our turn around time on the mountain may be as early as 11:00 am-12:00 pm. We use these time frames to avoid hazards such as well as optimize ski conditions. Sometimes we may delay our descent to wait for softening of the snow surface, every day is different and we’ll use our experience to judge best conditions."
+      },
+      {
+       "time": "",
+       "text": "Back at base camp the team will rest, hydrate, and prepare for the next big ski line."
+      }
+     ]
+    },
+    {
+     "day": "Day 4",
+     "items": [
+      {
+       "time": "Shasta Summit Climb",
+       "text": "Alpine Start | Shasta West Face. Depending on our team abilities, weather, and route conditions we will begin our climb between 2:00-3:00am."
+      },
+      {
+       "time": "Turn around time",
+       "text": "For safety purposes, our turn around time on the mountain may be as early as 11:00 am-12:00 pm. We use these time frames to avoid hazards such as well as optimize ski conditions. Sometimes we may delay our descent to wait for softening of the snow surface, every day is different and we’ll use our experience to judge best conditions."
+      },
+      {
+       "time": "",
+       "text": "Back at camp we will pack up our gear and return to the trailhead. We can expect to return between 4:00-6:00pm"
+      }
+     ],
+     "note": "Itinerary subject to change & the summit of Mount Shasta and Shastina is subject to safe weather and snow conditions. We may chose to alter the itinerary to best serve the safety and goals of the group."
+    }
+   ],
+   "notes": [
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and LOGE Mt. Shasta. They offer a discount to our climbers and guests."
+   ],
+   "source": "https://shastaguides.com/skimountaineeringseminar"
+  },
+  {
+   "slug": "womens-ski",
+   "name": "3-Day Women's Ski Mountaineering Seminar",
+   "program": "ski-shasta",
+   "programTitle": "Ski Shasta",
+   "formOption": "Ski Shasta",
+   "fb": 790,
+   "length": "3 days",
+   "route": "",
+   "card_cost": "$1,595 per person",
+   "eyebrow": "Mt Shasta, California · 14,179 ft",
+   "route_line": "",
+   "hero": {
+    "src": "assets/trips/62d97d-tailer-spinneys-client-skiing-down-the-west-face.jpg",
+    "alt": "3-Day Women's Ski Mountaineering Seminar on Mt. Shasta"
+   },
+   "gallery": [
+    {
+     "src": "assets/trips/1649e7-lake-helen-skiers.jpg",
+     "alt": "Skiers pose together during the womens ski mountaineering course"
+    },
+    {
+     "src": "assets/trips/4b10aa-snapinsta.app-58409713-136934640785051-2574316204856136970-n-1080.jpg",
+     "alt": "Female mountaineers push to the summit of mt shasta"
+    },
+    {
+     "src": "assets/trips/78e611-maddie-ski-guide.jpg",
+     "alt": "shasta mountain guide leads the way to the summit of mt shasta"
+    },
+    {
+     "src": "assets/trips/3797bb-ski-gulch-casaval.jpg",
+     "alt": "women skiing the slopes of mt shasta"
+    },
+    {
+     "src": "assets/trips/a1483d-lowergulchskier.jpg",
+     "alt": "Female ski tours up the slope of mt shasta"
+    },
+    {
+     "src": "assets/trips/0b34b1-senior-guide-tailer-spinney-whipping-up-a-feast-for-her-clients.jpg",
+     "alt": "shasta mountain guide Tailor prepares a meal in the basecamp tent"
+    },
+    {
+     "src": "assets/trips/402b77-shastina1.jpg",
+     "alt": "Mount Shasta in all its glory"
+    }
+   ],
+   "overview": [
+    {
+     "p": "As one of the top ski mountaineering peaks in the world, Mt. Shasta is the perfect place to hone in your ski mountaineering skills. And to do so with the support of an all female team will make this a fun and informative adventure!"
+    },
+    {
+     "p": "This 3 day ski and board expedition will explore what Mt. Shasta is famous for; classic spring skiing and big mountain ski lines. We will climb and ski either the Avalanche Gulch or West Face route, depending on current conditions and weather. Guided by our professional female staff, this course is a unique opportunity for women to develop and hone a ski mountaineering skill set with a crew of exceptionally supportive and professional ladies."
+    },
+    {
+     "p": "Ski Mountaineering instruction includes:"
+    },
+    {
+     "ul": [
+      "Ice axe and crampon use",
+      "Ice axe self-arrest",
+      "Snow climbing and skinning technique",
+      "Basic rope travel",
+      "Avalanche Awareness",
+      "Transceiver Practice"
+     ]
+    },
+    {
+     "p": "In this seminar, we aim to create personal connections with Mt. Shasta and the surrounding land and building lasting connections to your new snow sliding community."
+    },
+    {
+     "p": "We have logged over 45 years of experience guiding on Mount Shasta and are the original company for this special mountain. We know Shasta better than anyone and aim to provide a professional and positive experience for all climbers."
+    }
+   ],
+   "requirements": [
+    "Guests should have advanced downhill ability in all conditions.",
+    "Previous experience with backcountry ski touring and skiing uphill.",
+    "Must be in excellent physical condition to consider multiple objectives",
+    "Climbing Mt Shasta is strenuous. For the best chances of summiting please train ahead of time. Feel free to contact us for any training recommendations. Check out our training page to get started."
+   ],
+   "dates_title": "2027 Dates",
+   "dates": [
+    "All dates are subject to route change in the event of adverse conditions.",
+    "May 14-16, 2027"
+   ],
+   "cost": [
+    "$1595 per person"
+   ],
+   "includes": [
+    "Professional instruction and mountain guiding with a guide-to-client summit-day ratio of 1:3",
+    "Main meals (breakfast and dinner on the mountain)",
+    "Group logistic support equipment; tents, stoves, drinking water, main meals",
+    "Mt. Shasta summit passes and permits"
+   ],
+   "cost_notes": [
+    "Guests are responsible for their personal equipment; clothing layers, backpack, sleeping bag, skis, etc. These are available to rent"
+   ],
+   "gear": {
+    "href": "assets/downloads/smg-ski-snowboard-mountaineering-gear-list.pdf",
+    "label": "Ski & Snowboard Mountaineering Gear List"
+   },
+   "guides_title": "The difference is in our guides",
+   "guides": [
+    "The Shasta Mountain Guides staff is a diverse, skilled, and fun group of individuals. Their common bond is a pure passion for being in the mountains and sharing that desire with friends, both old and new. We strongly believe in providing the highest level of service and quality of experience while climbing Mt. Shasta.",
+    "We are local professionals and are committed to your safety and enjoyment. SMG is the original guide service on Mt. Shasta and we are on the mountain daily. We specialize in Mount Shasta and the Shasta-Trinity National Forest. When you climb with us, your trip is supported by our collective experience and knowledge of the mountain.",
+    "Our combined experience includes thousands of Shasta summits and many years spent on the mountain. Together we’ve explored all its’ routes during all conditions and seasons. Join us for a trip of your lifetime!"
+   ],
+   "itinerary_title": "Planned ITINERARY",
+   "itinerary": [
+    {
+     "day": "Day 1",
+     "items": [
+      {
+       "time": "8:00am",
+       "text": "Meet guides and group at SMG shop 305 Chestnut St Mt. Shasta. We will conduct a thorough gear check and distribute group equipment. Plan to add 8-10 pounds of group gear to your personal kit; this includes food and tents."
+      },
+      {
+       "time": "10:00am",
+       "text": "Drive to the Bunny Flat trailhead (6,950’) for a group briefing and start the approach to base camp, typically treeline at 8,000’ or higher based on snow conditions"
+      },
+      {
+       "time": "2:00pm",
+       "text": "At base camp your group will set up camp, snack on trail food and prepare for a light ski tour or afternoon skills session"
+      },
+      {
+       "time": "5:00pm",
+       "text": "Return to camp for an early dinner and evening briefing."
+      }
+     ]
+    },
+    {
+     "day": "Day 2",
+     "items": [
+      {
+       "time": "7:00am",
+       "text": "Wake-up, hot breakfast, and pack for day tour and skills clinics."
+      },
+      {
+       "time": "9:00am-2:00pm",
+       "text": "We will tour on the lower flanks of the mountain looking for the best ski terrain and conditions while refining our ski mountaineering techniques"
+      },
+      {
+       "time": "2:00-5:00pm",
+       "text": "We will continue with an additional skills session and advanced training and review at camp while we rehydrate and prepare for the big days ahead."
+      },
+      {
+       "time": "5:00-7:00pm",
+       "text": "Dinner and climb briefing"
+      }
+     ]
+    },
+    {
+     "day": "Day 3",
+     "items": [
+      {
+       "time": "Shasta Ski",
+       "text": "Alpine Start | Depending on our weather and route conditions we will select terrain where we can have the best snow conditions while climbing and skiing on Mt. Shasta. With over 5,000’ of gain from camp, there are big options for us on our summit day. Depending on our team abilities, weather, and route conditions we will begin our climb between 2:00-3:00am"
+      },
+      {
+       "time": "Turn around time",
+       "text": "For safety purposes, our turn around time on the mountain may be as early as 11:00-12:00pm. We use these time frames to avoid hazards as well as optimize ski conditions. Sometimes we may delay our descent to wait for softening of the snow surface, every day is different and we’ll use our experience to judge best conditions."
+      },
+      {
+       "time": "",
+       "text": "Back at base camp the team will pack camp and head back to the trailhead. We’re typically back to the trailhead between 4:00-5:00p,"
+      }
+     ],
+     "note": "Itinerary subject to change & the summit of Mount Shasta is subject to safe weather and snow conditions. We may chose to alter the itinerary to best serve the safety and goals of the group"
+    }
+   ],
+   "notes": [
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and Cold Creek Inn. They offer a discount to our climbers and guests."
+   ],
+   "source": "https://shastaguides.com/womens-ski"
+  },
+  {
+   "slug": "shasta-lassen",
+   "name": "5-Day Shasta–Lassen Cascade Challenge",
+   "program": "ski-shasta",
+   "programTitle": "Ski Shasta",
+   "formOption": "Ski Shasta",
+   "fb": 25974,
+   "length": "5 days",
+   "route": "",
+   "card_cost": "$1,795 per person",
+   "eyebrow": "Mt Shasta, California · 14,179 ft",
+   "route_line": "Mt Lassen, California - 10,457 ft",
+   "hero": {
+    "src": "assets/trips/f5a353-ski.gulc.jpg",
+    "alt": "5-Day Shasta–Lassen Cascade Challenge on Mt. Shasta"
+   },
+   "gallery": [
+    {
+     "src": "assets/trips/83a1e5-lassen.jpg",
+     "alt": "Lassen peak covered in snow"
+    },
+    {
+     "src": "assets/trips/346fe1-img-9148--281-29.jpg",
+     "alt": "Backcountry skiers during sunset of an alpine start"
+    },
+    {
+     "src": "assets/trips/727069-190519-ckrumholz-0487.jpg",
+     "alt": "Skiers tent in the backcountry and fresh snow on top"
+    },
+    {
+     "src": "assets/trips/adb226-skishadow.jpg",
+     "alt": "backcountry skier enjoys the steep slopes of Lassen peak"
+    },
+    {
+     "src": "assets/trips/84c274-seanski1.jpg",
+     "alt": "backcountry skier enjoys the slopes of mt shasta"
+    },
+    {
+     "src": "assets/trips/816d65-westface.jpg",
+     "alt": "Mt shasta covered in snow"
+    }
+   ],
+   "overview": [
+    {
+     "p": "California is home to the two southern-most and most skiable Cascade Volcanoes. With this in mind, we have designed this program to take advantage of the awesome spring skiing in the southern Cascades."
+    },
+    {
+     "p": "Mt. Shasta is an obvious objective that dominates the Northern California skyline. A summit ski descent is on every skier's bucket list. Our volcanic neighbor to the south; Mt. Lassen, boasts an impressive number of ski lines with a little less commitment required to enjoy its near perfect pitches. Add them together and you get 10,000′ of climbing and 2 peaks in the Pacific Ring of Fire."
+    },
+    {
+     "p": "We are excited to offer this adventure to make the most of the spring skiing in far northern California. We’ll take care of all the logistics, you just need to get fired up for California Spring skiing at its finest!"
+    },
+    {
+     "p": "We will make the town of Mt. Shasta our starting point for this 2 peak objective. You are responsible for transportation and accommodations while in town. We will carpool to the trailhead of Shasta and Lassen."
+    }
+   ],
+   "requirements": [
+    "Skiers and Boarders should have advanced downhill ability in all conditions.",
+    "Must have some previous experience with backcountry skiing and skinning.",
+    "Must be in excellent physical condition and committed to a ski training fitness program.",
+    "Climbing Mt Shasta is strenuous. For the best chances of summiting a committed training program is necessary. Feel free to contact us for any recommendations. Check out our training page to get started."
+   ],
+   "dates_title": "2026 Dates",
+   "dates": [
+    "All dates are subject to route change in the event of adverse conditions.",
+    "May 8-12 2026"
+   ],
+   "cost": [
+    "$1795 per person"
+   ],
+   "includes": [
+    "Professional instruction and mountain guiding with trained guides",
+    "Breakfast & dinner while in the backcountry",
+    "Group equipment; tents, stoves and kitchen, first aid, ropes, harnesses",
+    "Mt. Shasta summit passes and permits"
+   ],
+   "cost_notes": [
+    "personal equipment is not included but rentals are available in Mt. Shasta."
+   ],
+   "gear": {
+    "href": "assets/downloads/smg-ski-snowboard-mountaineering-gear-list.pdf",
+    "label": "Ski & Snowboard Mountaineering Gear List"
+   },
+   "guides_title": "The difference is in our guides",
+   "guides": [
+    "The Shasta Mountain Guides® staff is a diverse, skilled, and fun group of individuals. Their common bond is a pure passion for being in the mountains and sharing that desire with friends, both old and new. We strongly believe in providing the highest level of service and quality of experience while climbing Mt. Shasta.",
+    "We are local professionals and are committed to your safety and enjoyment. SMG is the original guide service on Mt. Shasta and we are on the mountain daily. We specialize in Mount Shasta and the Shasta-Trinity National Forest. When you climb with us, your trip is supported by our collective experience and knowledge of the mountain.",
+    "Our combined experience includes thousands of Shasta summits and many years spent on the mountain. Together we’ve explored all its’ routes during all conditions and seasons. Join us for a trip of your lifetime!"
+   ],
+   "itinerary_title": "Planned itinerary",
+   "itinerary": [
+    {
+     "day": "Day 1",
+     "items": [
+      {
+       "time": "8:00 am",
+       "text": "Meet guides and group at the SMG Shop located at 305 Chestnut St. Please be punctual to allow time for gear rentals, packing, and a group briefing. Please note; your guides will do a thorough gear check and pass out group gear before packing your backpack."
+      },
+      {
+       "time": "10:00am",
+       "text": "Drive to the Bunny Flat trailhead (6,950’) for a group briefing and start the approach to base camp. Depending on weather and trail conditions, the moderate/ low angle approach to base camp may take anywhere from 1.5 to 2.0 hours. Distance: 2 miles, Vertical gain: 1,000’"
+      },
+      {
+       "time": "1:00pm",
+       "text": "Snow school ski tour. Assess snow conditions and review of technical skills. The purpose of snow school is to prepare you and the climbing team for a safe, efficient, and enjoyable climb. Topics covered include fundamental climbing techniques, ice axe and crampon use, team rope travel, and team arrest."
+      },
+      {
+       "time": "4:00pm-6:00pm",
+       "text": "After snow school you will return to camp for an early dinner and evening briefing."
+      }
+     ]
+    },
+    {
+     "day": "Day 2",
+     "items": [
+      {
+       "time": "7:00am",
+       "text": "Hot breakfast"
+      },
+      {
+       "time": "8:00am",
+       "text": "Ski tour for acclimation and snow assessment"
+      }
+     ]
+    },
+    {
+     "day": "Day 3",
+     "items": [
+      {
+       "time": "Alpine Start",
+       "text": "Depending on our team abilities, weather, and route conditions we will begin our climb between 2:00- 3:00am."
+      },
+      {
+       "time": "Turn around time",
+       "text": "For safety purposes, our turn around time on the mountain may be as early as 11:00 am-12:00 pm. We use these time frames to optimize best skiing conditions and to avoid hazards. Depending on route conditions, the descent back to camp may take 2-3 hours."
+      },
+      {
+       "time": "Back at base camp",
+       "text": "Back at base camp the team will pack up and descend to the trail head. We expect to be back to the Bunny Flat Trailhead between 4:00 and 5:00pm"
+      },
+      {
+       "time": "",
+       "text": "You are own your own for meals and accommodations in the town of Mt. Shasta"
+      }
+     ]
+    },
+    {
+     "day": "Day 4",
+     "items": [
+      {
+       "time": "8:00am",
+       "text": "Meet and carpool to Lassen National Park"
+      },
+      {
+       "time": "11:00am",
+       "text": "Ski Tour and snow assessment. We’ll enter the park from the Manzanita Lake entrance station and tour for afternoon turns and to get a look at our objective"
+      },
+      {
+       "time": "4:00pm",
+       "text": "Back to car camping location at trailhead for dinner and briefing"
+      }
+     ]
+    },
+    {
+     "day": "Day 5",
+     "items": [
+      {
+       "time": "Alpine Start for Lassen Peak summit and ski",
+       "text": "We’ll wake between 4-6:00am to start our summit ascent."
+      },
+      {
+       "time": "2:00pm",
+       "text": "Return to trailhead and carpool back to Mt. Shasta"
+      },
+      {
+       "time": "5:00pm",
+       "text": "Arrive Mt. Shasta and conclusion of trip"
+      }
+     ],
+     "note": "Itinerary subject to change & the summit of Mount Shasta is subject to safe weather and snow conditions"
+    }
+   ],
+   "notes": [
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and Cold Creek Inn. They offer a discount to our climbers and guests."
+   ],
+   "source": "https://shastaguides.com/shasta-lassen"
+  },
+  {
+   "slug": "dayclass",
+   "name": "Basic Mountaineering Day Class",
+   "program": "mountaineering-courses",
+   "programTitle": "Mountaineering Courses",
+   "formOption": "Mountaineering Course",
+   "fb": 798,
+   "length": "1 day",
+   "route": "",
+   "card_cost": "$275 per person",
+   "eyebrow": "Mt Shasta, California · 1 Day",
+   "route_line": "",
+   "hero": {
+    "src": "assets/trips/1d6af3-180707-ckrumholz-0086.jpg",
+    "alt": "Basic Mountaineering Day Class on Mt. Shasta"
+   },
+   "gallery": [
+    {
+     "src": "assets/trips/cc7602-180602-ckrumholz-0474.jpg",
+     "alt": "Climber practices self arresting in our Mountaineering day class"
+    },
+    {
+     "src": "assets/trips/d9ddc1-180602-ckrumholz-0639.jpg",
+     "alt": "Participants learn to glissade in our mountaineering day class"
+    },
+    {
+     "src": "assets/trips/639678-180707-ckrumholz-0200.jpg",
+     "alt": "participant picks up speed while glissading down"
+    },
+    {
+     "src": "assets/trips/e6a720-180707-ckrumholz-0324.jpg",
+     "alt": "Learning to glissade in our day mountaineering course"
+    }
+   ],
+   "overview": [
+    {
+     "p": "Basic mountaineering is a one-day snow school class that provides an introduction to climbing and efficient movement on moderate-angle snow and to the use of ice axe, crampons, and self-arrest skills. This knowledge is a prerequisite to the beginning mountaineer and essential for new climbers to attempt a Mt. Shasta summit climb. This is also a primer for climbing Mt. Shasta and we will answer specific route and itinerary questions as well as discuss weather, altitude, and terrain considerations."
+    },
+    {
+     "p": "Mountaineering instruction includes:"
+    },
+    {
+     "ul": [
+      "Ice axe and crampon use",
+      "Ice axe self-arrest",
+      "Snow climbing technique",
+      "Basic rope travel"
+     ]
+    },
+    {
+     "p": "We aim to create personal connections with Mt. Shasta and the surrounding land, and lasting connections to your new climbing community."
+    },
+    {
+     "p": "We have logged over 45 years of experience guiding on Mount Shasta and are the original guiding company for this special mountain. We know Shasta better than anyone and aim to provide a professional and positive experience for all climbers."
+    }
+   ],
+   "requirements": [
+    "No mountaineering experience is required.",
+    "Previous hiking experience is required.",
+    "Must be in good physical condition."
+   ],
+   "dates_title": "2027 Dates",
+   "dates": [
+    "All dates are subject to route change in the event of adverse conditions.",
+    "April 17",
+    "May 1",
+    "May 15",
+    "May 29",
+    "June 5",
+    "Custom dates available"
+   ],
+   "cost": [
+    "$275 per person"
+   ],
+   "includes": [
+    "Full day of instruction with professional Guide"
+   ],
+   "cost_notes": [],
+   "gear": {
+    "href": "assets/downloads/smg-mountaineering-class-day-hike-gear-list.pdf",
+    "label": "Mountaineering Class & Day Hike Gear List"
+   },
+   "guides_title": "The difference is in our guides",
+   "guides": [
+    "The Shasta Mountain Guides® staff is a diverse, skilled, and fun group of individuals. Their common bond is a pure passion for being in the mountains and sharing that desire with friends, both old and new. We strongly believe in providing the highest level of service and quality of experience while climbing Mt. Shasta.",
+    "We are local professionals and are committed to your safety and enjoyment. SMG is the original guide service on Mt. Shasta and we are on the mountain daily. We specialize in Mount Shasta and the Shasta-Trinity National Forest. When you climb with us, your trip is supported by our collective experience and knowledge of the mountain.",
+    "Our combined experience includes thousands of Shasta summits and many years spent on the mountain. Together we’ve explored all its’ routes during all conditions and seasons. Join us for a trip of your lifetime!"
+   ],
+   "itinerary_title": "",
+   "itinerary": [],
+   "notes": [
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and LOGE Mt. Shasta. They offer a discount to our climbers and guests."
+   ],
+   "source": "https://shastaguides.com/dayclass"
+  },
+  {
+   "slug": "glacier2",
+   "name": "Glacier II: Glacier Travel & Crevasse Rescue",
+   "program": "mountaineering-courses",
+   "programTitle": "Mountaineering Courses",
+   "formOption": "Mountaineering Course",
+   "fb": 795,
+   "length": "5 days",
+   "route": "",
+   "card_cost": "$1,795 per person",
+   "eyebrow": "Mt Shasta, California · 14,179 ft",
+   "route_line": "Hotlum Glacier Route",
+   "hero": {
+    "src": "assets/trips/1eb8fc-hotlum.climb.jpg",
+    "alt": "Glacier II: Glacier Travel & Crevasse Rescue on Mt. Shasta"
+   },
+   "gallery": [
+    {
+     "src": "assets/trips/da0bd2-climb.glacier1.jpg",
+     "alt": "Mountaineers cross a crevasse on a mt shasta glacier"
+    },
+    {
+     "src": "assets/trips/415f1f-180629-ckrumholz-0399.jpg",
+     "alt": "Course participant practices mountaineering technique"
+    },
+    {
+     "src": "assets/trips/f71127-180629-ckrumholz-0960.jpg",
+     "alt": "Course participant practices self arresting during the glacier travel and crevasse rescue course on mt shasta"
+    },
+    {
+     "src": "assets/trips/1cffea-180629-ckrumholz-1349.jpg",
+     "alt": "Course participants build a dead man anchor."
+    },
+    {
+     "src": "assets/trips/e9621b-180629-ckrumholz-1392.jpg",
+     "alt": "Course participants learn how to build rope systems."
+    },
+    {
+     "src": "assets/trips/288d26-180629-ckrumholz-1408.jpg",
+     "alt": "mountaineers learn how to tie knots."
+    },
+    {
+     "src": "assets/trips/955b26-180630-ckrumholz-1601.jpg",
+     "alt": "Course participants pose at the summit of mt shasta"
+    },
+    {
+     "src": "assets/trips/74974c-hotlum.climb.sunrise.jpg",
+     "alt": "Climbers push to the top of mt shasta"
+    }
+   ],
+   "overview": [
+    {
+     "p": "This seminar is an in-depth and comprehensive course covering glacier travel and crevasse rescue techniques. We will be on the Hotlum Glacier, where a series of crevasses and icefalls will provide perfect training and climbing opportunities. The emphasis will be on skill development and hands-on practice for glacier travel and rescue. A summit bid via the dramatic Hotlum Glacier completes this five-day seminar."
+    },
+    {
+     "p": "Mountaineering instruction includes:"
+    },
+    {
+     "p": "Ice axe and crampon technique, team and self-arrest, snow travel and climbing technique, pacing, elevation, nutrition, etc."
+    },
+    {
+     "p": "Advanced instruction includes:"
+    },
+    {
+     "ul": [
+      "Constructing snow and ice anchors",
+      "Rope rigging for glacier travel",
+      "Self and team crevasse rescue",
+      "Hauling systems for more complex rescues"
+     ]
+    },
+    {
+     "p": "In this course we aim to create personal connections with Mt. Shasta and the surrounding land, and to building lasting connections to your new climbing community. We have logged over 45 years of experience guiding on Mount Shasta and are the original guiding company for this special mountain. We know Shasta better than anyone and aim to provide a professional and positive experience for all climbers."
+    }
+   ],
+   "requirements": [
+    "Previous Mountaineering experience including crampon/ice axe use is required.",
+    "Some exposure to basic rope skills is helpful",
+    "Previous time spent at elevation is required.",
+    "Must be in very good physical condition.",
+    "The Glacier II Seminar is a hands on training seminar and climb that will attempt the Hotlum Glacier route. This is a advanced course that requires previous experience"
+   ],
+   "dates_title": "2026 Dates",
+   "dates": [
+    "All dates are subject to route change in the event of adverse conditions."
+   ],
+   "cost": [
+    "$1895 per person"
+   ],
+   "includes": [
+    "Professional instruction and mountain guiding",
+    "We supply group gear and logistics; tents, stoves, kitchen, main meals, Mt. Shasta summit passes and permits"
+   ],
+   "cost_notes": [
+    "Technical equipment is available to rent from the Fifth Season in Mt. Shasta"
+   ],
+   "gear": {
+    "href": "assets/downloads/smg-advanced-climbing-seminars-gear-list.pdf",
+    "label": "Advanced Climbing Seminars Gear List"
+   },
+   "guides_title": "The difference is in our guides",
+   "guides": [
+    "The Shasta Mountain Guides® staff is a diverse, skilled, and fun group of individuals. Their common bond is a pure passion for being in the mountains and sharing that desire with friends, both old and new. We strongly believe in providing the highest level of service and quality of experience while climbing Mt. Shasta.",
+    "We are local professionals and are committed to your safety and enjoyment. SMG is the original guide service on Mt. Shasta and we are on the mountain daily. We specialize in Mount Shasta and the Shasta-Trinity National Forest. When you climb with us, your trip is supported by our collective experience and knowledge of the mountain.",
+    "Our combined experience includes thousands of Shasta summits and many years spent on the mountain. Together we’ve explored all its’ routes during all conditions and seasons. Join us for a trip of your lifetime!"
+   ],
+   "itinerary_title": "5-DAY Course ITINERARY",
+   "itinerary": [
+    {
+     "day": "Day 1",
+     "items": [
+      {
+       "time": "9:00 am",
+       "text": "Meet group at the SMG Shop 305 Chestnut Street, Mt. Shasta, CA. Please be punctual to allow enough time for gear rentals, packing, and a group briefing with your guides. We will conduct a thorough gear check and pass out group gear before packing your backpacks. Rental equipment is available from The Fifth Season, conveniently located next to us. please reserve in advance 530-926-3606. www.thefifthseason.com"
+      },
+      {
+       "time": "10:00-11:30am",
+       "text": "Drive to the Brewer Creek trail head (7200’) for a group briefing and start the approach to base camp (10,200’). The drive is approximately 1 hour on dirt roads; we do not provide transportation but encourage carpooling."
+      },
+      {
+       "time": "11:30-4:30pm",
+       "text": "Hike to base camp. Depending on weather and trail conditions, this approach to base camp may take anywhere from 4 to 6 hours, it is mostly cross-country hiking on dry rugged terrain and some snow field crossing. Distance hiking: 3 miles, 3,000’ elevation gain."
+      },
+      {
+       "time": "4:30pm-8:00pm",
+       "text": "At base camp the group will set up camp, enjoy dinner prepared by your guides, and pack for the following day of skills instruction. There will be plenty of time for questions and answers, and possibly some appropriate skill instruction."
+      }
+     ]
+    },
+    {
+     "day": "Day 2",
+     "items": [
+      {
+       "time": "6:30am-7:30am",
+       "text": "Day two we will rise early and prepare for a full day of skills instruction on the glacier."
+      },
+      {
+       "time": "7:30am-3:00pm",
+       "text": "Your guides will chose an appropriate area on the glacier for this day of skills instruction. Guides are prepared to format instruction according to group and individual educational goals. Emphasis will be placed on glacier travel and crevasse rescue techniques; rope rigging, snow anchors, snow movement, as well as a review of fundamental climbing techniques, team rope travel and team arrest."
+      },
+      {
+       "time": "3:00pm-7:30pm",
+       "text": "The team will return to camp for an early dinner and evening briefing. Your guides will discuss seminar logistics and what to pack for the following day. There is typically time for Q & A and review of the days material."
+      }
+     ]
+    },
+    {
+     "day": "Day 3",
+     "items": [
+      {
+       "time": "7:00am-3:00pm",
+       "text": "We will pick up where day 2 left off. The day will be spent on the glacier refining our skills and practicing crevasse rescue techniques. We will add specific skills including steep climbing, self rescue, team rescue, and possibly ice climbing."
+      },
+      {
+       "time": "3:00pm- 6:00pm",
+       "text": "We will return to camp to rest and prepare for the next day's summit attempt. The guides will have an evening briefing to discuss climb day logistics and what to pack for the summit climb. We will have a pre-climb dinner and early bed time to ready ourselves for the early morning start."
+      }
+     ]
+    },
+    {
+     "day": "Day 4",
+     "items": [
+      {
+       "time": "Alpine Start",
+       "text": "Depending on group size, season, and route conditions, wake-up call will occur between 2:00am-3:00am. Total distance: 4 miles, 4,000’ elevation gain."
+      },
+      {
+       "time": "Turn around time",
+       "text": "For safety purposes, our turn around time on the mountain may be as early as 11:00 am-12:00 pm. We use these time frames to avoid hazards such as serac and snow bridge collapse, rock fall and afternoon storms. Depending on route conditions, the descent back to camp may take 2.5-4.0 hours."
+      },
+      {
+       "time": "Back at base camp",
+       "text": "the team will have the rest of the afternoon to relax, debrief the day and enjoy another alpine dinner and sunset from our camp"
+      }
+     ]
+    },
+    {
+     "day": "Day 5",
+     "items": [
+      {
+       "time": "7:00am - 8:30am",
+       "text": "we will enjoy a leisurely breakfast and pack up camp. There will be a skills session before descending back to the trailhead. This will be a time to answer any remaining questions and possibly cover some new material. The descent takes about 2-3 hours."
+      }
+     ],
+     "note": "Itinerary subject to change & the summit of Mount Shasta is subject to safe weather and snow conditions"
+    }
+   ],
+   "notes": [
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and LOGE Mt. Shasta. They offer a discount to our climbers and guests."
+   ],
+   "source": "https://shastaguides.com/glacier2"
+  },
+  {
+   "slug": "denali",
+   "name": "Denali Prep Climbing Seminar",
+   "program": "mountaineering-courses",
+   "programTitle": "Mountaineering Courses",
+   "formOption": "Mountaineering Course",
+   "fb": 797,
+   "length": "5 days",
+   "route": "",
+   "card_cost": "$1,895 per person",
+   "eyebrow": "Mt Shasta, California · 5 Days",
+   "route_line": "",
+   "hero": {
+    "src": "assets/trips/ab32bc-casavalcamp2.jpg",
+    "alt": "Denali Prep Climbing Seminar on Mt. Shasta"
+   },
+   "gallery": [
+    {
+     "src": "assets/trips/2cd72c-mtshastaavgulch.jpg",
+     "alt": "Mount Shasta covered in snow!"
+    },
+    {
+     "src": "assets/trips/d65122-180722-ckrumholz-0356-2.jpg",
+     "alt": "Climber smiles for the camera"
+    },
+    {
+     "src": "assets/trips/dd882e-180722-ckrumholz-0403.jpg",
+     "alt": "Mountaineers prepare for climbing Denali by learning rope systems."
+    },
+    {
+     "src": "assets/trips/571ff4-180722-ckrumholz-0522.jpg",
+     "alt": "Climbers manage ropes while learning everything they need to climb denali"
+    },
+    {
+     "src": "assets/trips/e0e124-180722-ckrumholz-0612.jpg",
+     "alt": "Denali ready mountaineers use an ice axe while summiting mt shasta"
+    },
+    {
+     "src": "assets/trips/87a504-180722-ckrumholz-1468.jpg",
+     "alt": "Denali prep mountaineering course participants learn the ins and outs of rope systems"
+    },
+    {
+     "src": "assets/trips/bffea7-hotlum-wintun-greg-guiding.jpg",
+     "alt": "Denali prep course participants learn crampon techniques that they will use on Denali"
+    },
+    {
+     "src": "assets/trips/0b34b1-senior-guide-tailer-spinney-whipping-up-a-feast-for-her-clients.jpg",
+     "alt": "Guide- Tailor preps food in the basecamp tent."
+    }
+   ],
+   "overview": [
+    {
+     "p": "Mount Shasta is the perfect peak to train for greater objectives like Denali, Aconcagua, and beyond. This course is led by successful Denali Guides and they will teach and share with you the techniques of big mountain expedition climbing. We model and practice every aspect of expedition mountaineering and snow travel; establishing basecamp and advanced camps, roped travel, sled hauling, and glacier travel will all be thoroughly practiced. All in an effort to make a successful early-season summit of Mt. Shasta."
+    },
+    {
+     "p": "Many of our guides lead expeditions to Denali, this course will be led by Sam Steuart who successfully climbed Denali in 2026."
+    },
+    {
+     "p": "Mountaineering instruction includes:"
+    },
+    {
+     "ul": [
+      "Ice axe and crampon use",
+      "Ice axe self-arrest",
+      "Snow climbing technique",
+      "Basic rope travel",
+      "establishing basecamp and advanced camps",
+      "sled hauling",
+      "glacier travel"
+     ]
+    },
+    {
+     "p": "In this Seminar, we aim to create personal connections with Mt. Shasta and the surrounding land, and lasting connections to your new climbing community."
+    },
+    {
+     "p": "We have logged over 45 years of experience guiding on Mount Shasta and are the original guiding company for this special mountain. We know Shasta better than anyone and aim to provide a professional and positive experience for all climbers."
+    }
+   ],
+   "requirements": [
+    "No mountaineering experience is required.",
+    "Previous hiking experience is required.",
+    "Previous backpacking experience is helpful.",
+    "Prospective climbers should be in excellent physical condition and train diligently for a big challenge.",
+    "Climbing Mt Shasta is strenuous. For the best chances of summiting please train ahead of time. Feel free to contact us for any training recommendations. Check out our training page to get started."
+   ],
+   "dates_title": "2027 Dates",
+   "dates": [
+    "All dates are subject to route change in the event of adverse conditions.",
+    "April 23-26"
+   ],
+   "cost": [
+    "$1895 per person"
+   ],
+   "includes": [
+    "Professional instruction and mountain guiding with a guide-to-client summit-day ratio of 1:3",
+    "Group gear; tents, stoves, kitchen, main meals",
+    "Mt. Shasta summit passes and permits"
+   ],
+   "cost_notes": [
+    "Your personal climbing gear is not included and available to rent from the Fifth Season in Mt. Shasta"
+   ],
+   "gear": {
+    "href": "assets/downloads/smg-advanced-climbing-seminars-gear-list.pdf",
+    "label": "Advanced Climbing Seminars Gear List"
+   },
+   "guides_title": "The difference is in our guides",
+   "guides": [
+    "The Shasta Mountain Guides® staff is a diverse, skilled, and fun group of individuals. Their common bond is a pure passion for being in the mountains and sharing that desire with friends, both old and new. We strongly believe in providing the highest level of service and quality of experience while climbing Mt. Shasta.",
+    "We are local professionals and are committed to your safety and enjoyment. SMG is the original guide service on Mt. Shasta and we are on the mountain daily. We specialize in Mount Shasta and the Shasta-Trinity National Forest. When you climb with us, your trip is supported by our collective experience and knowledge of the mountain.",
+    "Our combined experience includes thousands of Shasta summits and many years spent on the mountain. Together we’ve explored all its’ routes during all conditions and seasons. Join us for a trip of your lifetime!"
+   ],
+   "itinerary_title": "5-DAY Seminar ITINERARY",
+   "itinerary": [
+    {
+     "day": "Day 1",
+     "items": [
+      {
+       "time": "9:00-10:00 am",
+       "text": "Meet guides and group at ours hop 305 Chestnut Street, Mt. Shasta, CA 96067. Please be punctual to allow enough time for gear rentals, packing, and a group briefing with your guides. Please note: your guides will do a thorough gear check and pass out group gear before packing your backpacks. In addition, we recommend that you reserve your rental equipment through the Fifth Season in advance. 530-926-3606. They are conveniently located next to our shop."
+      },
+      {
+       "time": "10:00-11:30 am",
+       "text": "Drive to the Bunny Flat trail head (7,000 ft.) for a group briefing and start the approach to base camp (8,000’ ft.)."
+      },
+      {
+       "time": "11:30-1:30pm",
+       "text": "Hike to base camp. Depending on weather and trail conditions, this approach to base camp may take anywhere from 1-2 hours."
+      },
+      {
+       "time": "2:30pm-7:00pm",
+       "text": "At base camp the group will set up camp. There will be plenty of time for questions and answers, and possibly some basic knots, map and compass, or other appropriate skill sessions on day one."
+      }
+     ]
+    },
+    {
+     "day": "Day 2",
+     "items": [
+      {
+       "time": "6:30am-7:30am",
+       "text": "We will rise early and prepare for an exiting day of skills instruction on nearby snowfields."
+      },
+      {
+       "time": "7:30am-3:00pm",
+       "text": "Your guides will chose the safest area for this day of skills instruction. Guides are prepared to format instruction according to group and individual educational goals. Emphasis will be placed on glacier travel and crevasse rescue techniques, as well as a review of fundamental climbing techniques, team rope travel and team arrest."
+      },
+      {
+       "time": "3:00pm-7:30pm",
+       "text": "The team will return to camp for an early dinner and evening briefing. Your guides will discuss seminar logistics and what to pack. Generally we like climbers to be resting in the tents by early evening."
+      }
+     ]
+    },
+    {
+     "day": "Day 3",
+     "items": [
+      {
+       "time": "7:00am-3:00pm",
+       "text": "We will prepare the group for moving our base camp to our advanced camp in preparation of the summit climb. We will spend the day on the snow refining our travel skills including running belays and fixed rope travel. If timing permits we may be able to cover additional training topics including steep climbing, self rescue, team rescue, etc."
+      },
+      {
+       "time": "3:00pm- 6:00pm",
+       "text": "We will establish our high camp to rest and prepare for the next day's summit attempt. The guides will have an evening briefing to discuss climb day logistics and what to pack for the summit climb. We will have a preclimb dinner and early bed time to ready ourselves for the early morning start."
+      }
+     ]
+    },
+    {
+     "day": "Day 4",
+     "items": [
+      {
+       "time": "Alpine Start",
+       "text": "Depending on group size, season, and route conditions, wake-up call will occur between 2:00am-3:00am."
+      },
+      {
+       "time": "Turn around time",
+       "text": "For safety purposes, our turn around time on the mountain may be as early as 11:00 am-12:00 pm. We use these time frames to avoid hazards such as rock fall and afternoon storms. Depending on route conditions, the descent back to camp may take 2.5-4.0 hours."
+      },
+      {
+       "time": "Back at base camp",
+       "text": "The team will have the rest of the afternoon to relax, debrief the day and enjoy another alpine dinner and sunset together."
+      }
+     ]
+    },
+    {
+     "day": "Day 5",
+     "items": [
+      {
+       "time": "7:00am – 2:00pm",
+       "text": "We will enjoy a leisurely breakfast and pack up camp. There will be a skills session before descending back to the trailhead. This will be a time to tie up any loose ends answer any remaining questions and possibly cover some new material. The descent takes about 4-6 hours."
+      }
+     ],
+     "note": "Itinerary subject to change & the summit of Mount Shasta is subject to safe weather and snow conditions"
+    }
+   ],
+   "notes": [
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and LOGE Mt. Shasta. They offer a discount to our climbers and guests."
+   ],
+   "source": "https://shastaguides.com/denali"
+  },
+  {
+   "slug": "aiare1",
+   "name": "AIARE Level 1",
+   "program": "avalanche-courses",
+   "programTitle": "Avalanche Courses",
+   "formOption": "Avalanche Course",
+   "fb": 793,
+   "length": "3 days",
+   "route": "",
+   "card_cost": "$595 per person",
+   "eyebrow": "Mt Shasta, California · 3-Days",
+   "route_line": "",
+   "hero": {
+    "src": "assets/trips/dbfef2-aiare-ski-tour.jpg",
+    "alt": "AIARE Level 1 on Mt. Shasta"
+   },
+   "gallery": [
+    {
+     "src": "assets/trips/b6194f-190518-ckrumholz-1403.jpg",
+     "alt": "Avalanche course participants learn about different layers of snow."
+    },
+    {
+     "src": "assets/trips/474d65-190517-ckrumholz-0948.jpg",
+     "alt": "Skier applies skins to tour in the bunny flats base area"
+    },
+    {
+     "src": "assets/trips/dbcf08-skin-track.jpg",
+     "alt": "Skin track on mt shasta"
+    },
+    {
+     "src": "assets/trips/8f3c82-190518-ckrumholz-1389.jpg",
+     "alt": "AIARE course snow pit on mt shasta"
+    },
+    {
+     "src": "assets/trips/2cd72c-mtshastaavgulch.jpg",
+     "alt": "Mt shasta covered in a blanket of snow"
+    },
+    {
+     "src": "assets/trips/7072ea-avalanche-debris-gulch.jpg",
+     "alt": "Mt shasta with avalanches on its slopes"
+    }
+   ],
+   "overview": [
+    {
+     "p": "The AIARE Level 1 Avalanche course is the industry standard avalanche education every recreational winter backcountry user needs to complete. A hands-on and complete course that builds a foundation for skiers and snowboarders to learn the basics of how to evaluate avalanche terrain and make good decisions in the backcountry. This will be a hybrid course with 2 full days in the Mt. Shasta backcountry and online pre-course work completed prior to the start. At the end of the course, you will receive a certificate of completion."
+    },
+    {
+     "p": "Upon completion of this level one course you will have an understanding of:"
+    },
+    {
+     "ul": [
+      "Trip Planning and Preparation",
+      "Characteristics of avalanches",
+      "Types of avalanches, and danger scale",
+      "An introduction to snowpack metamorphism and layering",
+      "Field observation techniques",
+      "Stability tests",
+      "Terrain recognition, assessment and route finding"
+     ]
+    }
+   ],
+   "requirements": [
+    "No backcountry experience is required.",
+    "Intermediate-Advanced skiing or boarding skills are required.",
+    "must be in good physical condition."
+   ],
+   "dates_title": "2027 Dates",
+   "dates": [
+    "All dates are subject to route change in the event of adverse conditions.",
+    "January 16-17, plus online pre-course work",
+    "February 13-14, plus online pre-course work"
+   ],
+   "cost": [
+    "$595 per person"
+   ],
+   "includes": [
+    "Professional AIARE instruction and curriculum with a maximum instructor-to-student ratio of 1:6"
+   ],
+   "cost_notes": [],
+   "gear": {
+    "href": "assets/downloads/smg-backcountry-ski-avalanche-gear-list.pdf",
+    "label": "Backcountry Ski Tour & Avalanche Course Gear List"
+   },
+   "guides_title": "The difference is in our Instructors",
+   "guides": [
+    "David Reichel, our Senior Avalanche Course Leader has over 20 years teaching and guiding in the backcountry. He is an industry professional and is the Executive Director of the Sierra Avalanche Center and founder of the California Avalanche Workshop. This will be a great opportunity to learn and practice the details of avalanche hazard assessment and mitigation with an experienced professional."
+   ],
+   "itinerary_title": "",
+   "itinerary": [],
+   "notes": [
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and Cold Creek Inn. They offer a discount to our climbers and guests."
+   ],
+   "source": "https://shastaguides.com/aiare1"
+  },
+  {
+   "slug": "aiareplus",
+   "name": "AIARE Level 1+",
+   "program": "avalanche-courses",
+   "programTitle": "Avalanche Courses",
+   "formOption": "Avalanche Course",
+   "fb": 13924,
+   "length": "4 days",
+   "route": "",
+   "card_cost": "$795 per person",
+   "eyebrow": "Mt Shasta, California · 4 Days",
+   "route_line": "",
+   "hero": {
+    "src": "assets/trips/adb226-skishadow.jpg",
+    "alt": "AIARE Level 1+ on Mt. Shasta"
+   },
+   "gallery": [
+    {
+     "src": "assets/trips/dbfef2-aiare-ski-tour.jpg",
+     "alt": "Skiers touring on the backcountry slopes of mt shasta"
+    },
+    {
+     "src": "assets/trips/26fddf-190518-ckrumholz-1389.jpg",
+     "alt": "AIARE course participants observe layers of snow in a snow pit."
+    },
+    {
+     "src": "assets/trips/84c274-seanski1.jpg",
+     "alt": "Skier rips down the snowy slopes of mt shasta"
+    },
+    {
+     "src": "assets/trips/7072ea-avalanche-debris-gulch.jpg",
+     "alt": "An avalanche on mt shasta"
+    },
+    {
+     "src": "assets/trips/3ecee3-agskintrack.jpg",
+     "alt": "A blanket of snow over mt shasta"
+    },
+    {
+     "src": "assets/trips/079776-helen-switchbacks.jpg",
+     "alt": "Skier skins up in a methodical zig zag up mt shasta"
+    },
+    {
+     "src": "assets/trips/57fde2-tipsongreenbutte.jpg",
+     "alt": "Skis on a ridge of mt shasta"
+    }
+   ],
+   "overview": [
+    {
+     "p": "We are excited to offer this 4-day Avalanche training and backcountry skills course. Four days in the Mt. Shasta Backcountry with Senior Guide and Avalanche Educator Rich Meyer. Completion of this course will include AIARE Level I, AIARE Rescue Class, and a day to put all the new learned skills to practice while choosing appropriate terrain for the conditions. At the end of the course, you will receive a certificate of completion."
+    },
+    {
+     "p": "Rich Meyer has over 20 years of guiding in the backcountry and saw a need to offer an extra day to tour while debriefing the course content with real-world scenarios. This will be a great opportunity to learn and practice the details of avalanche hazard assessment and mitigation with plenty of time in the field ski touring."
+    },
+    {
+     "p": "NOTE: This is a ski/board-specific course. Touring skis or split boards are required – snowshoes are not sufficient."
+    },
+    {
+     "p": "Upon completion of the Avalanche level one course you will have an understanding of:"
+    },
+    {
+     "ul": [
+      "Trip Planning and Preparation",
+      "Types and characteristics of avalanches",
+      "Types of avalanches, their motion & size classification",
+      "Avalanche danger scale",
+      "An introduction to snowpack metamorphism and layering",
+      "Field observation techniques",
+      "Stability tests",
+      "Avalanche terrain recognition, assessment and route finding",
+      "Proper decision making",
+      "Intro to Companion Rescue and equipment"
+     ]
+    }
+   ],
+   "requirements": [
+    "No backcountry experience is required.",
+    "Intermediate-Advanced skiing or boarding skills are required",
+    "Must be on skis or splitboards. This course is not for snowshoers",
+    "Must be in good physical condition and capable in winter conditions"
+   ],
+   "dates_title": "2026 Dates",
+   "dates": [
+    "January 10-13, 2026"
+   ],
+   "cost": [
+    "$795 per person"
+   ],
+   "includes": [
+    "Professional instruction with an instructor-to-student ratio of 1:5"
+   ],
+   "cost_notes": [
+    "Ski equipment is not included but rentals are available in the town of Mt. Shasta."
+   ],
+   "gear": {
+    "href": "assets/downloads/smg-backcountry-ski-avalanche-gear-list.pdf",
+    "label": "Backcountry Ski Tour & Avalanche Course Gear List"
+   },
+   "guides_title": "The difference is in our guides",
+   "guides": [],
+   "itinerary_title": "",
+   "itinerary": [],
+   "notes": [
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and LOGE Mt. Shasta. They offer a discount to our climbers and guests."
+   ],
+   "source": "https://shastaguides.com/aiareplus"
+  },
+  {
+   "slug": "pacific-crest-trail-backpacking-trip",
+   "name": "Pacific Crest Trail Backpacking Trip",
+   "program": "backpacking",
+   "programTitle": "Backpacking",
+   "formOption": "Backpacking",
+   "fb": 36128,
+   "length": "3 days",
+   "route": "",
+   "card_cost": "$1,295 per person",
+   "eyebrow": "Mt Shasta, California · 3 Days",
+   "route_line": "",
+   "hero": {
+    "src": "assets/trips/547af2-img-2360.jpg",
+    "alt": "Pacific Crest Trail Backpacking Trip on Mt. Shasta"
+   },
+   "gallery": [
+    {
+     "src": "assets/trips/caa8cf-img-2144.jpg",
+     "alt": "IMG_2144.JPG"
+    },
+    {
+     "src": "assets/trips/9c0009-img-2171.jpg",
+     "alt": "IMG_2171.JPG"
+    },
+    {
+     "src": "assets/trips/f7ca77-img-2176.jpg",
+     "alt": "IMG_2176.JPG"
+    },
+    {
+     "src": "assets/trips/fa4e6a-img-2181.jpg",
+     "alt": "IMG_2181.JPG"
+    },
+    {
+     "src": "assets/trips/2c2d7d-img-2193.jpg",
+     "alt": "IMG_2193.JPG"
+    },
+    {
+     "src": "assets/trips/216f81-img-2203.jpg",
+     "alt": "IMG_2203.JPG"
+    },
+    {
+     "src": "assets/trips/735a63-img-2219.jpg",
+     "alt": "IMG_2219.JPG"
+    },
+    {
+     "src": "assets/trips/ad4487-img-2223.jpg",
+     "alt": "IMG_2223.JPG"
+    }
+   ],
+   "overview": [
+    {
+     "p": "Rejuvenate the spirit on this 3-day backpacking trip through one of the world's most quintessential trails. The Pacific Crest Trail has long been a place for adventurers to come and find peace in the journey. With minimal elevation gain and loss, the trail is accessible to all levels of backpacker fitness. While our trip focuses on the Mount Shasta region of the trail, it is a wonderful chance to get a taste of life as a thru-hiker on the PCT.\nBackpacking is an incredible way to roam the world's wild spaces. Taking the trip with a guide brings the experience to a whole new level. Our local, expert guides share their intimate knowledge of the region and their perspectives on backpacking as a whole. With our guides at the helm, we are led to stunning campsites to explore and enjoy the remote solitude that draw so many to this trail. Our final, optional adventure is a dramatic ascent of Mount Eddy. The challenge is rewarding and filled with a sense of personal accomplishment, as is the entire journey itself."
+    },
+    {
+     "p": "Enjoy three days of backpacking the PCT in the Mount Shasta region of northern California"
+    },
+    {
+     "p": "Hone your backpacking skills with help from expert guides"
+    },
+    {
+     "p": "Relax and explore at our lakeshore camp sites"
+    },
+    {
+     "p": "Summit the tallest of the Klamath Mountains"
+    },
+    {
+     "p": "We aim to create personal connections with Mt. Shasta and the surrounding land, and lasting connections to your new climbing community."
+    },
+    {
+     "p": "We have logged over 45 years of experience guiding on Mount Shasta and are the original guiding company for this special mountain. We know Shasta better than anyone and aim to provide a professional and positive experience for all."
+    }
+   ],
+   "requirements": [
+    "No previous experience is required.",
+    "Participants will be carrying their own backpacks weighing 35 to 40 pounds, 4 to 6 miles daily over varied terrain.",
+    "To maximize your enjoyment of the trip, we strongly encourage participants to be physically prepared for the activity. Nearly all hikes take place at elevations between 6,000'-7,500' with\nMt. Eddy reaching 9,026' above sea level."
+   ],
+   "dates_title": "2026 Dates",
+   "dates": [
+    "All dates are subject to route change in the event of adverse conditions.",
+    "July 3-5",
+    "July 17-19",
+    "August 7-9",
+    "August 28-30",
+    "September 4-6"
+   ],
+   "cost": [
+    "$1295 per person"
+   ],
+   "includes": [
+    "Professional instruction and guiding",
+    "meals as noted on the daily itinerary",
+    "1 and 2-person tents",
+    "group cooking gear",
+    "group first aid kit",
+    "water filter",
+    "campsite and permit fees",
+    "transportation from our location in the town of Mt. Shasta to the trailhead and return"
+   ],
+   "cost_notes": [],
+   "gear": {
+    "href": "assets/downloads/smg-pct-backpacking-gear-list.pdf",
+    "label": "PCT Backpacking Gear List"
+   },
+   "guides_title": "The difference is in our guides",
+   "guides": [
+    "The Shasta Mountain Guides® staff is a diverse, skilled, and fun group of individuals. Their common bond is a pure passion for being in the mountains and sharing that desire with friends, both old and new. We strongly believe in providing the highest level of service and quality of experience while climbing Mt. Shasta and exploring the nearby Wilderness.",
+    "We are local professionals and are committed to your safety and enjoyment. SMG is the original guide service on Mt. Shasta and we are on the mountain daily. We specialize in Mount Shasta and the Shasta-Trinity National Forest. When you climb with us, your trip is supported by our collective experience and knowledge of the mountain. Our combined experience includes thousands of Shasta summits and many years spent on the mountain and hiking the area trails. Together we’ve explored all its’ routes during all conditions and seasons. Join us for a trip of your lifetime!"
+   ],
+   "itinerary_title": "",
+   "itinerary": [],
+   "notes": [],
+   "source": "https://shastaguides.com/pacific-crest-trail-backpacking-trip"
+  },
+  {
+   "slug": "pacific-crest-trail-womens-backpacking",
+   "name": "Pacific Crest Trail Women's Backpacking",
+   "program": "backpacking",
+   "programTitle": "Backpacking",
+   "formOption": "Backpacking",
+   "fb": 36129,
+   "length": "3 days",
+   "route": "",
+   "card_cost": "$1,295 per person",
+   "eyebrow": "Mt Shasta, California · 3 Days",
+   "route_line": "",
+   "hero": {
+    "src": "assets/trips/547af2-img-2360.jpg",
+    "alt": "Pacific Crest Trail Women's Backpacking on Mt. Shasta"
+   },
+   "gallery": [
+    {
+     "src": "assets/trips/9c0009-img-2171.jpg",
+     "alt": "IMG_2171.JPG (Copy)"
+    },
+    {
+     "src": "assets/trips/2c2d7d-img-2193.jpg",
+     "alt": "IMG_2193.JPG (Copy)"
+    },
+    {
+     "src": "assets/trips/f95e95-img-2384.jpg",
+     "alt": "IMG_2384.JPG (Copy)"
+    },
+    {
+     "src": "assets/trips/fa4e6a-img-2181.jpg",
+     "alt": "IMG_2181.JPG (Copy)"
+    },
+    {
+     "src": "assets/trips/f7ca77-img-2176.jpg",
+     "alt": "IMG_2176.JPG (Copy)"
+    },
+    {
+     "src": "assets/trips/ad4487-img-2223.jpg",
+     "alt": "IMG_2223.JPG (Copy)"
+    },
+    {
+     "src": "assets/trips/cc6041-img-2270.jpg",
+     "alt": "IMG_2270.JPG (Copy)"
+    },
+    {
+     "src": "assets/trips/221cf2-img-2287.jpg",
+     "alt": "IMG_2287.JPG (Copy)"
+    }
+   ],
+   "overview": [
+    {
+     "p": "Discover the peace and power of wild places on this three-day backpacking trip on one of the world's longest hiking trails. Perfect for women who want to try backpacking, advance their backcountry skills or get a taste of life as a thru-hiker, this trip is a learning journey that touches a spectacularly scenic portion of the Pacific Crest Trail. The PCT stretches 2,650 miles along America's west coast, through some of the country's most rugged and dramatic terrain. Our trail section is accessible to those who want an incredible backpacking experience but don't have a lot of time.\nBy day, we hike through mountain meadows, along open ridgelines and by the shores of gemlike alpine lakes, with Mount Shasta towering on the horizon. Our expert female guides share their knowledge of wilderness travel and the fauna, flora, geology and history of the land. We camp near lakes, allowing plenty of time to relax. By night, we savor star-filled skies and remote solitude. Our final, optional adventure is an ascent of Mount Eddy, the highest of the Klamath Mountains."
+    },
+    {
+     "p": "Disconnect from everyday life in the beautiful California mountains"
+    },
+    {
+     "p": "Enjoy a cup of hot cocoa while sitting under a blanket of stars"
+    },
+    {
+     "p": "Create lifelong memories exploring the quiet corners of pristine wilderness"
+    },
+    {
+     "p": "See the world through the eyes of a thru-hiker along a remote alpine ridge"
+    },
+    {
+     "p": "Designed for women, guided by women"
+    },
+    {
+     "p": "We aim to create personal connections with Mt. Shasta and the surrounding land, and lasting connections to your new climbing community."
+    },
+    {
+     "p": "We have logged over 45 years of experience guiding on Mount Shasta and are the original guiding company for this special mountain. We know Shasta better than anyone and aim to provide a professional and positive experience for all."
+    }
+   ],
+   "requirements": [
+    "No previous experience is required.",
+    "Participants will be carrying their own backpacks weighing 35 to 40 pounds, distances of 4 to 7 miles daily\nover varied terrain.",
+    "To maximize your enjoyment of the trip, we strongly encourage participants to be involved in a training regimen before the trip.\nMost important to your enjoyment of the trip is your overall fitness level. Nearly all hikes take place at elevations between 6,500'-7,500' with\nMt. Eddy reaching 9,026' above sea level."
+   ],
+   "dates_title": "2026 Dates",
+   "dates": [
+    "All dates are subject to route change in the event of adverse conditions.",
+    "July 10-12",
+    "July 24-26",
+    "July 31-August 2",
+    "August 14-16",
+    "August 21-23",
+    "September 11-13"
+   ],
+   "cost": [
+    "$1295 per person"
+   ],
+   "includes": [
+    "Professional instruction and guiding",
+    "meals as noted on the daily itinerary",
+    "2-person tents",
+    "group cooking gear",
+    "group first aid kit",
+    "water filter",
+    "campsite and permit fees",
+    "transportation from our location in the town of Mt. Shasta to the trailhead and return"
+   ],
+   "cost_notes": [],
+   "gear": {
+    "href": "assets/downloads/smg-pct-backpacking-gear-list.pdf",
+    "label": "PCT Backpacking Gear List"
+   },
+   "guides_title": "The difference is in our guides",
+   "guides": [
+    "The Shasta Mountain Guides® staff is a diverse, skilled, and fun group of individuals. Their common bond is a pure passion for being in the mountains and sharing that desire with friends, both old and new. We strongly believe in providing the highest level of service and quality of experience while climbing Mt. Shasta.",
+    "We are local professionals and are committed to your safety and enjoyment. SMG is the original guide service on Mt. Shasta and we are on the mountain daily. We specialize in Mount Shasta and the Shasta-Trinity National Forest. When you climb with us, your trip is supported by our collective experience and knowledge of the mountain.",
+    "Our combined experience includes thousands of Shasta summits and many years spent on the mountain. Together we’ve explored all its’ routes during all conditions and seasons. Join us for a trip of your lifetime!"
+   ],
+   "itinerary_title": "",
+   "itinerary": [],
+   "notes": [
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and LOGE Mt. Shasta. They offer a discount to our climbers and guests."
+   ],
+   "source": "https://shastaguides.com/pacific-crest-trail-womens-backpacking"
+  },
+  {
+   "slug": "mtshasta-basecamp-trek",
+   "name": "Mt. Shasta Basecamp Trek",
+   "program": "backpacking",
+   "programTitle": "Backpacking",
+   "formOption": "Backpacking",
+   "fb": 41952,
+   "length": "3 days",
+   "route": "",
+   "card_cost": "$1,295 per person",
+   "eyebrow": "Mt Shasta, California · 3 Days",
+   "route_line": "",
+   "hero": {
+    "src": "assets/trips/4c9be3-img-5090.jpg",
+    "alt": "Mt. Shasta Basecamp Trek on Mt. Shasta"
+   },
+   "gallery": [
+    {
+     "src": "assets/trips/1f5a0d-northside-basecamp.jpg",
+     "alt": "GT120.JPG"
+    },
+    {
+     "src": "assets/trips/b41755-hidden-valley-camp.jpg",
+     "alt": "Hidden Valley camp.jpg"
+    },
+    {
+     "src": "assets/trips/3dea88-20250711-205218.jpg",
+     "alt": "20250711_205218.jpg"
+    },
+    {
+     "src": "assets/trips/f26bcd-20250711-231944.jpg",
+     "alt": "20250711_231944.jpg"
+    },
+    {
+     "src": "assets/trips/893f23-clear-creek-hike.jpg",
+     "alt": "IMG_0402.jpg"
+    },
+    {
+     "src": "assets/trips/7dec17-basecamp-light.jpg",
+     "alt": "20250712_031209.jpg"
+    },
+    {
+     "src": "assets/trips/85deb4-hikeclearcreek.jpg",
+     "alt": "hikeclearcreek.jpg"
+    },
+    {
+     "src": "assets/trips/b409f3-hiddenvalley.jpg",
+     "alt": "hiddenvalley.jpg"
+    }
+   ],
+   "overview": [
+    {
+     "p": "Are you wanting to experience the majesty of Mt. Shasta without the commitment of climbing to the summit? Do you want a physical challenge without the technical aspect of mountaineering? Do you want to visit the high mountain without the risks associated with making a climb? Or maybe the summit is a goal but you want to start slowly by spending time exporing the high camps and learning the skills before committing to a summit expedition. The Mt. Shasta Basecamp Trek is the place to start"
+    },
+    {
+     "p": "Enjoy a three day trek to some of the remote and scenic basecamps on Mt. Shasta"
+    },
+    {
+     "p": "Hone your backpacking skills with help from expert guides while ascending up to 10,000’"
+    },
+    {
+     "p": "Learn, explore, and adventure to places that few get to experience"
+    },
+    {
+     "p": "These hikes are non technical and we spend 3 days and 2 nights at high camp learning about geology, glaciology, and Mt. Shasta’s history and lore"
+    },
+    {
+     "p": "We aim to create personal connections with Mt. Shasta and the surrounding land, and lasting connections to your new outdoor community."
+    },
+    {
+     "p": "We have logged over 45 years of experience guiding on Mount Shasta and are the original guiding company for this special mountain. We know Shasta better than anyone and aim to provide a professional and positive experience for all."
+    }
+   ],
+   "requirements": [
+    "No previous experience is required.",
+    "Participants will be carrying their own backpacks weighing 35 to 40 pounds, 3-4 miles with 2,000-3,000’ of elevation gain daily over varied terrain.",
+    "To maximize your enjoyment of the trip, we strongly encourage participants to be physically prepared for the activity. Nearly all hikes take place at elevations between 7,000-10,000'"
+   ],
+   "dates_title": "2026 Dates",
+   "dates": [
+    "All dates are subject to route change in the event of adverse conditions.",
+    "July 3-5",
+    "July 24-26",
+    "July 31-August 2",
+    "August 7-9",
+    "August 21-23"
+   ],
+   "cost": [
+    "$1295 per person"
+   ],
+   "includes": [
+    "Professional instruction and guiding",
+    "meals as noted on the daily itinerary",
+    "1 and 2-person tents",
+    "group cooking gear",
+    "group first aid kit",
+    "campsite and permit fees"
+   ],
+   "cost_notes": [],
+   "gear": null,
+   "guides_title": "The difference is in our guides",
+   "guides": [
+    "The Shasta Mountain Guides® staff is a diverse, skilled, and fun group of individuals. Their common bond is a pure passion for being in the mountains and sharing that desire with friends, both old and new. We strongly believe in providing the highest level of service and quality of experience while climbing Mt. Shasta and exploring the nearby Wilderness.",
+    "We are local professionals and are committed to your safety and enjoyment. SMG is the original guide service on Mt. Shasta and we are on the mountain daily. We specialize in Mount Shasta and the Shasta-Trinity National Forest. When you climb with us, your trip is supported by our collective experience and knowledge of the mountain. Our combined experience includes thousands of Shasta summits and many years spent on the mountain and hiking the area trails. Together we’ve explored all its’ routes during all conditions and seasons. Join us for a trip of your lifetime!"
+   ],
+   "itinerary_title": "",
+   "itinerary": [],
+   "notes": [],
+   "source": "https://shastaguides.com/mtshasta-basecamp-trek"
+  },
+  {
+   "slug": "funclimb",
+   "name": "Fun Climbing Day at Cantara Crag",
+   "program": "rock-climbing",
+   "programTitle": "Rock Climbing",
+   "formOption": "Rock Climbing",
+   "fb": null,
+   "length": "1 day",
+   "route": "",
+   "card_cost": "$450 for 1 · $495 for 2 · $550 for 3 · $595 for 4",
+   "eyebrow": "Cantara Crag · 1 Day",
+   "route_line": "",
+   "hero": {
+    "src": "assets/images/cosmic-wall-climber.jpg",
+    "alt": "A climber on sunny granite near Mt. Shasta"
+   },
+   "gallery": [],
+   "overview": [
+    {
+     "p": "For climbers with little or no climbing experience. All ages are welcome. Cantara Crag is a 5 minute walk from the parking area."
+    },
+    {
+     "p": "This small but scenic and action-packed riverside cliff has routes for everyone, with the opportunity to cool off in the adjacent swimming holes. Climbers are secured by a rope from above and have the choice between easy and more difficult climbs. Family, friends, corporate outings, and canine companions are welcome to join as spectators."
+    },
+    {
+     "p": "On this climb, we aim to create personal connections to the surrounding land and lasting connections to your new climbing community."
+    },
+    {
+     "p": "We have logged over 45 years of experience guiding on Mount Shasta and are the original guiding company for this special mountain. We know Shasta better than anyone and aim to provide a professional and positive experience for all climbers."
+    },
+    {
+     "p": "Book by custom arrangement only."
+    }
+   ],
+   "requirements": [
+    "For climbers with little or no climbing experience. All ages are welcome.",
+    "Cantara Crag is a 5 minute walk from the parking area."
+   ],
+   "dates_title": "2026 Dates",
+   "dates": [
+    "By custom arrangement only. Please contact us.",
+    "All dates are subject to route change in the event of adverse conditions."
+   ],
+   "cost": [
+    "$450 for 1 climber, $495 for 2, $550 for 3, $595 for 4. For parties greater than 4, please contact us for pricing."
+   ],
+   "includes": [
+    "Professional instruction and mountain guiding with a guide-to-client summit-day ratio of 1:3",
+    "All group climbing gear"
+   ],
+   "cost_notes": [],
+   "gear": {
+    "href": "assets/downloads/smg-rock-climbing-gear-list.pdf",
+    "label": "Rock Climbing Gear List"
+   },
+   "guides_title": "The difference is in our guides",
+   "guides": [
+    "The Shasta Mountain Guides® staff is a diverse, skilled, and fun group of individuals. Their common bond is a pure passion for being in the mountains and sharing that desire with friends, both old and new. We strongly believe in providing the highest level of service and quality of experience while climbing Mt. Shasta.",
+    "We are local professionals and are committed to your safety and enjoyment. SMG is the original guide service on Mt. Shasta and we are on the mountain daily. We specialize in Mount Shasta and the Shasta-Trinity National Forest. When you climb with us, your trip is supported by our collective experience and knowledge of the mountain.",
+    "Our combined experience includes thousands of Shasta summits and many years spent on the mountain. Together we’ve explored all its’ routes during all conditions and seasons. Join us for a trip of your lifetime!"
+   ],
+   "itinerary_title": "",
+   "itinerary": [],
+   "notes": [
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and LOGE Mt. Shasta. They offer a discount to our climbers and guests."
+   ],
+   "source": "https://shastaguides.com/funclimb"
+  },
+  {
+   "slug": "cosmicwall",
+   "name": "Climb Cosmic Wall, Castle Crags",
+   "program": "rock-climbing",
+   "programTitle": "Rock Climbing",
+   "formOption": "Rock Climbing",
+   "fb": null,
+   "length": "1 day",
+   "route": "",
+   "card_cost": "$595 for 1 · $695 for 2 (1:2 ratio)",
+   "eyebrow": "Castle Crags State Park · 1 Day",
+   "route_line": "",
+   "hero": {
+    "src": "assets/trips/56610d-cosmic-web.jpg",
+    "alt": "Climb Cosmic Wall, Castle Crags on Mt. Shasta"
+   },
+   "gallery": [
+    {
+     "src": "assets/trips/56610d-cosmic-web.jpg",
+     "alt": "Climb Cosmic Wall, Castle Crags on Mt. Shasta"
+    }
+   ],
+   "overview": [
+    {
+     "p": "Perhaps the best 5.6 in California, this incredible 5-pitch climb, pioneered by SMG Founder Michael Zanger with Himalayan Legend Chris Bonington, climbs the imposing 800′ east face of Mt. Hubris aka “The Ogre” in Castle Crags State Park. With everything from slabs, face, cracks, and a dramatic and exposed alpine ridge finish, this climb is sure to satisfy everyone from new to experienced climbers."
+    },
+    {
+     "p": "Previous multi pitch experience is necessary and we can help you prepare for this ascent with a climbing skills day in advance."
+    },
+    {
+     "p": "On this climb, we aim to create personal connections with the surrounding land and sustaining connections to your new climbing community."
+    },
+    {
+     "p": "Booking by Custom arrangement only."
+    }
+   ],
+   "requirements": [
+    "Experience Required. For climbers with previous traditional climbing experience.",
+    "Ages 16 and up.",
+    "Requires previous multi-pitch climbing experience or skills day prior to the climb.",
+    "Castle Crags climbs require a strenuous 2-3 hour uphill approach hike to access the rock and climbers should be in good physical condition."
+   ],
+   "dates_title": "Dates",
+   "dates": [
+    "Book by custom Arrangement only. Please contact us.",
+    "All dates are subject to route change in the event of adverse conditions."
+   ],
+   "cost": [
+    "$595 for one person $695 for two people"
+   ],
+   "includes": [
+    "Professional instruction and alpine rock guiding with a guide-to-client summit-day ratio of 1:2",
+    "Group Climbing gear",
+    "Each climber supplies your own climbing helmet, shoes, and harness"
+   ],
+   "cost_notes": [],
+   "gear": {
+    "href": "assets/downloads/smg-rock-climbing-gear-list.pdf",
+    "label": "Rock Climbing Gear List"
+   },
+   "guides_title": "The difference is in our guides",
+   "guides": [
+    "The Shasta Mountain Guides® staff is a diverse, skilled, and fun group of individuals. Their common bond is a pure passion for being in the mountains and sharing that desire with friends, both old and new. We strongly believe in providing the highest level of service and quality of experience while climbing Mt. Shasta.",
+    "We are local professionals and are committed to your safety and enjoyment. SMG is the original guide service on Mt. Shasta and we are on the mountain daily. We specialize in Mount Shasta and the Shasta-Trinity National Forest. When you climb with us, your trip is supported by our collective experience and knowledge of the mountain.",
+    "Our combined experience includes thousands of Shasta summits and many years spent on the mountain. Together we’ve explored all its’ routes during all conditions and seasons. Join us for a trip of your lifetime!"
+   ],
+   "itinerary_title": "Single Day Comisc Wall Climb ITINERARY",
+   "itinerary": [
+    {
+     "day": "Day 1",
+     "items": [
+      {
+       "time": "7:00 am",
+       "text": "Meet your guide at the SMG Shop at 305 Chestnut Street, Mt. Shasta, CA 96067. Please be punctual to allow time for gear check and briefing. Depending on weather and time of year we may choose to meet earlier or later."
+      },
+      {
+       "time": "8:00am",
+       "text": "Drive to Castle Crags and approach hike 2.4 miles to the climb."
+      },
+      {
+       "time": "11:00am",
+       "text": "Climb Cosmic Wall"
+      },
+      {
+       "time": "3:00pm",
+       "text": "Hike out and return to trailhead"
+      }
+     ]
+    }
+   ],
+   "notes": [
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and LOGE Mt. Shasta. They offer a discount to our climbers and guests."
+   ],
+   "source": "https://shastaguides.com/cosmicwall"
+  },
+  {
+   "slug": "snowshoedaytour",
+   "name": "Snowshoe Tour",
+   "program": "day-trips",
+   "programTitle": "Day Trips",
+   "formOption": "Day Trip",
+   "fb": 42271,
+   "length": "5 to 6 hours",
+   "route": "",
+   "card_cost": "$125 per person",
+   "eyebrow": "Mt Shasta, California",
+   "route_line": "",
+   "hero": {
+    "src": "assets/trips/2dcd19-ms3.24.jpg",
+    "alt": "Snowshoe Tour on Mt. Shasta"
+   },
+   "gallery": [
+    {
+     "src": "assets/trips/2cd72c-mtshastaavgulch.jpg",
+     "alt": "mtshastaavgulch.JPG"
+    },
+    {
+     "src": "assets/trips/dbcf08-skin-track.jpg",
+     "alt": "skin track.JPG"
+    },
+    {
+     "src": "assets/trips/512a52-shastaskibowl.jpg",
+     "alt": "shastaskibowl.jpg"
+    },
+    {
+     "src": "assets/trips/0380ae-190519-ckrumholz-0867--281-29.jpg",
+     "alt": "190519_CKrumholz_0867 (1).jpg"
+    },
+    {
+     "src": "assets/trips/e28899-snapinsta.app-326480564-572760287723171-3918832102302832344-n-1080.jpg",
+     "alt": "Snapinsta.app_326480564_572760287723171_3918832102302832344_n_1080.jpg"
+    },
+    {
+     "src": "assets/trips/5f4900-190519-ckrumholz-0833.jpg",
+     "alt": "190519_CKrumholz_0833.jpg"
+    }
+   ],
+   "overview": [
+    {
+     "p": "This day snowshoe hike is perfect for individuals or families and friends who would like to spend a day exploring Mt. Shasta in the snow with a guide. A typical winter day on Mt. Shasta is often a magical display of nature and snowshoes are a great way to get out and see it for yourself."
+    },
+    {
+     "p": "During this tour, we aim to create personal connections with Mt. Shasta and the surrounding land, and lasting memories of a day well spent in natural beauty."
+    },
+    {
+     "p": "We have logged over 45 years of experience guiding on Mount Shasta and are the original guiding company for this special mountain. We know Shasta better than anyone and aim to provide a professional and positive experience for all who join us."
+    }
+   ],
+   "requirements": [
+    "No previous experience is required.",
+    "Participants will be outside in winter conditions",
+    "To maximize your enjoyment of the day, we strongly encourage participants to be physically prepared for the activity."
+   ],
+   "dates_title": "2026 Dates",
+   "dates": [
+    "All activities are available as a custom departure",
+    "December 27, 28",
+    "January 3, 4,",
+    "January 17, 18",
+    "February 14, 15"
+   ],
+   "cost": [
+    "$150 per person, 2 person minimum"
+   ],
+   "includes": [
+    "Professional guiding and instruction"
+   ],
+   "cost_notes": [],
+   "gear": {
+    "href": "assets/downloads/smg-pct-backpacking-gear-list.pdf",
+    "label": "PCT Backpacking Gear List"
+   },
+   "guides_title": "The difference is in our guides",
+   "guides": [
+    "The Shasta Mountain Guides® staff is a diverse, skilled, and fun group of individuals. Their common bond is a pure passion for being in the mountains and sharing that desire with friends, both old and new. We strongly believe in providing the highest level of service and quality of experience while climbing Mt. Shasta and exploring the nearby Wilderness.",
+    "We are local professionals and are committed to your safety and enjoyment. SMG is the original guide service on Mt. Shasta and we are on the mountain daily. We specialize in Mount Shasta and the Shasta-Trinity National Forest. When you travel with us, your trip is supported by our collective experience and knowledge of the mountain. Our combined experience includes thousands of Shasta summits and many years spent on the mountain and hiking the area trails. Together we’ve explored all its’ routes during all conditions and seasons. Join us for a trip of your lifetime!"
+   ],
+   "itinerary_title": "",
+   "itinerary": [],
+   "notes": [],
+   "source": "https://shastaguides.com/snowshoedaytour"
+  },
+  {
+   "slug": "vortextours",
+   "name": "Vortex Tour",
+   "program": "day-trips",
+   "programTitle": "Day Trips",
+   "formOption": "Day Trip",
+   "fb": 43781,
+   "length": "Half or full day",
+   "route": "",
+   "card_cost": "Half day $222 for 1 · $333 for 2 · $444 for 3 — Full day $555 · $888 · $999",
+   "eyebrow": "Mt Shasta, California",
+   "route_line": "",
+   "hero": {
+    "src": "assets/trips/2dcd19-ms3.24.jpg",
+    "alt": "Vortex Tour on Mt. Shasta"
+   },
+   "gallery": [
+    {
+     "src": "assets/trips/8e6327-gsw.jpg",
+     "alt": "GSW.jpeg"
+    },
+    {
+     "src": "assets/trips/512a52-shastaskibowl.jpg",
+     "alt": "shastaskibowl.jpg"
+    },
+    {
+     "src": "assets/trips/7307e0-shastavortex.jpg",
+     "alt": "Shastavortex.png"
+    },
+    {
+     "src": "assets/trips/42a325-mt-shasta-alpine-hut.jpg",
+     "alt": "Mt Shasta Alpine Hut.jpg"
+    },
+    {
+     "src": "assets/trips/839a72-img-2166.jpg",
+     "alt": "IMG_2166.jpg"
+    },
+    {
+     "src": "assets/trips/bc38f8-img-2426.jpg",
+     "alt": "IMG_2426.jpg"
+    }
+   ],
+   "overview": [
+    {
+     "p": "Mount Shasta is widely regarded by spiritual practitioners as the root chakra (Muladhara) of the Earth. Representing the base of the planet's energy system, this active volcano embodies intense grounding, stability, and survival energy, helping individuals connect with the physical world. Known for more than just its physical beauty, it stands out as an impalpable entity—an energy, a sacredness—that has inspired myths of hidden civilizations, religious movements, and a powerful vortex."
+    },
+    {
+     "p": "We have partnered with Garth Sky Walker to lead these tours. Garth volunteered for 12 years with the USFS and Mount Shasta Bioregional Ecology Center as a campground host at Panther Meadows. After eating the berries and fish nurtured by the mountain’s streams – Garth realized a return to optimum health, mentally, physically, spiritually and socially. Over the previous 2 decades, Garth has guided friends, family and those in need of an ease to suffering, to specific portals and vortices on and around this high vibrational vortex called:"
+    },
+    {
+     "ul": [
+      "MOUNT SHASTA !!!"
+     ]
+    },
+    {
+     "p": "Garth caters his 4 or 7 hour tours to the interests of each visitor. He has been featured in several documentaries sharing intimate knowledge about the eclectic atmosphere revolving around Mount Shasta and the surrounding areas. During this tour, we aim to create personal connections with Mt. Shasta and the surrounding land, and lasting memories of a day well spent in natural beauty."
+    },
+    {
+     "p": "We have logged over 45 years of experience guiding on Mount Shasta and are the original guiding company for this special mountain. We know Shasta better than anyone and aim to provide a professional and positive experience for all who join us."
+    }
+   ],
+   "requirements": [
+    "No previous experience is required.",
+    "Participants will be outside on the mountain and surrounding forests",
+    "To maximize your enjoyment of the day, we strongly encourage participants to be physically prepared for the activity."
+   ],
+   "dates_title": "2026 Dates",
+   "dates": [
+    "All activities are available as a custom departure"
+   ],
+   "cost": [
+    "Half Day:",
+    "1 person $222",
+    "2 people $333",
+    "3 people $444",
+    "4-6 people $555",
+    "Full Day:",
+    "1 person $555",
+    "2 people $888",
+    "3 people $999",
+    "4-6 people $1111"
+   ],
+   "includes": [
+    "Professional guiding and instruction"
+   ],
+   "cost_notes": [],
+   "gear": {
+    "href": "assets/downloads/smg-pct-backpacking-gear-list.pdf",
+    "label": "PCT Backpacking Gear List"
+   },
+   "guides_title": "The difference is in our guides",
+   "guides": [
+    "The Shasta Mountain Guides® staff is a diverse, skilled, and fun group of individuals. Their common bond is a pure passion for being in the mountains and sharing that desire with friends, both old and new. We strongly believe in providing the highest level of service and quality of experience while climbing Mt. Shasta and exploring the nearby Wilderness.",
+    "We are local professionals and are committed to your safety and enjoyment. SMG is the original guide service on Mt. Shasta and we are on the mountain daily. We specialize in Mount Shasta and the Shasta-Trinity National Forest. When you travel with us, your trip is supported by our collective experience and knowledge of the mountain. Our combined experience includes thousands of Shasta summits and many years spent on the mountain and hiking the area trails. Together we’ve explored all its’ routes during all conditions and seasons. Join us for a trip of your lifetime!"
+   ],
+   "itinerary_title": "",
+   "itinerary": [],
+   "notes": [],
+   "source": "https://shastaguides.com/vortextours"
+  }
+ ]
+}
