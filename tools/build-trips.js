@@ -20,7 +20,7 @@ const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(
 
 const NAV_LINKS = pages.map(p => `<li><a href="${p.slug}.html">${esc(p.title)}</a></li>`).join('\n          ');
 
-function nav(current) {
+function nav(current, contact = '#inquire') {
   return `<header class="nav">
   <div class="wrap nav__inner">
     <a href="index.html" aria-label="Shasta Mountain Guides home">
@@ -35,12 +35,20 @@ function nav(current) {
       <li><a href="index.html#guides">Our Guides</a></li>
       <li><a href="index.html#learn">Learn</a></li>
       <li><a href="index.html#resources">Free Resources</a></li>
-      <li><a href="#inquire">Contact</a></li>
+      <li><a href="${contact}">Contact</a></li>
       <li>${fbButton('Book Now', FB.catalog)}</li>
     </ul>
   </div>
 </header>`;
 }
+
+// Footer links: the info pages (tools/info-pages.json) live on the same URLs as shastaguides.com.
+const FOOTER_LINKS = [
+  ['About Us', 'about.html'], ['About Mt. Shasta', 'aboutshasta.html'], ['Routes & Seasons', 'routesandseasons.html'],
+  ['Trip Details', 'tripdetails.html'], ['Gear', 'gear.html'], ['Training', 'training.html'], ['FAQ', 'faq.html'],
+  ['Articles', `${LIVE}/articles`], ['Policies', 'policies.html'], ['Essentials of Eligibility', 'assets/downloads/smg-essential-eligibility-criteria.pdf'],
+  ['Privacy Policy', 'privacypolicy.html'], ['Terms of Use', 'terms-of-service.html'], ['Contact', 'contact.html'],
+];
 
 function footer() {
   return `<footer>
@@ -48,14 +56,7 @@ function footer() {
     <div class="foot">
       <img class="logo" src="assets/logos/SMG-logo-white.png" alt="Shasta Mountain Guides">
       <ul>
-        <li><a href="${LIVE}/tripdetails">Trip Details</a></li>
-        <li><a href="${LIVE}/gear">Gear</a></li>
-        <li><a href="${LIVE}/training">Training</a></li>
-        <li><a href="${LIVE}/faq">FAQ</a></li>
-        <li><a href="${LIVE}/articles">Articles</a></li>
-        <li><a href="${LIVE}/policies">Policies</a></li>
-        <li><a href="${LIVE}/s/SMG-Essential-Eligibility-Criteria.pdf">Essentials of Eligibility</a></li>
-        <li><a href="${LIVE}/privacypolicy">Privacy Policy</a></li>
+        ${FOOTER_LINKS.map(([t, h]) => `<li><a href="${h}">${esc(t)}</a></li>`).join('\n        ')}
       </ul>
     </div>
     <p class="permit">This business operates under special use permit with the Shasta-Trinity National Forest. This institution is an equal opportunity provider.</p>
@@ -158,7 +159,7 @@ function inquire(p) {
             <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h12l4 4v12H4z"/><path d="M8 12h8M8 16h8"/></svg></span>
             <div><b>${esc(p.article.title)}</b><span>Read the article</span></div>
           </a>
-          <a class="cl" href="${LIVE}/tripdetails">
+          <a class="cl" href="tripdetails.html">
             <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2"/></svg></span>
             <div><b>Trip details</b><span>Meeting times, lodging, food, weather and tipping</span></div>
           </a>
@@ -273,7 +274,7 @@ ${inquire(p)}` });
 }
 
 // Full HTML document: head, sitewide header and footer, shared scripts, Flybook.
-function docShell({ title, description, current, body }) {
+function docShell({ title, description, current, body, contact, head = '' }) {
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -285,10 +286,10 @@ function docShell({ title, description, current, body }) {
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/site.css">
-</head>
+${head}</head>
 <body id="top">
 
-${nav(current)}
+${nav(current, contact)}
 
 ${body}
 
@@ -314,7 +315,7 @@ ${FLYBOOK_ASSETS}
 `;
 }
 
-module.exports = { pages, esc, nav, footer, inquire, fbButton, FB, LIVE, ROOT, docShell, detailHref, detailSlug };
+module.exports = { pages, esc, nav, footer, FOOTER_LINKS, inquire, fbButton, FB, LIVE, ROOT, docShell, detailHref, detailSlug };
 
 if (require.main === module) {
   let n = 0;

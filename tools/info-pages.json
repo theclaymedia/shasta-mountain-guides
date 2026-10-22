@@ -1,0 +1,1610 @@
+{
+ "about": {
+  "title": "About Us",
+  "h1": "About Us",
+  "eyebrow": "The original guide service on Mt. Shasta",
+  "lede": "Founded in the late 1970s, run by longtime guides Chris and Jenn Carr since 2003, and on the mountain every day of the season.",
+  "hero": {
+   "src": "assets/info/5339ae-190519-ckrumholz-0833.jpg",
+   "alt": "Shasta Mountain Guides climbers on Mt. Shasta"
+  },
+  "intro": [
+   "SMG was founded in the late 1970’s by Michael Zanger. In 2003 longtime guides Chris and Jenn Carr took over ownership and operations and have grown to a seasonal staff of over 30. Our team is a diverse, skilled, and fun group of individuals. Their common bond is a pure passion for being in the mountains and sharing that desire with you. We strongly believe in providing the highest level of service and quality of experience while climbing Mt. Shasta.",
+   "We are local professionals and are committed to your safety and enjoyment. SMG is the original guide service on Mt. Shasta and we are on the mountain daily. We specialize in Mount Shasta and the Shasta-Trinity National Forest. When you climb with us, your trip is supported by our collective experience and knowledge of the mountain which includes thousands of Shasta summits and many years spent on the mountain. Together we’ve explored all its’ routes during all conditions and seasons. Join us for a trip of your lifetime!"
+  ],
+  "team": [
+   {
+    "name": "Chris Carr",
+    "role": "Co-Owner",
+    "certs": "AIARE Level III, AIARE Instructor, AMGA Alpine and Ski Guide Courses, B.S. Exercise Physiology",
+    "photo": "assets/guides/chris-carr.jpg",
+    "bio": [
+     "Chris has lived and climbed in the Mt. Shasta area since 1995. As a climber and guide he is inspired by the beauty and scale of Mt. Shasta. “The greatest joy of my role at SMG is the remarkable people I get to meet, both our climbers and our guides, I am surrounded by amazing people doing amazing things.” With hundreds of summits and countless ski descents, no one has more experience on Mt. Shasta. In 2003 he and Jenn became owners of SMG. Going strong for over 30 seasons and over 180 summits on the mountain, Chris is still immeasurably stoked for the next powder day and sharing it with his family. Chris’ role is in the general operations and administrative duties of Shasta Mountain Guides and you’ll often find him on the mountain checking on conditions."
+    ],
+    "local": true
+   },
+   {
+    "name": "Jenn Carr",
+    "role": "Co-Owner",
+    "certs": "EMT, WFR, AIARE -III, LNT, BA French Language/English Lit.",
+    "photo": "assets/guides/jenn-carr.jpg",
+    "bio": [
+     "Jenn, a California native, began climbing in the early 90’s in the Sierra Nevada and Yosemite Valley with her brother. Her love of the mountains led her to start guiding on Mt. Shasta in 1998, she has summited over 50 times. In 2003 she and Chris became owners of SMG, and is involved in the daily operations of the company. “I am drawn to the Mountains by the joy, exhilaration and serenity I experience in wild terrain. Sharing that experience with others is why I started guiding.”"
+    ],
+    "local": true
+   },
+   {
+    "name": "Rich Meyer",
+    "role": "Senior Guide · Special Operations Manager",
+    "certs": "AMGA Certified Ski Guide, AIARE Lead Instructor, AAA Professional, WFR, LNT",
+    "photo": "assets/guides/rich-meyer.jpg",
+    "bio": [
+     "Rich has 25 years of experience guiding clients to mountain peaks around the world. His specialties include Skiing, Climbing, and Avalanche Education. Rich can be found leading trips from the Alps, Antarctica, Japan, Alaska, to South America, and is a true professional in everything he does. He facilitates SMG’s Guide Training, Special Events and Avalanche Seminars. Rich has accumulated close to 150 summits of Mt. Shasta, and is fired up for many more."
+    ],
+    "local": false
+   },
+   {
+    "name": "Dane Brinkley",
+    "role": "Senior Guide",
+    "certs": "AIARE Level I-III, AIARE Instructor; WFR, LNT",
+    "photo": "assets/guides/dane-brinkley.jpg",
+    "bio": [
+     "Dane has worked extensively on Mt Shasta year round guiding ski tours, teaching AIARE avalanche courses, glacier seminars, and leading summit climbs on every major route. Dane’s been to the summit of Shasta over 200 times, often with skis. He’s also guided on Denali, where he’s served on three expeditions. Dane is an experienced skier and climber whose resume includes peaks throughout the Sierra and Cascades in Washington, Oregon, and California. Dane is an AIARE course instructor, and also guides for Three Sisters Backcountry in the winter months. He guides because to him there’s nothing better than sharing beauty and adventure with friends."
+    ],
+    "local": false
+   },
+   {
+    "name": "David Reichel",
+    "role": "Senior Guide",
+    "certs": "AIARE III, AIARE I&II Instructor, AAA Pro Trainer; WFR; AMGA Ski Guide Courses; LNT Trainer; BA Political Science UC Berkeley",
+    "photo": "assets/guides/david-reichel.jpg",
+    "bio": [
+     "A CA Cascades native, David is originally from Meyers, CA. He guides all aspects of mountain travel but is most happy to lead ski or splitboard trips under blue skies in powder conditions. He is an experienced avalanche educator and teaches many AIARE courses every year. David has also guided in Argentina and Japan for SASS for numerous seasons, works as a guide and Avalanche Instructor for Tahoe Mountain School. He is a Professional Observer at the Sierra Avalanche Center and the Founder of the California Avalanche Workshop. Upon release from four years of UC imposed sea level living David migrated to higher elevations and has been working and playing in the Sierra Nevada and Cascades ever since."
+    ],
+    "local": false
+   },
+   {
+    "name": "Katie Wry",
+    "role": "Senior Guide",
+    "certs": "Avalanche: AIARE I-II, National Avalanche School, AAI Pro 1; OEC, EMT; AMGA Alpine Skills; LNT; BA Sociology/Anthropology",
+    "photo": "assets/guides/katie-wry.jpg",
+    "bio": [
+     "Katie is a native Vermonter, but moved out west to pursue a career in the outdoor industry. Growing up around the ski industry Katie has always had a strong passion for the mountains. After college she settled in Lake Tahoe, CA where she ski patrolled for 10 years at Kirkwood Resort. This past season Katie moved to Colorado to learn about a new mountain range and a continental snowpack, getting a job as an advanced ski patroller at Crested Butte.",
+     "Wanting to combine her passion for the outdoors and climbing mountains with her love of working with and teaching people she decided to try out mountain guiding to complement her winter patrolling work. Katie is incredibly passionate about the outdoors in her personal life, but is equally motivated to teach others and help share that joy and passion for the mountains with people eager to tap into the climbing world."
+    ],
+    "local": false
+   },
+   {
+    "name": "Tailer Spinney",
+    "role": "Lead Guide",
+    "certs": "AIARE I-II; WFR; AMGA Alpine Skills Course, AMGA SPI Certification; LNT",
+    "photo": "assets/guides/tailer-spinney.jpg",
+    "bio": [
+     "Tailer is based out of Lake Tahoe, CA, and also guides for Alpenglow Expeditions in the Tahoe Area. Tailer guides our mountaineering trips, glacier seminars, and our backpacking program. Tailer is also an avid snowboarder, surfer, long-distance backpacker, and rock climber, and can when not in the mountains be found at beaches from CA to Costa Rica. Tailer’s always positive attitude, and infectious enthusiasm, help make any trip with her a fun one."
+    ],
+    "local": false
+   },
+   {
+    "name": "Greg Cunningham",
+    "role": "Senior Guide",
+    "certs": "AAI III, NAS; OEC; AMGA Ski Guide Course; AMGA Alpine Skills Course, B.A. Environment Science & Outdoor Ed",
+    "photo": "assets/guides/greg-cunningham.jpg",
+    "bio": [
+     "Originally from MA and VT, Greg currently lives in the Lake Tahoe area, and is a fixture on Mount Shasta during the spring and summer Months. Greg has climbing and skiing experience throughout the lower 48 United States, AK and Europe. Greg is the Lead Avalanche Forecaster and Assistant Patrol Director at Kirkwood in the winter months, and spent several seasons with H20 Heli Guides in Alaska. Greg has the ability to assess dynamic conditions in the mountains and safely and effectively manage risk, while maximizing client reward. Greg’s adventurous spirit, ability to make difficult decisions and calm demeanor make him a solid partner in the mountains. Greg is always in the pursuit of new knowledge and experience and is eager to share that knowledge and experience with everyone around him."
+    ],
+    "local": false
+   },
+   {
+    "name": "John Michael McGinn",
+    "role": "Senior Guide",
+    "certs": "AMGA Certified Ski Guide, AAA Pro 2, WFR. AMGA Rock, AMGA Alpine Courses, BA Environmental Policy",
+    "photo": null,
+    "bio": [
+     "Born and raised in Tennessee, John Michael (JM) developed a passion for climbing at a young age exploring the beautiful sandstone bluffs and boulders of the southeast. After finishing up college, he decided to head west and landed in Jackson, WY where a new playground awaited him. John Michael soon discovered the joys of powder skiing and never looked back. Since then JM has honed his skills in the Tetons, exploring its steep couloirs in the winter and abundance of quality alpine climbs in the summer.",
+     "JM has been lucky enough to experience the steep skiing culture of the Alps and Canadian Rockies, explore the desert rock of Morocco, and continue to develop a sense of community here in the Tetons. JM is actively pursuing his AMGA certifications in the ski, rock, and alpine disciplines in order to become an internationally certified mountain guide. He is currently an AMGA Certified Ski Guide and has taken multiple courses in the rock and alpine disciplines. JM also holds his AAA Pro 2 certification, is WFR certified, and holds a degree in Environmental Policy and Sustainable Action. Aside from guiding, JM coaches the Jackson Hole Ski Club's \"Backcountry Program” during the colder months and spends time growing food and fishing during the warmer months."
+    ],
+    "local": false
+   },
+   {
+    "name": "Ethan Atkins",
+    "role": "Guide",
+    "certs": "AIARE I; WFR; LNT; BA Experiential Education & Expeditionary Learning",
+    "photo": "assets/guides/ethan-atkins.jpg",
+    "bio": [
+     "Ethan is from Carmel Valley, CA, and has been rock and alpine climbing for over 7 years all around the Western U.S and Canada, including California, Colorado, Montana, Idaho, Wyoming, Utah, Arizona, and British Columbia. Ethan is a talented recreation and the natural environment teacher. He works with the Ventana Wilderness Alliance in Big Sur, leading outdoor educational trips for underserved youth and college outing clubs, and also leads projects to help maintain and build backcountry trails. An avid surfer, you will often find Ethan surfing the remote point breaks of the Central CA coast. He works with the Stevenson School in Monterey, teaching surfing and ocean natural history. Ethan is also an adjunct instructor at Prescott College, Arizona, and each year leads their expeditionary 21 day orientation for new students. “I choose to guide on Mount Shasta because it gets people outside and learning how to enjoy themselves, be safe, and create a sense of place in the mountains.”"
+    ],
+    "local": false
+   },
+   {
+    "name": "Travis Soares",
+    "role": "Guide",
+    "certs": "Adventure Education, Prescott College",
+    "photo": "assets/guides/travis-soares.jpg",
+    "bio": [
+     "Originally from Rhode Island, Travis found his way to the mountains of Arizona where he attended Prescott College. He studied Adventure Education and Wilderness Leadership and began rock climbing, backcountry skiing, whitewater rafting and alpine mountaineering. Upon graduating Travis thru-hiked the Appalachian trail, Arizona Trail, and became interested in Fastest Known Times. The biggest FKT he completed was climbing all 247 mountains on the Sierra Peaks Section list in 117 days. He enjoys moving fast through the mountains but more importantly loves sharing the joy of being in the mountains with people, no matter how fast or slow. Travis summited Mount Shasta 7 times in his first season of guiding and looks forward to many many more"
+    ],
+    "local": false
+   },
+   {
+    "name": "Daniel Ross",
+    "role": "Lead Guide",
+    "certs": "AMGA Assistant rock guide, Apprentice ski guide, Apprentice Alpine guide. BA Environmental Studies, BA Adventure Education. LNT Educator, AAI Pro 1, AAI Avalanche instructor.",
+    "photo": "assets/guides/daniel-ross.jpg",
+    "bio": [
+     "After growing up in Claremont, CA, Daniel has been sharing days in the mountains with climbers and skiers since 2020, and there's nowhere he'd rather be than helping others discover what makes these places so special. Whether it's your first time putting on crampons or you're chasing a big objective, he enjoys creating an experience that's equal parts rewarding, educational, and fun. Teaching is at the heart of his approach, and he loves breaking down new skills, answering questions, and helping clients build confidence and competence along the way. Daniel has guided on Mount Shasta since 2023 after beginning his career as a Single Pitch Instructor and ski patrolling. He holds bachelor's degrees in Adventure Education and Environmental Studies from Prescott College, bringing both a passion for teaching and a healthy curiosity about the landscapes we travel through. If you find yourself asking \"why?\" about flowers, snow, rocks, weather, or just about anything else in the mountains, he'll probably be just as excited to talk about it as you are to ask. Daniel is now based in Bishop, CA, and calls the Eastern Sierra home. Above all, Daniel hopes every trip leaves guests with new skills, great memories, and a reason to come back for the next adventure."
+    ],
+    "local": false
+   },
+   {
+    "name": "Lael Cashen",
+    "role": "Lead Guide",
+    "certs": "Diploma in Adventure Studies at Thompson Rivers University, EMR, OEC, WFR, AIARE Instructor training course, CAA AST 1 and 2, CAA Operations level 1, CAA AvSAR level 2, CAA Intro to Wx, CAA Operations level 2 student, CAA Instructing in avalanche terrain B",
+    "photo": null,
+    "bio": [
+     "Originally from the Hudson Valley in upstate NY Lael grew up avidly skiing and spending time outdoors working and playing on her family’s farm. She studied Guiding and Adventure Tourism at Thompson Rivers University in Iceland and British Columbia and is actively pursuing the Canadian guiding certification process. Lael has split her time between Northern California and BC for the last few years working as a ski patroller at Revelstoke Mountain and Whistler Blackcomb as well as a practicum guide at a variety of backcountry cat and ski touring lodges across the province. She loves the challenge and excitement of learning in different environments, snowpacks and Mountain Ranges. In the summers when she is not working Lael can be found pursuing personal objectives in the mountains and continuing to grow and push her own goals while also prioritizing quality time with her friends and family.",
+     "Lael cares deeply about providing a quality experience for guests and recognizes the balance of risk management, fun and professionalism required and does take that task lightly. She hopes to inspire and spark the same joy the mountains bring her in the people she gets to share them with."
+    ],
+    "local": false
+   },
+   {
+    "name": "Rachel Foucher",
+    "role": "Guide",
+    "certs": "",
+    "photo": null,
+    "bio": [
+     "Photo and bio coming soon."
+    ],
+    "local": false
+   }
+  ],
+  "closing": "Climbing Mount Shasta without a guide is not recommended.",
+  "slug": "about",
+  "source": "https://shastaguides.com/about"
+ },
+ "aboutshasta": {
+  "title": "About Mt. Shasta",
+  "h1": "About Mt. Shasta",
+  "eyebrow": "Mt. Shasta, California · 14,179 ft",
+  "lede": "The second highest volcano in the United States and one of the great mountaineering objectives of North America.",
+  "hero": {
+   "src": "assets/info/cf02d0-mtshastaavgulch.jpg",
+   "alt": "Avalanche Gulch on Mt. Shasta"
+  },
+  "intro": [
+   "Welcome to Mt. Shasta, the second highest volcano in the United States and a major peak of the Cascade Range and Pacific Ring of Fire. Climbing Mt. Shasta is considered one of the great mountaineering objectives of North America.",
+   "This magnificent mountain rises to 14,179 feet, and its base is more than 17 miles in diameter. Eight superb glaciers, California’s largest, adorn its flanks. With a volume of over 85 cubic miles, Mount Shasta is the largest stratovolcano in the Cascade Volcanic Arc. Mount Shasta is all the more stunning because it erupts from the ground; it’s not one of several peaks, it is the peak. Thus, it’s visible from hundreds of miles away, and lies at the center of many stories, legends and myths. All of this is complemented by splendid meadows of wildflowers, groves of Shasta Red Fir, and numerous mystical legends; you may meet a Yeti or even a Lemurian on your trip to the summit.",
+   "Mount Shasta is a significant alpine challenge – there is no trail or easy way to the top, all routes surmount major obstacles in order to reach the summit. The ascent requires over 7,000 vertical feet of climbing, and an ice axe and crampons to safely climb sections of snow and ice. Thousands of climbers attempt the summit each year, and most will be unsuccessful without proper training, preparation, instruction and guidance. Although mountaineering experience is very helpful before attempting Shasta, it is not required. Professional instruction and technique, along with diligent physical conditioning prior to the climb, can allow even a first time mountaineer to reach the summit. Our guides are patient and skilled professionals who want to help you learn the skills of mountaineering, and lead a safe, fun and successful climb.",
+   "Some might describe Mount Shasta as a beginners’ mountain, however we would say that Mount Shasta is rather a beginners’ big mountain, and is a great training ground for other big mountaineering objectives of the world, like Mount Rainier, Denali, high peaks in Mexico or South America, the Alps, the Himalayas, and beyond."
+  ],
+  "gallery": [
+   {
+    "src": "assets/info/fcc6d3-avalanche-debris-gulch.jpg",
+    "alt": "Mount Shasta in the snow"
+   },
+   {
+    "src": "assets/info/62db8e-hidden-valley-mt-shasta.jpg",
+    "alt": "Panoramic views of mt shasta and shashtina"
+   },
+   {
+    "src": "assets/info/76ea99-climb-cloud.jpg",
+    "alt": "Climbing hiking the ridge of mt shasta"
+   },
+   {
+    "src": "assets/info/00fff2-advanced-ski.jpg",
+    "alt": "Skiier skinning past a glacier on mt shasta"
+   },
+   {
+    "src": "assets/info/ddb9ef-snapinsta-app-326480564-572760287723171-39188321.jpg",
+    "alt": "Shasta mountain guides owner  Jenn Carr standing next to Horse camp camp buried in snow"
+   },
+   {
+    "src": "assets/info/c2b039-casa-4.jpg",
+    "alt": "Spiers on mt shasta"
+   },
+   {
+    "src": "assets/info/ebd599-hotlum-climb-team.jpg",
+    "alt": "Mountaineers short roping on mt shasta"
+   },
+   {
+    "src": "assets/info/589420-climb-glacier1.jpg",
+    "alt": "Mountaineers on the glaciers of mt shasta"
+   },
+   {
+    "src": "assets/info/dc2f31-tipsongreenbutte.jpg",
+    "alt": "Skiing fresh powder on mt shasta"
+   },
+   {
+    "src": "assets/info/d3311a-early-season-sunrise.jpg",
+    "alt": "Lakes surrounding mt shasta at sun set"
+   },
+   {
+    "src": "assets/info/18bb37-shastina3jpg.jpg",
+    "alt": "Mt shasta summit log book"
+   }
+  ],
+  "slug": "aboutshasta",
+  "source": "https://shastaguides.com/aboutshasta"
+ },
+ "routesandseasons": {
+  "title": "Routes & Seasons",
+  "h1": "Routes and Seasons",
+  "eyebrow": "Getting to the summit",
+  "lede": "Where we climb, and when. The route follows the snow: the south side in spring, the north and east sides through summer.",
+  "hero": {
+   "src": "assets/info/7f1fca-bolam-glacier.jpg",
+   "alt": "Climbers on the Bolam Glacier, Mt. Shasta"
+  },
+  "map": {
+   "src": "assets/info/9f9b92-shata-routes.jpg",
+   "alt": "Map of the climbing routes on Mt. Shasta"
+  },
+  "seasons": [
+   "From late April through early June we are typically climbing on the South and Southwest side, utilizing the Avalanche Gulch, the West Face, or Casaval Ridge routes. There are options for both new and experienced mountaineers.",
+   "From June through early September, we climb the Hotlum-Bolam Ridge, Hotlum-Wintun Ridge, the Hotlum Glacier, or Clear Creek routes on the North and east aspects of Mt. Shasta. These are suitable options for new and experienced mountain climbers, especially those looking for additional and more advanced training."
+  ],
+  "slug": "routesandseasons",
+  "source": "https://shastaguides.com/routesandseasons"
+ },
+ "tripdetails": {
+  "title": "Trip Details",
+  "h1": "Preparing to Climb Mount Shasta",
+  "eyebrow": "Trip details",
+  "lede": "Meeting times, travel, lodging, food, tipping and weather: everything to know before your trip.",
+  "intro": [],
+  "sections": [
+   {
+    "h": "Meeting and Transportation",
+    "id": "meeting-and-transportation",
+    "blocks": [
+     "We will meet you at our shop at the specified time (usually either 8 or 9am) on the first morning of the climb. We will conduct a thorough equipment check, distribute group gear, address any last minute needs and details, and proceed to the trailhead.",
+     "Shasta Mountain Guides",
+     "305 Chestnut Street<br>Mt. Shasta, CA 96067",
+     "<a href=\"tel:+15309263117\">530-926-3117</a>",
+     "The closest airports are Redding, CA (RDD) or Medford, OR (MFR). The closest major airports are Sacramento, CA (SMF) or San Francisco/Bay Area (SFO).",
+     "<strong>We do not provide transportation to the trailhead.</strong> There is limited public transportation in the Mt Shasta area and a car is very helpful. Climbers drive themselves or carpool with others. Guides drive separately. The drive to the Bunny Flat Trailhead (South Side Climbs) is 12 miles via the paved and plowed Everitt Memorial Highway and the climb starts here at 6,950 ft. Climbs on the North or East side require a 1-1.5 hr drive on occasionally rough Forest Service roads.",
+     "There may be opportunities to carpool with other climbers to the trailhead. Due to complexities in our scheduling, we cannot arrange carpools in advance. Guides will help facilitate a carpool during check-in. If you carpool with other climbers, there is ample overnight parking available in downtown Mt Shasta. We can store valuables or extra equipment at our office during the climb"
+    ]
+   },
+   {
+    "h": "Pre-Trip Arrival & Post-Trip Departure",
+    "id": "pre-trip-arrival-post-trip-departure",
+    "blocks": [
+     "If possible, we recommend arriving at least one day prior to the start of your climb. Time can be spent organizing your equipment and rental gear and a light hike to break up the travel stress. Please do not arrive late to check-in, this impacts the entire climb team and may adversely affect the summit attempt.",
+     "We recommend staying in Mt. Shasta the night of our return, especially on climbs with a planned summit attempt on the final day. If you hope to travel directly after the climb, expect to be very fatigued and plan accordingly. It is generally not possible to fly on the same day we return from the mountain.",
+     "Please make sure your schedule is not too tight. An extra day or so off work is well worth making the most of this amazing experience. Not having post-trip travel constraints allows for weather and logistical delays, and our climbers and guides can focus on the goal of climbing the mountain. Please refer to the itinerary when planning your trip."
+    ]
+   },
+   {
+    "h": "Travel Insurance",
+    "id": "travel-insurance",
+    "blocks": [
+     "<strong>We recommend travel insurance to cover delays, interruptions, cancellations, lost baggage, etc.</strong> The American Alpine Club has some good climber-specific options and benefits. Alternatively, purchase through your airline, automobile club, travel agent, or directly through a provider like Travelguard. Make sure any policy doesn’t exclude activities like hiking, mountaineering, climbing, etc. Companies such as Travelguard require an add on “Adventure Sports Bundle” to cover mountaineering. Be sure to read the fine print on any policy that you are considering. There are no refunds or credits and travel insurance can help with unplanned disruptions."
+    ]
+   },
+   {
+    "h": "Lodging",
+    "id": "lodging",
+    "blocks": [
+     "There are a great variety of accommodations in Mt. Shasta. Some recommendations:",
+     "<a href=\"https://www.thesummitlofts.com\">Summit Lofts Mt. Shasta. </a>A newly refurbished boutique hotel located downtown, walking distance to our shop and across the street from the Fifth Season. They offer a discount to our climbers.",
+     "<a href=\"https://coldcreekinn.com\">Cold Creek Inn</a> offers a discount to our climbers. They are clean, basic, and centrally located on the north end town, close to our shop and near a train crossing.",
+     "<a href=\"https://www.logecamps.com/property/mtshasta-ca\">LOGE Mt Shasta</a> They offer hotel, hostel, and camping options, have a great outdoor space for gear organization/packing, and a cafe and bar on-site. They also offer our climbers a discount.",
+     "You can also refer to the local Chamber page <a href=\"https://www.visitmtshasta.com/stay\">Visit Mt. Shasta</a> for additional recommendations."
+    ]
+   },
+   {
+    "h": "Equipment",
+    "id": "equipment",
+    "blocks": [
+     "We will supply tents, stoves, kitchen equipment, drinking water and hot drinks, summit passes and permits, ropes and climbing harnesses, emergency first aid, repair, and communication equipment. Each climber supplies their personal gear; clothing, backpack, sleeping bag, and climbing equipment.",
+     "<strong>Everything on the equipment list is essential</strong> for your comfort, safety, and summit success. Please read it carefully and arrive properly equipped or be prepared to purchase or rent locally. If you need rental equipment all of the items on the list marked with * can be rented at The <a href=\"https://thefifthseason.com\">Fifth Season</a> – advance reservations recommended: <a href=\"tel:+15309263606\">530-926-3606</a>.",
+     "Your backpack will weigh approximately 40-45 lbs. We will all share in carrying the supplied gear items for the carry to base camp. (This will include a portion of a tent, stove, food, etc. and will add 8-9 pounds to your personal equipment."
+    ]
+   },
+   {
+    "h": "Food",
+    "id": "food",
+    "blocks": [
+     "Our meals are hearty, nutritious, fresh, and organic and we can accommodate most diets with advanced notice. We’ll provide dinner and breakfast. We do not provide lunch/snacks, so bring plenty of your favorite foods for the hike to base camp, climb nutrition, and rest breaks. We recommend bringing snack foods that have a variety of carbohydrates, proteins, fats, salts, and sweets. Please see our equipment list for detailed recommendations."
+    ]
+   },
+   {
+    "h": "Gratuities",
+    "id": "gratuities",
+    "blocks": [
+     "Gratuities for mountain guides are customary in the United States. As with other service-based professions, after the experience, it is generally recommended to tip your guides 10-20% of the trip cost, depending on your level of satisfaction with their service. Our guides accept cash (ATM’s nearby), check (to the guide), or electronically (Venmo, Zelle, Paypal, etc)"
+    ]
+   },
+   {
+    "h": "Mountain Weather",
+    "id": "mountain-weather",
+    "blocks": [
+     "Mt. Shasta is less than 200 miles from the Pacific Ocean, stands over 11,000’ from the valley floor, and is the largest (by volume) mountain in the US. This unique topography results in dynamic winds and storms, and problematic forecasts. Weather forecasts for Mt. Shasta, especially automated computer models a.k.a. “point forecasts” are notoriously unreliable. An accurate forecast is usually not available greater than 24-48 hours in advance. We have climbed to the summit many times where 3-5 days prior to the climb, the forecast seemed unfavorable.",
+     "<strong>We do not cancel our trips based on weather forecasts and will operate rain, snow, wind, or shine.</strong> Certain weather may influence our final route selection, and adverse weather may hamper our summit bid. We continually monitor the weather, consult numerous sources prior to your climb, but generally prefer the <a href=\"https://www.weather.gov/wrh/TextProduct?product=recmfr\">Mt Shasta Recreational Report</a>, which is issued by local NWS forecasters familiar with the mountain. All routes and weather conditions can still create wonderful opportunities for learning new skills, adventures, and great memories."
+    ]
+   },
+   {
+    "h": "Training",
+    "id": "training",
+    "blocks": [
+     "<strong>Training is essential for safety, success, and enjoyment</strong> – Take responsibility to be physically and mentally prepared for the challenge; your training program should be started well in advance of your trip. Not being prepared can affect the whole team, and put yourself and others at risk. <strong>Plan to be in your very best physical condition before a summit attempt.</strong>",
+     "Training should concentrate on endurance, strength, and mobility. Hiking on steep, hilly terrain as often as possible is the best way to simulate mountaineering. Carrying a pack during these hikes will pay the most dividends in preparing for a climb. Consult your doctor before starting an aggressive training plan or new activities. We recommend working with a coach to gain the most reward for your efforts. CasavalPT and Outdoor Adventure Training are recommended by SMG",
+     "The more you put into your training program in advance, the more you will be able to enjoy yourself during the ascent. Climbing requires stamina, conditioning, and preparation to make it safe, successful, and enjoyable. Neither Shasta Mountain Guides, nor any outfitter, can guarantee a successful summit bid. Some individuals may not be able to complete this strenuous climb.",
+     "Mountaineering is a unique activity unlike any other sport in which we may participate. Challenging terrain, unlimited views, and difficult climbing awaits. An open mind, positive attitude, and adequate preparation will all contribute to a successful trip. We try to remember that mountaineering is about the journey and to be satisfied with our high point. We want you to be safe, to have fun, and to achieve your goals and will do everything in our power to help you accomplish this.",
+     "We hope you are excited and motivated! Train smart and eat well! We look forward to climbing with you. Please contact us with any questions."
+    ]
+   }
+  ],
+  "hero": {
+   "src": "assets/info/90cda8-shastacastle.jpg",
+   "alt": "Mt. Shasta"
+  },
+  "slug": "tripdetails",
+  "source": "https://shastaguides.com/tripdetails"
+ },
+ "gear": {
+  "title": "Gear",
+  "h1": "What Gear Do You Need to Mountaineer?",
+  "eyebrow": "Gear",
+  "lede": "What to bring, what to rent, and what we supply. Gear lists for each trip are on its trip page and below.",
+  "intro": [
+   "We get a lot of questions about gear!",
+   "For multi-day trips, we provide tents, all group kitchen and cooking gear, ropes, harnesses, first aid, and other group climbing hardware.",
+   "The first phase of any trip is a detailed gear orientation and gear check with our guides. We’ll go through all the items in detail, assist with packing your backpack, and provide extra time to pick up last-minute items or rental gear from the nearby mountain shop.",
+   "Gear lists are listed on each trip page."
+  ],
+  "sections": [
+   {
+    "h": "Rentals",
+    "id": "rentals",
+    "blocks": [
+     "Aside from clothing, much of the required personal equipment can be rented from <a href=\"https://thefifthseason.com\">The Fifth Season</a>, which is conveniently located next door to our office.",
+     "Reservations are recommended in advance, and pricing is available on their website. Gear can be picked up the evening before at no additional charge. We prefer this, but if not possible, please pick up as soon as possible on the morning of the climb.",
+     "If you can’t pick up before the climb, and your check-in time with us is the same as when the rental shop opens, please check in for your climb first before proceeding to rentals."
+    ]
+   },
+   {
+    "h": "Mountaineering Boots",
+    "id": "mountaineering-boots",
+    "blocks": [
+     "Mountaineering boots are required. Backpacking and hiking boots are not sufficient for the climb. Many climbers rent boots with great success from the shop in Mt. Shasta.",
+     "We hike to basecamp in our mountaineering boots – an additional pair of hiking boots is unnecessary.",
+     "In general, mountain boots can be broken down into 4 categories:",
+     "<strong>all-around/general purpose</strong> (sometimes called 3-season) mountain boots, double boots, lightweight alpine boots, and supergaiter boots. All-around boots are generally preferred. The Scarpa Mont Blanc, or La Sportiva Nepal Evo are good picks in that class. These versatile general-purpose boots are guide favorites and are better for climbs that have extended snow and ice, including at basecamp – such as May and June climbs on Shasta. If purchasing a first mountain boot, one in this class is a good buy."
+    ]
+   },
+   {
+    "h": "Backpack",
+    "id": "backpack",
+    "blocks": [
+     "We require an expedition/mountaineering sized – (65-80 Liter) internal frame pack. Examples include the Gregory Denali or Baltoro, Osprey Ariel Pro 70 or Aether AG 70; Mountain Hardware AMG75 or similar packs. Packs are also available to rent at the Fifth Season in Mt Shasta if you prefer to rent vs. buy.",
+     "We do not bring a smaller, secondary “summit pack”. We use our main backpacks for the summit attempt – we remove the top panel (aka the “brain”), store it inside the pack body, and use the side compression straps to shrink down the profile. We leave the tents/camp setup, and break it down after the summit attempt. For the summit attempt our packs typically weigh between 10-15 lbs.",
+     "During basecamp approach and descent our packs will weigh 40-45 pounds depending on personal gear. We all carry a portion of the group gear (food, etc), so expect to add 10-15 L of volume and 8-9 lbs. weight to your pack.",
+     "With lightweight personal gear, and careful packing, a 60-65L can work, especially if it has lots of outside lashing options, and an external crampon pocket. If you already own or have your heart set on a specific 60-65L pack, we can make it work, but packing will be more of a challenge. Although sometimes marketed as sufficient for multi-day trips, a 50-55L(or less) pack is way too small for a Shasta trip. We consider them in the technical daypack category, or suitable for lightweight backpacking."
+    ]
+   },
+   {
+    "h": "Puffy Jacket",
+    "id": "puffy-jacket",
+    "blocks": [
+     "Important! Down/synthetic fill. Medium heavy weight. The down/synthetic puffy insulated jacket is required for all trips. It is fit to be worn over all your additional layers. It should be lightweight and compressible but very warm. Good examples include Black Diamond Cold Forge and OR Super Alpine Down Parka.",
+     "Lightweight puffy jackets like the Patagonia Micro Puff or similar are not sufficient but may be substituted as the mid layer instead."
+    ]
+   },
+   {
+    "h": "Crampons",
+    "id": "crampons",
+    "blocks": [
+     "Step in crampons are preferred, hybrids are OK. Rentals are widely available in numerous types/models to fit various boot types.",
+     "Good examples include the Grivel G12 or G10; Black Diamond Serac or Contact; and the Petzl Vasak or Irvis.",
+     "10 point models are sufficient, 12 point models can be more versatile for more technical mountaineering. Steel is preferred for most trips. Aluminum crampons are fine for ski trips and early season mountaineering trips. Please test and adjust your crampons prior to the trip. There is no universal attachment standard, so not all crampons will fit all boots, and vice-versa. Full strap crampons are not generally recommended, but if they fit the boot securely, and the boot is appropriate to the conditions they’ll work OK. We do not allow soft/flexible backpacking, hiking, hunting, or very light alpine boots combined with full strap crampons. Even if you can attach a crampon, you still need a stiff sole/shank to support its use."
+    ]
+   },
+   {
+    "h": "Ice Axe",
+    "id": "ice-axe",
+    "blocks": [
+     "The ice axe is required for all routes, and should generally be 60-75cm depending on your height. It can be shorter and more lightweight for ski trips. Rentals are available.",
+     "Good examples include the Black Diamond Raven or Raven Pro; Petzl Glacier or Summit, and Grivel G1, G Zero, Nepal SA, or Air Tech. Steel picks are preferred, aluminum is fine for ski trips/early season. A leash/tether is not required – we will typically ask you to remove it, and rentals do not include one. We teach maintaining good control of the axe, rather than relying on a tether. The exception is for complex glaciated routes like the Hotlum Glacier, where tethers are used for the unlikely event of a crevasse fall.",
+     "The classic method of sizing was to hold the axe in the self arrest grip at ones side, with the arm relaxed. Previously the adage was that the axe should extend down to ones ankle. We feel that this results in an unnecessarily long (and consequently heavy) axe. A less savvy climbing shop employee may still try to fit you this way so buyer beware.",
+     "Lately the trend has been for an all-purpose axe to be a little shorter, extending down to boot-top or even mid-calf for experienced mountaineers. The technical trend is for collapsible ski poles to be used with crampons in more low-angle terrain instead of an axe. As such, the axe does not need to be long enough to be used as a cane or walking stick in low-angle terrain, and is only removed from the pack for moderate to steep terrain where a slip/fall and self arrest is a concern.",
+     "As you gain experience with footwork, technique, and estimation of slope steepness and resultant need for an axe, you’ll find yourself using the axe less in lower to moderate angle terrain, and your ski poles more. Consequently you’ll eventually prefer a shorter axe then when you first start mountaineering.",
+     "For ski mountaineers, it’s also nice to own a very lightweight, 45-50cm axe, for ski objectives where you don’t expect to use it very much."
+    ]
+   },
+   {
+    "h": "Helmet",
+    "id": "helmet",
+    "blocks": [
+     "Climbing-rated Helmet only please. Rentals are available.",
+     "Bike, ski or other helmets are not suitable, except for dual-rated (mountaineering and skiing) helmets for ski trips.",
+     "Climbing helmets basically come in two styles: hardshell (constructed like a hard hat), or molded foam hybrid (constructed like a ski helmet). Either is suitable for a Shasta climb.",
+     "Hardshells are better for protection against multiple impacts from above – like rockfall, or dropped equipment. As such they tend to be used for purely climbing applications. They are very durable and withstand use and abuse for many years. Industry leading examples include the Black Diamond Half Dome or the Petzl Elios.",
+     "Foam hybrids also protect against rockfall/falling objects, but with less protection against multiple impacts, and are much less durable in general. However, with a more wrap/around style, they also protect more against climber/skier falls and resultant head strikes, or impacts from behind. They can absorb more energy, but like a ski helmet, this comes at the expense of deformation/destruction of the foam. Industry leading examples include the Black Diamond Vapor, the Black Diamond Vector, or the Petzl Siroccho."
+    ]
+   },
+   {
+    "h": "Trekking/Ski poles",
+    "id": "trekking-ski-poles",
+    "blocks": [
+     "Trekking/Ski poles are required. Rentals are available. Collapsible (3-section) is highly recommended. Black Diamond Expedition 3 poles have been a guide favorite for many years.",
+     "We use poles for the approach hikes to/from basecamp, and also on lower angle portions of the summit climb, often in combination with crampons.",
+     "To size/adjust a pole, hold it by its handle at your side, with your elbow forming a 90 degree angle – the tip should reach the ground. Most poles come with a smaller basket, which is suitable for a variety of applications, including more firm/consolidated snow like we have in the summer on Shasta. A larger “powder” basket is usually not necessary for June or later trips on Shasta. Tip protectors are not necessary, and pole straps can usually be removed to save weight and bulk."
+    ]
+   },
+   {
+    "h": "Sleeping Bag & Pad",
+    "id": "sleeping-bag-pad",
+    "blocks": [
+     "<strong>Sleeping bag</strong> – Synthetic or down, rated to 20f minimum (for spring trips). Bring an easily compressible down or synthetic mummy style sleeping bag rated to 15-25. If you are a cold sleeper, consider a bag with a 15F-5F rating. For very early season trips, many climbers and guides prefer a 0F bag. For later season trips, a 20-25F bag can be sufficient.",
+     "Down is more compressible and provides more warmth per weight unit, but is consequently more expensive. A higher fill value i.e. 800 vs. 600 denotes a higher quality fill, which will be more expensive, but will provide a much higher quality product, and, if cared for, a longer lasting investment.",
+     "<strong>Sleeping Pad</strong> – Air or closed cell foam pad. For most South Side climbs through June we will be camping on snow, especially at the high camps. A 4 season pad or one with a higher R-value is nice to have. For camping on snow, many of our guides and climbers prefer to go with a double pad combo vs. just a single 4-season inflatable type pad. A 3/4 length foam pad only weighs about 1/2 a pound, and when combined with a full-length lighter weight, 3-season pad the total R-value is very high. Also, the foam is easy to strap on the outside, provides insulated seating in camp, and some “insurance” against an unexpected leak in the middle of the night."
+    ]
+   },
+   {
+    "h": "Shell Jacket and Pants (waterproof/water-resistant)",
+    "id": "shell-jacket-and-pants-waterproof-water-resistant",
+    "blocks": [
+     "Hard or soft shell, uninsulated. The shell jacket and pants can either be waterproof aka “hardshell”, or water and wind-resistant, aka “softshell”. In general, hardshells are recommended early season (April-June), with softshells recommended late season (July-September), except during periods of inclement weather. When in doubt, bring both options and your guide will advise you which to bring based on the current forecast."
+    ]
+   },
+   {
+    "h": "Midlayers",
+    "id": "midlayers",
+    "blocks": [
+     "Fleece/wool light to medium weight sweater top only. It can be on the lighter side. Light fleeces like the Patagonia R1, or a very slightly insulated/lined windshirt like the Marmot DriClime are guide favorites. Pieces with a hood are more versatile.",
+     "If you have a few different options for a certain layer and aren’t sure what to bring, then bring them all. We do a thorough gear review and Q&amp;A after check in, taking into account the expected weather and conditions, and the guides can advise which would be the better choice.",
+     "Lightweight puffy jackets like the Patagonia Micro Puff or similar are not sufficient for the insulated but may be substituted as the mid layer instead. Many of our guides prefer this “double-puff method. For very early season trips, a more heavyweight baselayer bottom, or lightweight puffy pants can be a nice addition."
+    ]
+   },
+   {
+    "h": "Lightweight hiking layers",
+    "id": "lightweight-hiking-layers",
+    "blocks": [
+     "Lightweight Hiking Pants/Shorts: (optional) for hike to basecamp. Often not necessary for May through early June trips, but required for late season trips, especially if using a hardshell pant for the climb layer. Sun Hoody/Shirt: (optional) sun hoody or button-up style. The OR Echo is a guide favorite and we have these for sale in our shop."
+    ]
+   },
+   {
+    "h": "Gloves",
+    "id": "gloves",
+    "blocks": [
+     "2 pairs gloves are required: an insulated glove and a thin lightweight glove. Some may also prefer to add a third: a midweight glove, but this is not required",
+     "Light Weight Gloves are a thin, lightweight glove, usually constructed of soft-shell and/or fleece, and possibly some leather. Some water resistance and durability is nice to have. These are sometimes called “liners” but they won’t be worn under the insulated pair. Black Diamond Mont Blancs are a great example.",
+     "Insulated Gloves are waterproof and well-insulated ski or mountaineering style – a thick/warm glove that will keep your hands warm well below freezing. This glove should have ample insulation, be waterproof, and a leather palm is nice for ice axe/rope handling. The Black Diamond legend is an excellent example.",
+     "Medium Weight Glove a.k.a an “alpine work glove” is in between the two, may only be water-resistant, and is often a mix of leather and softshell construction. Good examples include the Black Diamond Dirtbag, Truck M1, or the very popular Kincos which are available at many hardware stores.",
+     "Mittens: We do not recommend mittens except for very high altitude/cold expeditions (Denali, Everest, Shasta in winter etc.) as it's a little more difficult to grip the ice axe properly. Mittens should be the 4th, or “last resort” glove in a kit, and not a primary option."
+    ]
+   },
+   {
+    "h": "Baselayers, Socks & Underwear",
+    "id": "baselayers-socks-underwear",
+    "blocks": [
+     "<strong>Baselayers</strong> – No Cotton. Cotton drains body heat when wet and is unsuitable for climbing; this includes briefs/bras, etc. Wicking layers like Capilene or Wool are best suited for high output activities in the mountains. Wool especially has become a great base and mid layer. Test your layers before a trip. One set of base layers is sufficient for multi day climbs. Examples include Capilene, Merino or other synthetic",
+     "<strong>Socks</strong> – Generally 2-3 pairs is sufficient. A thin, hiking or mountaineering specific sock is best; wool or synthetic. The boot provides warmth; the sock fine tunes the fit.",
+     "<strong>Underwear</strong> – Briefs &amp; Bras must be synthetic or wool material. As lightweight as possible. 2-3 sets max is sufficient for most trips."
+    ]
+   },
+   {
+    "h": "Glacier Glasses/Sunglasses (& Goggles)",
+    "id": "glacier-glasses-sunglasses-goggles",
+    "blocks": [
+     "Glacier glasses are preferred. Julbo makes a wide variety of options. Sunglasses with dark lenses and full coverage (sport style) are subject to approval. Goggles are generally not needed for mountaineering trips, and are only recommended for early season or winter ski trips."
+    ]
+   },
+   {
+    "h": "Sunscreen, Hats & Face Protection",
+    "id": "sunscreen-hats-face-protection",
+    "blocks": [
+     "Sunscreen and lip protection – 25 SPF minimum",
+     "Brimmed Sun Hat – Baseball cap style, visor, or other",
+     "Fleece or Wool Hat – warm &amp; covers ears. Thin and lightweight is better to be comfortably worn under a helmet.",
+     "Buff -Facemask/neck gaiter – lightweight &amp; breathable style. Available in our shop."
+    ]
+   },
+   {
+    "h": "Gaiters",
+    "id": "gaiters",
+    "blocks": [
+     "Gaiters are usually required and may be omitted for late season trips. Rentals are available. Mid-calf or to just below the knee. Good examples include the ubiquitous OR Crocodile, and the Black Diamond Frontpoint, Apex, or Cirque."
+    ]
+   },
+   {
+    "h": "Headlamp",
+    "id": "headlamp",
+    "blocks": [
+     "Any basic LED headlamp by a reputable manufacturer will work. There is no lumen requirement.",
+     "Popular examples include the Petzl Tikka (available in our shop), Petzl Bindi (rechargeable), Black Diamond Spot or Revolt. Please arrive with fresh batteries or a fully charged battery, if rechargeable."
+    ]
+   },
+   {
+    "h": "Water Bottles (& Water Bladders)",
+    "id": "water-bottles-water-bladders",
+    "blocks": [
+     "Nalgene-style or lightweight stainless quart bottles, 2 to 3L total capacity. A 1L or less vacuum insulated bottle like a Kleen Kanteen or Hydroflask can be a good choice for one of the bottles.",
+     "<strong>Water bladders are NOT allowed on summit day</strong> – may be used for approach hike to basecamp only and around camp. If bringing a bladder as supplement, make sure to also carry enough hard bottle to meet the required capacity (2-3L)",
+     "Problems with water bladders include inability to monitor consumption, filling difficulties, freezing issues, leakage and breaking (we carry a lot of sharp things!)"
+    ]
+   },
+   {
+    "h": "Camp Shoes (& Hiking Shoes/Boots)",
+    "id": "camp-shoes-hiking-shoes-boots",
+    "blocks": [
+     "<strong>Camp shoes</strong> are optional, and can be unnecessary weight for fair-weather, shorter (2-3 day) trips. Bring down booties for spring/early summer or light camp shoes for most summer trips.",
+     "<strong>Down booties</strong> can be nice in spring/early summer, when still on snow at one or more camps. Examples include The North Face Booties, Western Mountaineering Booties, Feathered Friends Booties, or the Baffin Island Bootie.",
+     "<strong>Lighter camp shoes</strong> are sufficient for when camp is expected to be dry (late season South Side trips, most North Side trips). Very lightweight running or approach shoes, sandals, Crocs, or flip-flops can work. If in doubt on what to expect as far as camp conditions, please contact us a week or two before your trip and we’ll advise."
+    ]
+   },
+   {
+    "h": "Toiletries and Personal Items",
+    "id": "toiletries-and-personal-items",
+    "blocks": [
+     "Personal Kit/Toiletries – Small quantity of toilet paper, towelettes, toothbrush, blister kit, personal medications, earplugs, pocket knife, etc.",
+     "<em>NOTE: Please bring only the minimum amount of toiletries, medications etc, and package/consolidate them into the smallest/lightest containers available. This is an easy weight to reduce a significant amount of pack weight.</em>",
+     "Garbage Bag: for packing out provided solid waste kits aka “wag bags”…",
+     "**<strong>Bathroom Notes</strong>: At high camp in Avalanche Gulch and at all other base camps, we pack out all human solid waste using Forest Service provided pack-out kits. Liquid waste goes on the ground. We usually designate a private area away from camp for both. Your guides will explain use and disposal."
+    ]
+   },
+   {
+    "h": "Personal Eating Utensils",
+    "id": "personal-eating-utensils",
+    "blocks": [
+     "Eating Utensils – Cup, bowl, &amp; spoon only. Please select very lightweight/compatible versions to easily save weight/space."
+    ]
+   },
+   {
+    "h": "Snacks & Food",
+    "id": "snacks-food",
+    "blocks": [
+     "Snacks only for climb/descent days. Light lunches for other days (see below). Bring a variety of small portions of carbs, fats, proteins and sweets.",
+     "<strong>Snack examples include:</strong> Clif Bars, Shots, or Blocks; energy/candy bars; hard or gummy candy; dried fruit, nuts; jerky, cheese, salty trail mix, etc. Many like to supplement breakfast with additional protein like nuts, jerky, cheese, etc. depending on needs and preferences.",
+     "<strong>DAILY FOOD SUGGESTIONS</strong>",
+     "<strong>Day 1</strong> on all climbs/courses – a perishable sandwich-style lunch is OK. There is often time to pick up a sandwich locally after gear check. Also bring a small selection of snacks.",
+     "<strong>Day 2</strong> on climbs/seminars that involve a move to a higher camp – Avalanche Gulch Expedition-Style (3-day), or a dedicated skills day – Glacier I Seminars, or custom/advanced courses.<br><br>A non-perishable lunch, i.e. bagels/tortillas/crackers with cheese/salami or peanut butter etc. is nice to have, along with selection of other snacks. Alternately just bring a wide variety of snacks.",
+     "<strong>Climb Day</strong> – day three for Avalanche Gulch (4-day), and Glacier I seminar; day two for Avalanche Gulch Alpine-Style (2-day), West Face, North Side, Clear Creek, and Casaval Ridge.<br><br>Bring a large selection of small, convenient snacks – one or two individual 100-200 calorie snack for each break. Plan for a long day with many snacks! We typically stop for a snack/water break every 1-1.5 hrs, and may be on the move for 12-16 hours or more. A wide variety is key.",
+     "<strong>Descent Day</strong> – day three for West Face, North Side, Clear Creek, and Casaval Ridge; or day four 4-day Avalanche Gulch Glacier I seminar.<br><br>2-3 small snacks is usually sufficient. After breakfast we break camp, hike out, and are usually back to town in time for lunch."
+    ]
+   }
+  ],
+  "hero": {
+   "src": "assets/info/9a9c3a-180722-ckrumholz-0405.jpg",
+   "alt": "Mt. Shasta"
+  },
+  "slug": "gear",
+  "source": "https://shastaguides.com/gear"
+ },
+ "policies": {
+  "title": "Policies",
+  "h1": "Policies",
+  "eyebrow": "Booking",
+  "lede": "Cancellations, changes, transfers and weather.",
+  "intro": [],
+  "sections": [
+   {
+    "h": "Cancellation Policy",
+    "id": "cancellation-policy",
+    "blocks": [
+     "The deposit is non-refundable. For reservations paid in excess of the deposit, cancellations received <strong>at least 30 days prior to trip departure</strong> will receive a refund minus the deposit. No refund will be issued for cancellations received 0 to 29 days prior to trip departure, or in the event of no-shows.",
+     "If you cancel <strong>at least 14 days before</strong> the original trip start date, no refund will be issued but you may transfer your trip to another scheduled date. There is a $95 change fee for this, and total payment is required to process trip transfers.",
+     "We seldom, if ever, cancel a trip for reasons within our control, but if we find it necessary to do so, we will refund all deposits and fees paid to us. If Shasta Mountain Guides determines, in its sole discretion, it must cancel before or during a trip because of a condition beyond its control (force majeure or Act of God – including but not limited to natural disaster such as earthquake, volcanic eruption, wildfire, flood, pandemic, civil unrest or conflict, government shutdowns, etc.), no refunds or credits will be issued.",
+     "We sometimes need to change the planned route for climbing, skiing, etc. This decision will be based on a number of factors, including weather, ground conditions, and safety. Although we attempt to select the final route during the week of the trip, a route change decision is at our professional discretion and can be made on the start date of, or anytime during, the actual trip. If we select an alternate route, no refund or credit will be given.",
+     "Shasta Mountain Guides is not liable for incidental, special or consequential damages for any reason (including airfare, lodging, meals and/or other travel expenses due to changes in route or cancellation of a trip, for which trip cancellation insurance may be available to you). Our total liability shall not exceed the total amount of fees you have paid to us for services. We highly recommend that you purchase travel insurance."
+    ]
+   },
+   {
+    "h": "Weather",
+    "id": "weather",
+    "blocks": [
+     "We do not cancel our trips based on weather forecasts and will operate snow, rain, wind, or shine. Certain weather may influence our final route selection, and adverse weather may hamper our summit bid."
+    ]
+   },
+   {
+    "h": "Personal Cancellations & Changes",
+    "id": "personal-cancellations-changes",
+    "blocks": [
+     "The deposit is non-refundable. For reservations paid in excess of the deposit, cancellations received at least 30 days prior to trip departure will receive a refund minus the deposit. No refund will be issued for cancellations received 0 to 29 days prior to trip departure, or in the event of no-shows.",
+     "If you cancel at least 30 days before the original trip start date, no refund will be issued but you may transfer your trip to another scheduled date. There is a $95 change fee for this, and total payment is required to process trip transfers.",
+     "Any issued trip credits will expire 3 years from original trip date."
+    ]
+   }
+  ],
+  "slug": "policies",
+  "source": "https://shastaguides.com/policies"
+ },
+ "training": {
+  "title": "Training",
+  "h1": "How to Train to Climb Mount Shasta",
+  "eyebrow": "Training",
+  "lede": "A summit climb or ski of Mount Shasta is a serious physical challenge. Here is how to prepare for it.",
+  "hero": {
+   "src": "assets/info/dc2c03-180722-ckrumholz-0761.jpg",
+   "alt": "Climbers training on Mt. Shasta"
+  },
+  "intro": [
+   "A summit climb or ski of Mount Shasta is a serious physical challenge and should not be underestimated! Diligent training prior to your climb is essential for safety, enjoyment, and success. Not being prepared can affect the whole team, and put yourself and others at risk. Please do your best to effectively prepare your body prior to your trip.",
+   "Your training should cover all areas; cardio, strength training, endurance, balance, and the technical skills necessary for the objectives. Training for the activity should be strenuous 4-5 days per week and as much hiking as possible.",
+   "We are very happy to discuss training for mountaineering, this is a very critical piece of a successful summit climb and descent.<br>Here are a few resources and training coaches we recommend."
+  ],
+  "quote": {
+   "text": "Without a doubt, the best indicator of success in the mountains is to be as physically prepared as possible. For many climbers, it’s difficult to quantify the efforts of mountaineering and to develop a training program to meet the demands of a big Cascade peak like Mt. Shasta. With Dane’s (CasavalPT) experience guiding and his deep knowledge base, he is a tremendous resource for those seeking to expand their capabilities. A regimented training program will not only increase your chance of achieving your goals, but you’ll have a much more enjoyable time while doing it.",
+   "by": "Chris Carr, Co-owner of Shasta Mountain Guides"
+  },
+  "links": [
+   {
+    "label": "Training for Mt. Shasta (PDF)",
+    "href": "assets/downloads/smg-training-for-mount-shasta.pdf",
+    "note": "Our 24-page fitness guide"
+   },
+   {
+    "label": "Casaval Training Plan (PDF)",
+    "href": "assets/downloads/smg-casaval-training-plan.pdf",
+    "note": "From Dane Brinkley at CasavalPT"
+   },
+   {
+    "label": "Outdoor Adventure Training",
+    "href": "https://outdooradventuretraining.com/mountaineering/",
+    "note": "Mountaineering training programs"
+   }
+  ],
+  "slug": "training",
+  "source": "https://shastaguides.com/training"
+ },
+ "faq": {
+  "title": "FAQ",
+  "h1": "Frequently Asked Questions",
+  "eyebrow": "FAQ",
+  "lede": "Have a question? Check here for the answers to the most commonly asked questions.",
+  "hero": {
+   "src": "assets/info/b2ea52-190518-ckrumholz-1417.jpg",
+   "alt": "Climbers on Mt. Shasta"
+  },
+  "qa": [
+   {
+    "q": "Why Shasta Mountain Guides?",
+    "id": "why-shasta-mountain-guides",
+    "a": [
+     "Shasta Mountain Guides is the oldest and only local Mt. Shasta guide service. For over 45 years we have been leading the highest quality summit climbs, ski trips, and seminars on the mountain. We achieve this through smaller climb teams with the lowest guide to climber ratio on the mountain. We focus on every detail of your climb and every aspect will be well planned. Our guides are highly trained professionals and we make your safety and goals our first priority. As the chosen outfitter for countless organizations including BCPP, SheJumps, REI Adventures, Overland Expeditions, we have been featured in numerous publications including Outside Magazine, National Geographic, Men’s Journal, Forbes, and others."
+    ]
+   },
+   {
+    "q": "When is the best time of year to climb Mt. Shasta?",
+    "id": "when-is-the-best-time-of-year-to-climb-mt-shasta",
+    "a": [
+     "As a Cascade Volcano in far Northern California, Mt. Shasta receives over 500″ of snow annually and extended periods of high pressure in spring and summer. This is optimal for safe and efficient mountaineering and we generally recommend April-September for best conditions.",
+     "Winter weather can be quite fierce and severe with potential avalanche hazard above tree line making a climb of anything other than a ridge potentially dangerous. Autumn brings short, cold days and nearly all of the climbing routes are in very poor condition.",
+     "More than 2 days before a trip it is impossible for us to predict what the weather will be like on a given day. Weather can and does change rapidly and day and night time temperatures vary depending on time of year and elevation. Come prepared with everything on the clothing and equipment list."
+    ]
+   },
+   {
+    "q": "What is the best route to climb Mt. Shasta?",
+    "id": "what-is-the-best-route-to-climb-mt-shasta",
+    "a": [
+     "If you are new to mountaineering, the 3 day Avalanche Gulch or our 4-day Glacier I Intro to Mountaineering are best. The 3 and 4-day Avalanche Gulch and our 4-day Glacier 1 course are best for new climbers and those looking for the greatest opportunity to reach the summit. Previous experience is required to join our 2-day Avalanche Gulch climbs or 3-day North Side climbs.",
+     "The West Face is slightly more challenging than Avalanche Gulch, but can still be suitable for fit and athletic new climbers looking for a scenic and less crowded alternative.",
+     "For experienced climbers, the Glacier routes on the north side are a great challenge. These are best June – September and may be more steep and technical compared to the south side climbs. The Hotlum-Bolam and Hotlum-Wintun are steeper, on glaciated terrain, which will add to the effort. This is a great option for experienced climbers or those wanting advanced skills and more remote routes.",
+     "Clear Creek, on the East Side, is a late season alternative to Avalanche Gulch. Although it is technically less difficult than Avalanche Gulch, and is considered the “easiest” route on Shasta, it climbs from a lower elevation trailhead and involves tough travel over loose scree and talus. As such, most consider it to be more physically difficult than other snow-covered routes."
+    ]
+   },
+   {
+    "q": "How Difficult is the Mt. Shasta Summit Climb?",
+    "id": "how-difficult-is-the-mt-shasta-summit-climb",
+    "a": [
+     "Mountaineering is an extremely demanding sport by nature. We carry loaded backpacks to basecamp over rough trails, snowfields, loose scree, and ice. The climbing is long and sustained on steep, exposed slopes. The high altitude, changing weather, and terrain all demand proper preparation to hope for success.",
+     "Summits are never guaranteed and to best increase your odds of success requires committed training and preparation. All of our trips are physically strenuous; however, many people from diverse age groups and backgrounds climb to the summit every year.",
+     "To get the most out of your climb, we recommend that you start a training regimen several months prior to your trip.",
+     "Not all who attempt will reach the summit, to best increase your odds of success, proper training 3-5 days per week 4 to 6 months in advance is generally recommended."
+    ]
+   },
+   {
+    "q": "How heavy will my backpack be to climb Mt. Shasta?",
+    "id": "how-heavy-will-my-backpack-be-to-climb-mt-shasta",
+    "a": [
+     "Expect to carry a 40-45 lb pack on the approach to base camp. On climb day, your pack will weigh approximately 15-20 lbs. Any extra gear will remain at camp. It is not recommended or necessary to bring an additional summit pack."
+    ]
+   },
+   {
+    "q": "How big will our climb group be?",
+    "id": "how-big-will-our-climb-group-be",
+    "a": [
+     "For safety and group comfort we utilize a maximum 3:1 climber to guide ratio. The more technical trips and routes we use a 2:1 ratio. Our group size limit is generally 6 climbers and 3 guides, which is lower than the limit required by the USFS. Typically our groups are even smaller and we may have an even lower ratio. This is a great advantage and makes for a better experience for both the climbers and guides."
+    ]
+   },
+   {
+    "q": "What kind of food should I bring to climb Mt. Shasta?",
+    "id": "what-kind-of-food-should-i-bring-to-climb-mt-shasta",
+    "a": [
+     "Shasta Mountain Guides will provide breakfasts and dinners during your climb.",
+     "We do not provide lunch and snacks, so bring plenty of your favorites for the hike to basecamp, climb day, and rest breaks. Lunch is more of an all-day affair, rather than sitting down to actually prepare something. We say that lunch starts right after breakfast and ends just before dinner. We recommend bringing snack foods you know you like and have used on similar adventures. These should be packable and in easy to consume portions. Often at altitude our appetites decrease so it is important that your food is palatable. A selection of protein, carbs, fats, salts, and sweets should be considered. Try to vary your snacks to accommodate your high altitude lack of appetite. Bagels, cheese, jerky, gorp, chocolate, nuts, Clif Bars and energy gels are all good choices."
+    ]
+   },
+   {
+    "q": "If someone in my group is unable to summit, will my climb be affected?",
+    "id": "if-someone-in-my-group-is-unable-to-summit-will-my-climb-be-affected",
+    "a": [
+     "Our best technique for a safe climb and to minimize this possibility is through low climber to guide ratios and our trips are the lowest on Mt. Shasta at 2:1.",
+     "Mountaineering is a team-oriented sport that encompasses much more than simply climbing to the summit of an objective peak. With Shasta Mountain Guides you will meet new people, learn new skills, be pushed physically and mentally, enjoy aesthetic views and delicious mountain cuisine, and make a summit attempt.",
+     "We understand that reaching the summit is of the highest priority for most climbers, and our guides make every attempt to do so safely; however, due to unpredictable changes in weather and route conditions a summit is never guaranteed. In the event that a team member needs to turn around, one guide will accompany that climber down so the rest of the team can climb on.",
+     "Often, we have multiple groups and guides on the mountain. Our guides work closely with one another to maximize the climber's opportunity to reach the summit. It is rare that we have to turn an entire team around; your guides will brief the group prior to the summit climb."
+    ]
+   },
+   {
+    "q": "How much should I tip my guides?",
+    "id": "how-much-should-i-tip-my-guides",
+    "a": [
+     "Mountain Guiding is very much a service-driven industry; the guides take pride in their profession and work hard to provide safe and fun adventures on Mt. Shasta. Consider as you would in a restaurant or other service industry and plan for 10-20% of the trip fee."
+    ]
+   },
+   {
+    "q": "What is Shasta Mountain Guides’ cancellation policy?",
+    "id": "what-is-shasta-mountain-guides-cancellation-policy",
+    "a": [
+     "The deposit is non-refundable. For reservations paid in excess of the deposit, cancellations received at least 30 days prior to trip departure will receive a refund or credit minus deposit. No refund or credit will be issued for cancellations received 0 to 29 days prior to trip departure, or in the event of no-shows.",
+     "We seldom, if ever, cancel a trip for reasons within our control, but if we find it necessary to do so, we will refund all deposits and fees paid to us. If Shasta Mountain Guides determines, in its sole discretion, it must cancel before or during a trip because of a condition beyond its control (force majeure or Act of God – including but not limited to natural disaster such as earthquake, volcanic eruption, wildfire, flood, pandemic, civil unrest or conflict, government shutdowns, etc.), no refunds or credits will be issued.",
+     "We sometimes need to change the planned route for climbing, skiing, etc. This decision will be based on a number of factors, including weather, ground conditions, and safety. Although we attempt to select the final route during the week of the trip, a route change decision is at our professional discretion and can be made on the start date of, or anytime during, the actual trip. If we select an alternate route, no refund or credit will be given.",
+     "Shasta Mountain Guides is not liable for incidental, special or consequential damages for any reason (including airfare, lodging, meals and/or other travel expenses due to changes in route or cancellation of a trip, for which trip cancellation insurance may be available to you). Our total liability shall not exceed the total amount of fees you have paid to us for services. We highly recommend that you purchase travel insurance"
+    ]
+   }
+  ],
+  "slug": "faq",
+  "source": "https://shastaguides.com/faq"
+ },
+ "privacypolicy": {
+  "title": "Privacy Policy",
+  "h1": "Privacy Policy",
+  "eyebrow": "Legal",
+  "lede": "",
+  "updated": "Last Modified: 10/21/2023",
+  "blocks": [
+   {
+    "t": "p",
+    "html": "1. INTRODUCTION. <br><strong>Shasta Mountain Guides LLC.</strong> (“Company”) respects your privacy. This Privacy Policy sets forth Company’s policy with respect to the types of information we may collect from you or that you may provide when you visit <strong>shastaguides.com</strong> (“the Website”), including any content, services, functionality, mobile applications, downloadable materials, and courses (“the Services”). If you do not agree with our Privacy Policy, your choice is to not use our Website. By accessing or using this Website, you agree to this Privacy Policy."
+   },
+   {
+    "t": "p",
+    "html": "2. CHILDREN UNDER THE AGE OF 16. <br>All website users must be at least 16 years of age. If we learn we have received information from a child under 16 we will delete the information. If you have reason to believe that a child under the age of 16 has provided Personal Data to us through the Website or Services, please contact us and we will endeavor to delete the information from our database. If we learn a user is under 16 years of age, we will not disclose any personal information to any third parties unless the user has given opt-in consent. If you have reason to believe that a user is under 16 years of age, notify the Company in order to prevent disclosure of any personal data without opt-in consent."
+   },
+   {
+    "t": "p",
+    "html": "3. WHEN WE COLLECT INFORMATION FROM YOU."
+   },
+   {
+    "t": "p",
+    "html": "We collect data and process data when you access our Website, fill out forms on our Website, register, make a purchase, sign up for our newsletter, respond to a survey, surf the Website, or use or view our Website via your browser’s cookies."
+   },
+   {
+    "t": "p",
+    "html": "4. WHAT TYPES OF INFORMATION WE COLLECT FROM YOU."
+   },
+   {
+    "t": "p",
+    "html": "A. Voluntary Information"
+   },
+   {
+    "t": "p",
+    "html": "When you visit our Website or use our Services we collect certain types of information from you. This includes your name, email address, mailing address, phone number, credit card information, age, sex, marital status, race, nationality, or other information you provide to us."
+   },
+   {
+    "t": "p",
+    "html": "B. Automatic Data Collection"
+   },
+   {
+    "t": "p",
+    "html": "We also collect information automatically through cookies and other tracking technologies such as information about your internet connection, your IP address, traffic and location data, logs, and other information. The information we automatically collect helps us to improve our Website and deliver a better service."
+   },
+   {
+    "t": "p",
+    "html": "C. The categories of consumer data we have collected within the past 12 months."
+   },
+   {
+    "t": "p",
+    "html": "include your name, email address, mailing address, phone number, credit card information, age, sex, marital status, race, nationality, or other information you provide to us."
+   },
+   {
+    "t": "p",
+    "html": "5. HOW WE COLLECT INFORMATION FROM YOU."
+   },
+   {
+    "t": "p",
+    "html": "The technologies we use for automatic data collection include “cookies.”Cookies are small files placed on the hard drive of your computer that enables the website or service provider’s systems to recognize your browser and remember certain information. We use functionality cookies to recognize you on our website and remember your previously selected preferences. These could include what language you prefer and the location you are in. We use advertising cookies to collect information about your visit to our website, the content you viewed, the links you followed and information about your browser, device, and your IP address. Our Company sometimes shares some limited aspects of this data with third parties for advertising purposes. We may also share online data collected through cookies with our advertising partners. This means that when you visit another website, you may be shown advertising based on your browsing patterns on our Website. You may refuse to accept browser cookies by activating the appropriate setting in your browser, but if you do, you may not be able to access certain parts of our Website or Services. We also use flash cookies or web beacons for automatic data collection. You may also provide information that is public or displayed on public areas of the Website, or transmitted to other users of the Website or third parties (“User Content”). Your User Content is transmitted to others at your own risk."
+   },
+   {
+    "t": "p",
+    "html": "6. HOW WE USE YOUR INFORMATION."
+   },
+   {
+    "t": "p",
+    "html": "Processing of your information is necessary for the purpose of legitimate interests and does not infringe on any fundamental rights and freedoms. Some of those legitimate interests include: direct marketing, processing of client data, ensuring network and information security, and fraud prevention, We use your information to understand and store information about visitor’s preferences, to compile aggregate data about site traffic and site interactions, to provide you with information, products, or services that you request from us or that we think you may like, to provide you with notices about your account, to carry out billing and collection, for customer support, for marketing purposes, and in any other way we describe when you provide information to us. We do not use automated decision-making in processing your personal information for some services and products. We do not sell personal information or consumer data for monetary gain or valuable consideration."
+   },
+   {
+    "t": "p",
+    "html": "7. THIRD-PARTY DISCLOSURES."
+   },
+   {
+    "t": "p",
+    "html": "Some content or applications on the Website are served by third parties, such as advertisements, Scheduling, booking, and taking payments. We do not control third parties tracking technologies. You should consult the privacy policies of any such third party for more detailed information on their practices. Our Company Website contains links to other websites. Our privacy policy applies only to our Website, so if you click on a link to another website, you should read their privacy policy."
+   },
+   {
+    "t": "p",
+    "html": "8. HOW WE DISCLOSE YOUR INFORMATION."
+   },
+   {
+    "t": "p",
+    "html": "A. We may disclose aggregated information about our users and information that does not identify any individual without restriction."
+   },
+   {
+    "t": "p",
+    "html": "B. We do not disclose personal information that we collect or you provide as described in this Privacy Policy to third parties, including the following subsidiaries, affiliates, service providers, and contractors."
+   },
+   {
+    "t": "p",
+    "html": "C. We use your provided data to prevent fraudulent purchases by sharing your data with credit reference agencies."
+   },
+   {
+    "t": "p",
+    "html": "D. We will release information when it is appropriate to comply with the law or enforce our site policies."
+   },
+   {
+    "t": "p",
+    "html": "E. Do Not Track Policy: Our site honors Do Not Track (“DNT”) browser settings. We do not track your online browsing activity on any other online service."
+   },
+   {
+    "t": "p",
+    "html": "F. We do not transfer personal data collected from you to third-party processors located internationally. Please be aware that such counties may not have the same level of data protection; however, our collection, storage and use of your personal data will continue to be governed by this Privacy Policy."
+   },
+   {
+    "t": "p",
+    "html": "9. HOW WE STORE AND PROTECT USER INFORMATION."
+   },
+   {
+    "t": "p",
+    "html": "A. Company securely stores your data at <strong>ADDRESS</strong>. We have implemented security measures designed to protect your visit to the Website. These include locks &amp; passwords."
+   },
+   {
+    "t": "p",
+    "html": "A. All payment information is encrypted."
+   },
+   {
+    "t": "p",
+    "html": "B. All information you provide to us is stored on our secure servers behind firewalls."
+   },
+   {
+    "t": "p",
+    "html": "C. We use regular Malware Scanning."
+   },
+   {
+    "t": "p",
+    "html": "D. No transmission over the internet or email is completely secure or error-free. Please keep this in mind when disclosing personal information over the internet."
+   },
+   {
+    "t": "p",
+    "html": "B. We will keep your data for 5 years. Once this time period has expired we will delete your data."
+   },
+   {
+    "t": "p",
+    "html": "10. YOUR CALIFORNIA PRIVACY RIGHTS."
+   },
+   {
+    "t": "p",
+    "html": "A. If you are a California resident, California law may provide you with additional rights regarding our use of your personal information. To learn more about your California privacy rights, visit https://oag.ca.gov/privacy/ccpa"
+   },
+   {
+    "t": "p",
+    "html": "B. Under the CCPA, California residents have the right to opt-out of the sale of personal information about them or their household, such as their name, postal or email address, and other personal identifying information. The right is subject to certain exceptions. For example, it does not apply to information that we share with certain third-party service providers so they can perform business functions for us or on our behalf. You may opt-out by emailing <strong>EMAIL</strong>."
+   },
+   {
+    "t": "p",
+    "html": "C. In the preceding twelve months, we have not sold personal information. Our policy is that we do not and will not sell your personal information, unless you give us your consent or direct us to do so."
+   },
+   {
+    "t": "p",
+    "html": "11. RIGHT TO OPT OUT."
+   },
+   {
+    "t": "p",
+    "html": "You have agreed to receive marketing material from the Company and have consented to the Company disclosing your information to third parties for marketing purposes. You may opt out at any time. If you no longer wish to be contacted for marketing purposes, please email <strong>EMAIL.</strong>"
+   },
+   {
+    "t": "p",
+    "html": "12. YOUR DATA PROTECTION RIGHTS."
+   },
+   {
+    "t": "p",
+    "html": "A. The Right to be Informed: This means anyone processing your personal data must make clear what they are processing, why, and who else the data may be passed to."
+   },
+   {
+    "t": "p",
+    "html": "B. The Right to Access: This is your right to see what data is held about you by a Data Controller."
+   },
+   {
+    "t": "p",
+    "html": "C. The Right to Rectification: You have the right to have your data corrected and amended if what is held is incorrect in some way. You can request that we correct any information that you believe is inaccurate or request that we complete information that you believe is incomplete."
+   },
+   {
+    "t": "p",
+    "html": "D. The Right to Erasure: Under certain circumstances, you can ask for your personal data to be deleted. This is also called “The Right to be Forgotten.” This would apply if the personal data is no longer required for the purposes it was collected for, or your consent for the processing of that data has been withdrawn, or the personal data has been unlawfully processed."
+   },
+   {
+    "t": "p",
+    "html": "E. The Right to Restrict Processing: This gives the you the right to ask for a temporary halt to processing of personal data, such as in the case where a dispute or legal case has to be concluded, or the data is being corrected."
+   },
+   {
+    "t": "p",
+    "html": "F. The Right of Portability: you have the right to ask for any data supplied directly to the Data Controller by you, to be provided in a structured, commonly used, and machine- readable format. You may request copies of your personal data from us. You may request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions. We may charge a small fee for this service or for any copies requested."
+   },
+   {
+    "t": "p",
+    "html": "G. The Right to Object: You have the right to object to further processing of your data which is inconsistent with the primary purpose for which it was collected, including profiling, automation, and direct marketing."
+   },
+   {
+    "t": "p",
+    "html": "H. Rights in Relation to Automated Decision-making and Profiling: You have the right not to be subject to a decision based solely on automated processing."
+   },
+   {
+    "t": "p",
+    "html": "I. Right Not to be Subject to Discrimination for the Exercise of Rights: The Company will not refuse goods or services to individuals who exercise their consumer rights."
+   },
+   {
+    "t": "p",
+    "html": "If you would like to exercise these rights, please contact us at <strong>info@shastaguides.com</strong>"
+   },
+   {
+    "t": "p",
+    "html": "13. CHANGES TO PRIVACY POLICY."
+   },
+   {
+    "t": "p",
+    "html": "The date the Privacy Policy was last revised is identified on the first page of the Privacy Policy. We reserve to update this policy and if we make material changes to how we treat our users’ personal information we will notify you by email. You are responsible for periodically visiting our Website and Privacy Policy to check for any changes."
+   },
+   {
+    "t": "p",
+    "html": "14. CONTACT."
+   },
+   {
+    "t": "p",
+    "html": "You may send us an email to inquire about our Privacy Policy or to request access to, correct or delete any personal information that you have provided to us at:"
+   },
+   {
+    "t": "p",
+    "html": "<strong><em>305 Chestnut Street<br>Mount Shasta, CA<br>96067</em></strong>"
+   },
+   {
+    "t": "p",
+    "html": "<strong><em>530.926.3117</em></strong>"
+   },
+   {
+    "t": "p",
+    "html": "<strong>info@shastaguides.com</strong>"
+   },
+   {
+    "t": "p",
+    "html": "15. COMPLAINTS."
+   },
+   {
+    "t": "p",
+    "html": "Should you wish to report a complaint or if you feel that our Company has not addressed your concern in a satisfactory manner, you may contact the Information Commissioner’s office (if an individual located in the United Kingdom) or the European Data Protection Board."
+   },
+   {
+    "t": "p",
+    "html": "16. INDIVIDUALS LOCATED WITHIN THE UNITED KINGDOM."
+   },
+   {
+    "t": "p",
+    "html": "A. Restricted Transfers: Our Company may make a restricted transfer if the receiver is located in a third country or territory or is an international organization, covered by UK “adequacy regulations.” If there are no adequacy regulations about the country, territory or sector for the restricted transfer, our Company should then find out whether you can make the transfer subject to ‘appropriate safeguards’ as listed in the UK GDPR. Before we rely on an appropriate safeguard to make a restricted transfer, we must be satisfied that the data subjects of the transferred data continue to have a level of protection essentially equivalent to that under the UK data protection regime. We do this by undertaking a risk assessment, which takes into account the protections contained in that appropriate safeguard and the legal framework of the destination country (including laws governing public authority access to the data). If our assessment is that the appropriate safeguard does not provide the required level of protection, we will include additional measures. Appropriate safeguards may be: (1) A legally binding and enforceable instrument between public authorities or bodies; (2) binding corporate rules as defined in Article 47 of the UK GDPR; (3) a contract incorporating standard data protection clauses recognized or issued in accordance with the UK data protection regime; (4) a code of conduct approved by the ICO; (4) Certification under an approved certification scheme; (5) a bespoke contract governing a specific restricted transfer which has been individually authorized by the ICO; or (6) Administrative arrangements between public authorities or bodies. If none of the criteria above apply for the transfer, we may still make the transfer if the transfer is covered by an ‘exception’ set out in Article 49 of the UK GDPR."
+   },
+   {
+    "t": "p",
+    "html": "B. CHILDREN UNDER THE AGE OF 13:"
+   },
+   {
+    "t": "p",
+    "html": "All website users located in the United Kingdom must be at least 13 years of age. If we learn we have received information from a child under 13 we will delete the information. If you have reason to believe that a child under the age of 13 located in the United Kingdom has provided Personal Data to us through the Website or Services, please contact us and we will endeavor to delete the information from our database. If we learn a user is under 13 years of age, we will not disclose any personal information to any third parties unless the user has given opt-in consent. If you have reason to believe that a user is under 13 years of age, notify the Company in order to prevent disclosure of any personal data without opt-in consent."
+   },
+   {
+    "t": "p",
+    "html": "C. Local Representative in United Kingdom: We do not either offer goods or services to individuals in the UK; or monitor the behavior of individuals in the UK. Our local UK representative is listed below:"
+   },
+   {
+    "t": "p",
+    "html": "<strong><em>305 Chestnut Street<br>Mount Shasta, CA<br>96067</em></strong>"
+   },
+   {
+    "t": "p",
+    "html": "<strong><em>530.926.3117</em></strong>"
+   },
+   {
+    "t": "p",
+    "html": "<strong>info@shastaguides.com</strong>"
+   }
+  ],
+  "slug": "privacypolicy",
+  "source": "https://shastaguides.com/privacypolicy"
+ },
+ "terms-of-service": {
+  "title": "Terms of Use",
+  "h1": "Terms of Use",
+  "eyebrow": "Legal",
+  "lede": "",
+  "updated": "Last updated October 21, 2023",
+  "blocks": [
+   {
+    "t": "h2",
+    "html": "AGREEMENT TO OUR LEGAL TERMS"
+   },
+   {
+    "t": "p",
+    "html": "We are Shasta Mountain Guides LLC (\"<strong>Company</strong>,\" \"<strong>we</strong>,\" \"<strong>us</strong>,\" \"<strong>our</strong>\"), a company registered in California, United States at 305 Chestnut St, Mount Shasta, CA 96067."
+   },
+   {
+    "t": "p",
+    "html": "We operate the website <a href=\"http://www.shastaguides.com\">http://www.shastaguides.com</a> (the \"<strong>Site</strong>\"), as well as any other related products and services that refer or link to these legal terms (the \"<strong>Legal Terms</strong>\") (collectively, the \"<strong>Services</strong>\")."
+   },
+   {
+    "t": "p",
+    "html": "You can contact us by phone at 530.926.3117, email at info@shastaguides.com, or by mail to 305 Chestnut St, Mount Shasta, CA 96067, United States."
+   },
+   {
+    "t": "p",
+    "html": "These Legal Terms constitute a legally binding agreement made between you, whether personally or on behalf of an entity (\"<strong>you</strong>\"), and Shasta Mountain Guides LLC, concerning your access to and use of the Services. You agree that by accessing the Services, you have read, understood, and agreed to be bound by all of these Legal Terms. IF YOU DO NOT AGREE WITH ALL OF THESE LEGAL TERMS, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SERVICES AND YOU MUST DISCONTINUE USE IMMEDIATELY."
+   },
+   {
+    "t": "p",
+    "html": "Supplemental terms and conditions or documents that may be posted on the Services from time to time are hereby expressly incorporated herein by reference. We reserve the right, in our sole discretion, to make changes or modifications to these Legal Terms from time to time. We will alert you about any changes by updating the \"Last updated\" date of these Legal Terms, and you waive any right to receive specific notice of each such change. It is your responsibility to periodically review these Legal Terms to stay informed of updates. You will be subject to, and will be deemed to have been made aware of and to have accepted, the changes in any revised Legal Terms by your continued use of the Services after the date such revised Legal Terms are posted."
+   },
+   {
+    "t": "p",
+    "html": "The Services are intended for users who are at least 18 years old. Persons under the age of 18 are not permitted to use or register for the Services."
+   },
+   {
+    "t": "p",
+    "html": "We recommend that you print a copy of these Legal Terms for your records."
+   },
+   {
+    "t": "h2",
+    "html": "<strong>TABLE OF CONTENTS</strong>",
+    "id": "a2595956-7028-dbe5-123e-d3d3a93ed076"
+   },
+   {
+    "t": "p",
+    "html": "<a href=\"#services\">1. OUR SERVICES</a>"
+   },
+   {
+    "t": "p",
+    "html": "<a href=\"#ip\">2. INTELLECTUAL PROPERTY RIGHTS</a>"
+   },
+   {
+    "t": "p",
+    "html": "<a href=\"#userreps\">3. USER REPRESENTATIONS</a>"
+   },
+   {
+    "t": "p",
+    "html": "<a href=\"#prohibited\">4. PROHIBITED ACTIVITIES</a>"
+   },
+   {
+    "t": "p",
+    "html": "<a href=\"#ugc\">5. USER GENERATED CONTRIBUTIONS</a>"
+   },
+   {
+    "t": "p",
+    "html": "<a href=\"#license\">6. CONTRIBUTION LICENSE</a>"
+   },
+   {
+    "t": "p",
+    "html": "<a href=\"#thirdparty\">7. THIRD-PARTY WEBSITES AND CONTENT</a>"
+   },
+   {
+    "t": "p",
+    "html": "<a href=\"#advertisers\">8. ADVERTISERS</a>"
+   },
+   {
+    "t": "p",
+    "html": "<a href=\"#sitemanage\">9. SERVICES MANAGEMENT</a>"
+   },
+   {
+    "t": "p",
+    "html": "<a href=\"#ppyes\">10. PRIVACY POLICY</a>"
+   },
+   {
+    "t": "p",
+    "html": "<a href=\"#terms\">11. TERM AND TERMINATION</a>"
+   },
+   {
+    "t": "p",
+    "html": "<a href=\"#modifications\">12. MODIFICATIONS AND INTERRUPTIONS</a>"
+   },
+   {
+    "t": "p",
+    "html": "<a href=\"#law\">13. GOVERNING LAW</a>"
+   },
+   {
+    "t": "p",
+    "html": "<a href=\"#disputes\">14. DISPUTE RESOLUTION</a>"
+   },
+   {
+    "t": "p",
+    "html": "<a href=\"#corrections\">15. CORRECTIONS</a>"
+   },
+   {
+    "t": "p",
+    "html": "<a href=\"#disclaimer\">16. DISCLAIMER</a>"
+   },
+   {
+    "t": "p",
+    "html": "<a href=\"#liability\">17. LIMITATIONS OF LIABILITY</a>"
+   },
+   {
+    "t": "p",
+    "html": "<a href=\"#indemnification\">18. INDEMNIFICATION</a>"
+   },
+   {
+    "t": "p",
+    "html": "<a href=\"#userdata\">19. USER DATA</a>"
+   },
+   {
+    "t": "p",
+    "html": "<a href=\"#electronic\">20. ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES</a>"
+   },
+   {
+    "t": "p",
+    "html": "<a href=\"#california\">21. CALIFORNIA USERS AND RESIDENTS</a>"
+   },
+   {
+    "t": "p",
+    "html": "<a href=\"#misc\">22. MISCELLANEOUS</a>"
+   },
+   {
+    "t": "p",
+    "html": "<a href=\"#contact\">23. CONTACT US</a>"
+   },
+   {
+    "t": "h2",
+    "html": "<strong>1. OUR SERVICES</strong>",
+    "id": "services"
+   },
+   {
+    "t": "p",
+    "html": "The information provided when using the Services is not intended for distribution to or use by any person or entity in any jurisdiction or country where such distribution or use would be contrary to law or regulation or which would subject us to any registration requirement within such jurisdiction or country. Accordingly, those persons who choose to access the Services from other locations do so on their own initiative and are solely responsible for compliance with local laws, if and to the extent local laws are applicable."
+   },
+   {
+    "t": "p",
+    "html": "The Services are not tailored to comply with industry-specific regulations (Health Insurance Portability and Accountability Act (HIPAA), Federal Information Security Management Act (FISMA), etc.), so if your interactions would be subjected to such laws, you may not use the Services. You may not use the Services in a way that would violate the Gramm-Leach-Bliley Act (GLBA)."
+   },
+   {
+    "t": "h2",
+    "html": "<strong>2. INTELLECTUAL PROPERTY RIGHTS</strong>"
+   },
+   {
+    "t": "h3",
+    "html": "<strong>Our intellectual property</strong>",
+    "id": "ip"
+   },
+   {
+    "t": "p",
+    "html": "We are the owner or the licensee of all intellectual property rights in our Services, including all source code, databases, functionality, software, website designs, audio, video, text, photographs, and graphics in the Services (collectively, the \"Content\"), as well as the trademarks, service marks, and logos contained therein (the \"Marks\")."
+   },
+   {
+    "t": "p",
+    "html": "Our Content and Marks are protected by copyright and trademark laws (and various other intellectual property rights and unfair competition laws) and treaties in the United States and around the world."
+   },
+   {
+    "t": "p",
+    "html": "The Content and Marks are provided in or through the Services \"AS IS\" for your personal, non-commercial use or internal business purpose only."
+   },
+   {
+    "t": "h3",
+    "html": "<strong>Your use of our Services</strong>"
+   },
+   {
+    "t": "p",
+    "html": "Subject to your compliance with these Legal Terms, including the \"<a href=\"#prohibited\">PROHIBITED ACTIVITIES</a>\" section below, we grant you a non-exclusive, non-transferable, revocable license to:"
+   },
+   {
+    "t": "li",
+    "html": "access the Services; and"
+   },
+   {
+    "t": "li",
+    "html": "download or print a copy of any portion of the Content to which you have properly gained access."
+   },
+   {
+    "t": "p",
+    "html": "solely for your personal, non-commercial use or internal business purpose."
+   },
+   {
+    "t": "p",
+    "html": "Except as set out in this section or elsewhere in our Legal Terms, no part of the Services and no Content or Marks may be copied, reproduced, aggregated, republished, uploaded, posted, publicly displayed, encoded, translated, transmitted, distributed, sold, licensed, or otherwise exploited for any commercial purpose whatsoever, without our express prior written permission."
+   },
+   {
+    "t": "p",
+    "html": "If you wish to make any use of the Services, Content, or Marks other than as set out in this section or elsewhere in our Legal Terms, please address your request to: info@shastaguides.com. If we ever grant you the permission to post, reproduce, or publicly display any part of our Services or Content, you must identify us as the owners or licensors of the Services, Content, or Marks and ensure that any copyright or proprietary notice appears or is visible on posting, reproducing, or displaying our Content."
+   },
+   {
+    "t": "p",
+    "html": "We reserve all rights not expressly granted to you in and to the Services, Content, and Marks."
+   },
+   {
+    "t": "p",
+    "html": "Any breach of these Intellectual Property Rights will constitute a material breach of our Legal Terms and your right to use our Services will terminate immediately."
+   },
+   {
+    "t": "h3",
+    "html": "<strong>Your submissions</strong>"
+   },
+   {
+    "t": "p",
+    "html": "Please review this section and the \"<a href=\"#prohibited\">PROHIBITED ACTIVITIES</a>\" section carefully prior to using our Services to understand the (a) rights you give us and (b) obligations you have when you post or upload any content through the Services."
+   },
+   {
+    "t": "p",
+    "html": "<strong>Submissions:</strong> By directly sending us any question, comment, suggestion, idea, feedback, or other information about the Services (\"Submissions\"), you agree to assign to us all intellectual property rights in such Submission. You agree that we shall own this Submission and be entitled to its unrestricted use and dissemination for any lawful purpose, commercial or otherwise, without acknowledgment or compensation to you."
+   },
+   {
+    "t": "p",
+    "html": "<strong>You are responsible for what you post or upload:</strong> By sending us Submissions through any part of the Services you:"
+   },
+   {
+    "t": "li",
+    "html": "confirm that you have read and agree with our \"<a href=\"#prohibited\">PROHIBITED ACTIVITIES</a>\" and will not post, send, publish, upload, or transmit through the Services any Submission that is illegal, harassing, hateful, harmful, defamatory, obscene, bullying, abusive, discriminatory, threatening to any person or group, sexually explicit, false, inaccurate, deceitful, or misleading;"
+   },
+   {
+    "t": "li",
+    "html": "to the extent permissible by applicable law, waive any and all moral rights to any such Submission;"
+   },
+   {
+    "t": "li",
+    "html": "warrant that any such Submission are original to you or that you have the necessary rights and licenses to submit such Submissions and that you have full authority to grant us the above-mentioned rights in relation to your Submissions; and"
+   },
+   {
+    "t": "li",
+    "html": "warrant and represent that your Submissions do not constitute confidential information."
+   },
+   {
+    "t": "p",
+    "html": "You are solely responsible for your Submissions and you expressly agree to reimburse us for any and all losses that we may suffer because of your breach of (a) this section, (b) any third party’s intellectual property rights, or (c) applicable law."
+   },
+   {
+    "t": "h2",
+    "html": "</a><strong><strong><strong>3.</strong> </strong>USER REPRESENTATIONS</strong>",
+    "id": "userreps"
+   },
+   {
+    "t": "p",
+    "html": "By using the Services, you represent and warrant that: (1) you have the legal capacity and you agree to comply with these Legal Terms; (2) you are not a minor in the jurisdiction in which you reside; (3) you will not access the Services through automated or non-human means, whether through a bot, script or otherwise; (4) you will not use the Services for any illegal or unauthorized purpose; and (5) your use of the Services will not violate any applicable law or regulation."
+   },
+   {
+    "t": "p",
+    "html": "If you provide any information that is untrue, inaccurate, not current, or incomplete, we have the right to suspend or terminate your account and refuse any and all current or future use of the Services (or any portion thereof)."
+   },
+   {
+    "t": "h2",
+    "html": "<strong><strong><strong>4.</strong> </strong>PROHIBITED ACTIVITIES</strong>",
+    "id": "prohibited"
+   },
+   {
+    "t": "p",
+    "html": "You may not access or use the Services for any purpose other than that for which we make the Services available. The Services may not be used in connection with any commercial endeavors except those that are specifically endorsed or approved by us."
+   },
+   {
+    "t": "p",
+    "html": "As a user of the Services, you agree not to:"
+   },
+   {
+    "t": "li",
+    "html": "Systematically retrieve data or other content from the Services to create or compile, directly or indirectly, a collection, compilation, database, or directory without written permission from us."
+   },
+   {
+    "t": "li",
+    "html": "Trick, defraud, or mislead us and other users, especially in any attempt to learn sensitive account information such as user passwords."
+   },
+   {
+    "t": "li",
+    "html": "Circumvent, disable, or otherwise interfere with security-related features of the Services, including features that prevent or restrict the use or copying of any Content or enforce limitations on the use of the Services and/or the Content contained therein."
+   },
+   {
+    "t": "li",
+    "html": "Disparage, tarnish, or otherwise harm, in our opinion, us and/or the Services."
+   },
+   {
+    "t": "li",
+    "html": "Use any information obtained from the Services in order to harass, abuse, or harm another person."
+   },
+   {
+    "t": "li",
+    "html": "Make improper use of our support services or submit false reports of abuse or misconduct."
+   },
+   {
+    "t": "li",
+    "html": "Use the Services in a manner inconsistent with any applicable laws or regulations."
+   },
+   {
+    "t": "li",
+    "html": "Engage in unauthorized framing of or linking to the Services."
+   },
+   {
+    "t": "li",
+    "html": "Upload or transmit (or attempt to upload or to transmit) viruses, Trojan horses, or other material, including excessive use of capital letters and spamming (continuous posting of repetitive text), that interferes with any party’s uninterrupted use and enjoyment of the Services or modifies, impairs, disrupts, alters, or interferes with the use, features, functions, operation, or maintenance of the Services."
+   },
+   {
+    "t": "li",
+    "html": "Engage in any automated use of the system, such as using scripts to send comments or messages, or using any data mining, robots, or similar data gathering and extraction tools."
+   },
+   {
+    "t": "li",
+    "html": "Delete the copyright or other proprietary rights notice from any Content."
+   },
+   {
+    "t": "li",
+    "html": "Attempt to impersonate another user or person or use the username of another user."
+   },
+   {
+    "t": "li",
+    "html": "Upload or transmit (or attempt to upload or to transmit) any material that acts as a passive or active information collection or transmission mechanism, including without limitation, clear graphics interchange formats (\"gifs\"), 1×1 pixels, web bugs, cookies, or other similar devices (sometimes referred to as \"spyware\" or \"passive collection mechanisms\" or \"pcms\")."
+   },
+   {
+    "t": "li",
+    "html": "Interfere with, disrupt, or create an undue burden on the Services or the networks or services connected to the Services."
+   },
+   {
+    "t": "li",
+    "html": "Harass, annoy, intimidate, or threaten any of our employees or agents engaged in providing any portion of the Services to you."
+   },
+   {
+    "t": "li",
+    "html": "Attempt to bypass any measures of the Services designed to prevent or restrict access to the Services, or any portion of the Services."
+   },
+   {
+    "t": "li",
+    "html": "Copy or adapt the Services' software, including but not limited to Flash, PHP, HTML, JavaScript, or other code."
+   },
+   {
+    "t": "li",
+    "html": "Except as permitted by applicable law, decipher, decompile, disassemble, or reverse engineer any of the software comprising or in any way making up a part of the Services."
+   },
+   {
+    "t": "li",
+    "html": "Except as may be the result of standard search engine or Internet browser usage, use, launch, develop, or distribute any automated system, including without limitation, any spider, robot, cheat utility, scraper, or offline reader that accesses the Services, or use or launch any unauthorized script or other software."
+   },
+   {
+    "t": "li",
+    "html": "Use a buying agent or purchasing agent to make purchases on the Services."
+   },
+   {
+    "t": "li",
+    "html": "Make any unauthorized use of the Services, including collecting usernames and/or email addresses of users by electronic or other means for the purpose of sending unsolicited email, or creating user accounts by automated means or under false pretenses."
+   },
+   {
+    "t": "li",
+    "html": "Use the Services as part of any effort to compete with us or otherwise use the Services and/or the Content for any revenue-generating endeavor or commercial enterprise."
+   },
+   {
+    "t": "h2",
+    "html": "<strong><strong><strong>5.</strong> </strong>USER GENERATED CONTRIBUTIONS</strong>",
+    "id": "ugc"
+   },
+   {
+    "t": "p",
+    "html": "The Services does not offer users to submit or post content."
+   },
+   {
+    "t": "h2",
+    "html": "<strong><strong><strong>6.</strong> </strong>CONTRIBUTION LICENSE</strong>",
+    "id": "license"
+   },
+   {
+    "t": "p",
+    "html": "You and Services agree that we may access, store, process, and use any information and personal data that you provide following the terms of the Privacy Policy and your choices (including settings)."
+   },
+   {
+    "t": "p",
+    "html": "By submitting suggestions or other feedback regarding the Services, you agree that we can use and share such feedback for any purpose without compensation to you."
+   },
+   {
+    "t": "h2",
+    "html": "<strong><strong>7.</strong> THIRD-PARTY WEBSITES AND CONTENT</strong>",
+    "id": "thirdparty"
+   },
+   {
+    "t": "p",
+    "html": "The Services may contain (or you may be sent via the Site) links to other websites (\"Third-Party Websites\") as well as articles, photographs, text, graphics, pictures, designs, music, sound, video, information, applications, software, and other content or items belonging to or originating from third parties (\"Third-Party Content\"). Such Third-Party Websites and Third-Party Content are not investigated, monitored, or checked for accuracy, appropriateness, or completeness by us, and we are not responsible for any Third-Party Websites accessed through the Services or any Third-Party Content posted on, available through, or installed from the Services, including the content, accuracy, offensiveness, opinions, reliability, privacy practices, or other policies of or contained in the Third-Party Websites or the Third-Party Content. Inclusion of, linking to, or permitting the use or installation of any Third-Party Websites or any Third-Party Content does not imply approval or endorsement thereof by us. If you decide to leave the Services and access the Third-Party Websites or to use or install any Third-Party Content, you do so at your own risk, and you should be aware these Legal Terms no longer govern. You should review the applicable terms and policies, including privacy and data gathering practices, of any website to which you navigate from the Services or relating to any applications you use or install from the Services. Any purchases you make through Third-Party Websites will be through other websites and from other companies, and we take no responsibility whatsoever in relation to such purchases which are exclusively between you and the applicable third party. You agree and acknowledge that we do not endorse the products or services offered on Third-Party Websites and you shall hold us blameless from any harm caused by your purchase of such products or services. Additionally, you shall hold us blameless from any losses sustained by you or harm caused to you relating to or resulting in any way from any Third-Party Content or any contact with Third-Party Websites."
+   },
+   {
+    "t": "h2",
+    "html": "<strong><strong><strong>8.</strong> </strong>ADVERTISERS</strong>",
+    "id": "advertisers"
+   },
+   {
+    "t": "p",
+    "html": "We allow advertisers to display their advertisements and other information in certain areas of the Services, such as sidebar advertisements or banner advertisements. We simply provide the space to place such advertisements, and we have no other relationship with advertisers."
+   },
+   {
+    "t": "h2",
+    "html": "<strong><strong><strong>9.</strong> </strong>SERVICES MANAGEMENT</strong>",
+    "id": "sitemanage"
+   },
+   {
+    "t": "p",
+    "html": "We reserve the right, but not the obligation, to: (1) monitor the Services for violations of these Legal Terms; (2) take appropriate legal action against anyone who, in our sole discretion, violates the law or these Legal Terms, including without limitation, reporting such user to law enforcement authorities; (3) in our sole discretion and without limitation, refuse, restrict access to, limit the availability of, or disable (to the extent technologically feasible) any of your Contributions or any portion thereof; (4) in our sole discretion and without limitation, notice, or liability, to remove from the Services or otherwise disable all files and content that are excessive in size or are in any way burdensome to our systems; and (5) otherwise manage the Services in a manner designed to protect our rights and property and to facilitate the proper functioning of the Services."
+   },
+   {
+    "t": "h2",
+    "html": "<strong><strong><strong>10.</strong> </strong>PRIVACY POLICY</strong>",
+    "id": "ppyes"
+   },
+   {
+    "t": "p",
+    "html": "We care about data privacy and security. Please review our Privacy Policy:<strong> <a href=\"http://www.shastaguides.com/privacypolicy\">http://www.shastaguides.com/privacypolicy</a></strong>. By using the Services, you agree to be bound by our Privacy Policy, which is incorporated into these Legal Terms. Please be advised the Services are hosted in the United States. If you access the Services from any other region of the world with laws or other requirements governing personal data collection, use, or disclosure that differ from applicable laws in the United States, then through your continued use of the Services, you are transferring your data to the United States, and you expressly consent to have your data transferred to and processed in the United States."
+   },
+   {
+    "t": "h2",
+    "html": "<strong><strong><strong>11.</strong> </strong>TERM AND TERMINATION</strong>",
+    "id": "terms"
+   },
+   {
+    "t": "p",
+    "html": "These Legal Terms shall remain in full force and effect while you use the Services. WITHOUT LIMITING ANY OTHER PROVISION OF THESE LEGAL TERMS, WE RESERVE THE RIGHT TO, IN OUR SOLE DISCRETION AND WITHOUT NOTICE OR LIABILITY, DENY ACCESS TO AND USE OF THE SERVICES (INCLUDING BLOCKING CERTAIN IP ADDRESSES), TO ANY PERSON FOR ANY REASON OR FOR NO REASON, INCLUDING WITHOUT LIMITATION FOR BREACH OF ANY REPRESENTATION, WARRANTY, OR COVENANT CONTAINED IN THESE LEGAL TERMS OR OF ANY APPLICABLE LAW OR REGULATION. WE MAY TERMINATE YOUR USE OR PARTICIPATION IN THE SERVICES OR DELETE ANY CONTENT OR INFORMATION THAT YOU POSTED AT ANY TIME, WITHOUT WARNING, IN OUR SOLE DISCRETION."
+   },
+   {
+    "t": "p",
+    "html": "If we terminate or suspend your account for any reason, you are prohibited from registering and creating a new account under your name, a fake or borrowed name, or the name of any third party, even if you may be acting on behalf of the third party. In addition to terminating or suspending your account, we reserve the right to take appropriate legal action, including without limitation pursuing civil, criminal, and injunctive redress."
+   },
+   {
+    "t": "h2",
+    "html": "<strong><strong><strong>12.</strong> </strong>MODIFICATIONS AND INTERRUPTIONS</strong>",
+    "id": "modifications"
+   },
+   {
+    "t": "p",
+    "html": "We reserve the right to change, modify, or remove the contents of the Services at any time or for any reason at our sole discretion without notice. However, we have no obligation to update any information on our Services. We will not be liable to you or any third party for any modification, price change, suspension, or discontinuance of the Services."
+   },
+   {
+    "t": "p",
+    "html": "We cannot guarantee the Services will be available at all times. We may experience hardware, software, or other problems or need to perform maintenance related to the Services, resulting in interruptions, delays, or errors. We reserve the right to change, revise, update, suspend, discontinue, or otherwise modify the Services at any time or for any reason without notice to you. You agree that we have no liability whatsoever for any loss, damage, or inconvenience caused by your inability to access or use the Services during any downtime or discontinuance of the Services. Nothing in these Legal Terms will be construed to obligate us to maintain and support the Services or to supply any corrections, updates, or releases in connection therewith."
+   },
+   {
+    "t": "h2",
+    "html": "<strong><strong><strong>13.</strong> </strong>GOVERNING LAW</strong>",
+    "id": "law"
+   },
+   {
+    "t": "p",
+    "html": "These Legal Terms and your use of the Services are governed by and construed in accordance with the laws of the State of California applicable to agreements made and to be entirely performed within the State of California, without regard to its conflict of law principles."
+   },
+   {
+    "t": "h2",
+    "html": "<strong><strong><strong>14.</strong> </strong>DISPUTE RESOLUTION</strong>",
+    "id": "disputes"
+   },
+   {
+    "t": "p",
+    "html": "Any legal action of whatever nature brought by either you or us (collectively, the \"Parties\" and individually, a \"Party\") shall be commenced or prosecuted in the state and federal courts located in Siskiyou, California, and the Parties hereby consent to, and waive all defenses of lack of personal jurisdiction and forum non conveniens with respect to venue and jurisdiction in such state and federal courts. Application of the United Nations Convention on Contracts for the International Sale of Goods and the Uniform Computer Information Transaction Act (UCITA) are excluded from these Legal Terms. In no event shall any claim, action, or proceeding brought by either Party related in any way to the Services be commenced more than one (1) years after the cause of action arose."
+   },
+   {
+    "t": "h2",
+    "html": "<strong><strong><strong>15.</strong> </strong>CORRECTIONS</strong>",
+    "id": "corrections"
+   },
+   {
+    "t": "p",
+    "html": "There may be information on the Services that contains typographical errors, inaccuracies, or omissions, including descriptions, pricing, availability, and various other information. We reserve the right to correct any errors, inaccuracies, or omissions and to change or update the information on the Services at any time, without prior notice."
+   },
+   {
+    "t": "h2",
+    "html": "<strong><strong>16.</strong> DISCLAIMER</strong>",
+    "id": "disclaimer"
+   },
+   {
+    "t": "p",
+    "html": "THE SERVICES ARE PROVIDED ON AN AS-IS AND AS-AVAILABLE BASIS. YOU AGREE THAT YOUR USE OF THE SERVICES WILL BE AT YOUR SOLE RISK. TO THE FULLEST EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, IN CONNECTION WITH THE SERVICES AND YOUR USE THEREOF, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE MAKE NO WARRANTIES OR REPRESENTATIONS ABOUT THE ACCURACY OR COMPLETENESS OF THE SERVICES' CONTENT OR THE CONTENT OF ANY WEBSITES OR MOBILE APPLICATIONS LINKED TO THE SERVICES AND WE WILL ASSUME NO LIABILITY OR RESPONSIBILITY FOR ANY (1) ERRORS, MISTAKES, OR INACCURACIES OF CONTENT AND MATERIALS, (2) PERSONAL INJURY OR PROPERTY DAMAGE, OF ANY NATURE WHATSOEVER, RESULTING FROM YOUR ACCESS TO AND USE OF THE SERVICES, (3) ANY UNAUTHORIZED ACCESS TO OR USE OF OUR SECURE SERVERS AND/OR ANY AND ALL PERSONAL INFORMATION AND/OR FINANCIAL INFORMATION STORED THEREIN, (4) ANY INTERRUPTION OR CESSATION OF TRANSMISSION TO OR FROM THE SERVICES, (5) ANY BUGS, VIRUSES, TROJAN HORSES, OR THE LIKE WHICH MAY BE TRANSMITTED TO OR THROUGH THE SERVICES BY ANY THIRD PARTY, AND/OR (6) ANY ERRORS OR OMISSIONS IN ANY CONTENT AND MATERIALS OR FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF ANY CONTENT POSTED, TRANSMITTED, OR OTHERWISE MADE AVAILABLE VIA THE SERVICES. WE DO NOT WARRANT, ENDORSE, GUARANTEE, OR ASSUME RESPONSIBILITY FOR ANY PRODUCT OR SERVICE ADVERTISED OR OFFERED BY A THIRD PARTY THROUGH THE SERVICES, ANY HYPERLINKED WEBSITE, OR ANY WEBSITE OR MOBILE APPLICATION FEATURED IN ANY BANNER OR OTHER ADVERTISING, AND WE WILL NOT BE A PARTY TO OR IN ANY WAY BE RESPONSIBLE FOR MONITORING ANY TRANSACTION BETWEEN YOU AND ANY THIRD-PARTY PROVIDERS OF PRODUCTS OR SERVICES. AS WITH THE PURCHASE OF A PRODUCT OR SERVICE THROUGH ANY MEDIUM OR IN ANY ENVIRONMENT, YOU SHOULD USE YOUR BEST JUDGMENT AND EXERCISE CAUTION WHERE APPROPRIATE."
+   },
+   {
+    "t": "h2",
+    "html": "<strong><strong><strong>17.</strong> </strong>LIMITATIONS OF LIABILITY</strong>",
+    "id": "liability"
+   },
+   {
+    "t": "p",
+    "html": "IN NO EVENT WILL WE OR OUR DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY DIRECT, INDIRECT, CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, SPECIAL, OR PUNITIVE DAMAGES, INCLUDING LOST PROFIT, LOST REVENUE, LOSS OF DATA, OR OTHER DAMAGES ARISING FROM YOUR USE OF THE SERVICES, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES."
+   },
+   {
+    "t": "h2",
+    "html": "<strong><strong><strong>18.</strong> </strong>INDEMNIFICATION</strong>",
+    "id": "indemnification"
+   },
+   {
+    "t": "p",
+    "html": "You agree to defend, indemnify, and hold us harmless, including our subsidiaries, affiliates, and all of our respective officers, agents, partners, and employees, from and against any loss, damage, liability, claim, or demand, including reasonable attorneys’ fees and expenses, made by any third party due to or arising out of: (1) use of the Services; (2) breach of these Legal Terms; (3) any breach of your representations and warranties set forth in these Legal Terms; (4) your violation of the rights of a third party, including but not limited to intellectual property rights; or (5) any overt harmful act toward any other user of the Services with whom you connected via the Services. Notwithstanding the foregoing, we reserve the right, at your expense, to assume the exclusive defense and control of any matter for which you are required to indemnify us, and you agree to cooperate, at your expense, with our defense of such claims. We will use reasonable efforts to notify you of any such claim, action, or proceeding which is subject to this indemnification upon becoming aware of it."
+   },
+   {
+    "t": "h2",
+    "html": "<strong><strong><strong>19.</strong> </strong>USER DATA</strong>",
+    "id": "userdata"
+   },
+   {
+    "t": "p",
+    "html": "We will maintain certain data that you transmit to the Services for the purpose of managing the performance of the Services, as well as data relating to your use of the Services. Although we perform regular routine backups of data, you are solely responsible for all data that you transmit or that relates to any activity you have undertaken using the Services. You agree that we shall have no liability to you for any loss or corruption of any such data, and you hereby waive any right of action against us arising from any such loss or corruption of such data."
+   },
+   {
+    "t": "h2",
+    "html": "<strong><strong><strong>20.</strong> </strong>ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES</strong>",
+    "id": "electronic"
+   },
+   {
+    "t": "p",
+    "html": "Visiting the Services, sending us emails, and completing online forms constitute electronic communications. You consent to receive electronic communications, and you agree that all agreements, notices, disclosures, and other communications we provide to you electronically, via email and on the Services, satisfy any legal requirement that such communication be in writing. YOU HEREBY AGREE TO THE USE OF ELECTRONIC SIGNATURES, CONTRACTS, ORDERS, AND OTHER RECORDS, AND TO ELECTRONIC DELIVERY OF NOTICES, POLICIES, AND RECORDS OF TRANSACTIONS INITIATED OR COMPLETED BY US OR VIA THE SERVICES. You hereby waive any rights or requirements under any statutes, regulations, rules, ordinances, or other laws in any jurisdiction which require an original signature or delivery or retention of non-electronic records, or to payments or the granting of credits by any means other than electronic means."
+   },
+   {
+    "t": "h2",
+    "html": "<strong><strong><strong>21.</strong> </strong>CALIFORNIA USERS AND RESIDENTS</strong>",
+    "id": "california"
+   },
+   {
+    "t": "p",
+    "html": "If any complaint with us is not satisfactorily resolved, you can contact the Complaint Assistance Unit of the Division of Consumer Services of the California Department of Consumer Affairs in writing at 1625 North Market Blvd., Suite N 112, Sacramento, California 95834 or by telephone at (800) 952-5210 or (916) 445-1254."
+   },
+   {
+    "t": "h2",
+    "html": "<strong><strong><strong>22.</strong> </strong>MISCELLANEOUS</strong>",
+    "id": "misc"
+   },
+   {
+    "t": "p",
+    "html": "These Legal Terms and any policies or operating rules posted by us on the Services or in respect to the Services constitute the entire agreement and understanding between you and us. Our failure to exercise or enforce any right or provision of these Legal Terms shall not operate as a waiver of such right or provision. These Legal Terms operate to the fullest extent permissible by law. We may assign any or all of our rights and obligations to others at any time. We shall not be responsible or liable for any loss, damage, delay, or failure to act caused by any cause beyond our reasonable control. If any provision or part of a provision of these Legal Terms is determined to be unlawful, void, or unenforceable, that provision or part of the provision is deemed severable from these Legal Terms and does not affect the validity and enforceability of any remaining provisions. There is no joint venture, partnership, employment or agency relationship created between you and us as a result of these Legal Terms or use of the Services. You agree that these Legal Terms will not be construed against us by virtue of having drafted them. You hereby waive any and all defenses you may have based on the electronic form of these Legal Terms and the lack of signing by the parties hereto to execute these Legal Terms."
+   },
+   {
+    "t": "h2",
+    "html": "<strong><strong><strong>23.</strong> </strong>CONTACT US</strong>",
+    "id": "contact"
+   },
+   {
+    "t": "p",
+    "html": "In order to resolve a complaint regarding the Services or to receive further information regarding use of the Services, please contact us at:"
+   },
+   {
+    "t": "p",
+    "html": "<strong>Shasta Mountain Guides LLC</strong>"
+   },
+   {
+    "t": "p",
+    "html": "<strong>305 Chestnut St</strong>"
+   },
+   {
+    "t": "p",
+    "html": "<strong>Mount Shasta, CA 96067</strong>"
+   },
+   {
+    "t": "p",
+    "html": "<strong>United States</strong>"
+   },
+   {
+    "t": "p",
+    "html": "<strong>Phone: 530.926.3117</strong>"
+   },
+   {
+    "t": "p",
+    "html": "<strong>info@shastaguides.com</strong>"
+   },
+   {
+    "t": "p",
+    "html": "These terms of use were created using Termly's <a href=\"https://termly.io/products/terms-and-conditions-generator/\">Terms and Conditions Generator</a>."
+   }
+  ],
+  "slug": "terms-of-service",
+  "source": "https://shastaguides.com/terms-of-service"
+ },
+ "contact": {
+  "title": "Contact",
+  "h1": "Contact Us",
+  "eyebrow": "Mt. Shasta, California",
+  "lede": "Questions about a trip, dates or gear? Send us a note and a guide will reply within one business day.",
+  "hero": {
+   "src": "assets/info/90cda8-shastacastle.jpg",
+   "alt": "Mt. Shasta"
+  },
+  "address": [
+   "305 Chestnut Street",
+   "Mt. Shasta, California 96067"
+  ],
+  "phone": "530.926.3117",
+  "email": "info@shastaguides.com",
+  "slug": "contact",
+  "source": "https://shastaguides.com/contact"
+ }
+}

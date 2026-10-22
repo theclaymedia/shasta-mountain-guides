@@ -3,7 +3,9 @@
 Usage: python3 sqs_blocks.py page.html  → prints JSON [{"t": "h1|h2|h3|h4|p|li|img|a", ...}, ...]
 Skips scripts, styles, the site header/footer and navigation; keeps headings, paragraphs,
 list items, accordion titles, images (with alt) and links/buttons, in document order.
+Text blocks also carry "html": the same text with inline links, bold and italics kept.
 """
+import html as H
 import json
 import re
 import sys
@@ -11,12 +13,13 @@ from html.parser import HTMLParser
 
 SKIP = {"script", "style", "noscript", "svg", "header", "footer", "nav", "template"}
 BLOCK = {"h1", "h2", "h3", "h4", "h5", "p", "li", "summary", "button"}
+INLINE = {"strong": "strong", "b": "strong", "em": "em", "i": "em"}
 
 
 class Blocks(HTMLParser):
     def __init__(self):
         super().__init__(convert_charrefs=True)
-        self.out, self.skip, self.stack, self.buf, self.link = [], 0, [], [], None
+        self.out, self.skip, self.stack, self.buf, self.link, self.hbuf = [], 0, [], [], None, []
 
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
@@ -33,6 +36,10 @@ class Blocks(HTMLParser):
             return
         if tag == "a":
             self.link = a.get("href")
+            if self.stack and self.link:
+                self.hbuf.append(f'<a href="{H.escape(self.link)}">')
+        if tag in INLINE and self.stack:
+            self.hbuf.append(f"<{INLINE[tag]}>")
         if "accordion-item__title" in cls:
             tag = "h4"
         if tag in BLOCK:
@@ -40,6 +47,7 @@ class Blocks(HTMLParser):
             self.stack.append(tag)
         if tag == "br":
             self.buf.append("\n")
+            self.hbuf.append("<br>")
 
     def handle_endtag(self, tag):
         if tag in SKIP:
@@ -53,7 +61,11 @@ class Blocks(HTMLParser):
                 self.out.append({"t": "a", "text": text, "href": self.link})
             self.buf = []
         if tag == "a":
+            if self.stack and self.link:
+                self.hbuf.append("</a>")
             self.link = None
+        if tag in INLINE and self.stack:
+            self.hbuf.append(f"</{INLINE[tag]}>")
         if tag in BLOCK and self.stack:
             self.flush()
 
@@ -61,14 +73,17 @@ class Blocks(HTMLParser):
         text = "".join(self.buf)
         text = "\n".join(" ".join(line.split()) for line in text.split("\n")).strip()
         if self.stack and text:
-            self.out.append({"t": self.stack[-1] if self.stack[-1] != "summary" else "h4", "text": text})
+            html = " ".join("".join(self.hbuf).split()).replace("<br> ", "<br>").strip()
+            html = re.sub(r"(<br>)+$", "", re.sub(r"<(strong|em)>\s*</\1>", "", html))
+            self.out.append({"t": self.stack[-1] if self.stack[-1] != "summary" else "h4", "text": text, "html": html})
         if self.stack:
             self.stack.pop()
-        self.buf = []
+        self.buf, self.hbuf = [], []
 
     def handle_data(self, data):
         if not self.skip:
             self.buf.append(data)
+            self.hbuf.append(H.escape(data, quote=False))
 
 
 def blocks(path):

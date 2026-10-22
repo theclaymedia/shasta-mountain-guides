@@ -394,3 +394,78 @@
 .itin__day ol{ list-style:none; display:grid; gap:.8rem; }
 .itin__day li{ display:grid; gap:.15rem; font-size:.94rem; color:var(--gray); line-height:1.6; }
 .itin__day .t{ font-size:.72rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--ink); }
+
+/* ---------- Info pages (tools/build-info-pages.js) ---------- */
+.page-hero--short{ min-height:48vh; }
+.page-hero--plain{ min-height:0; padding-top:clamp(4rem,9vw,6rem); background:var(--deep); }
+.page-hero--plain::after{ display:none; }
+.prose p{ margin-top:.9rem; color:var(--body); }
+.prose p:first-child{ margin-top:0; }
+.prose a{ color:var(--glacier); text-decoration:underline; text-underline-offset:2px; }
+.prose a:hover{ color:var(--deep); }
+/* Long pages: sticky contents list beside the sections */
+.doc{ display:grid; grid-template-columns:15rem 1fr; gap:clamp(2rem,5vw,4.5rem); align-items:start; }
+.toc{ position:sticky; top:96px; max-height:calc(100vh - 120px); overflow-y:auto; display:grid; gap:.15rem; border-left:2px solid var(--line); }
+.toc .label{ padding:0 0 .6rem 1rem; }
+.toc a{ display:block; padding:.32rem 0 .32rem 1rem; margin-left:-2px; border-left:2px solid transparent; font-size:.88rem; color:var(--gray); line-height:1.35; }
+.toc a:hover{ color:var(--glacier); border-left-color:var(--glacier); }
+.doc__body{ max-width:46rem; }
+.doc__sec{ padding-block:1.6rem; border-top:1px solid var(--line); }
+.doc__sec:first-child{ border-top:0; padding-top:0; }
+.doc__sec h2{ font-size:clamp(1.5rem,2.6vw,1.9rem); letter-spacing:.02em; margin-bottom:.8rem; }
+@media (max-width:880px){
+  .doc{ grid-template-columns:1fr; }
+  .toc{ position:static; max-height:none; border-left:0; display:flex; flex-wrap:wrap; gap:.4rem; }
+  .toc .label{ width:100%; padding:0 0 .2rem; }
+  .toc a{ margin:0; padding:.35rem .7rem; border:1px solid var(--line); border-radius:999px; font-size:.8rem; background:#fff; }
+}
+/* Gear list downloads */
+.gear-lists{ display:grid; grid-template-columns:repeat(auto-fill,minmax(15rem,1fr)); gap:.8rem; margin-top:1.4rem; }
+.gear-lists a{ display:flex; align-items:center; gap:.8rem; padding:.9rem 1rem; background:#fff; border:1px solid var(--line); border-radius:var(--radius); font-weight:600; font-size:.92rem; color:var(--ink); transition:border-color .2s, transform .2s; }
+.gear-lists a:hover{ border-color:var(--glacier); transform:translateY(-2px); }
+.gear-lists svg{ width:1.3rem; height:1.3rem; flex-shrink:0; fill:none; stroke:var(--glacier); stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+/* About: the team */
+.team{ display:grid; grid-template-columns:repeat(2,1fr); gap:1.2rem; }
+.member{ background:#fff; border:1px solid var(--line); border-radius:var(--radius); padding:1.6rem; display:grid; grid-template-columns:auto 1fr; gap:.4rem 1.3rem; align-content:start; }
+.member .avatar{ width:5.6rem; height:5.6rem; border-radius:50%; overflow:hidden; background:var(--deep); color:var(--sun); font-family:var(--display); font-size:1.8rem; display:flex; align-items:center; justify-content:center; letter-spacing:.04em; grid-row:span 3; box-shadow:0 0 0 3px #fff, 0 0 0 4px var(--line); }
+.member .avatar img{ width:100%; height:100%; object-fit:cover; }
+.member h3{ font-size:1.45rem; letter-spacing:.03em; align-self:end; }
+.member .role{ font-size:.72rem; font-weight:700; letter-spacing:.18em; text-transform:uppercase; color:var(--glacier); }
+.member .certs{ font-size:.82rem; color:var(--gray); line-height:1.5; }
+.member .bio{ grid-column:1 / -1; margin-top:.8rem; font-size:.94rem; }
+.member .bio p{ color:var(--gray); line-height:1.65; }
+.member .local{ display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:#2A1C05; background:var(--sun); border-radius:4px; padding:.15rem .55rem; justify-self:start; }
+@media (max-width:880px){ .team{ grid-template-columns:1fr; } }
+@media (max-width:480px){ .member{ grid-template-columns:1fr; } .member .avatar{ grid-row:auto; } }
+/* Routes & seasons */
+.route-map{ max-width:62rem; margin:0 auto; border-radius:var(--radius); overflow:hidden; border:1px solid var(--line); box-shadow:0 18px 44px rgba(18,34,47,.12); background:#fff; }
+.season{ background:#fff; border:1px solid var(--line); border-radius:var(--radius); padding:1.6rem 1.7rem; display:grid; gap:.7rem; align-content:start; }
+.season h3{ font-size:1.5rem; letter-spacing:.03em; }
+.season .when{ font-size:.72rem; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:var(--glacier); }
+.season p{ color:var(--gray); }
+.route-links{ display:flex; flex-wrap:wrap; gap:.45rem; margin-top:.3rem; }
+.route-links a{ font-size:.8rem; font-weight:600; padding:.35rem .75rem; border-radius:999px; background:var(--frost); color:var(--glacier); }
+.route-links a:hover{ background:var(--glacier); color:#fff; }
+/* Training */
+.quote{ margin:0; background:var(--deep); color:var(--ice); border-radius:var(--radius); padding:clamp(1.6rem,3vw,2.4rem); }
+.quote p{ font-size:clamp(1.02rem,1.6vw,1.15rem); line-height:1.7; color:#fff; }
+.quote figcaption{ margin-top:1rem; font-size:.78rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--sun); }
+/* FAQ */
+.qa-list{ display:grid; gap:.7rem; max-width:52rem; }
+.qa{ background:#fff; border:1px solid var(--line); border-radius:var(--radius); }
+.qa summary{ list-style:none; cursor:pointer; display:flex; justify-content:space-between; align-items:center; gap:1rem; padding:1.15rem 1.4rem; font-weight:600; font-size:1.02rem; color:var(--ink); }
+.qa summary::-webkit-details-marker{ display:none; }
+.qa summary::after{ content:"+"; font-family:var(--display); font-size:1.5rem; line-height:1; color:var(--glacier); transition:transform .2s; }
+.qa[open] summary::after{ transform:rotate(45deg); }
+.qa summary:hover{ color:var(--glacier); }
+.qa summary:focus-visible{ outline:3px solid var(--glacier); outline-offset:2px; border-radius:var(--radius); }
+.qa .prose{ padding:0 1.4rem 1.3rem; }
+/* Legal */
+.legal{ max-width:48rem; }
+.legal .updated{ font-size:.78rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--glacier); margin-bottom:1.6rem; }
+.legal h2{ font-size:clamp(1.3rem,2.2vw,1.6rem); letter-spacing:.02em; margin-top:2.2rem; }
+.legal h3{ font-family:var(--body); font-size:1.02rem; font-weight:700; color:var(--ink); margin-top:1.4rem; text-transform:none; letter-spacing:0; }
+.legal p{ margin-top:.8rem; font-size:.95rem; color:var(--body); line-height:1.7; }
+.legal ul{ margin:.8rem 0 0 1.2rem; display:grid; gap:.35rem; }
+.legal li{ font-size:.95rem; color:var(--body); line-height:1.6; }
+.legal a{ color:var(--glacier); text-decoration:underline; word-break:break-word; }
