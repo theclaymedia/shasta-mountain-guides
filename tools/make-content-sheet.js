@@ -109,12 +109,12 @@ children.push(small('The eight trip cards in their new order. Every image is one
 children.push(table3([
   ['1. Climb Shasta', 'Photo: “shasta climb gulch shadow” — rope team at sunrise with the mountain’s shadow behind'],
   ['2. Ski Shasta', 'Photo: “Shastaski.gulch” — skier carving powder below the Red Banks'],
-  ['3. Mountaineering Courses', 'Photo: “guide helping” — guide fitting a climber’s crampons at camp', 'Done — moved to third.'],
+  ['3. Mountaineering Courses', 'Photo: “glacier training” — a guide teaching rope and crevasse rescue skills on the glacier', 'Done for now — shows the glacier rope training photo until your new content arrives.'],
   ['4. Custom Trips', 'Photo: “Climb.north2” — climbers on the north side at sunrise', 'Done — moved to fourth.'],
   ['5. Avalanche Courses', 'Photo: “skintrack” — skin track winding up a snowy ridge', 'Done — moved to fifth.'],
   ['6. Backpacking', 'Photo: “Northside basecamp” — filling a bottle from a spring at basecamp', 'Done — moved to sixth.'],
   ['7. Rock Climbing', 'Photo: “mz.cosmic” — a climber on the granite of Cosmic Wall in Castle Crags', 'Done — moved to seventh, and now uses your Cosmic Wall photo. Is this Michael Zanger? We can caption it.'],
-  ['8. Day Trips', 'Photo: “Shasta trailhead” — group raising poles at the trailhead'],
+  ['8. Day Trips', 'Photo: “dayhike” — a hiker facing the spires of Castle Crags', 'Done — now matches the Day Trips page.'],
 ], COLS3, ['Card', 'Image now used', 'Your notes / swap']));
 children.push(placeholder('Each card still needs a destination page and one short line of description. Tell us which programs are being retired and we will draft the lines for the ones that remain.'));
 
@@ -262,7 +262,7 @@ children.push(gap());
 children.push(small('Photos used, by section:'));
 children.push(...bullets([
   'Hero slideshow — CATO high5, CATO flags, AGskintrack (your three USE_IN_HERO files)',
-  'Trip cards — shasta climb gulch shadow, Shastaski.gulch, guide helping, Climb.north2, skintrack, Northside basecamp, mz.cosmic, Shasta trailhead',
+  'Trip cards — shasta climb gulch shadow, Shastaski.gulch, glacier training, Climb.north2, skintrack, Northside basecamp, mz.cosmic, dayhike',
   'Why SMG — shasta team',
   'Meet Your Guides — BCPP_2026_CATO (team summit photo) plus eleven headshots from shastaguides.com/about',
   'Rooted in Mt. Shasta — Shasta.lentics',
@@ -270,7 +270,7 @@ children.push(...bullets([
   'Photo strip — headlamps alpine start, Shasta one, CATO climb shadow, casavalcamp2, GB ski, climb.casaval1',
 ]));
 children.push(gap());
-children.push(small('Added from the Drive folder on October 13 and now in use: cosmic (Rock Climbing hero), mz.cosmic (Rock Climbing card and Fun Climbing Day), cosmicgear (Cosmic Wall), glacier training (Glacier II), clear creek (Clear Creek climb), hikeclearcreek (Climb Shasta photo strip), Porcupine Lake (PCT Backpacking), dayhike (Day Trips hero).'));
+children.push(small('Added from the Drive folder on October 13 and now in use: cosmic (Rock Climbing hero), mz.cosmic (Rock Climbing card and Fun Climbing Day), cosmicgear (Cosmic Wall), glacier training (Glacier II and the Mountaineering card), clear creek (Clear Creek climb), hikeclearcreek (Climb Shasta photo strip), Porcupine Lake (PCT Backpacking), dayhike (Day Trips hero and card).'));
 children.push(small('New in the Drive folder since Round 2, held for inner pages or swaps:'));
 children.push(...bullets([
   'shastaroutemap (route map — ideal for the “Which route?” article and the quiz), smgadmin (team group), basecampdinner, campwater, glissadehorns, miseryhill, redbanksiceaxe, redbanksfisheye, pow ski, approachhike, avalanche climbers gully, casaval.ridge, climbhotlumguides, Helen switchbacks, shasta northeast side, shasta south side, uptrack south side',

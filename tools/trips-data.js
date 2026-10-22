@@ -127,7 +127,7 @@ module.exports = [
         experience: 'Previous mountaineering experience plus significant ski or splitboard touring experience.',
         demand: 'Excellent fitness and recent experience climbing 2,500 to 4,000 feet per day on skis. Advanced downhill ability in all conditions.',
         learn: LIVE + '/shasta-ski-descent' },
-      { name: 'Single-Day Ski Push', tag: 'Expert', img: 'assets/images/climb-shadow-dawn.jpg', alt: 'Climbers at dawn high on the mountain', length: '1 day', cost: '$1,295 per person',
+      { name: 'Single-Day Ski Push', tag: 'Expert', img: 'assets/images/PChu.jpg', alt: 'A skier high on Mt. Shasta below the Red Banks', length: '1 day', cost: '$1,295 per person',
         blurb: 'Our most ambitious itinerary and only single-day summit attempt.',
         experience: 'Previous ski mountaineering experience plus significant ski or splitboard touring experience.',
         demand: 'No time to acclimatize. Excellent fitness, recent 3,500 to 5,000 foot ski days, expert downhill ability.',
@@ -160,7 +160,7 @@ module.exports = [
     eyebrow: 'Learn to Mountaineer',
     h1: 'Mountaineering Courses',
     lede: 'Build a solid foundation of mountain skills on one of California’s largest glaciers, then put them to work on a summit climb.',
-    hero: { src: 'assets/images/guide-teaching-crampons.jpg', alt: 'A Shasta Mountain Guides instructor helps a climber fit crampons at camp' },
+    hero: { src: 'assets/images/hotlum-ridge-climb.jpg', alt: 'A roped team climbs a steep snow ridge high on Mt. Shasta' },
     intro: [
       'As a major volcanic peak in the Cascade Range, Mt. Shasta is an ideal place to learn and develop the key skills of a proficient mountaineer and alpine climber.',
       'Our four and five-day seminars build a solid foundation of mountain skills while making a summit climb on one of California’s largest glaciers. Our guides are highly skilled climbers and teachers, eager to share their experience with you.',
