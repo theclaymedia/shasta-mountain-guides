@@ -25,6 +25,14 @@ for (const t of trips.filter(x => x.slug)) {
   for (const s of t.strip || []) seen.add(s);
 }
 
+// Trip pages: hero, photo grid and gear list, plus every gear PDF the redirects point the live /s/ links at.
+const details = require('../trip-details.json');
+for (const t of details.trips) {
+  for (const g of [t.hero, ...t.gallery]) { seen.add(g.src); if (!alts[g.src] && g.alt) alts[g.src] = g.alt; }
+  if (t.gear) seen.add(t.gear.href);
+}
+for (const f of fs.readdirSync(path.join(ROOT, 'assets', 'downloads'))) if (/-gear-list\.pdf$/.test(f)) seen.add(`assets/downloads/${f}`);
+
 const manifest = [...seen]
   .filter(p => !/\.(css|js)$/.test(p))
   .sort()

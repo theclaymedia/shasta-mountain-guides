@@ -1,4 +1,8 @@
 {
+    "assets/downloads/smg-advanced-climbing-seminars-gear-list.pdf": {
+        "id": 835,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/smg-advanced-climbing-seminars-gear-list.pdf"
+    },
     "assets/downloads/smg-backcountry-ski-avalanche-gear-list.pdf": {
         "id": 10,
         "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/smg-backcountry-ski-avalanche-gear-list.pdf"
@@ -14,6 +18,14 @@
     "assets/downloads/smg-pct-backpacking-gear-list.pdf": {
         "id": 13,
         "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/smg-pct-backpacking-gear-list.pdf"
+    },
+    "assets/downloads/smg-rock-climbing-gear-list.pdf": {
+        "id": 836,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/smg-rock-climbing-gear-list.pdf"
+    },
+    "assets/downloads/smg-single-push-ski-descent-gear-list.pdf": {
+        "id": 837,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/smg-single-push-ski-descent-gear-list.pdf"
     },
     "assets/downloads/smg-ski-snowboard-mountaineering-gear-list.pdf": {
         "id": 14,
@@ -286,5 +298,589 @@
     "assets/logos/SMG-logo-white.png": {
         "id": 81,
         "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/SMG-logo-white.webp"
+    },
+    "assets/trips/0380ae-190519-ckrumholz-0867--281-29.jpg": {
+        "id": 838,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/0380ae-190519-ckrumholz-0867-281-29.jpg"
+    },
+    "assets/trips/038817-mt.-shasta-late-season-north-side.jpg": {
+        "id": 839,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/038817-mt.-shasta-late-season-north-side.jpg"
+    },
+    "assets/trips/077450-clearcreekcamp.jpg": {
+        "id": 840,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/077450-clearcreekcamp.jpg"
+    },
+    "assets/trips/079776-helen-switchbacks.jpg": {
+        "id": 841,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/079776-helen-switchbacks.jpg"
+    },
+    "assets/trips/0b34b1-senior-guide-tailer-spinney-whipping-up-a-feast-for-her-clients.jpg": {
+        "id": 842,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/0b34b1-senior-guide-tailer-spinney-whipping-up-a-feast-for-her-clients.jpg"
+    },
+    "assets/trips/0e1eec-180708-ckrumholz-2018.jpg": {
+        "id": 843,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/0e1eec-180708-ckrumholz-2018.jpg"
+    },
+    "assets/trips/148131-180714-ckrumholz-0401.jpg": {
+        "id": 844,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/148131-180714-ckrumholz-0401.jpg"
+    },
+    "assets/trips/14d9e8-climb.north2.jpg": {
+        "id": 845,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/14d9e8-climb.north2_.jpg"
+    },
+    "assets/trips/1649e7-lake-helen-skiers.jpg": {
+        "id": 846,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/1649e7-lake-helen-skiers.jpg"
+    },
+    "assets/trips/191efc-skitoshasta.jpg": {
+        "id": 847,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/191efc-skitoshasta.jpg"
+    },
+    "assets/trips/193fa9-180714-ckrumholz-0565--281-29.jpg": {
+        "id": 848,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/193fa9-180714-ckrumholz-0565-281-29.jpg"
+    },
+    "assets/trips/1cffea-180629-ckrumholz-1349.jpg": {
+        "id": 849,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/1cffea-180629-ckrumholz-1349.jpg"
+    },
+    "assets/trips/1d6af3-180707-ckrumholz-0086.jpg": {
+        "id": 850,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/1d6af3-180707-ckrumholz-0086.jpg"
+    },
+    "assets/trips/1ddc43-hidden-valley-mt.-shasta.jpg": {
+        "id": 851,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/1ddc43-hidden-valley-mt.-shasta.jpg"
+    },
+    "assets/trips/1e5d3a-snapinsta.app-320031728-1145283486121632-4397591440084761167-n-1080.jpg": {
+        "id": 852,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/1e5d3a-snapinsta.app-320031728-1145283486121632-4397591440084761167-n-1080.jpg"
+    },
+    "assets/trips/1eb8fc-hotlum.climb.jpg": {
+        "id": 853,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/1eb8fc-hotlum.climb_.jpg"
+    },
+    "assets/trips/1f5a0d-northside-basecamp.jpg": {
+        "id": 854,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/1f5a0d-northside-basecamp.jpg"
+    },
+    "assets/trips/20b897-190517-ckrumholz-0294.jpg": {
+        "id": 855,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/20b897-190517-ckrumholz-0294.jpg"
+    },
+    "assets/trips/216f81-img-2203.jpg": {
+        "id": 856,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/216f81-img-2203.jpg"
+    },
+    "assets/trips/221cf2-img-2287.jpg": {
+        "id": 857,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/221cf2-img-2287.jpg"
+    },
+    "assets/trips/26fddf-190518-ckrumholz-1389.jpg": {
+        "id": 858,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/26fddf-190518-ckrumholz-1389.jpg"
+    },
+    "assets/trips/288d26-180629-ckrumholz-1408.jpg": {
+        "id": 859,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/288d26-180629-ckrumholz-1408.jpg"
+    },
+    "assets/trips/2c2d7d-img-2193.jpg": {
+        "id": 860,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/2c2d7d-img-2193.jpg"
+    },
+    "assets/trips/2c9ee6-180603-ckrumholz-1458.jpg": {
+        "id": 861,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/2c9ee6-180603-ckrumholz-1458.jpg"
+    },
+    "assets/trips/2cd72c-mtshastaavgulch.jpg": {
+        "id": 862,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/2cd72c-mtshastaavgulch.jpg"
+    },
+    "assets/trips/2ce2ff-basecamp-northside.jpg": {
+        "id": 863,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/2ce2ff-basecamp-northside.jpg"
+    },
+    "assets/trips/2dcd19-ms3.24.jpg": {
+        "id": 864,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/2dcd19-ms3.24.jpg"
+    },
+    "assets/trips/3138e0-climbteam.jpg": {
+        "id": 865,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/3138e0-climbteam.jpg"
+    },
+    "assets/trips/31ad31-img-20180624-060206.jpg": {
+        "id": 866,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/31ad31-img-20180624-060206.jpg"
+    },
+    "assets/trips/346fe1-img-9148--281-29.jpg": {
+        "id": 867,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/346fe1-img-9148-281-29.jpg"
+    },
+    "assets/trips/355bcc-west-face-shastina.jpg": {
+        "id": 868,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/355bcc-west-face-shastina.jpg"
+    },
+    "assets/trips/3797bb-ski-gulch-casaval.jpg": {
+        "id": 869,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/3797bb-ski-gulch-casaval.jpg"
+    },
+    "assets/trips/3dea88-20250711-205218.jpg": {
+        "id": 870,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/3dea88-20250711-205218.jpg"
+    },
+    "assets/trips/3ecee3-agskintrack.jpg": {
+        "id": 871,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/3ecee3-agskintrack.jpg"
+    },
+    "assets/trips/3ed216-180714-ckrumholz-0530.jpg": {
+        "id": 872,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/3ed216-180714-ckrumholz-0530.jpg"
+    },
+    "assets/trips/402b77-shastina1.jpg": {
+        "id": 873,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/402b77-shastina1.jpg"
+    },
+    "assets/trips/415f1f-180629-ckrumholz-0399.jpg": {
+        "id": 874,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/415f1f-180629-ckrumholz-0399.jpg"
+    },
+    "assets/trips/42a325-mt-shasta-alpine-hut.jpg": {
+        "id": 875,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/42a325-mt-shasta-alpine-hut.jpg"
+    },
+    "assets/trips/42f36d-pchu.jpg": {
+        "id": 876,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/42f36d-pchu.jpg"
+    },
+    "assets/trips/445f40-hbstep.jpg": {
+        "id": 877,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/445f40-hbstep.jpg"
+    },
+    "assets/trips/474d65-190517-ckrumholz-0948.jpg": {
+        "id": 878,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/474d65-190517-ckrumholz-0948.jpg"
+    },
+    "assets/trips/47dbbb-180707-ckrumholz-0005.jpg": {
+        "id": 879,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/47dbbb-180707-ckrumholz-0005.jpg"
+    },
+    "assets/trips/49942a-ivy3.jpg": {
+        "id": 880,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/49942a-ivy3.jpg"
+    },
+    "assets/trips/4b10aa-snapinsta.app-58409713-136934640785051-2574316204856136970-n-1080.jpg": {
+        "id": 881,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/4b10aa-snapinsta.app-58409713-136934640785051-2574316204856136970-n-1080.jpg"
+    },
+    "assets/trips/4c9be3-img-5090.jpg": {
+        "id": 882,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/4c9be3-img-5090.jpg"
+    },
+    "assets/trips/4dac93-hidden-valley.jpg": {
+        "id": 883,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/4dac93-hidden-valley.jpg"
+    },
+    "assets/trips/4ff4b7-fabc6ed6-0a5e-4f97-869c-cf8d087bf574.jpg": {
+        "id": 884,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/4ff4b7-fabc6ed6-0a5e-4f97-869c-cf8d087bf574.jpg"
+    },
+    "assets/trips/512a52-shastaskibowl.jpg": {
+        "id": 885,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/512a52-shastaskibowl.jpg"
+    },
+    "assets/trips/524100-smg.redbanks.jpg": {
+        "id": 886,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/524100-smg.redbanks.jpg"
+    },
+    "assets/trips/542813-img-9146.jpg": {
+        "id": 887,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/542813-img-9146.jpg"
+    },
+    "assets/trips/547af2-img-2360.jpg": {
+        "id": 888,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/547af2-img-2360.jpg"
+    },
+    "assets/trips/56610d-cosmic-web.jpg": {
+        "id": 889,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/56610d-cosmic-web.jpg"
+    },
+    "assets/trips/571ff4-180722-ckrumholz-0522.jpg": {
+        "id": 890,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/571ff4-180722-ckrumholz-0522.jpg"
+    },
+    "assets/trips/57fde2-tipsongreenbutte.jpg": {
+        "id": 891,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/57fde2-tipsongreenbutte.jpg"
+    },
+    "assets/trips/5ca890-180628-ckrumholz-0168.jpg": {
+        "id": 892,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/5ca890-180628-ckrumholz-0168.jpg"
+    },
+    "assets/trips/5e2ba4-180601-ckrumholz-0218.jpg": {
+        "id": 893,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/5e2ba4-180601-ckrumholz-0218.jpg"
+    },
+    "assets/trips/5f4900-190519-ckrumholz-0833.jpg": {
+        "id": 894,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/5f4900-190519-ckrumholz-0833.jpg"
+    },
+    "assets/trips/62d97d-tailer-spinneys-client-skiing-down-the-west-face.jpg": {
+        "id": 895,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/62d97d-tailer-spinneys-client-skiing-down-the-west-face.jpg"
+    },
+    "assets/trips/639678-180707-ckrumholz-0200.jpg": {
+        "id": 896,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/639678-180707-ckrumholz-0200.jpg"
+    },
+    "assets/trips/63a7e8-mt.-shasta-basecamp-stretching.jpg": {
+        "id": 897,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/63a7e8-mt.-shasta-basecamp-stretching.jpg"
+    },
+    "assets/trips/705e24-casavalridge.jpg": {
+        "id": 898,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/705e24-casavalridge.jpg"
+    },
+    "assets/trips/7072ea-avalanche-debris-gulch.jpg": {
+        "id": 899,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/7072ea-avalanche-debris-gulch.jpg"
+    },
+    "assets/trips/70dff2-mt.-shasta-snow-climbers.jpg": {
+        "id": 900,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/70dff2-mt.-shasta-snow-climbers.jpg"
+    },
+    "assets/trips/727069-190519-ckrumholz-0487.jpg": {
+        "id": 901,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/727069-190519-ckrumholz-0487.jpg"
+    },
+    "assets/trips/7307e0-shastavortex.jpg": {
+        "id": 902,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/7307e0-shastavortex.jpg"
+    },
+    "assets/trips/735a63-img-2219.jpg": {
+        "id": 903,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/735a63-img-2219.jpg"
+    },
+    "assets/trips/738e5f-avalanche-gulch-ski-tour.jpg": {
+        "id": 904,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/738e5f-avalanche-gulch-ski-tour.jpg"
+    },
+    "assets/trips/74974c-hotlum.climb.sunrise.jpg": {
+        "id": 905,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/74974c-hotlum.climb_.sunrise.jpg"
+    },
+    "assets/trips/74dd6a-180713-ckrumholz-0325.jpg": {
+        "id": 906,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/74dd6a-180713-ckrumholz-0325.jpg"
+    },
+    "assets/trips/761ab1-180630-ckrumholz-0496.jpg": {
+        "id": 907,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/761ab1-180630-ckrumholz-0496.jpg"
+    },
+    "assets/trips/78e611-maddie-ski-guide.jpg": {
+        "id": 908,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/78e611-maddie-ski-guide.jpg"
+    },
+    "assets/trips/791a3c-180602-ckrumholz-0639.jpg": {
+        "id": 909,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/791a3c-180602-ckrumholz-0639.jpg"
+    },
+    "assets/trips/7dec17-basecamp-light.jpg": {
+        "id": 910,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/7dec17-basecamp-light.jpg"
+    },
+    "assets/trips/816d65-westface.jpg": {
+        "id": 911,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/816d65-westface.jpg"
+    },
+    "assets/trips/839a72-img-2166.jpg": {
+        "id": 912,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/839a72-img-2166.jpg"
+    },
+    "assets/trips/83a1e5-lassen.jpg": {
+        "id": 913,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/83a1e5-lassen.jpg"
+    },
+    "assets/trips/84c274-seanski1.jpg": {
+        "id": 914,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/84c274-seanski1.jpg"
+    },
+    "assets/trips/85deb4-hikeclearcreek.jpg": {
+        "id": 915,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/85deb4-hikeclearcreek.jpg"
+    },
+    "assets/trips/87a504-180722-ckrumholz-1468.jpg": {
+        "id": 916,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/87a504-180722-ckrumholz-1468.jpg"
+    },
+    "assets/trips/893f23-clear-creek-hike.jpg": {
+        "id": 917,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/893f23-clear-creek-hike.jpg"
+    },
+    "assets/trips/8990c6-snapinsta.app-314946760-2963449950625625-5043142992681465778-n-1080.jpg": {
+        "id": 918,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/8990c6-snapinsta.app-314946760-2963449950625625-5043142992681465778-n-1080.jpg"
+    },
+    "assets/trips/8c384f-snow-school.jpg": {
+        "id": 919,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/8c384f-snow-school.jpg"
+    },
+    "assets/trips/8dbd42-f50e1234-a747-460b-919b-0a45f674b194.jpg": {
+        "id": 920,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/8dbd42-f50e1234-a747-460b-919b-0a45f674b194.jpg"
+    },
+    "assets/trips/8e6327-gsw.jpg": {
+        "id": 921,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/8e6327-gsw.jpg"
+    },
+    "assets/trips/8f3c82-190518-ckrumholz-1389.jpg": {
+        "id": 922,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/8f3c82-190518-ckrumholz-1389.jpg"
+    },
+    "assets/trips/955b26-180630-ckrumholz-1601.jpg": {
+        "id": 923,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/955b26-180630-ckrumholz-1601.jpg"
+    },
+    "assets/trips/958977-hotlum-bolam.jpg": {
+        "id": 924,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/958977-hotlum-bolam.jpg"
+    },
+    "assets/trips/965204-190609-ckrumholz-1799.jpg": {
+        "id": 925,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/965204-190609-ckrumholz-1799.jpg"
+    },
+    "assets/trips/96fd32-snapinsta.app-320063021-148246127967787-1361541624230464874-n-1080.jpg": {
+        "id": 926,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/96fd32-snapinsta.app-320063021-148246127967787-1361541624230464874-n-1080.jpg"
+    },
+    "assets/trips/98bea2-ski-up-gulch.jpg": {
+        "id": 927,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/98bea2-ski-up-gulch.jpg"
+    },
+    "assets/trips/9c0009-img-2171.jpg": {
+        "id": 928,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/9c0009-img-2171.jpg"
+    },
+    "assets/trips/9f83d0-180603-ckrumholz-1600.jpg": {
+        "id": 929,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/9f83d0-180603-ckrumholz-1600.jpg"
+    },
+    "assets/trips/a00630-senior-guide-katie-wry-leading-her-group-to-the-summit.jpg": {
+        "id": 930,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/a00630-senior-guide-katie-wry-leading-her-group-to-the-summit.jpg"
+    },
+    "assets/trips/a1483d-lowergulchskier.jpg": {
+        "id": 931,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/a1483d-lowergulchskier.jpg"
+    },
+    "assets/trips/a3db92-snapinsta.app-326316088-829409321488972-7996609323830067164-n-1080.jpg": {
+        "id": 932,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/a3db92-snapinsta.app-326316088-829409321488972-7996609323830067164-n-1080.jpg"
+    },
+    "assets/trips/ab32bc-casavalcamp2.jpg": {
+        "id": 933,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/ab32bc-casavalcamp2.jpg"
+    },
+    "assets/trips/ac64d1-west-face-ski.jpg": {
+        "id": 934,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/ac64d1-west-face-ski.jpg"
+    },
+    "assets/trips/ad4487-img-2223.jpg": {
+        "id": 935,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/ad4487-img-2223.jpg"
+    },
+    "assets/trips/ad9d78-chris-davenport-ski-shasta.jpg": {
+        "id": 936,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/ad9d78-chris-davenport-ski-shasta.jpg"
+    },
+    "assets/trips/adb226-skishadow.jpg": {
+        "id": 937,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/adb226-skishadow.jpg"
+    },
+    "assets/trips/ae74cc-climb-cloud.jpg": {
+        "id": 938,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/ae74cc-climb-cloud.jpg"
+    },
+    "assets/trips/b1b8a1-casa-4.jpg": {
+        "id": 939,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/b1b8a1-casa-4.jpg"
+    },
+    "assets/trips/b324b3-caleb.rbanks.jpg": {
+        "id": 940,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/b324b3-caleb.rbanks.jpg"
+    },
+    "assets/trips/b409f3-hiddenvalley.jpg": {
+        "id": 941,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/b409f3-hiddenvalley.jpg"
+    },
+    "assets/trips/b41755-hidden-valley-camp.jpg": {
+        "id": 942,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/b41755-hidden-valley-camp.jpg"
+    },
+    "assets/trips/b6194f-190518-ckrumholz-1403.jpg": {
+        "id": 943,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/b6194f-190518-ckrumholz-1403.jpg"
+    },
+    "assets/trips/b98cdb-clearcreekhike.jpg": {
+        "id": 944,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/b98cdb-clearcreekhike.jpg"
+    },
+    "assets/trips/babf20-gbski1.jpg": {
+        "id": 945,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/babf20-gbski1.jpg"
+    },
+    "assets/trips/bbebb1-mount-shasta-hidden-valley.jpg": {
+        "id": 946,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/bbebb1-mount-shasta-hidden-valley.jpg"
+    },
+    "assets/trips/bc38f8-img-2426.jpg": {
+        "id": 947,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/bc38f8-img-2426.jpg"
+    },
+    "assets/trips/bffea7-hotlum-wintun-greg-guiding.jpg": {
+        "id": 948,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/bffea7-hotlum-wintun-greg-guiding.jpg"
+    },
+    "assets/trips/c0a2c9-7fbbcbc8-d67f-4b27-98f9-4aa5e1aca4cc.jpg": {
+        "id": 949,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/c0a2c9-7fbbcbc8-d67f-4b27-98f9-4aa5e1aca4cc.jpg"
+    },
+    "assets/trips/c0d5ff-snapinsta.app-47040614-273367439966027-7161295548949585036-n-1080.jpg": {
+        "id": 950,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/c0d5ff-snapinsta.app-47040614-273367439966027-7161295548949585036-n-1080.jpg"
+    },
+    "assets/trips/caa8cf-img-2144.jpg": {
+        "id": 951,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/caa8cf-img-2144.jpg"
+    },
+    "assets/trips/cbbe8c-casaval-climb.jpg": {
+        "id": 952,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/cbbe8c-casaval-climb.jpg"
+    },
+    "assets/trips/cc6041-img-2270.jpg": {
+        "id": 953,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/cc6041-img-2270.jpg"
+    },
+    "assets/trips/cc7602-180602-ckrumholz-0474.jpg": {
+        "id": 954,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/cc7602-180602-ckrumholz-0474.jpg"
+    },
+    "assets/trips/ce218b-mt.-shasta-climbers.jpg": {
+        "id": 955,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/ce218b-mt.-shasta-climbers.jpg"
+    },
+    "assets/trips/ce2fac-mountaineering-boots-with-crampons.jpg": {
+        "id": 956,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/ce2fac-mountaineering-boots-with-crampons.jpg"
+    },
+    "assets/trips/d3693a-sargentspow.jpg": {
+        "id": 957,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/d3693a-sargentspow.jpg"
+    },
+    "assets/trips/d65122-180722-ckrumholz-0356-2.jpg": {
+        "id": 958,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/d65122-180722-ckrumholz-0356-2.jpg"
+    },
+    "assets/trips/d76e8f-mt.-shasta-hotlum-bolam-ridge.jpg": {
+        "id": 959,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/d76e8f-mt.-shasta-hotlum-bolam-ridge.jpg"
+    },
+    "assets/trips/d7a46b-basecamp-northside.jpg": {
+        "id": 960,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/d7a46b-basecamp-northside.jpg"
+    },
+    "assets/trips/d8a79b-d572d4ef-8236-4b48-bf5a-38498d1b7797.jpg": {
+        "id": 961,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/d8a79b-d572d4ef-8236-4b48-bf5a-38498d1b7797.jpg"
+    },
+    "assets/trips/d9ddc1-180602-ckrumholz-0639.jpg": {
+        "id": 962,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/d9ddc1-180602-ckrumholz-0639.jpg"
+    },
+    "assets/trips/da0bd2-climb.glacier1.jpg": {
+        "id": 963,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/da0bd2-climb.glacier1.jpg"
+    },
+    "assets/trips/dbcf08-skin-track.jpg": {
+        "id": 964,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/dbcf08-skin-track.jpg"
+    },
+    "assets/trips/dbe396-mt.-shasta-ski-mountaineering.jpg": {
+        "id": 965,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/dbe396-mt.-shasta-ski-mountaineering.jpg"
+    },
+    "assets/trips/dbfef2-aiare-ski-tour.jpg": {
+        "id": 966,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/dbfef2-aiare-ski-tour.jpg"
+    },
+    "assets/trips/dcb548-180603-ckrumholz-1741.jpg": {
+        "id": 967,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/dcb548-180603-ckrumholz-1741.jpg"
+    },
+    "assets/trips/dd882e-180722-ckrumholz-0403.jpg": {
+        "id": 968,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/dd882e-180722-ckrumholz-0403.jpg"
+    },
+    "assets/trips/ddd5aa-180708-ckrumholz-2044.jpg": {
+        "id": 969,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/ddd5aa-180708-ckrumholz-2044.jpg"
+    },
+    "assets/trips/e0e124-180722-ckrumholz-0612.jpg": {
+        "id": 970,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/e0e124-180722-ckrumholz-0612.jpg"
+    },
+    "assets/trips/e28899-snapinsta.app-326480564-572760287723171-3918832102302832344-n-1080.jpg": {
+        "id": 971,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/e28899-snapinsta.app-326480564-572760287723171-3918832102302832344-n-1080.jpg"
+    },
+    "assets/trips/e6a720-180707-ckrumholz-0324.jpg": {
+        "id": 972,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/e6a720-180707-ckrumholz-0324.jpg"
+    },
+    "assets/trips/e71ff7-img-9141.jpg": {
+        "id": 973,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/e71ff7-img-9141.jpg"
+    },
+    "assets/trips/e9621b-180629-ckrumholz-1392.jpg": {
+        "id": 974,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/e9621b-180629-ckrumholz-1392.jpg"
+    },
+    "assets/trips/ef6134-mt.-shasta-summit-climbers.jpg": {
+        "id": 975,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/ef6134-mt.-shasta-summit-climbers.jpg"
+    },
+    "assets/trips/ef9f46-casa-2.jpg": {
+        "id": 976,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/ef9f46-casa-2.jpg"
+    },
+    "assets/trips/f26bcd-20250711-231944.jpg": {
+        "id": 977,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/f26bcd-20250711-231944.jpg"
+    },
+    "assets/trips/f5a353-ski.gulc.jpg": {
+        "id": 978,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/f5a353-ski.gulc_.jpg"
+    },
+    "assets/trips/f71127-180629-ckrumholz-0960.jpg": {
+        "id": 979,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/f71127-180629-ckrumholz-0960.jpg"
+    },
+    "assets/trips/f7ca77-img-2176.jpg": {
+        "id": 980,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/f7ca77-img-2176.jpg"
+    },
+    "assets/trips/f95e95-img-2384.jpg": {
+        "id": 981,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/f95e95-img-2384.jpg"
+    },
+    "assets/trips/fa4e6a-img-2181.jpg": {
+        "id": 982,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/fa4e6a-img-2181.jpg"
+    },
+    "assets/trips/ff37ff-nick-climb-team.jpg": {
+        "id": 983,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/ff37ff-nick-climb-team.jpg"
     }
 }

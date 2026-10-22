@@ -20,8 +20,9 @@ retry() {
 }
 
 node tools/wp/build-site.js "$BUNDLE"
-retry rsync -az -e 'ssh -o BatchMode=yes' "$BUNDLE" tools/wp/deploy.php "$HOST:shasta-import/" >/dev/null
+retry rsync -az -e 'ssh -o BatchMode=yes' tools/wp/deploy.php "$HOST:shasta-import/" >/dev/null
 retry rsync -az -e 'ssh -o BatchMode=yes' "$BUNDLE" "$HOST:shasta-import/bundle.json" >/dev/null
+retry rsync -az -e 'ssh -o BatchMode=yes' tools/wp/mu-plugins/ "$HOST:$SITE/wp-content/mu-plugins/" >/dev/null
 
 local_sum=$(shasum -a 256 "$BUNDLE" | cut -d' ' -f1)
 remote_sum=$(retry ssh -o BatchMode=yes "$HOST" 'sha256sum shasta-import/bundle.json' | cut -d' ' -f1)

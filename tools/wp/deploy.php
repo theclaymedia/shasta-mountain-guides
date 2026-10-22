@@ -131,6 +131,20 @@ foreach ( $bundle['pages'] ?? array() as $p ) {
 	WP_CLI::log( "Page {$p['slug']} → #$id " . get_permalink( $id ) );
 }
 
-// ---- 5. Regenerate Elementor CSS ----
+// ---- 5. URLs: live-site permalinks and redirects ----
+// '/articles/%postname%' gives pages Squarespace's slash-less URLs (/climbmtshasta) and posts /articles/<slug>.
+if ( ! empty( $bundle['permalinks'] ) && get_option( 'permalink_structure' ) !== $bundle['permalinks'] ) {
+	global $wp_rewrite;
+	$wp_rewrite->set_permalink_structure( $bundle['permalinks'] );
+	WP_CLI::log( "Permalinks → {$bundle['permalinks']}" );
+}
+flush_rewrite_rules( false );
+// Read by the smg-redirects mu-plugin
+if ( isset( $bundle['redirects'] ) ) {
+	update_option( 'smg_redirects', $bundle['redirects'], false );
+	WP_CLI::log( count( $bundle['redirects'] ) . ' redirects saved' );
+}
+
+// ---- 6. Regenerate Elementor CSS ----
 Plugin::$instance->files_manager->clear_cache();
 WP_CLI::success( 'Deploy complete. Elementor CSS cache cleared.' );

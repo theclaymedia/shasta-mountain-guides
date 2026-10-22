@@ -1,4 +1,4 @@
-// Builds the Elementor site bundle (kit, menus, header/footer, homepage, 8 program pages)
+// Builds the Elementor site bundle (kit, menus, header/footer, homepage, 8 program pages, 28 trip pages, redirects)
 // from the static mockup. The mockup stays the source of truth: copy is read from index.html
 // and tools/trips-data.js, images are resolved through media-map.json (see import-media.php).
 //
@@ -28,12 +28,37 @@ const media = (p) => {
   if (!m) throw new Error(`Not in media-map: ${p}`);
   return m;
 };
-const pageUrl = (slug) => `${HOME}/${slug}/`;
+// Every page keeps its live shastaguides.com URL so search rankings carry over at launch.
+// Program pages: mockup file name → live slug (mountaineeering is Chris's typo, kept because Google indexed it).
+const OLD_SLUG = {
+  'climb-shasta': 'climbmtshasta', 'ski-shasta': 'skishasta', 'mountaineering-courses': 'mountaineeering', 'custom-trips': 'custom',
+  'avalanche-courses': 'avicourses', 'backpacking': 'backpack', 'rock-climbing': 'rockclimb', 'day-trips': 'daytrips',
+};
+const DETAILS = require('../trip-details.json');
+const DETAIL_SLUGS = new Set(DETAILS.trips.map(t => t.slug));
+// No trailing slash, matching Squarespace (permalink structure is /articles/%postname%, see deploy.php).
+const pageUrl = (slug) => `${HOME}/${OLD_SLUG[slug] || slug}`;
+// Live trip URL (https://shastaguides.com/glacierseminar) → the page that replaces it here
+const liveUrl = (href) => {
+  const slug = (href || '').replace(/^https:\/\/shastaguides\.com\//, '');
+  const target = DETAILS.redirects[slug] || slug;
+  return DETAIL_SLUGS.has(target) || Object.values(OLD_SLUG).includes(target) ? `${HOME}/${target}` : href;
+};
+// Redirects served by the smg-redirects mu-plugin: duplicate live pages, the mockup's file names, and the
+// live site's /s/ gear PDF links (shared and bookmarked widely) → their Media Library copies.
+const LIVE_PDFS = {
+  'Summit-Climb-Gear-List.pdf': 'smg-summit-climb-gear-list.pdf', 'Ski-Snowboard-Mountaineering-Gear-List.pdf': 'smg-ski-snowboard-mountaineering-gear-list.pdf',
+  'Backcountry-Ski-Tour-Avalanche-Course-Gear-List.pdf': 'smg-backcountry-ski-avalanche-gear-list.pdf', 'Mountaineering-Class-Day-Hike-Gear-List.pdf': 'smg-mountaineering-class-day-hike-gear-list.pdf',
+  'PCT-Backpacking-Gear-List.pdf': 'smg-pct-backpacking-gear-list.pdf', 'PCT-Backpacking-Gear-List-ezff.pdf': 'smg-pct-backpacking-gear-list.pdf',
+  'Advanced-Climbing-Seminars-Gear-List.pdf': 'smg-advanced-climbing-seminars-gear-list.pdf', 'Rock-Climbing-Gear-List.pdf': 'smg-rock-climbing-gear-list.pdf',
+  'Single-Push-Ski-Descent-Gear-List.pdf': 'smg-single-push-ski-descent-gear-list.pdf',
+};
 // Mockup links → WordPress links
 const link = (href) => {
   if (!href) return '';
   const trip = TRIPS.find(t => href === `${t.slug}.html`);
   if (trip) return pageUrl(trip.slug);
+  if (DETAIL_SLUGS.has(href.replace(/\.html$/, ''))) return pageUrl(href.replace(/\.html$/, ''));
   if (href.startsWith('assets/')) return media(href).url;
   if (href.startsWith('#')) return href;
   return href;
@@ -111,7 +136,20 @@ const KIT = {
     '.smg-fb.flybook-book-now-button:focus-visible{outline:3px solid #1F5D8C;outline-offset:3px}',
     '.smg-fb--sm.flybook-book-now-button{font-size:.9rem;padding:.65rem 1.4rem}',
     '.smg-fb--nav.flybook-book-now-button{font-size:.88rem;padding:.5rem 1.3rem}',
-    '@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.smg-lift,.smg-fb{transition:none}.smg-lift:hover,.smg-fb:hover,.smg-fb:focus{transform:none}}',
+    // Trip detail pages: tick lists, date list, itinerary days, photo grid (same as the mockup's .ticks/.date-list/.itin/.trip-gallery)
+    '.smg-ticks ul{list-style:none;margin:0;padding:0;display:grid;gap:.5rem}',
+    '.smg-ticks li{position:relative;padding-left:1.5rem}',
+    '.smg-ticks li::before{content:"";position:absolute;left:.1rem;top:.62em;width:.55rem;height:.3rem;border-left:2px solid #1F5D8C;border-bottom:2px solid #1F5D8C;transform:rotate(-45deg)}',
+    '.smg-dates ul{list-style:none;margin:0;padding:0;display:grid;gap:.4rem}',
+    '.smg-dates li{padding:.5rem .75rem;background:#E9F3FA;border-radius:6px;color:#12222F;font-weight:500;font-size:.95rem}',
+    '.smg-dates li.sub{background:none;padding:.6rem 0 0;font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#1F5D8C}',
+    '.smg-itin ol{list-style:none;margin:0;padding:0;display:grid;gap:.8rem}',
+    '.smg-itin li{display:grid;gap:.15rem}',
+    '.smg-itin .t{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#12222F}',
+    '.smg-gallery .elementor-widget-image{overflow:hidden;border-radius:6px}',
+    '.smg-gallery img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .45s ease}',
+    '.smg-gallery .elementor-widget-image:hover img{transform:scale(1.05)}',
+    '@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.smg-lift,.smg-fb,.smg-gallery img{transition:none}.smg-lift:hover,.smg-fb:hover,.smg-fb:focus,.smg-gallery .elementor-widget-image:hover img{transform:none}}',
   ].join('\n'),
 };
 
@@ -526,34 +564,77 @@ function mainWrap(sections) {
   return [container({ content_width: 'full', html_tag: 'main', _element_id: 'content', _attributes: 'tabindex|-1', padding: box(0), flex_gap: gap(0) }, sections, false)];
 }
 
-// ---------------- Program pages (from tools/trips-data.js) ----------------
-function tripPage(t) {
-  const sections = [];
-  sections.push(container(merge(bgImage(t.hero.src, 'up'), {
+// ---------------- Shared page parts (program + trip pages) ----------------
+// crumbs: [[label, url], ..., [current]]
+function pageHero(src, crumbs, eyebrow, h1, lede, buttons) {
+  const trail = crumbs.map(([t, u]) => (u ? `<a href="${u}" style="color:#BFDDF2">${t}</a>` : `<span style="color:#fff">${t}</span>`)).join(' <span style="opacity:.6">/</span> ');
+  return container(merge(bgImage(src, 'up'), {
     content_width: 'full', ...res('min_height', px(64, 'vh'), px(56, 'vh'), px(60, 'vh')), flex_direction: 'column', flex_justify_content: 'flex-end',
   }), [
     container({ content_width: 'boxed', boxed_width: px(1280), flex_direction: 'column', flex_gap: gap(10), padding: boxC('clamp(2.6rem, 5vw, 4rem)', GUTTER, 'clamp(2.6rem, 5vw, 4rem)', GUTTER) }, [
-      text(`<p><a href="${HOME}/" style="color:#BFDDF2">Home</a> <span style="opacity:.6">/</span> <a href="${HOME}/#trips" style="color:#BFDDF2">Trips &amp; Courses</a> <span style="opacity:.6">/</span> <span style="color:#fff">${t.title}</span></p>`, merge({ text_color: COL.ice }, type('typography', { family: 'Inter', size: px(12.5), spacing: px(0.5) }))),
-      label(t.eyebrow, COL.ice),
-      heading(t.h1, 'h1', merge(type('typography', { ...DISPLAY, size: cl('clamp(2.1rem, 5vw, 3.8rem)'), line: px(1.06, 'em') }), { title_color: COL.white, _element_width: 'initial', _element_custom_width: cl('min(100%, calc(clamp(2.1rem, 5vw, 3.8rem) * 10.87))') })),
-      para(t.lede, COL.ice, merge(type('typography', { family: 'Inter', size: cl('clamp(1rem, 1.8vw, 1.2rem)'), line: px(1.6, 'em') }), { _element_width: 'initial', _element_custom_width: px(680), ...res('_element_custom_width', px(680), px(100, '%'), px(100, '%')) })),
-      row([fbButton('Book Now', FB.catalog), btn('Plan My Trip', '#inquire', 'ghost')], { padding: box(8, 0, 0, 0) }),
+      text(`<p>${trail}</p>`, merge({ text_color: COL.ice }, type('typography', { family: 'Inter', size: px(12.5), spacing: px(0.5) }))),
+      label(eyebrow, COL.ice),
+      heading(h1, 'h1', merge(type('typography', { ...DISPLAY, size: cl('clamp(2.1rem, 5vw, 3.8rem)'), line: px(1.06, 'em') }), { title_color: COL.white, _element_width: 'initial', _element_custom_width: cl('min(100%, calc(clamp(2.1rem, 5vw, 3.8rem) * 10.87))') })),
+      lede ? para(lede, COL.ice, merge(type('typography', { family: 'Inter', size: cl('clamp(1rem, 1.8vw, 1.2rem)'), line: px(1.6, 'em') }), { _element_width: 'initial', _element_custom_width: px(680), ...res('_element_custom_width', px(680), px(100, '%'), px(100, '%')) })) : null,
+      row(buttons, { padding: box(8, 0, 0, 0) }),
     ]),
-  ], false));
+  ], false);
+}
 
-  // Overview + at a glance
-  sections.push(section({ background_background: 'classic', background_color: COL.white }, { flex_direction: 'row', flex_gap: gap(56), flex_align_items: 'flex-start', ...res('flex_direction', 'row', 'column', 'column'), ...res('flex_gap', gap(56), gap(32), gap(28)) }, [
+// Overview copy on the left, "at a glance" facts box (+ optional extras) on the right
+function overviewSection(left, glance, below = []) {
+  return section({ background_background: 'classic', background_color: COL.white }, { flex_direction: 'row', flex_gap: gap(56), flex_align_items: 'flex-start', ...res('flex_direction', 'row', 'column', 'column'), ...res('flex_gap', gap(56), gap(32), gap(28)) }, [
+    col([label('Overview'), ...left], { ...res('width', px(56, '%'), px(100, '%'), px(100, '%')) }),
     col([
-      label('Overview'),
-      ...t.intro.map(p => para(p)),
-      t.status ? text(`<p><strong>Current status:</strong> ${t.status}</p>`, { text_color: COL.body, _background_background: 'classic', _background_color: COL.frost, _padding: box(16, 20), _border_border: 'solid', _border_width: box(0, 0, 0, 4), _border_color: COL.sun, _border_radius: box(0, 6, 6, 0) }) : null,
-    ], { ...res('width', px(56, '%'), px(100, '%'), px(100, '%')) }),
-    container({ flex_direction: 'column', flex_gap: gap(0), background_background: 'classic', background_color: COL.paper, border_border: 'solid', border_width: box(1), border_color: COL.line, border_radius: box(8), ...res('width', px(40, '%'), px(100, '%'), px(100, '%')) },
-      t.glance.map(([k, v], i) => container({ flex_direction: 'row', flex_gap: gap(16), flex_wrap: 'nowrap', padding: box(15, 20), border_border: 'solid', border_width: box(0, 0, i === t.glance.length - 1 ? 0 : 1, 0), border_color: COL.line, flex_align_items: 'baseline' }, [
-        text(`<p>${k}</p>`, merge({ text_color: COL.glacier, _element_width: 'initial', _element_custom_width: px(120) }, type('typography', { family: 'Inter', weight: '700', size: cl('0.72rem'), transform: 'uppercase', spacing: px(0.16, 'em') }))),
-        text(`<p><strong>${v}</strong></p>`, merge({ text_color: COL.ink }, type('typography', { family: 'Inter', weight: '600', size: px(15.5) }))),
-      ]))),
-  ]));
+      container({ flex_direction: 'column', flex_gap: gap(0), background_background: 'classic', background_color: COL.paper, border_border: 'solid', border_width: box(1), border_color: COL.line, border_radius: box(8) },
+        glance.map(([k, v], i) => container({ flex_direction: 'row', flex_gap: gap(16), flex_wrap: 'nowrap', padding: box(15, 20), border_border: 'solid', border_width: box(0, 0, i === glance.length - 1 ? 0 : 1, 0), border_color: COL.line, flex_align_items: 'baseline' }, [
+          text(`<p>${k}</p>`, merge({ text_color: COL.glacier, _element_width: 'initial', _element_custom_width: px(120) }, type('typography', { family: 'Inter', weight: '700', size: cl('0.72rem'), transform: 'uppercase', spacing: px(0.16, 'em') }))),
+          text(`<p><strong>${v}</strong></p>`, merge({ text_color: COL.ink }, type('typography', { family: 'Inter', weight: '600', size: px(15.5) }))),
+        ]))),
+      ...below,
+    ], { ...res('width', px(40, '%'), px(100, '%'), px(100, '%')), flex_gap: gap(16) }),
+  ]);
+}
+
+// "Plan your trip" form + resources. t: { title, formOption, gear: {href,label,alt?}, article: {title,href} }
+function inquireSection(t) {
+  const gearLink = (g) => ({ _id: `r${Math.random().toString(36).slice(2, 7)}`, text: `${g.label} (PDF)`, selected_icon: { value: 'fas fa-clipboard-check', library: 'fa-solid' }, link: { url: media(g.href).url, is_external: 'on' } });
+  return section({ background_background: 'classic', background_color: COL.paper, _element_id: 'inquire' }, {}, [
+    sectionHead('Plan Your Trip', `Ask us about ${t.title.toLowerCase()}.`, 'Send a few details and a guide will reply within one business day with a recommendation, dates and next steps. No phone tag.', false),
+    container({ flex_direction: 'row', flex_gap: gap(56), flex_align_items: 'flex-start', ...res('flex_direction', 'row', 'column', 'column'), ...res('flex_gap', gap(56), gap(36), gap(28)) }, [
+      col([formCard('Plan my trip', planForm(t.formOption, { page: t.title }), "We reply by email within one business day. Prefer a call? Leave your number in the message and we'll ring you.")], { ...res('width', px(54, '%'), px(100, '%'), px(100, '%')) }),
+      col([
+        label('Before You Go'),
+        heading('Show up ready.', 'h2', merge(type('typography', { ...DISPLAY, size: px(32), sizeM: px(26) }), { title_color: COL.ink })),
+        widget('icon-list', {
+          icon_list: [
+            gearLink(t.gear),
+            ...(t.gear.alt ? [gearLink(t.gear.alt)] : []),
+            { _id: 'rtr', text: 'Training for Mt. Shasta (PDF)', selected_icon: { value: 'fas fa-chart-line', library: 'fa-solid' }, link: { url: media('assets/downloads/smg-training-for-mount-shasta.pdf').url, is_external: 'on' } },
+            { _id: 'rar', text: t.article.title, selected_icon: { value: 'fas fa-book-open', library: 'fa-solid' }, link: { url: t.article.href } },
+            { _id: 'rtd', text: 'Trip details: meeting times, lodging, food, weather and tipping', selected_icon: { value: 'fas fa-info-circle', library: 'fa-solid' }, link: { url: 'https://shastaguides.com/tripdetails' } },
+          ],
+          space_between: px(14), icon_color: COL.glacier, icon_size: px(18), text_color: COL.ink, text_color_hover: COL.glacier, text_indent: px(10),
+          ...type('icon_typography', { family: 'Inter', weight: '600', size: px(15.5) }),
+        }),
+        text('<p>Already booked and need us right now? Call <a href="tel:+15309263117">530.926.3117</a>.</p>', merge({ text_color: COL.gray, link_color: COL.glacier }, type('typography', { family: 'Inter', size: px(14) }))),
+      ], { ...res('width', px(42, '%'), px(100, '%'), px(100, '%')), flex_gap: gap(14) }),
+    ]),
+    // "Ask about this trip" pre-fills the form message with the specific trip.
+    html(`<script>document.addEventListener('click',function(e){var a=e.target.closest('[data-trip]');if(!a)return;var m=document.querySelector('#inquire textarea');if(m&&!m.value){m.value="I'm interested in the "+a.getAttribute('data-trip')+". ";}});</script>`),
+  ]);
+}
+
+// ---------------- Program pages (from tools/trips-data.js) ----------------
+function tripPage(t) {
+  const sections = [];
+  sections.push(pageHero(t.hero.src, [['Home', `${HOME}/`], ['Trips &amp; Courses', `${HOME}/#trips`], [t.title]], t.eyebrow, t.h1, t.lede,
+    [fbButton('Book Now', FB.catalog), btn('Plan My Trip', '#inquire', 'ghost')]));
+
+  sections.push(overviewSection([
+    ...t.intro.map(p => para(p)),
+    t.status ? text(`<p><strong>Current status:</strong> ${t.status}</p>`, { text_color: COL.body, _background_background: 'classic', _background_color: COL.frost, _padding: box(16, 20), _border_border: 'solid', _border_width: box(0, 0, 0, 4), _border_color: COL.sun, _border_radius: box(0, 6, 6, 0) }) : null,
+  ], t.glance));
 
   // Program cards
   if (t.programs) {
@@ -575,7 +656,7 @@ function tripPage(t) {
             ...(pr.fb
               ? [fbButton('Book Now', pr.fb, 'sm'), btnSm('Ask about this trip', '#inquire', 'outline', { _attributes: `data-trip|${pr.name}` })]
               : [btnSm('Request this trip', '#inquire', 'sun', { _attributes: `data-trip|${pr.name}` })]),
-            pr.learn ? text(`<p><a href="${pr.learn}" style="color:#E8A33D;font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:.8rem">Full details &rsaquo;</a></p>`) : null,
+            pr.learn ? text(`<p><a href="${liveUrl(pr.learn)}" style="color:#E8A33D;font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:.8rem">Full details &rsaquo;</a></p>`) : null,
           ], { padding: box(6, 0, 0, 0), flex_gap: gap(12) }),
         ], { ...res('width', px(66, '%'), px(62, '%'), px(100, '%')), ...res('padding', box(26, 28), box(22, 22), box(20, 18)), flex_gap: gap(12) }),
       ])),
@@ -631,33 +712,104 @@ function tripPage(t) {
 
   sections.push(strip(t.strip));
 
-  // Inquiry + resources
-  const gearLink = (g) => ({ _id: `r${Math.random().toString(36).slice(2, 7)}`, text: `${g.label} (PDF)`, selected_icon: { value: 'fas fa-clipboard-check', library: 'fa-solid' }, link: { url: media(g.href).url, is_external: 'on' } });
-  sections.push(section({ background_background: 'classic', background_color: COL.paper, _element_id: 'inquire' }, {}, [
-    sectionHead('Plan Your Trip', `Ask us about ${t.title.toLowerCase()}.`, 'Send a few details and a guide will reply within one business day with a recommendation, dates and next steps. No phone tag.', false),
-    container({ flex_direction: 'row', flex_gap: gap(56), flex_align_items: 'flex-start', ...res('flex_direction', 'row', 'column', 'column'), ...res('flex_gap', gap(56), gap(36), gap(28)) }, [
-      col([formCard('Plan my trip', planForm(t.formOption, { page: t.title }), "We reply by email within one business day. Prefer a call? Leave your number in the message and we'll ring you.")], { ...res('width', px(54, '%'), px(100, '%'), px(100, '%')) }),
-      col([
-        label('Before You Go'),
-        heading('Show up ready.', 'h2', merge(type('typography', { ...DISPLAY, size: px(32), sizeM: px(26) }), { title_color: COL.ink })),
-        widget('icon-list', {
-          icon_list: [
-            gearLink(t.gear),
-            ...(t.gear.alt ? [gearLink(t.gear.alt)] : []),
-            { _id: 'rtr', text: 'Training for Mt. Shasta (PDF)', selected_icon: { value: 'fas fa-chart-line', library: 'fa-solid' }, link: { url: media('assets/downloads/smg-training-for-mount-shasta.pdf').url, is_external: 'on' } },
-            { _id: 'rar', text: t.article.title, selected_icon: { value: 'fas fa-book-open', library: 'fa-solid' }, link: { url: t.article.href } },
-            { _id: 'rtd', text: 'Trip details: meeting times, lodging, food, weather and tipping', selected_icon: { value: 'fas fa-info-circle', library: 'fa-solid' }, link: { url: 'https://shastaguides.com/tripdetails' } },
-          ],
-          space_between: px(14), icon_color: COL.glacier, icon_size: px(18), text_color: COL.ink, text_color_hover: COL.glacier, text_indent: px(10),
-          ...type('icon_typography', { family: 'Inter', weight: '600', size: px(15.5) }),
-        }),
-        text('<p>Already booked and need us right now? Call <a href="tel:+15309263117">530.926.3117</a>.</p>', merge({ text_color: COL.gray, link_color: COL.glacier }, type('typography', { family: 'Inter', size: px(14) }))),
-      ], { ...res('width', px(42, '%'), px(100, '%'), px(100, '%')), flex_gap: gap(14) }),
+  sections.push(inquireSection(t));
+  return mainWrap(sections);
+}
+
+// ---------------- Trip detail pages (from tools/trip-details.json, same layout as tools/build-trip-details.js) ----------------
+const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+const titleCase = (s) => s.toLowerCase().replace(/(^|[\s(-])([a-z])/g, (m, a, b) => a + b.toUpperCase()).replace(/\b(Ii|Iii)\b/g, x => x.toUpperCase());
+const isDateHead = (d) => /^(\d{4}|[A-Za-z ]+\d{4}|Clear Creek)$/.test(d.trim());
+const ticks = (items, color) => text(`<ul>${items.map(i => `<li>${esc(i)}</li>`).join('')}</ul>`, { _css_classes: 'smg-ticks', text_color: color || COL.gray });
+const tripCard = (children) => card(children, { padding: boxC('1.6rem', '1.7rem', '1.6rem', '1.7rem'), flex_gap: gap(12) });
+
+function detailPage(t) {
+  const prog = TRIPS.find(p => p.slug === t.program);
+  const gear = t.gear || prog.gear;
+  const lede = t.route_line || [t.length, t.route].filter(Boolean).join(' · ');
+  const book = (size) => (t.fb ? fbButton('Book Now', t.fb, size) : (size === 'sm' ? btnSm : btn)('Request this trip', '#inquire', 'sun', { _attributes: `data-trip|${t.name}` }));
+  const sections = [];
+
+  sections.push(pageHero(t.hero.src, [['Home', `${HOME}/`], ['Trips &amp; Courses', `${HOME}/#trips`], [esc(prog.title), pageUrl(prog.slug)], [esc(t.name)]],
+    esc(t.eyebrow), esc(t.name), lede && esc(lede), [book('lg'), btn('Plan My Trip', '#inquire', 'ghost')]));
+
+  const glance = [['Length', t.length], ['Route', t.route], ['Cost', t.card_cost], ['Program', t.programTitle]].filter(([, v]) => v).map(([k, v]) => [k, esc(v)]);
+  sections.push(overviewSection(
+    t.overview.map(b => (b.ul ? ticks(b.ul, COL.body) : para(esc(b.p)))),
+    glance,
+    [row([book('sm'), gear ? text(`<p><a href="${media(gear.href).url}" target="_blank" rel="noopener" style="color:#1F5D8C;font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:.8rem">Gear list (PDF) &rsaquo;</a></p>`) : null], { flex_justify_content: 'space-between', flex_gap: gap(12) })],
+  ));
+
+  if (t.gallery.length) {
+    sections.push(container({ content_width: 'full', background_background: 'classic', background_color: COL.white, padding: boxC('0', '0', 'clamp(2.4rem, 5vw, 4rem)', '0') }, [
+      container({
+        container_type: 'grid', content_width: 'boxed', boxed_width: px(1280), padding: boxC('0', GUTTER, '0', GUTTER), css_classes: 'smg-gallery',
+        ...res('grid_columns_grid', px(4, 'fr'), px(2, 'fr'), px(2, 'fr')), grid_rows_grid: { unit: 'custom', size: 'auto', sizes: [] }, grid_gaps: gap(8),
+      }, t.gallery.map(g => image(media(g.src), { image_size: 'large' }))),
+    ], false));
+  }
+
+  // Requirements + dates
+  const dates = `<ul>${t.dates.map(d => `<li${isDateHead(d) ? ' class="sub"' : ''}>${esc(d)}</li>`).join('')}</ul>`;
+  sections.push(section({ background_background: 'classic', background_color: COL.paper }, {}, [
+    container({ container_type: 'grid', ...res('grid_columns_grid', px(2, 'fr'), px(1, 'fr'), px(1, 'fr')), grid_rows_grid: { unit: 'custom', size: 'auto', sizes: [] }, grid_gaps: gap(19), grid_align_items: 'start' }, [
+      tripCard([
+        label('Experience &amp; Fitness'),
+        h3('Is this trip right for you?', COL.ink, 24),
+        ticks(t.requirements),
+        small(`<a href="${media('assets/downloads/smg-training-for-mount-shasta.pdf').url}" target="_blank" rel="noopener" style="color:#1F5D8C">Training for Mt. Shasta (PDF)</a> &middot; our 24-page fitness guide.`),
+      ]),
+      tripCard([
+        label(esc(t.dates_title)),
+        h3('Dates', COL.ink, 24),
+        text(dates, { _css_classes: 'smg-dates' }),
+        row([t.fb ? fbButton('Check availability', t.fb, 'sm') : btnSm('Ask about dates', '#inquire', 'sun', { _attributes: `data-trip|${t.name}` })], { padding: box(6, 0, 0, 0) }),
+      ]),
     ]),
-    // "Ask about this trip" pre-fills the form message with the specific trip.
-    html(`<script>document.addEventListener('click',function(e){var a=e.target.closest('[data-trip]');if(!a)return;var m=document.querySelector('#inquire textarea');if(m&&!m.value){m.value="I'm interested in the "+a.getAttribute('data-trip')+". ";}});</script>`),
   ]));
 
+  // Cost & what's included + the guides
+  sections.push(section({ background_background: 'classic', background_color: COL.deep }, { flex_direction: 'row', flex_gap: gap(56), flex_align_items: 'flex-start', ...res('flex_direction', 'row', 'column', 'column'), ...res('flex_gap', gap(56), gap(32), gap(28)) }, [
+    col([
+      label("Cost &amp; What's Included", COL.ice),
+      h2(esc(t.cost[0] || t.card_cost), COL.white),
+      ...t.cost.slice(1).map(c => para(`<p><strong>${esc(c)}</strong></p>`, COL.ice)),
+      t.includes.length ? widget('icon-list', {
+        icon_list: t.includes.map((x, i) => ({ _id: `i${i}`, text: esc(x), selected_icon: { value: 'fas fa-check-circle', library: 'fa-solid' } })),
+        space_between: px(10), icon_color: COL.sun, icon_size: px(18), text_color: COL.bodyOnDark, text_indent: px(10), icon_self_align: 'left',
+        ...type('icon_typography', { family: 'Inter', size: px(15.5), line: px(1.5, 'em') }),
+      }) : null,
+      ...t.cost_notes.map(n => small(esc(n), COL.ice)),
+      row([book('lg'), gear ? btn('Gear list (PDF)', media(gear.href).url, 'ghost', { link: { url: media(gear.href).url, is_external: 'on', nofollow: '' } }) : null], { padding: box(10, 0, 0, 0) }),
+    ], { ...res('width', px(54, '%'), px(100, '%'), px(100, '%')) }),
+    col([
+      h3(esc(t.guides_title), COL.white, 22),
+      ...t.guides.slice(0, 2).map(g => para(esc(g), COL.ice)),
+      row([btn('Meet your guides', `${HOME}/#guides`, 'ghost')]),
+    ], { ...res('width', px(42, '%'), px(100, '%'), px(100, '%')), background_background: 'classic', background_color: 'rgba(11,28,43,0.55)', border_border: 'solid', border_width: box(1), border_color: COL.lineDk, border_radius: box(8), padding: box(26, 26), flex_gap: gap(12) }),
+  ]));
+
+  // Day-by-day itinerary
+  const notes = t.notes.map(n => small(esc(n)));
+  if (t.itinerary.length) {
+    sections.push(section({ background_background: 'classic', background_color: COL.paper }, { flex_gap: gap(19) }, [
+      sectionHead('Day by Day', esc(titleCase(t.itinerary_title || 'Itinerary')), null, false),
+      container({
+        container_type: 'grid', ...res('grid_columns_grid', cl('repeat(auto-fit, minmax(300px, 1fr))'), cl('repeat(auto-fit, minmax(300px, 1fr))'), px(1, 'fr')),
+        grid_rows_grid: { unit: 'custom', size: 'auto', sizes: [] }, grid_gaps: gap(19), grid_align_items: 'stretch',
+      }, t.itinerary.map(d => card([
+        h3(esc(d.day || 'The day'), COL.glacier, 24),
+        text(`<ol>${d.items.map(i => `<li>${i.time ? `<span class="t">${esc(i.time)}</span>` : ''}<span>${esc(i.text)}</span></li>`).join('')}</ol>`,
+          merge({ _css_classes: 'smg-itin', text_color: COL.gray }, type('typography', { family: 'Inter', size: px(15), line: px(1.6, 'em') }))),
+        d.note ? small(esc(d.note)) : null,
+      ], { padding: boxC('1.5rem', '1.6rem', '1.5rem', '1.6rem') }))),
+      ...notes,
+    ]));
+  } else if (notes.length) {
+    sections.push(section({ background_background: 'classic', background_color: COL.paper, padding: boxC('2rem', '0', '2rem', '0') }, {}, notes));
+  }
+
+  sections.push(inquireSection({ title: t.name, formOption: t.formOption, gear, article: prog.article }));
   return mainWrap(sections);
 }
 
@@ -687,8 +839,18 @@ const home = homePage();
 const pages = [{ key: 'home', slug: 'home', title: 'Home', front: true, order: 0, elements: home }];
 TRIPS.forEach((t, i) => {
   E.resetIds(10 + i);
-  pages.push({ key: `trip-${t.slug}`, slug: t.slug, title: t.title, order: i + 1, excerpt: t.lede, elements: tripPage(t) });
+  pages.push({ key: `trip-${t.slug}`, slug: OLD_SLUG[t.slug] || t.slug, title: t.title, order: i + 1, excerpt: t.lede, elements: tripPage(t) });
 });
+DETAILS.trips.forEach((t, i) => {
+  E.resetIds(100 + i);
+  pages.push({ key: `detail-${t.slug}`, slug: t.slug, title: t.name, order: 100 + i, excerpt: t.route_line || t.eyebrow, elements: detailPage(t) });
+});
+
+const redirects = {
+  ...Object.fromEntries(Object.entries(DETAILS.redirects).map(([from, to]) => [from, `/${to}`])),
+  ...Object.fromEntries(Object.entries(OLD_SLUG).map(([mock, live]) => [mock, `/${live}`])),
+  ...Object.fromEntries(Object.entries(LIVE_PDFS).map(([live, local]) => [`s/${live}`, media(`assets/downloads/${local}`).url.replace(/^.*(?=\/wp-content\/)/, '')])),
+};
 
 const bundle = {
   kit: KIT,
@@ -698,8 +860,10 @@ const bundle = {
     { key: 'footer', type: 'footer', title: 'Site Footer', elements: footer, conditions: [['include', 'general']] },
   ],
   pages,
+  permalinks: '/articles/%postname%',
+  redirects,
 };
 
 fs.writeFileSync(process.argv[2], JSON.stringify(bundle));
 const count = (els) => els.reduce((n, e) => n + 1 + count(e.elements || []), 0);
-console.log(`bundle: kit + ${menus.length} menus + 2 templates + ${pages.length} pages (${pages.map(p => `${p.slug}:${count(p.elements)}`).join(', ')})`);
+console.log(`bundle: kit + ${menus.length} menus + 2 templates + ${pages.length} pages + ${Object.keys(redirects).length} redirects (${pages.map(p => `${p.slug}:${count(p.elements)}`).join(', ')})`);
