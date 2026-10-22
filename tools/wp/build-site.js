@@ -7,7 +7,7 @@ const fs = require('fs');
 const path = require('path');
 const { parse } = require('node-html-parser');
 const E = require('./el.js');
-const { px, box, gap, gap2, C, T, res, type, merge, container, section, heading, text, html, button, image, widget } = E;
+const { px, cl, box, boxC, GUTTER, gap, gap2, C, T, res, type, merge, container, section, heading, text, html, button, image, widget } = E;
 
 const ROOT = path.join(__dirname, '..', '..');
 const MEDIA = require('./media-map.json');
@@ -39,8 +39,8 @@ const COL = {
   paper: '#F7FAFC', ink: '#12222F', gray: '#54697A', line: '#DCE7EF', lineDk: '#1E3D57', sun: '#E8A33D', sunHover: '#F4B95C',
   sunInk: '#2A1C05', body: '#33475A', white: '#FFFFFF', bodyOnDark: '#CFE2F0',
 };
-const DISPLAY = { family: 'Anton', weight: '400', transform: 'uppercase' };
-const LABEL = { family: 'Inter', weight: '700', size: px(11.5), transform: 'uppercase', spacing: px(3.4) };
+const DISPLAY = { family: 'Anton', weight: '400', transform: 'uppercase', spacing: px(0.015, 'em') };
+const LABEL = { family: 'Inter', weight: '700', size: cl('0.72rem'), transform: 'uppercase', spacing: px(0.24, 'em') };
 
 const KIT = {
   system_colors: [
@@ -65,7 +65,7 @@ const KIT = {
     { _id: 'primary', title: 'Display (headings)', ...type('typography', { ...DISPLAY, line: px(1.06, 'em') }) },
     { _id: 'secondary', title: 'Label (eyebrows)', ...type('typography', LABEL) },
     { _id: 'text', title: 'Body', ...type('typography', { family: 'Inter', weight: '400', size: px(16.3), line: px(1.7, 'em') }) },
-    { _id: 'accent', title: 'Button', ...type('typography', { family: 'Anton', weight: '400', size: px(16), transform: 'uppercase', spacing: px(1.3) }) },
+    { _id: 'accent', title: 'Button', ...type('typography', { family: 'Anton', weight: '400', size: cl('1rem'), line: px(1.4, 'em'), transform: 'uppercase', spacing: px(0.08, 'em') }) },
   ],
   body_color: COL.body,
   ...type('body_typography', { family: 'Inter', weight: '400', size: px(16.3), line: px(1.7, 'em') }),
@@ -78,14 +78,16 @@ const KIT = {
   button_background_background: 'classic', button_background_color: COL.sun,
   button_hover_text_color: COL.sunInk,
   button_hover_background_background: 'classic', button_hover_background_color: COL.sunHover,
-  button_border_radius: box(6), button_padding: box(15, 35),
-  ...type('button_typography', { family: 'Anton', weight: '400', size: px(16), transform: 'uppercase', spacing: px(1.3) }),
+  button_border_radius: box(6), button_padding: boxC('0.95rem', '2.2rem', '0.95rem', '2.2rem'),
+  button_border_border: 'solid', button_border_width: box(2), button_border_color: COL.sun, button_hover_border_color: COL.sunHover,
+  ...type('button_typography', { family: 'Anton', weight: '400', size: cl('1rem'), line: px(1.4, 'em'), transform: 'uppercase', spacing: px(0.08, 'em') }),
   form_label_color: COL.ink,
   ...type('form_label_typography', { family: 'Inter', weight: '700', size: px(12), transform: 'uppercase', spacing: px(1.9) }),
   form_field_text_color: COL.ink, form_field_background_color: COL.white,
   form_field_border_border: 'solid', form_field_border_width: box(1), form_field_border_color: COL.line,
   form_field_border_radius: box(6), form_field_padding: box(12, 14),
   container_width: px(1280),
+  container_padding: box(0),
   site_name: 'Shasta Mountain Guides',
   site_description: 'The Original Guide Service on Mt. Shasta',
   // Only what widgets cannot express: smooth anchor jumps under the sticky header, card lift on hover.
@@ -101,8 +103,8 @@ const KIT = {
 };
 
 // ---------------- Shared building blocks ----------------
-const label = (t, color, extra) => heading(t, 'span', merge({ __globals__: { typography_typography: T('secondary') }, title_color: color || COL.glacier }, extra));
-const h2 = (t, color, extra) => heading(t, 'h2', merge(type('typography', { ...DISPLAY, size: px(48), sizeT: px(38), sizeM: px(30), line: px(1.06, 'em') }), { title_color: color || COL.ink }, extra));
+const label = (t, color, extra) => heading(t, 'span', merge(extra && extra.typography_typography ? {} : { __globals__: { typography_typography: T('secondary') } }, { title_color: color || COL.glacier }, extra));
+const h2 = (t, color, extra) => heading(t, 'h2', merge(type('typography', { ...DISPLAY, size: cl('clamp(1.9rem, 4vw, 3rem)'), line: px(1.06, 'em') }), { title_color: color || COL.ink }, extra));
 const h3 = (t, color, size = 21, extra) => heading(t, 'h3', merge(type('typography', { ...DISPLAY, size: px(size), line: px(1.1, 'em'), spacing: px(0.5) }), { title_color: color || COL.ink }, extra));
 const para = (t, color, extra) => text(t.startsWith('<') ? t : `<p>${t}</p>`, merge({ text_color: color || COL.body }, extra));
 const small = (t, color) => text(`<p>${t}</p>`, merge({ text_color: color || COL.gray }, type('typography', { family: 'Inter', size: px(12.5), line: px(1.5, 'em') })));
@@ -110,11 +112,11 @@ const small = (t, color) => text(`<p>${t}</p>`, merge({ text_color: color || COL
 const BTN = {
   sun: {},
   ghost: { background_background: 'classic', background_color: 'rgba(0,0,0,0)', button_text_color: COL.white, border_border: 'solid', border_width: box(2), border_color: 'rgba(255,255,255,0.6)', hover_color: COL.deep, button_background_hover_background: 'classic', button_background_hover_color: COL.white, button_hover_border_color: COL.white },
-  glacier: { background_background: 'classic', background_color: COL.glacier, button_text_color: COL.white, hover_color: COL.white, button_background_hover_background: 'classic', button_background_hover_color: COL.deep },
+  glacier: { background_background: 'classic', background_color: COL.glacier, button_text_color: COL.white, border_border: 'solid', border_width: box(2), border_color: COL.glacier, hover_color: COL.white, button_background_hover_background: 'classic', button_background_hover_color: COL.deep, button_hover_border_color: COL.deep },
   outline: { background_background: 'classic', background_color: 'rgba(0,0,0,0)', button_text_color: COL.glacier, border_border: 'solid', border_width: box(2), border_color: COL.glacier, hover_color: COL.white, button_background_hover_background: 'classic', button_background_hover_color: COL.glacier, button_hover_border_color: COL.glacier },
 };
 const btn = (t, url, variant = 'sun', extra) => button(t, url, merge(BTN[variant], extra));
-const btnSm = (t, url, variant = 'sun', extra) => btn(t, url, variant, merge({ text_padding: box(10, 22), ...type('typography', { family: 'Anton', weight: '400', size: px(14.5), transform: 'uppercase', spacing: px(1.2) }) }, extra));
+const btnSm = (t, url, variant = 'sun', extra) => btn(t, url, variant, merge({ text_padding: boxC('0.65rem', '1.4rem', '0.65rem', '1.4rem'), ...type('typography', { family: 'Anton', weight: '400', size: cl('0.9rem'), line: px(1.4, 'em'), transform: 'uppercase', spacing: px(0.08, 'em') }) }, extra));
 
 const row = (children, extra) => container(merge({ flex_direction: 'row', flex_wrap: 'wrap', flex_gap: gap(16), flex_align_items: 'center' }, extra), children);
 const col = (children, extra) => container(merge({ flex_direction: 'column', flex_gap: gap(14) }, extra), children);
@@ -168,7 +170,7 @@ function planForm(preselect, extra = {}) {
     email_to: FORM_EMAIL, email_subject: `New trip inquiry from the website${extra.page ? ` (${extra.page})` : ''}`,
     email_content: '[all-fields]', email_from_name: 'Shasta Mountain Guides website',
     success_message: "Thanks, we've got it. A guide will reply within one business day with a recommended trip and dates. Keep an eye on your inbox.",
-    button_background_color: COL.sun, button_text_color: COL.sunInk, button_background_hover_color: COL.sunHover, button_hover_color: COL.sunInk,
+    button_background_color: COL.sun, button_text_color: COL.sunInk, button_background_hover_color: COL.sunHover, button_hover_color: COL.sunInk, button_border_border: 'solid', button_border_width: box(2), button_border_color: COL.sun, button_hover_border_color: COL.sunHover,
     __globals__: { button_typography_typography: T('accent') },
   }));
 }
@@ -244,7 +246,7 @@ function headerTemplate() {
     border_border: 'solid', border_width: box(0, 0, 1, 0), border_color: 'rgba(255,255,255,0.08)',
     sticky: 'top', sticky_on: ['desktop', 'tablet', 'mobile'], z_index: 60,
   }, [
-    container({ content_width: 'boxed', boxed_width: px(1280), flex_direction: 'row', flex_justify_content: 'space-between', flex_align_items: 'center', flex_gap: gap(20), ...res('padding', box(12, 64), box(12, 32), box(10, 18)), flex_wrap: 'nowrap' }, [
+    container({ content_width: 'boxed', boxed_width: px(1280), flex_direction: 'row', flex_justify_content: 'space-between', flex_align_items: 'center', flex_gap: gap(20), padding: boxC('0.8rem', GUTTER, '0.8rem', GUTTER), flex_wrap: 'nowrap' }, [
       image(media('assets/logos/SMG-logo-white.png'), { link_to: 'custom', link: { url: `${HOME}/` }, width: px(86), ...res('width', px(86), px(80), px(72)), _element_width: 'auto', _flex_size: 'none', __dynamic__: {} }),
       container({ flex_direction: 'row', flex_align_items: 'center', flex_justify_content: 'flex-end', flex_gap: gap(18), width: { unit: 'custom', size: 'auto', sizes: [] }, flex_wrap: 'nowrap', _flex_size: 'custom', _flex_grow: 1, _flex_shrink: 1 }, [
         widget('nav-menu', {
@@ -259,15 +261,15 @@ function headerTemplate() {
           dropdown_border_radius: box(8), dropdown_top_distance: px(10),
           toggle_color: COL.white, toggle_background_color: 'rgba(0,0,0,0)', toggle_size: px(24),
         }),
-        btnSm('Book Now', BOOK, 'sun', { text_padding: box(9, 20) }),
+        btnSm('Book Now', BOOK, 'sun', { text_padding: boxC('0.5rem', '1.3rem', '0.5rem', '1.3rem'), typography_font_size: cl('0.88rem') }),
       ]),
     ]),
   ], false)];
 }
 
 function footerTemplate() {
-  return [container({ content_width: 'full', background_background: 'classic', background_color: COL.night, ...res('padding', box(44, 0, 36, 0), box(40, 0, 32, 0), box(36, 0, 28, 0)) }, [
-    container({ content_width: 'boxed', boxed_width: px(1280), flex_direction: 'column', flex_gap: gap(22), ...res('padding', box(0, 64), box(0, 32), box(0, 18)) }, [
+  return [container({ content_width: 'full', background_background: 'classic', background_color: COL.night, padding: boxC('2.6rem', '0', '2.6rem', '0') }, [
+    container({ content_width: 'boxed', boxed_width: px(1280), flex_direction: 'column', flex_gap: gap(22), padding: boxC('0', GUTTER, '0', GUTTER) }, [
       row([
         image(media('assets/logos/SMG-logo-white.png'), { link_to: 'custom', link: { url: `${HOME}/` }, width: px(66), _element_width: 'auto', _flex_size: 'none' }),
         widget('nav-menu', {
@@ -307,10 +309,10 @@ function homePage() {
     background_overlay_background: 'gradient', background_overlay_color: 'rgba(11,28,43,0.92)', background_overlay_color_stop: px(0, '%'),
     background_overlay_color_b: 'rgba(11,28,43,0.18)', background_overlay_color_b_stop: px(100, '%'), background_overlay_gradient_type: 'linear', background_overlay_gradient_angle: px(0, 'deg'),
   }), [
-    container({ content_width: 'boxed', boxed_width: px(1280), flex_direction: 'column', flex_gap: gap(12), ...res('padding', box(86, 64), box(70, 32), box(56, 18)) }, [
-      label(txt(q('.elev', hero)), COL.ice),
-      heading(txt(q('h1', hero)), 'h1', merge(type('typography', { ...DISPLAY, size: px(70), sizeT: px(52), sizeM: px(36), line: px(1.06, 'em') }), { title_color: COL.white, _element_width: 'initial', _element_custom_width: px(900) }, res('_element_custom_width', px(900), px(640), px(100, '%')))),
-      para(`<p><em>${txt(q('.native', hero))}</em></p>`, COL.ice, type('typography', { family: 'Inter', weight: '500', size: px(19), sizeM: px(16) })),
+    container({ content_width: 'boxed', boxed_width: px(1280), flex_direction: 'column', flex_gap: gap(12), padding: boxC('clamp(3.4rem, 7vw, 5.4rem)', GUTTER, 'clamp(3.4rem, 7vw, 5.4rem)', GUTTER) }, [
+      label(txt(q('.elev', hero)), COL.ice, type('typography', { family: 'Inter', weight: '700', size: cl('0.78rem'), transform: 'uppercase', spacing: px(0.22, 'em') })),
+      heading(txt(q('h1', hero)), 'h1', merge(type('typography', { ...DISPLAY, size: cl('clamp(2.2rem, 5.6vw, 4.4rem)'), line: px(1.06, 'em') }), { title_color: COL.white, _element_width: 'initial', _element_custom_width: cl('min(100%, calc(clamp(2.2rem, 5.6vw, 4.4rem) * 10.87))') })),
+      para(`<p><em>${txt(q('.native', hero))}</em></p>`, COL.ice, type('typography', { family: 'Inter', weight: '500', size: cl('clamp(1rem, 2vw, 1.25rem)') })),
       row(qa('.hero__cta a', hero).map((a, i) => btn(txt(a), link(a.getAttribute('href')), i === 0 ? 'sun' : 'ghost')), { padding: box(10, 0, 0, 0) }),
     ]),
   ], false));
@@ -324,7 +326,7 @@ function homePage() {
       qa('.trip', trips).map(a => {
         const img = q('img', a);
         return container(merge(bgImage(img.getAttribute('src'), 'card'), {
-          html_tag: 'a', link: { url: link(a.getAttribute('href')) }, ...res('min_height', px(400), px(380), px(280)),
+          html_tag: 'a', link: { url: link(a.getAttribute('href')) }, ...res('min_height', cl('calc((min(100vw, 1280px) - 2 * clamp(1.1rem, 4vw, 4rem) - 48px) / 3)'), cl('calc((100vw - 2 * clamp(1.1rem, 4vw, 4rem) - 16px) * 2 / 3)'), cl('calc((100vw - 2 * clamp(1.1rem, 4vw, 4rem)) * 3 / 4)')),
           flex_direction: 'column', flex_justify_content: 'flex-end', flex_gap: gap(4), padding: box(20, 20, 22, 20), border_radius: box(8), css_classes: 'smg-lift',
         }), [
           h3(txt(q('h3', a)), COL.white, 22),
@@ -360,7 +362,7 @@ function homePage() {
     row([
       col([label(txt(q('.label', lead))), h2(txt(q('h2', lead))), ...qa('div > p', lead).map(p => para(txt(p), COL.gray))], { ...res('width', px(52, '%'), px(100, '%'), px(100, '%')) }),
       col([image(media(q('.photo img', lead).getAttribute('src')), { height: px(380), ...res('height', px(380), px(340), px(240)), 'object-fit': 'cover', width: px(100, '%'), image_border_radius: box(8) })], { ...res('width', px(44, '%'), px(100, '%'), px(100, '%')) }),
-    ], { flex_gap: gap(48), flex_justify_content: 'space-between', flex_wrap: 'wrap' }),
+    ], { flex_gap: gap(48), flex_justify_content: 'space-between', flex_align_items: 'center', ...res('flex_wrap', 'nowrap', 'wrap', 'wrap') }),
     container({ container_type: 'grid', ...res('grid_columns_grid', px(3, 'fr'), px(2, 'fr'), px(1, 'fr')), grid_rows_grid: { unit: 'custom', size: 'auto', sizes: [] }, grid_gaps: gap(18) },
       qa('.guide', g).map(gEl => {
         const img = q('.avatar img', gEl);
@@ -376,7 +378,7 @@ function homePage() {
           avatar,
           col([
             h3(txt(q('h3', gEl)), COL.ink, 20),
-            label(txt(q('.role', gEl)), COL.glacier, type('typography', { family: 'Inter', weight: '700', size: px(11), transform: 'uppercase', spacing: px(2) })),
+            label(txt(q('.role', gEl)), COL.glacier, type('typography', { family: 'Inter', weight: '700', size: cl('0.72rem'), line: px(1.5, 'em'), transform: 'uppercase', spacing: px(0.18, 'em') })),
             para(blurb, COL.gray, type('typography', { family: 'Inter', size: px(14.8), line: px(1.6, 'em') })),
             badge ? text(`<p><span style="display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#2A1C05;background:#E8A33D;border-radius:4px;padding:.15rem .55rem">${txt(badge)}</span></p>`) : null,
           ], { flex_gap: gap(6), _flex_size: 'custom', _flex_grow: 1, _flex_shrink: 1 }),
@@ -421,7 +423,7 @@ function homePage() {
         }, feature ? { grid_row: '2', grid_row_tablet: '1', grid_column_tablet: '2', grid_row_mobile: '1', grid_column_mobile: '1' } : {}), [
           container(merge(bgImage(img.getAttribute('src'), null), feature ? res('min_height', px(360), px(300), px(220)) : res('min_height', px(190), px(200), px(200)))),
           col([
-            label(txt(q('.tag', a)), COL.glacier, type('typography', { family: 'Inter', weight: '700', size: px(11), transform: 'uppercase', spacing: px(2.4) })),
+            label(txt(q('.tag', a)), COL.glacier, type('typography', { family: 'Inter', weight: '700', size: cl('0.7rem'), line: px(1.5, 'em'), transform: 'uppercase', spacing: px(0.18, 'em') })),
             h3(txt(q('h3', a)), COL.ink, feature ? 30 : 20),
             para(txt(q('p', a)), COL.gray, type('typography', { family: 'Inter', size: px(14.8), line: px(1.6, 'em') })),
             text(`<p>${txt(q('.go', a)).replace('›', '&rsaquo;')}</p>`, merge({ text_color: COL.sun }, type('typography', { family: 'Inter', weight: '700', size: px(12.8), transform: 'uppercase', spacing: px(1.3) }))),
@@ -436,7 +438,7 @@ function homePage() {
   const cards = qa('.res', resSec);
   const gearOptions = qa('select option', cards[1]).map(o => `${clean(o.text)}|${media(o.getAttribute('value')).url}`);
   const resCard = (c, body) => card([
-    text(`<p>${txt(q('.fmt', c))}</p>`, merge({ text_color: COL.glacier }, type('typography', { family: 'Inter', weight: '700', size: px(11.5), transform: 'uppercase', spacing: px(2.2) }))),
+    text(`<p>${txt(q('.fmt', c))}</p>`, merge({ text_color: COL.glacier }, type('typography', { family: 'Inter', weight: '700', size: cl('0.72rem'), transform: 'uppercase', spacing: px(0.16, 'em') }))),
     h3(txt(q('h3', c)), COL.ink, 22),
     para(txt(q('p', c)), COL.gray, type('typography', { family: 'Inter', size: px(14.8), line: px(1.6, 'em') })),
     ...body,
@@ -446,8 +448,8 @@ function homePage() {
     button_text: buttonText, button_size: 'sm', button_width: '100',
     submit_actions: ['save-to-database', 'email', 'redirect'], email_to: FORM_EMAIL, email_subject: `New download: ${name}`, email_content: '[all-fields]',
     email_from_name: 'Shasta Mountain Guides website', redirect_to: redirect, success_message: success,
-    button_background_color: COL.glacier, button_text_color: COL.white, button_background_hover_color: COL.deep, button_hover_color: COL.white,
-    __globals__: { button_typography_typography: T('accent') },
+    button_background_color: COL.glacier, button_text_color: COL.white, button_background_hover_color: COL.deep, button_hover_color: COL.white, button_border_border: 'solid', button_border_width: box(2), button_border_color: COL.glacier, button_hover_border_color: COL.deep,
+    button_text_padding: boxC('0.65rem', '1.4rem', '0.65rem', '1.4rem'), ...type('button_typography', { family: 'Anton', weight: '400', size: cl('0.9rem'), line: px(1.4, 'em'), transform: 'uppercase', spacing: px(0.08, 'em') }),
   });
   const nameEmail = [
     { _id: 'n1', custom_id: 'name', field_type: 'text', field_label: 'Name', placeholder: 'Your name', required: 'true', width: '100' },
@@ -516,11 +518,11 @@ function tripPage(t) {
   sections.push(container(merge(bgImage(t.hero.src, 'up'), {
     content_width: 'full', ...res('min_height', px(64, 'vh'), px(56, 'vh'), px(60, 'vh')), flex_direction: 'column', flex_justify_content: 'flex-end',
   }), [
-    container({ content_width: 'boxed', boxed_width: px(1280), flex_direction: 'column', flex_gap: gap(10), ...res('padding', box(64, 64), box(56, 32), box(44, 18)) }, [
+    container({ content_width: 'boxed', boxed_width: px(1280), flex_direction: 'column', flex_gap: gap(10), padding: boxC('clamp(2.6rem, 5vw, 4rem)', GUTTER, 'clamp(2.6rem, 5vw, 4rem)', GUTTER) }, [
       text(`<p><a href="${HOME}/" style="color:#BFDDF2">Home</a> <span style="opacity:.6">/</span> <a href="${HOME}/#trips" style="color:#BFDDF2">Trips &amp; Courses</a> <span style="opacity:.6">/</span> <span style="color:#fff">${t.title}</span></p>`, merge({ text_color: COL.ice }, type('typography', { family: 'Inter', size: px(12.5), spacing: px(0.5) }))),
       label(t.eyebrow, COL.ice),
-      heading(t.h1, 'h1', merge(type('typography', { ...DISPLAY, size: px(60), sizeT: px(46), sizeM: px(34), line: px(1.06, 'em') }), { title_color: COL.white })),
-      para(t.lede, COL.ice, merge(type('typography', { family: 'Inter', size: px(18.5), sizeM: px(16), line: px(1.6, 'em') }), { _element_width: 'initial', _element_custom_width: px(680), ...res('_element_custom_width', px(680), px(100, '%'), px(100, '%')) })),
+      heading(t.h1, 'h1', merge(type('typography', { ...DISPLAY, size: cl('clamp(2.1rem, 5vw, 3.8rem)'), line: px(1.06, 'em') }), { title_color: COL.white, _element_width: 'initial', _element_custom_width: cl('min(100%, calc(clamp(2.1rem, 5vw, 3.8rem) * 10.87))') })),
+      para(t.lede, COL.ice, merge(type('typography', { family: 'Inter', size: cl('clamp(1rem, 1.8vw, 1.2rem)'), line: px(1.6, 'em') }), { _element_width: 'initial', _element_custom_width: px(680), ...res('_element_custom_width', px(680), px(100, '%'), px(100, '%')) })),
       row([btn('Book Now', BOOK), btn('Plan My Trip', '#inquire', 'ghost')], { padding: box(8, 0, 0, 0) }),
     ]),
   ], false));
@@ -534,7 +536,7 @@ function tripPage(t) {
     ], { ...res('width', px(56, '%'), px(100, '%'), px(100, '%')) }),
     container({ flex_direction: 'column', flex_gap: gap(0), background_background: 'classic', background_color: COL.paper, border_border: 'solid', border_width: box(1), border_color: COL.line, border_radius: box(8), ...res('width', px(40, '%'), px(100, '%'), px(100, '%')) },
       t.glance.map(([k, v], i) => container({ flex_direction: 'row', flex_gap: gap(16), flex_wrap: 'nowrap', padding: box(15, 20), border_border: 'solid', border_width: box(0, 0, i === t.glance.length - 1 ? 0 : 1, 0), border_color: COL.line, flex_align_items: 'baseline' }, [
-        text(`<p>${k}</p>`, merge({ text_color: COL.glacier, _element_width: 'initial', _element_custom_width: px(120) }, type('typography', { family: 'Inter', weight: '700', size: px(11.5), transform: 'uppercase', spacing: px(2.2) }))),
+        text(`<p>${k}</p>`, merge({ text_color: COL.glacier, _element_width: 'initial', _element_custom_width: px(120) }, type('typography', { family: 'Inter', weight: '700', size: cl('0.72rem'), transform: 'uppercase', spacing: px(0.16, 'em') }))),
         text(`<p><strong>${v}</strong></p>`, merge({ text_color: COL.ink }, type('typography', { family: 'Inter', weight: '600', size: px(15.5) }))),
       ]))),
   ]));
@@ -552,8 +554,8 @@ function tripPage(t) {
           text(`<p class="smg-chips">${[pr.length && ['Length', pr.length], pr.route && ['Route', pr.route], pr.cost && ['Cost', pr.cost]].filter(Boolean).map(([k, v]) => `<span><b>${k}</b>${v}</span>`).join('')}</p>`),
           para(pr.blurb, COL.gray),
           container({ container_type: 'grid', ...res('grid_columns_grid', px(2, 'fr'), px(1, 'fr'), px(1, 'fr')), grid_rows_grid: { unit: 'custom', size: 'auto', sizes: [] }, grid_gaps: gap(14) }, [
-            col([label('Experience', COL.glacier, type('typography', { family: 'Inter', weight: '700', size: px(11), transform: 'uppercase', spacing: px(2) })), para(pr.experience, COL.gray, type('typography', { family: 'Inter', size: px(14), line: px(1.55, 'em') }))], { flex_gap: gap(4) }),
-            col([label('Physical demand', COL.glacier, type('typography', { family: 'Inter', weight: '700', size: px(11), transform: 'uppercase', spacing: px(2) })), para(pr.demand, COL.gray, type('typography', { family: 'Inter', size: px(14), line: px(1.55, 'em') }))], { flex_gap: gap(4) }),
+            col([label('Experience', COL.glacier, type('typography', { family: 'Inter', weight: '700', size: cl('0.7rem'), line: px(1.5, 'em'), transform: 'uppercase', spacing: px(0.14, 'em') })), para(pr.experience, COL.gray, type('typography', { family: 'Inter', size: px(14), line: px(1.55, 'em') }))], { flex_gap: gap(4) }),
+            col([label('Physical demand', COL.glacier, type('typography', { family: 'Inter', weight: '700', size: cl('0.7rem'), line: px(1.5, 'em'), transform: 'uppercase', spacing: px(0.14, 'em') })), para(pr.demand, COL.gray, type('typography', { family: 'Inter', size: px(14), line: px(1.55, 'em') }))], { flex_gap: gap(4) }),
           ]),
           row([
             btnSm('Book Now', BOOK),

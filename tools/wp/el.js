@@ -8,6 +8,12 @@ const id = () => crypto.createHash('md5').update(`smg-${counter++}`).digest('hex
 const resetIds = (seed) => { counter = 0; if (seed) counter = seed * 10000; };
 
 const px = (size, unit = 'px') => ({ unit, size, sizes: [] });
+// Fluid values copied from the mockup's CSS (clamp(), rem, em) via Elementor's "custom" unit.
+const cl = (expr) => ({ unit: 'custom', size: expr, sizes: [] });
+const boxC = (t, r = t, b = t, l = r) => ({ unit: 'custom', top: t, right: r, bottom: b, left: l, isLinked: false });
+// The mockup's spacing tokens (assets/css/site.css)
+const GUTTER = 'clamp(1.1rem, 4vw, 4rem)';
+const SECTION_Y = 'clamp(3.4rem, 6.5vw, 5.8rem)';
 const box = (t, r = t, b = t, l = r, unit = 'px') => ({ unit, top: String(t), right: String(r), bottom: String(b), left: String(l), isLinked: t === r && r === b && b === l });
 const gap = (n, unit = 'px') => ({ column: String(n), row: String(n), isLinked: true, unit, size: n });
 const gap2 = (row, col, unit = 'px') => ({ column: String(col), row: String(row), isLinked: false, unit });
@@ -54,8 +60,8 @@ function container(settings, children = [], isInner = true) {
 }
 // Top-level section: full-width band with a boxed (max 1280) inner container.
 function section(outer, inner, children) {
-  return container(merge({ content_width: 'full', ...res('padding', box(88, 0), box(72, 0), box(56, 0)) }, outer), [
-    container(merge({ content_width: 'boxed', boxed_width: px(1280), flex_direction: 'column', ...res('padding', box(0, 64), box(0, 32), box(0, 18)) }, inner), children),
+  return container(merge({ content_width: 'full', padding: boxC(SECTION_Y, '0', SECTION_Y, '0') }, outer), [
+    container(merge({ content_width: 'boxed', boxed_width: px(1280), flex_direction: 'column', padding: boxC('0', GUTTER, '0', GUTTER) }, inner), children),
   ], false);
 }
 function widget(widgetType, settings) {
@@ -69,4 +75,4 @@ const html = (code) => widget('html', { html: code });
 const button = (label, url, s) => widget('button', merge({ text: label, link: { url, is_external: '', nofollow: '' } }, s));
 const image = (media, s) => widget('image', merge({ image: { id: media.id, url: media.url }, image_size: 'full' }, s));
 
-module.exports = { id, resetIds, px, box, gap, gap2, C, T, res, type, merge, container, section, widget, heading, text, html, button, image };
+module.exports = { id, resetIds, px, cl, box, boxC, GUTTER, SECTION_Y, gap, gap2, C, T, res, type, merge, container, section, widget, heading, text, html, button, image };
