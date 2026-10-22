@@ -4,7 +4,11 @@ const fs = require('fs');
 const path = require('path');
 const data = require('./trips-data.js');
 const pages = data.filter(p => p.slug);
-const BOOK = data.BOOK, LIVE = data.LIVE;
+const BOOK = data.BOOK, LIVE = data.LIVE, FB = data.FLYBOOK;
+// Flybook's native "Book Now" button: its script reads these classes from the clicked element.
+const fbClasses = (entity) => `flybook-book-now-button fb-widget-type-frontend fb-default-category-id-0 fb-account-id-${FB.account} fb-entity-config-id-${entity} fb-domain-${FB.domain} fb-protocol-https`;
+const fbButton = (label, entity, cls = 'btn') => `<button type="button" class="${cls} ${fbClasses(entity)}">${label}</button>`;
+const FLYBOOK_ASSETS = `<link rel="stylesheet" href="https://${FB.domain}/content/bootstrapper/flybookbootstrap.css">\n<script src="https://${FB.domain}/custom/bootstrapper/flybookbootstrap.js"></script>`;
 const ROOT = path.join(__dirname, '..');
 
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -27,7 +31,7 @@ function nav(current) {
       <li><a href="index.html#learn">Learn</a></li>
       <li><a href="index.html#resources">Free Resources</a></li>
       <li><a href="#inquire">Contact</a></li>
-      <li><a class="btn" href="${BOOK}">Book Now</a></li>
+      <li>${fbButton('Book Now', FB.catalog)}</li>
     </ul>
   </div>
 </header>`;
@@ -72,8 +76,8 @@ function programCard(pr, pageOption) {
             <div><dt>Physical demand</dt><dd>${esc(pr.demand)}</dd></div>
           </dl>
           <div class="program__cta">
-            <a class="btn btn--sm" href="${BOOK}">Book Now</a>
-            <a class="btn btn--outline btn--sm" href="#inquire" data-trip="${esc(pr.name)}">Ask about this trip</a>
+            ${pr.fb ? `${fbButton('Book Now', pr.fb, 'btn btn--sm')}
+            <a class="btn btn--outline btn--sm" href="#inquire" data-trip="${esc(pr.name)}">Ask about this trip</a>` : `<a class="btn btn--sm" href="#inquire" data-trip="${esc(pr.name)}">Request this trip</a>`}
             ${pr.learn ? `<a class="more" href="${pr.learn}">Full details &rsaquo;</a>` : ''}
           </div>
         </div>
@@ -207,7 +211,7 @@ ${p.pricing.map(pricingTable).join('\n')}
       <h3>${esc(p.dates.title)}</h3>
       <ul>${p.dates.rows.map(r => `<li>${esc(r[0])}</li>`).join('')}</ul>
       ${p.dates.note ? `<p class="fine" style="color:var(--ice);">${esc(p.dates.note)}</p>` : ''}
-      <a class="btn" href="${BOOK}">Check availability</a>
+      ${fbButton('Check availability', p.programs[0].fb)}
     </div>` : `<div class="dates reveal">
       <h3>Dates and availability</h3>
       <p style="color:var(--ice);">Scheduled departures run through the season and private dates are available on request. Tell us your window and we will match you to a trip.</p>
@@ -256,7 +260,7 @@ ${nav(p.slug)}
     <h1>${esc(p.h1)}</h1>
     <p class="lede">${esc(p.lede)}</p>
     <div class="hero__cta">
-      <a class="btn" href="${BOOK}">Book Now</a>
+      ${fbButton('Book Now', FB.catalog)}
       <a class="btn btn--ghost" href="#inquire">Plan My Trip</a>
     </div>
     ${p.heroNote ? `<p class="hero-note">${esc(p.heroNote)}</p>` : ''}
@@ -280,6 +284,7 @@ ${inquire(p)}
 ${footer()}
 
 <script src="assets/js/site.js"></script>
+${FLYBOOK_ASSETS}
 <script>
   /* "Ask about this trip" buttons preload the form with the specific program. */
   document.querySelectorAll('[data-trip]').forEach(function(a){

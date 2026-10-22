@@ -13,7 +13,14 @@ const ROOT = path.join(__dirname, '..', '..');
 const MEDIA = require('./media-map.json');
 const TRIPS = require('../trips-data.js').filter(t => t.slug);
 const HOME = '{{HOME}}';
-const BOOK = require('../trips-data.js').BOOK; // live booking page until Flybook links arrive
+const FB = require('../trips-data.js').FLYBOOK;  // Flybook account + trip IDs (same as shastaguides.com)
+// Flybook's native Book Now button. Its script reads the trip from the classes on the *clicked* element,
+// which Elementor's button widget nests inside spans, so this is an HTML widget with Flybook's own markup.
+// Styled by .smg-fb in the kit CSS to match the Elementor buttons.
+const fbButton = (label, entity, size = 'lg') => widget('html', {
+  html: `<button type="button" class="smg-fb smg-fb--${size} flybook-book-now-button fb-widget-type-frontend fb-default-category-id-0 fb-account-id-${FB.account} fb-entity-config-id-${entity} fb-domain-${FB.domain} fb-protocol-https">${label}</button>`,
+  _element_width: 'auto', _flex_size: 'none',
+});
 const FORM_EMAIL = 'team@theclaymedia.com';   // staging: leads come to us; switch to info@shastaguides.com at launch
 
 const media = (p) => {
@@ -98,7 +105,13 @@ const KIT = {
     '.smg-lift:hover{transform:translateY(-6px);box-shadow:0 22px 48px rgba(18,34,47,.22)}',
     '.smg-chips span{display:inline-block;background:#E9F3FA;border-radius:4px;padding:.3rem .65rem;margin:0 .4rem .4rem 0;font-size:.84rem;color:#12222F}',
     '.smg-chips b{font-size:.66rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#1F5D8C;margin-right:.35rem}',
-    '@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.smg-lift{transition:none}.smg-lift:hover{transform:none}}',
+    // Flybook buttons (two classes beat flybookbootstrap.css; :hover/:focus claimed because of Hello's reset.css)
+    '.smg-fb.flybook-book-now-button{display:inline-block;font-family:Anton,Impact,sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.08em;line-height:1.4;font-size:1rem;padding:.95rem 2.2rem;border:2px solid #E8A33D;border-radius:6px;background:#E8A33D;color:#2A1C05;cursor:pointer;transition:background .2s,border-color .2s,transform .2s,box-shadow .2s}',
+    '.smg-fb.flybook-book-now-button:hover,.smg-fb.flybook-book-now-button:focus{background:#F4B95C;border-color:#F4B95C;color:#2A1C05;transform:translateY(-2px);box-shadow:0 12px 30px rgba(232,163,61,.4)}',
+    '.smg-fb.flybook-book-now-button:focus-visible{outline:3px solid #1F5D8C;outline-offset:3px}',
+    '.smg-fb--sm.flybook-book-now-button{font-size:.9rem;padding:.65rem 1.4rem}',
+    '.smg-fb--nav.flybook-book-now-button{font-size:.88rem;padding:.5rem 1.3rem}',
+    '@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.smg-lift,.smg-fb{transition:none}.smg-lift:hover,.smg-fb:hover,.smg-fb:focus{transform:none}}',
   ].join('\n'),
 };
 
@@ -261,7 +274,7 @@ function headerTemplate() {
           dropdown_border_radius: box(8), dropdown_top_distance: px(10),
           toggle_color: COL.white, toggle_background_color: 'rgba(0,0,0,0)', toggle_size: px(24),
         }),
-        btnSm('Book Now', BOOK, 'sun', { text_padding: boxC('0.5rem', '1.3rem', '0.5rem', '1.3rem'), typography_font_size: cl('0.88rem') }),
+        fbButton('Book Now', FB.catalog, 'nav'),
       ]),
     ]),
   ], false)];
@@ -285,6 +298,7 @@ function footerTemplate() {
         text('<p><span style="background:#123049;color:#BFDDF2;border-radius:5px;padding:.35rem .85rem;font-weight:600;letter-spacing:.04em">Concept staging site, not live</span></p>', type('typography', { family: 'Inter', size: px(12.5) })),
         text('<p>Site by <a href="https://theclaymedia.com" style="color:#fff;font-weight:700">The Clay Media</a></p>', merge({ text_color: '#8FA6B8' }, type('typography', { family: 'Inter', size: px(12.5) }))),
       ], { flex_justify_content: 'space-between' }),
+      html(`<link rel="stylesheet" href="https://${FB.domain}/content/bootstrapper/flybookbootstrap.css">\n<script src="https://${FB.domain}/custom/bootstrapper/flybookbootstrap.js"></script>`),
     ]),
   ], false)];
 }
@@ -523,7 +537,7 @@ function tripPage(t) {
       label(t.eyebrow, COL.ice),
       heading(t.h1, 'h1', merge(type('typography', { ...DISPLAY, size: cl('clamp(2.1rem, 5vw, 3.8rem)'), line: px(1.06, 'em') }), { title_color: COL.white, _element_width: 'initial', _element_custom_width: cl('min(100%, calc(clamp(2.1rem, 5vw, 3.8rem) * 10.87))') })),
       para(t.lede, COL.ice, merge(type('typography', { family: 'Inter', size: cl('clamp(1rem, 1.8vw, 1.2rem)'), line: px(1.6, 'em') }), { _element_width: 'initial', _element_custom_width: px(680), ...res('_element_custom_width', px(680), px(100, '%'), px(100, '%')) })),
-      row([btn('Book Now', BOOK), btn('Plan My Trip', '#inquire', 'ghost')], { padding: box(8, 0, 0, 0) }),
+      row([fbButton('Book Now', FB.catalog), btn('Plan My Trip', '#inquire', 'ghost')], { padding: box(8, 0, 0, 0) }),
     ]),
   ], false));
 
@@ -558,8 +572,9 @@ function tripPage(t) {
             col([label('Physical demand', COL.glacier, type('typography', { family: 'Inter', weight: '700', size: cl('0.7rem'), line: px(1.5, 'em'), transform: 'uppercase', spacing: px(0.14, 'em') })), para(pr.demand, COL.gray, type('typography', { family: 'Inter', size: px(14), line: px(1.55, 'em') }))], { flex_gap: gap(4) }),
           ]),
           row([
-            btnSm('Book Now', BOOK),
-            btnSm('Ask about this trip', '#inquire', 'outline', { _attributes: `data-trip|${pr.name}` }),
+            ...(pr.fb
+              ? [fbButton('Book Now', pr.fb, 'sm'), btnSm('Ask about this trip', '#inquire', 'outline', { _attributes: `data-trip|${pr.name}` })]
+              : [btnSm('Request this trip', '#inquire', 'sun', { _attributes: `data-trip|${pr.name}` })]),
             pr.learn ? text(`<p><a href="${pr.learn}" style="color:#E8A33D;font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:.8rem">Full details &rsaquo;</a></p>`) : null,
           ], { padding: box(6, 0, 0, 0), flex_gap: gap(12) }),
         ], { ...res('width', px(66, '%'), px(62, '%'), px(100, '%')), ...res('padding', box(26, 28), box(22, 22), box(20, 18)), flex_gap: gap(12) }),
@@ -601,7 +616,7 @@ function tripPage(t) {
           ? text(`<ul style="list-style:none;margin:0;padding:0;display:grid;gap:.5rem">${t.dates.rows.map(r => `<li style="padding:.6rem .8rem;background:rgba(255,255,255,.06);border-radius:6px;color:#fff;font-weight:500">${r[0]}</li>`).join('')}</ul>`)
           : para('Scheduled departures run through the season and private dates are available on request. Tell us your window and we will match you to a trip.', COL.ice),
         t.dates && t.dates.note ? small(t.dates.note, COL.ice) : null,
-        row([btn(t.dates ? 'Check availability' : 'Ask about dates', t.dates ? BOOK : '#inquire')]),
+        row([t.dates ? fbButton('Check availability', t.programs[0].fb) : btn('Ask about dates', '#inquire')]),
       ], { ...res('width', px(42, '%'), px(100, '%'), px(100, '%')), background_background: 'classic', background_color: 'rgba(11,28,43,0.55)', border_border: 'solid', border_width: box(1), border_color: COL.lineDk, border_radius: box(8), padding: box(26, 26), flex_gap: gap(12) }),
     ]));
   }

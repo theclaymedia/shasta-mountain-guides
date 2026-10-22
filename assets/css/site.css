@@ -361,3 +361,9 @@
 /* inquire form extras */
 .asking{ background:var(--frost); border-radius:6px; padding:.6rem .9rem; font-size:.9rem; color:var(--ink); }
 .contact-form .asking b{ color:var(--glacier); }
+
+/* Flybook Book Now buttons: two-class selectors beat flybookbootstrap.css, which loads last */
+.btn.flybook-book-now-button{ font-family:var(--display); font-size:1rem; line-height:1.4; padding:.95rem 2.2rem; border:2px solid var(--sun); color:#2A1C05; }
+.btn.flybook-book-now-button:hover,.btn.flybook-book-now-button:focus{ color:#2A1C05; }
+.btn--sm.flybook-book-now-button{ font-size:.9rem; padding:.65rem 1.4rem; }
+.nav .btn.flybook-book-now-button{ font-size:.88rem; padding:.5rem 1.3rem; }
