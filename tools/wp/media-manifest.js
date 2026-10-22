@@ -31,7 +31,13 @@ for (const t of details.trips) {
   for (const g of [t.hero, ...t.gallery]) { seen.add(g.src); if (!alts[g.src] && g.alt) alts[g.src] = g.alt; }
   if (t.gear) seen.add(t.gear.href);
 }
-for (const f of fs.readdirSync(path.join(ROOT, 'assets', 'downloads'))) if (/-gear-list\.pdf$/.test(f)) seen.add(`assets/downloads/${f}`);
+for (const f of fs.readdirSync(path.join(ROOT, 'assets', 'downloads'))) if (/\.pdf$/.test(f)) seen.add(`assets/downloads/${f}`);
+// Info pages: heroes, About Mt. Shasta gallery, route map, guide photos
+const info = require('../info-pages.json');
+for (const p of Object.values(info)) {
+  for (const g of [p.hero, p.map, ...(p.gallery || [])].filter(Boolean)) { seen.add(g.src); if (!alts[g.src] && g.alt) alts[g.src] = g.alt; }
+  for (const m of p.team || []) if (m.photo) { seen.add(m.photo); if (!alts[m.photo]) alts[m.photo] = m.name; }
+}
 
 const manifest = [...seen]
   .filter(p => !/\.(css|js)$/.test(p))

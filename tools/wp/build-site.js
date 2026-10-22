@@ -1,4 +1,4 @@
-// Builds the Elementor site bundle (kit, menus, header/footer, homepage, 8 program pages, 28 trip pages, redirects)
+// Builds the Elementor site bundle (kit, menus, header/footer, homepage, 8 program pages, 28 trip pages, 11 info pages, redirects)
 // from the static mockup. The mockup stays the source of truth: copy is read from index.html
 // and tools/trips-data.js, images are resolved through media-map.json (see import-media.php).
 //
@@ -52,13 +52,15 @@ const LIVE_PDFS = {
   'PCT-Backpacking-Gear-List.pdf': 'smg-pct-backpacking-gear-list.pdf', 'PCT-Backpacking-Gear-List-ezff.pdf': 'smg-pct-backpacking-gear-list.pdf',
   'Advanced-Climbing-Seminars-Gear-List.pdf': 'smg-advanced-climbing-seminars-gear-list.pdf', 'Rock-Climbing-Gear-List.pdf': 'smg-rock-climbing-gear-list.pdf',
   'Single-Push-Ski-Descent-Gear-List.pdf': 'smg-single-push-ski-descent-gear-list.pdf',
+  'SMG-Essential-Eligibility-Criteria.pdf': 'smg-essential-eligibility-criteria.pdf', '2023-CASAVAL-Training-Plan.pdf': 'smg-casaval-training-plan.pdf',
 };
 // Mockup links → WordPress links
 const link = (href) => {
   if (!href) return '';
   const trip = TRIPS.find(t => href === `${t.slug}.html`);
   if (trip) return pageUrl(trip.slug);
-  if (DETAIL_SLUGS.has(href.replace(/\.html$/, ''))) return pageUrl(href.replace(/\.html$/, ''));
+  const page = href.replace(/\.html(#.*)?$/, '');
+  if (DETAIL_SLUGS.has(page) || INFO[page]) return pageUrl(page) + (href.match(/#.*$/) || [''])[0];
   if (href.startsWith('assets/')) return media(href).url;
   if (href.startsWith('#')) return href;
   return href;
@@ -149,6 +151,28 @@ const KIT = {
     '.smg-gallery .elementor-widget-image{overflow:hidden;border-radius:6px}',
     '.smg-gallery img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .45s ease}',
     '.smg-gallery .elementor-widget-image:hover img{transform:scale(1.05)}',
+    // Info pages: links in copy, contents list, gear-list links, legal text, route chips, initials badge
+    '.smg-prose a{color:#1F5D8C;text-decoration:underline;text-underline-offset:2px}',
+    '.smg-prose p+p{margin-top:.9rem}',
+    '.smg-toc-col{position:sticky;top:96px;align-self:flex-start;max-height:calc(100vh - 120px);overflow-y:auto}',
+    '.smg-toc{display:grid;gap:.15rem;border-left:2px solid #DCE7EF;font-family:Inter,sans-serif}',
+    '.smg-toc span{padding:0 0 .6rem 1rem;font-size:.72rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:#1F5D8C}',
+    '.smg-toc a{display:block;padding:.32rem 0 .32rem 1rem;margin-left:-2px;border-left:2px solid transparent;font-size:.88rem;line-height:1.35;color:#54697A}',
+    '.smg-toc a:hover{color:#1F5D8C;border-left-color:#1F5D8C}',
+    '@media (max-width:1024px){.smg-toc-col{position:static;max-height:none}.smg-toc{display:flex;flex-wrap:wrap;gap:.4rem;border-left:0}.smg-toc span{width:100%;padding:0 0 .2rem}.smg-toc a{margin:0;padding:.35rem .7rem;border:1px solid #DCE7EF;border-radius:999px;font-size:.8rem;background:#fff}}',
+    '.smg-gear-lists{display:grid;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr));gap:.8rem;font-family:Inter,sans-serif}',
+    '.smg-gear-lists a{display:flex;align-items:center;gap:.8rem;padding:.9rem 1rem;background:#fff;border:1px solid #DCE7EF;border-radius:8px;font-weight:600;font-size:.92rem;color:#12222F;transition:border-color .2s,transform .2s}',
+    '.smg-gear-lists a:hover{border-color:#1F5D8C;transform:translateY(-2px)}',
+    '.smg-gear-lists svg{width:1.3rem;height:1.3rem;flex-shrink:0;fill:none;stroke:#1F5D8C;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}',
+    '.smg-route-links a{display:inline-block;margin:0 .45rem .45rem 0;font-size:.8rem;font-weight:600;padding:.35rem .75rem;border-radius:999px;background:#E9F3FA;color:#1F5D8C}',
+    '.smg-route-links a:hover{background:#1F5D8C;color:#fff}',
+    '.smg-initials{width:90px;height:90px;border-radius:50%;background:#123049;color:#E8A33D;font-family:Anton,sans-serif;font-size:1.8rem;letter-spacing:.04em;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 3px #fff,0 0 0 4px #DCE7EF}',
+    '.smg-legal h2{font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.02em;color:#12222F;font-size:clamp(1.3rem,2.2vw,1.6rem);line-height:1.1;margin:2.2rem 0 0}',
+    '.smg-legal h3{font-family:Inter,sans-serif;font-size:1.02rem;font-weight:700;color:#12222F;margin:1.4rem 0 0}',
+    '.smg-legal p{margin:.8rem 0 0;font-size:.95rem;line-height:1.7}',
+    '.smg-legal ul{margin:.8rem 0 0 1.2rem;display:grid;gap:.35rem}',
+    '.smg-legal li{font-size:.95rem;line-height:1.6}',
+    '.smg-legal a{color:#1F5D8C;text-decoration:underline;word-break:break-word}',
     '@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.smg-lift,.smg-fb,.smg-gallery img{transition:none}.smg-lift:hover,.smg-fb:hover,.smg-fb:focus,.smg-gallery .elementor-widget-image:hover img{transform:none}}',
   ].join('\n'),
 };
@@ -341,6 +365,47 @@ function footerTemplate() {
   ], false)];
 }
 
+// "Plan your climb" form + how to find us (homepage and Contact page), copy from index.html #contact
+function contactSection(page, withPhone = false) {
+  const doc = parse(fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8'));
+  const q = (sel, ctx = doc) => ctx.querySelector(sel);
+  const qa = (sel, ctx = doc) => ctx.querySelectorAll(sel);
+  const txt = (el) => clean(el ? el.text : '');
+  const ct = q('#contact');
+  const csh = q('.section-head', ct);
+  const right = qa('.cols > div', ct).pop();
+  return section({ background_background: 'classic', background_color: COL.paper, _element_id: 'contact' }, {}, [
+    sectionHead(txt(q('.label', csh)), txt(q('h2', csh)), txt(q('p', csh)), false),
+    container({ flex_direction: 'row', flex_gap: gap(56), flex_align_items: 'flex-start', ...res('flex_direction', 'row', 'column', 'column'), ...res('flex_gap', gap(56), gap(36), gap(28)) }, [
+      col([formCard('Plan my climb', planForm('', { page }), "We reply by email within one business day. Prefer a call? Leave your number in the message and we'll ring you.")], { ...res('width', px(54, '%'), px(100, '%'), px(100, '%')) }),
+      col([
+        label(txt(q('.label', right))),
+        heading(txt(q('h2', right)), 'h2', merge(type('typography', { ...DISPLAY, size: px(32), sizeM: px(26) }), { title_color: COL.ink })),
+        widget('icon-list', {
+          icon_list: [
+            { _id: 'c1', text: '305 Chestnut Street, Mt. Shasta, California 96067', selected_icon: { value: 'fas fa-map-marker-alt', library: 'fa-solid' }, link: { url: 'https://www.google.com/maps?q=305+Chestnut+St,+Mt+Shasta,+CA+96067', is_external: 'on' } },
+            ...(withPhone ? [{ _id: 'c3', text: '530.926.3117', selected_icon: { value: 'fas fa-phone', library: 'fa-solid' }, link: { url: 'tel:+15309263117' } }] : []),
+            { _id: 'c2', text: 'info@shastaguides.com', selected_icon: { value: 'fas fa-envelope', library: 'fa-solid' }, link: { url: 'mailto:info@shastaguides.com' } },
+          ],
+          space_between: px(14), icon_color: COL.glacier, icon_size: px(18), text_color: COL.ink, text_color_hover: COL.glacier, text_indent: px(10),
+          ...type('icon_typography', { family: 'Inter', weight: '600', size: px(16) }),
+        }),
+        text(`<p>${q('.phone-note', right).innerHTML}</p>`, merge({ text_color: COL.gray, link_color: COL.glacier }, type('typography', { family: 'Inter', size: px(14) }))),
+        widget('google_maps', { address: '305 Chestnut St, Mt Shasta, CA 96067', zoom: px(15), height: px(260) }),
+        widget('social-icons', {
+          social_icon_list: [
+            { _id: 's1', social_icon: { value: 'fab fa-instagram', library: 'fa-brands' }, link: { url: 'https://www.instagram.com/shastamountainguides/', is_external: 'on' } },
+            { _id: 's2', social_icon: { value: 'fab fa-facebook-f', library: 'fa-brands' }, link: { url: 'https://www.facebook.com/shastaguides', is_external: 'on' } },
+            { _id: 's3', social_icon: { value: 'fab fa-yelp', library: 'fa-brands' }, link: { url: 'https://www.yelp.com/biz/shasta-mountain-guides-mount-shasta', is_external: 'on' } },
+          ],
+          shape: 'circle', align: 'left', icon_color: 'custom', icon_primary_color: COL.white, icon_secondary_color: COL.glacier, icon_size: px(17), icon_padding: px(0.7, 'em'), icon_spacing: px(10),
+          hover_primary_color: COL.glacier, hover_secondary_color: COL.white,
+        }),
+      ], { ...res('width', px(42, '%'), px(100, '%'), px(100, '%')), flex_gap: gap(14) }),
+    ]),
+  ]);
+}
+
 // ---------------- Homepage (from index.html) ----------------
 function homePage() {
   const doc = parse(fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8'));
@@ -522,39 +587,7 @@ function homePage() {
   // Photo strip
   sections.push(strip(qa('.strip img').map(i => i.getAttribute('src'))));
 
-  // Contact
-  const ct = q('#contact');
-  const csh = q('.section-head', ct);
-  const right = qa('.cols > div', ct).pop();
-  sections.push(section({ background_background: 'classic', background_color: COL.paper, _element_id: 'contact' }, {}, [
-    sectionHead(txt(q('.label', csh)), txt(q('h2', csh)), txt(q('p', csh)), false),
-    container({ flex_direction: 'row', flex_gap: gap(56), flex_align_items: 'flex-start', ...res('flex_direction', 'row', 'column', 'column'), ...res('flex_gap', gap(56), gap(36), gap(28)) }, [
-      col([formCard('Plan my climb', planForm('', { page: 'Homepage' }), "We reply by email within one business day. Prefer a call? Leave your number in the message and we'll ring you.")], { ...res('width', px(54, '%'), px(100, '%'), px(100, '%')) }),
-      col([
-        label(txt(q('.label', right))),
-        heading(txt(q('h2', right)), 'h2', merge(type('typography', { ...DISPLAY, size: px(32), sizeM: px(26) }), { title_color: COL.ink })),
-        widget('icon-list', {
-          icon_list: [
-            { _id: 'c1', text: '305 Chestnut Street, Mt. Shasta, California 96067', selected_icon: { value: 'fas fa-map-marker-alt', library: 'fa-solid' }, link: { url: 'https://www.google.com/maps?q=305+Chestnut+St,+Mt+Shasta,+CA+96067', is_external: 'on' } },
-            { _id: 'c2', text: 'info@shastaguides.com', selected_icon: { value: 'fas fa-envelope', library: 'fa-solid' }, link: { url: 'mailto:info@shastaguides.com' } },
-          ],
-          space_between: px(14), icon_color: COL.glacier, icon_size: px(18), text_color: COL.ink, text_color_hover: COL.glacier, text_indent: px(10),
-          ...type('icon_typography', { family: 'Inter', weight: '600', size: px(16) }),
-        }),
-        text(`<p>${q('.phone-note', right).innerHTML}</p>`, merge({ text_color: COL.gray, link_color: COL.glacier }, type('typography', { family: 'Inter', size: px(14) }))),
-        widget('google_maps', { address: '305 Chestnut St, Mt Shasta, CA 96067', zoom: px(15), height: px(260) }),
-        widget('social-icons', {
-          social_icon_list: [
-            { _id: 's1', social_icon: { value: 'fab fa-instagram', library: 'fa-brands' }, link: { url: 'https://www.instagram.com/shastamountainguides/', is_external: 'on' } },
-            { _id: 's2', social_icon: { value: 'fab fa-facebook-f', library: 'fa-brands' }, link: { url: 'https://www.facebook.com/shastaguides', is_external: 'on' } },
-            { _id: 's3', social_icon: { value: 'fab fa-yelp', library: 'fa-brands' }, link: { url: 'https://www.yelp.com/biz/shasta-mountain-guides-mount-shasta', is_external: 'on' } },
-          ],
-          shape: 'circle', align: 'left', icon_color: 'custom', icon_primary_color: COL.white, icon_secondary_color: COL.glacier, icon_size: px(17), icon_padding: px(0.7, 'em'), icon_spacing: px(10),
-          hover_primary_color: COL.glacier, hover_secondary_color: COL.white,
-        }),
-      ], { ...res('width', px(42, '%'), px(100, '%'), px(100, '%')), flex_gap: gap(14) }),
-    ]),
-  ]));
+  sections.push(contactSection('Homepage'));
 
   return mainWrap(sections);
 }
@@ -566,17 +599,21 @@ function mainWrap(sections) {
 
 // ---------------- Shared page parts (program + trip pages) ----------------
 // crumbs: [[label, url], ..., [current]]
-function pageHero(src, crumbs, eyebrow, h1, lede, buttons) {
+// height: 'tall' (program/trip pages), 'short' (info pages), or 'plain' (no photo: legal pages)
+function pageHero(src, crumbs, eyebrow, h1, lede, buttons, height = 'tall') {
   const trail = crumbs.map(([t, u]) => (u ? `<a href="${u}" style="color:#BFDDF2">${t}</a>` : `<span style="color:#fff">${t}</span>`)).join(' <span style="opacity:.6">/</span> ');
-  return container(merge(bgImage(src, 'up'), {
-    content_width: 'full', ...res('min_height', px(64, 'vh'), px(56, 'vh'), px(60, 'vh')), flex_direction: 'column', flex_justify_content: 'flex-end',
+  const ground = height === 'plain'
+    ? { background_background: 'classic', background_color: COL.deep, padding: boxC('clamp(4rem, 9vw, 6rem)', '0', '0', '0') }
+    : merge(bgImage(src, 'up'), height === 'short' ? res('min_height', px(48, 'vh'), px(44, 'vh'), px(50, 'vh')) : res('min_height', px(64, 'vh'), px(56, 'vh'), px(60, 'vh')));
+  return container(merge(ground, {
+    content_width: 'full', flex_direction: 'column', flex_justify_content: 'flex-end',
   }), [
     container({ content_width: 'boxed', boxed_width: px(1280), flex_direction: 'column', flex_gap: gap(10), padding: boxC('clamp(2.6rem, 5vw, 4rem)', GUTTER, 'clamp(2.6rem, 5vw, 4rem)', GUTTER) }, [
       text(`<p>${trail}</p>`, merge({ text_color: COL.ice }, type('typography', { family: 'Inter', size: px(12.5), spacing: px(0.5) }))),
       label(eyebrow, COL.ice),
       heading(h1, 'h1', merge(type('typography', { ...DISPLAY, size: cl('clamp(2.1rem, 5vw, 3.8rem)'), line: px(1.06, 'em') }), { title_color: COL.white, _element_width: 'initial', _element_custom_width: cl('min(100%, calc(clamp(2.1rem, 5vw, 3.8rem) * 10.87))') })),
       lede ? para(lede, COL.ice, merge(type('typography', { family: 'Inter', size: cl('clamp(1rem, 1.8vw, 1.2rem)'), line: px(1.6, 'em') }), { _element_width: 'initial', _element_custom_width: px(680), ...res('_element_custom_width', px(680), px(100, '%'), px(100, '%')) })) : null,
-      row(buttons, { padding: box(8, 0, 0, 0) }),
+      buttons.length ? row(buttons, { padding: box(8, 0, 0, 0) }) : null,
     ]),
   ], false);
 }
@@ -612,7 +649,7 @@ function inquireSection(t) {
             ...(t.gear.alt ? [gearLink(t.gear.alt)] : []),
             { _id: 'rtr', text: 'Training for Mt. Shasta (PDF)', selected_icon: { value: 'fas fa-chart-line', library: 'fa-solid' }, link: { url: media('assets/downloads/smg-training-for-mount-shasta.pdf').url, is_external: 'on' } },
             { _id: 'rar', text: t.article.title, selected_icon: { value: 'fas fa-book-open', library: 'fa-solid' }, link: { url: t.article.href } },
-            { _id: 'rtd', text: 'Trip details: meeting times, lodging, food, weather and tipping', selected_icon: { value: 'fas fa-info-circle', library: 'fa-solid' }, link: { url: 'https://shastaguides.com/tripdetails' } },
+            { _id: 'rtd', text: 'Trip details: meeting times, lodging, food, weather and tipping', selected_icon: { value: 'fas fa-info-circle', library: 'fa-solid' }, link: { url: `${HOME}/tripdetails` } },
           ],
           space_between: px(14), icon_color: COL.glacier, icon_size: px(18), text_color: COL.ink, text_color_hover: COL.glacier, text_indent: px(10),
           ...type('icon_typography', { family: 'Inter', weight: '600', size: px(15.5) }),
@@ -813,6 +850,184 @@ function detailPage(t) {
   return mainWrap(sections);
 }
 
+// ---------------- Info pages (from tools/info-pages.json, same layout as tools/build-info-pages.js) ----------------
+const INFO = require('../info-pages.json');
+// Live-site links inside the copy → this site (same slugs), anything else stays on shastaguides.com
+const LOCAL_SLUGS = new Set([...Object.keys(INFO), ...DETAIL_SLUGS, ...Object.values(OLD_SLUG)]);
+const localize = (h) => h.replace(/href="(?:https?:\/\/(?:www\.)?shastaguides\.com)?\/([a-z0-9-]+)\/?"/g, (m, slug) => {
+  const s = DETAILS.redirects[slug] || slug;
+  return LOCAL_SLUGS.has(s) ? `href="${HOME}/${s}"` : `href="https://shastaguides.com/${slug}"`;
+});
+const prose = (blocks, color, extra) => text(blocks.map(h => `<p>${localize(h)}</p>`).join(''), merge({ text_color: color || COL.body, _css_classes: 'smg-prose' }, extra));
+const initials = (name) => name.split(/\s+/).filter(w => /^[A-Z]/.test(w)).map(w => w[0]).slice(0, 2).join('');
+const infoHero = (p, buttons = true) => pageHero(p.hero ? p.hero.src : null, [['Home', `${HOME}/`], [esc(p.title)]], esc(p.eyebrow), esc(p.h1), p.lede && esc(p.lede),
+  buttons ? [btn('See Trips &amp; Courses', `${HOME}/#trips`), btn('Plan My Trip', `${HOME}/contact`, 'ghost')] : [], p.hero ? 'short' : 'plain');
+const ctaBand = (title, kicker) => section({ background_background: 'classic', background_color: COL.glacier }, { flex_align_items: 'center', flex_gap: gap(18) }, [
+  label(esc(kicker), COL.ice),
+  heading(esc(title), 'h2', merge(type('typography', { ...DISPLAY, size: cl('clamp(1.6rem, 3.4vw, 2.4rem)'), line: px(1.1, 'em') }), { title_color: COL.white, align: 'center' })),
+  row([btn('Plan My Trip', `${HOME}/contact`), btn('See Trips &amp; Courses', `${HOME}/#trips`, 'ghost')], { flex_justify_content: 'center', padding: box(8, 0, 0, 0) }),
+]);
+const gallerySection = (list) => container({ content_width: 'full', background_background: 'classic', background_color: COL.white, padding: boxC('0', '0', 'clamp(2.4rem, 5vw, 4rem)', '0') }, [
+  container({
+    container_type: 'grid', content_width: 'boxed', boxed_width: px(1280), padding: boxC('0', GUTTER, '0', GUTTER), css_classes: 'smg-gallery',
+    ...res('grid_columns_grid', px(4, 'fr'), px(2, 'fr'), px(2, 'fr')), grid_rows_grid: { unit: 'custom', size: 'auto', sizes: [] }, grid_gaps: gap(8),
+  }, list.map(g => image(media(g.src), { image_size: 'large' }))),
+], false);
+
+// Long page: sticky contents list + one block per section (anchors match the live headings)
+function docSection(p, extra = []) {
+  const toc = `<nav class="smg-toc" aria-label="On this page"><span>On this page</span>${p.sections.map(s => `<a href="#${s.id}">${esc(s.h)}</a>`).join('')}</nav>`;
+  const block = (children, id, first) => container(merge({ flex_direction: 'column', flex_gap: gap(12), padding: box(first ? 0 : 26, 0, 26, 0) }, first ? {} : { border_border: 'solid', border_width: box(1, 0, 0, 0), border_color: COL.line }, id ? { _element_id: id } : {}), children);
+  return section({ background_background: 'classic', background_color: COL.paper }, { flex_direction: 'row', flex_gap: gap(64), flex_align_items: 'flex-start', ...res('flex_direction', 'row', 'column', 'column'), ...res('flex_gap', gap(64), gap(28), gap(24)) }, [
+    container({ css_classes: 'smg-toc-col', ...res('width', px(240), px(100, '%'), px(100, '%')), _flex_size: 'none' }, [html(toc)]),
+    container({ flex_direction: 'column', flex_gap: gap(0), ...res('width', cl('min(46rem, 100%)'), px(100, '%'), px(100, '%')), _flex_size: 'custom', _flex_grow: 1, _flex_shrink: 1 }, [
+      p.intro.length || extra.length ? block([p.intro.length ? prose(p.intro) : null, ...extra], null, true) : null,
+      ...p.sections.map((s, i) => block([h2(esc(s.h), COL.ink, type('typography', { ...DISPLAY, size: cl('clamp(1.5rem, 2.6vw, 1.9rem)'), line: px(1.06, 'em') })), prose(s.blocks)], s.id, i === 0 && !(p.intro.length || extra.length))),
+    ]),
+  ]);
+}
+
+function gearListsHtml() {
+  const seen = new Map();
+  for (const t of TRIPS) if (t.gear) seen.set(t.gear.href, t.gear.label);
+  for (const t of DETAILS.trips) if (t.gear) seen.set(t.gear.href, t.gear.label);
+  const icon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>';
+  return `<div class="smg-gear-lists">${[...seen].sort((a, b) => a[1].localeCompare(b[1])).map(([href, l]) => `<a href="${media(href).url}" target="_blank" rel="noopener">${icon}<span>${esc(l)} (PDF)</span></a>`).join('')}</div>`;
+}
+
+const INFO_PAGES = {
+  about(p) {
+    const member = (m) => card([
+      row([
+        m.photo ? image(media(m.photo), { image_size: 'medium', width: px(90), height: px(90), 'object-fit': 'cover', image_border_radius: box(50, 50, 50, 50, '%'), _element_width: 'auto', _flex_size: 'none' })
+          : html(`<div class="smg-initials" aria-hidden="true">${initials(m.name)}</div>`),
+        col([
+          h3(esc(m.name), COL.ink, 24),
+          label(esc(m.role), COL.glacier, type('typography', { family: 'Inter', weight: '700', size: cl('0.72rem'), line: px(1.5, 'em'), transform: 'uppercase', spacing: px(0.18, 'em') })),
+          m.certs ? small(esc(m.certs)) : null,
+          m.local ? text('<p><span style="display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#2A1C05;background:#E8A33D;border-radius:4px;padding:.15rem .55rem">Lives in Mt. Shasta</span></p>') : null,
+        ], { flex_gap: gap(4), _flex_size: 'custom', _flex_grow: 1, _flex_shrink: 1, width: { unit: 'custom', size: 'auto', sizes: [] } }),
+      ], { flex_wrap: 'nowrap', flex_gap: gap(20), flex_align_items: 'center', ...res('flex_wrap', 'nowrap', 'nowrap', 'wrap') }),
+      prose(m.bio, COL.gray, type('typography', { family: 'Inter', size: px(15), line: px(1.65, 'em') })),
+    ], { padding: boxC('1.6rem', '1.6rem', '1.6rem', '1.6rem'), flex_gap: gap(14) });
+    return [
+      infoHero(p),
+      overviewStory(p.intro, 'Our Story', image(media('assets/images/team-summit-group.jpg'), { image_border_radius: box(8) })),
+      section({ background_background: 'classic', background_color: COL.paper, _element_id: 'team' }, {}, [
+        sectionHead('Our Team', 'Meet your guides.', null, false),
+        container({ container_type: 'grid', ...res('grid_columns_grid', px(2, 'fr'), px(1, 'fr'), px(1, 'fr')), grid_rows_grid: { unit: 'custom', size: 'auto', sizes: [] }, grid_gaps: gap(19), grid_align_items: 'start' }, p.team.map(member)),
+      ]),
+      ctaBand(p.closing, 'Climb with the locals'),
+    ];
+  },
+
+  aboutshasta(p) {
+    const glance = [['Summit', '14,179 ft'], ['Base', '17+ miles across'], ['Glaciers', "8, California's largest"], ['Vertical', '7,000+ ft of climbing']];
+    return [
+      infoHero(p),
+      overviewSection([prose(p.intro.slice(0, 2))], glance, [prose(p.intro.slice(2))]),
+      gallerySection(p.gallery),
+      ctaBand('Ready to climb it?', 'Routes, seasons and trips'),
+    ];
+  },
+
+  routesandseasons(p) {
+    const chips = (pairs) => text(`<p class="smg-route-links">${pairs.map(([t, s]) => `<a href="${pageUrl(s)}">${esc(t)}</a>`).join('')}</p>`);
+    const season = (when, title, para, pairs) => card([
+      label(when, COL.glacier, type('typography', { family: 'Inter', weight: '700', size: cl('0.72rem'), line: px(1.5, 'em'), transform: 'uppercase', spacing: px(0.16, 'em') })),
+      h3(title, COL.ink, 24), prose([para], COL.gray), chips(pairs),
+    ], { padding: boxC('1.6rem', '1.7rem', '1.6rem', '1.7rem'), flex_gap: gap(12) });
+    return [
+      infoHero(p),
+      section({ background_background: 'classic', background_color: COL.paper }, { flex_gap: gap(0) }, [
+        sectionHead('Routes', 'The routes we guide.', null, false),
+        image(media(p.map.src), { image_size: 'full', width: cl('min(62rem, 100%)'), image_border_radius: box(8), _border_border: 'solid', _border_width: box(1), _border_color: COL.line, _border_radius: box(8) }),
+      ]),
+      section({ background_background: 'classic', background_color: COL.white }, {}, [
+        sectionHead('Seasons', 'When we climb where.', null, false),
+        container({ container_type: 'grid', ...res('grid_columns_grid', px(2, 'fr'), px(1, 'fr'), px(1, 'fr')), grid_rows_grid: { unit: 'custom', size: 'auto', sizes: [] }, grid_gaps: gap(19), grid_align_items: 'start' }, [
+          season('Late April to early June', 'South &amp; Southwest Side', p.seasons[0], [['Avalanche Gulch, 3-day', 'expedition-style'], ['Avalanche Gulch, 2-day', 'aplinestyleclimb'], ['West Face', 'westfaceclimb'], ['Casaval Ridge', 'cacavalridgeclimb']]),
+          season('June to early September', 'North &amp; East Side', p.seasons[1], [['North Side climbs', 'northsideclimb'], ['Glacier I Seminar', 'glacier1'], ['Clear Creek', 'clearcreekclimb']]),
+        ]),
+        small(`Not sure which fits? Take the one-minute <a href="${HOME}/#resources" style="color:#1F5D8C;text-decoration:underline">route quiz</a>.`),
+      ]),
+      ctaBand('Pick your route. We will handle the rest.', 'Plan your climb'),
+    ];
+  },
+
+  tripdetails: (p) => [infoHero(p), docSection(p), ctaBand('Questions before your trip?', 'We are here to help')],
+  gear: (p) => [infoHero(p), docSection(p, [h2('Gear lists by trip', COL.ink, type('typography', { ...DISPLAY, size: cl('clamp(1.5rem, 2.6vw, 1.9rem)'), line: px(1.06, 'em') })), html(gearListsHtml())]), ctaBand('Not sure about a piece of gear? Ask us.', 'Gear questions')],
+  policies: (p) => [infoHero(p, false), docSection(p)],
+
+  training(p) {
+    const res3 = p.links.map(l => card([
+      text('<p><span style="display:inline-flex;width:3rem;height:3rem;border-radius:8px;background:#123049;color:#E8A33D;align-items:center;justify-content:center"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></span></p>'),
+      label(esc(l.note), COL.glacier, type('typography', { family: 'Inter', weight: '700', size: cl('0.72rem'), line: px(1.5, 'em'), transform: 'uppercase', spacing: px(0.16, 'em') })),
+      heading(`<a href="${l.href.startsWith('assets/') ? media(l.href).url : l.href}" target="_blank" rel="noopener" style="color:inherit">${esc(l.label)}</a>`, 'h3', merge(type('typography', { ...DISPLAY, size: px(22), line: px(1.1, 'em') }), { title_color: COL.ink })),
+    ], { padding: boxC('1.7rem', '1.6rem', '1.7rem', '1.6rem'), css_classes: 'smg-lift' }));
+    return [
+      infoHero(p),
+      overviewStory(p.intro, 'Why Train Before Your Climb?', col([
+        text(`<p>&ldquo;${esc(p.quote.text)}&rdquo;</p>`, merge({ text_color: COL.white }, type('typography', { family: 'Inter', size: cl('clamp(1.02rem, 1.6vw, 1.15rem)'), line: px(1.7, 'em') }))),
+        label(esc(p.quote.by), COL.sun),
+      ], { background_background: 'classic', background_color: COL.deep, border_radius: box(8), padding: boxC('clamp(1.6rem, 3vw, 2.4rem)'), flex_gap: gap(12) })),
+      section({ background_background: 'classic', background_color: COL.frost }, {}, [
+        sectionHead('Resources', 'Training plans and coaches we recommend.', null, false),
+        container({ container_type: 'grid', ...res('grid_columns_grid', px(3, 'fr'), px(1, 'fr'), px(1, 'fr')), grid_rows_grid: { unit: 'custom', size: 'auto', sizes: [] }, grid_gaps: gap(19), grid_align_items: 'stretch' }, res3),
+      ]),
+      ctaBand('Train hard. Climb well.', 'Ready when you are'),
+    ];
+  },
+
+  faq(p) {
+    return [
+      infoHero(p),
+      section({ background_background: 'classic', background_color: COL.paper }, {}, [
+        widget('toggle', {
+          tabs: p.qa.map((q, i) => ({ _id: `q${i}`, tab_title: esc(q.q), tab_content: q.a.map(h => `<p>${localize(h)}</p>`).join('') })),
+          faq_schema: 'yes', title_html_tag: 'h3',
+          selected_icon: { value: 'fas fa-plus', library: 'fa-solid' }, selected_active_icon: { value: 'fas fa-minus', library: 'fa-solid' }, icon_align: 'right',
+          border_width: px(1), border_color: COL.line, space_between: px(10), box_shadow_box_shadow_type: '',
+          title_background: COL.white, title_color: COL.ink, tab_active_color: COL.glacier, icon_color: COL.glacier, icon_active_color: COL.glacier,
+          ...type('title_typography', { family: 'Inter', weight: '600', size: px(17), line: px(1.4, 'em') }),
+          title_padding: box(18, 22), content_background_color: COL.white, content_color: COL.body, content_padding: box(4, 22, 20, 22),
+          ...type('content_typography', { family: 'Inter', size: px(16), line: px(1.65, 'em') }),
+          _element_width: 'initial', _element_custom_width: cl('min(52rem, 100%)'),
+        }),
+      ]),
+      ctaBand('Still have a question?', 'Ask a guide'),
+    ];
+  },
+
+  privacypolicy: (p) => legalPage(p),
+  'terms-of-service': (p) => legalPage(p),
+  contact: (p) => [infoHero(p, false), contactSection('Contact page', true)],
+};
+
+// Overview band: copy on the left, a supporting element (photo, quote) on the right
+function overviewStory(paras, lbl, right) {
+  return section({ background_background: 'classic', background_color: COL.white }, { flex_direction: 'row', flex_gap: gap(56), flex_align_items: 'flex-start', ...res('flex_direction', 'row', 'column', 'column'), ...res('flex_gap', gap(56), gap(32), gap(28)) }, [
+    col([label(lbl), prose(paras)], { ...res('width', px(54, '%'), px(100, '%'), px(100, '%')) }),
+    col([right], { ...res('width', px(42, '%'), px(100, '%'), px(100, '%')) }),
+  ]);
+}
+
+function legalPage(p) {
+  const body = p.blocks.map((b, i) => {
+    if (b.t === 'li') return `${p.blocks[i - 1]?.t === 'li' ? '' : '<ul>'}<li>${b.html}</li>${p.blocks[i + 1]?.t === 'li' ? '' : '</ul>'}`;
+    return `<${b.t}${b.id ? ` id="${b.id}"` : ''}>${localize(b.html)}</${b.t}>`;
+  }).join('');
+  return [
+    infoHero(p, false),
+    section({ background_background: 'classic', background_color: COL.white }, {}, [
+      label(esc(p.updated)),
+      text(body, { _css_classes: 'smg-legal', text_color: COL.body, _element_width: 'initial', _element_custom_width: cl('min(48rem, 100%)') }),
+    ]),
+  ];
+}
+
+const infoPage = (slug) => mainWrap(INFO_PAGES[slug](INFO[slug]));
+
 // ---------------- Menus ----------------
 const menus = [
   { name: 'main', items: [
@@ -820,12 +1035,13 @@ const menus = [
     { title: 'Our Guides', url: `${HOME}/#guides` },
     { title: 'Learn', url: `${HOME}/#learn` },
     { title: 'Free Resources', url: `${HOME}/#resources` },
-    { title: 'Contact', url: `${HOME}/#contact` },
+    { title: 'Contact', url: `${HOME}/contact` },
   ] },
   { name: 'footer', items: [
-    ['Trip Details', 'https://shastaguides.com/tripdetails'], ['Gear', 'https://shastaguides.com/gear'], ['Training', 'https://shastaguides.com/training'],
-    ['FAQ', 'https://shastaguides.com/faq'], ['Articles', 'https://shastaguides.com/articles'], ['Policies', 'https://shastaguides.com/policies'],
-    ['Essentials of Eligibility', 'https://shastaguides.com/s/SMG-Essential-Eligibility-Criteria.pdf'], ['Privacy Policy', 'https://shastaguides.com/privacypolicy'],
+    ['About Us', `${HOME}/about`], ['About Mt. Shasta', `${HOME}/aboutshasta`], ['Routes & Seasons', `${HOME}/routesandseasons`],
+    ['Trip Details', `${HOME}/tripdetails`], ['Gear', `${HOME}/gear`], ['Training', `${HOME}/training`], ['FAQ', `${HOME}/faq`],
+    ['Articles', 'https://shastaguides.com/articles'], ['Policies', `${HOME}/policies`], ['Essentials of Eligibility', media('assets/downloads/smg-essential-eligibility-criteria.pdf').url],
+    ['Privacy Policy', `${HOME}/privacypolicy`], ['Terms of Use', `${HOME}/terms-of-service`], ['Contact', `${HOME}/contact`],
   ].map(([title, url]) => ({ title, url })) },
 ];
 
@@ -844,6 +1060,12 @@ TRIPS.forEach((t, i) => {
 DETAILS.trips.forEach((t, i) => {
   E.resetIds(100 + i);
   pages.push({ key: `detail-${t.slug}`, slug: t.slug, title: t.name, order: 100 + i, excerpt: t.route_line || t.eyebrow, elements: detailPage(t) });
+});
+
+Object.keys(INFO).forEach((slug, i) => {
+  E.resetIds(200 + i);
+  const p = INFO[slug];
+  pages.push({ key: `info-${slug}`, slug, title: p.h1, order: 200 + i, excerpt: p.lede || '', elements: infoPage(slug) });
 });
 
 const redirects = {
