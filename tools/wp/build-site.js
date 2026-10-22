@@ -371,7 +371,7 @@ function homePage() {
         const blurb = clean((q('p', gEl).childNodes.filter(n => n.nodeType === 3).map(n => n.text).join(' ')));
         const avatar = img
           ? image(media(img.getAttribute('src')), { width: px(74), height: px(74), 'object-fit': 'cover', image_border_radius: box(50, 50, 50, 50, '%'), _element_width: 'auto', _flex_size: 'none' })
-          : container({ width: px(74), min_height: px(74), _flex_size: 'none', flex_justify_content: 'center', flex_align_items: 'center', background_background: 'classic', background_color: COL.deep, border_radius: box(50, 50, 50, 50, '%') }, [
+          : container({ ...res('width', px(74), px(74), px(74)), min_height: px(74), _flex_size: 'none', flex_justify_content: 'center', flex_align_items: 'center', background_background: 'classic', background_color: COL.deep, border_radius: box(50, 50, 50, 50, '%') }, [
             heading(initials, 'span', merge(type('typography', { family: 'Anton', weight: '400', size: px(24) }), { title_color: COL.sun })),
           ]);
         return container({ flex_direction: 'row', flex_gap: gap(18), flex_align_items: 'flex-start', flex_wrap: 'nowrap', background_background: 'classic', background_color: COL.paper, border_border: 'solid', border_width: box(1), border_color: COL.line, border_radius: box(8), padding: box(24), css_classes: 'smg-lift' }, [
