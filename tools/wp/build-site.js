@@ -1,4 +1,5 @@
-// Builds the Elementor site bundle (kit, menus, header/footer, homepage, 8 program pages, 28 trip pages, 11 info pages, redirects)
+// Builds the Elementor site bundle (kit, menus, header/footer/article templates, homepage, 8 program pages, 28 trip pages,
+// 11 info pages, the Articles page, 10 article posts, redirects)
 // from the static mockup. The mockup stays the source of truth: copy is read from index.html
 // and tools/trips-data.js, images are resolved through media-map.json (see import-media.php).
 //
@@ -59,6 +60,7 @@ const link = (href) => {
   if (!href) return '';
   const trip = TRIPS.find(t => href === `${t.slug}.html`);
   if (trip) return pageUrl(trip.slug);
+  if (/^articles(\/[a-z0-9-]+)?\.html$/.test(href)) return `${HOME}/${href.replace(/\.html$/, '')}`;
   const page = href.replace(/\.html(#.*)?$/, '');
   if (DETAIL_SLUGS.has(page) || INFO[page]) return pageUrl(page) + (href.match(/#.*$/) || [''])[0];
   if (href.startsWith('assets/')) return media(href).url;
@@ -173,6 +175,24 @@ const KIT = {
     '.smg-legal ul{margin:.8rem 0 0 1.2rem;display:grid;gap:.35rem}',
     '.smg-legal li{font-size:.95rem;line-height:1.6}',
     '.smg-legal a{color:#1F5D8C;text-decoration:underline;word-break:break-word}',
+    // Articles: post content (single-post template) and the posts grid
+    '.smg-post p+p,.smg-post p+ul,.smg-post ul+p{margin-top:1rem}',
+    '.smg-post h2{font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;color:#12222F;font-size:clamp(1.5rem,2.6vw,1.9rem);line-height:1.1;margin:2.2rem 0 .8rem}',
+    '.smg-post h3{font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;color:#12222F;font-size:1.35rem;margin:1.8rem 0 .6rem}',
+    '.smg-post a{color:#1F5D8C;text-decoration:underline;text-underline-offset:2px}',
+    '.smg-post ul,.smg-post ol{margin:.9rem 0 0 1.3rem}',
+    '.smg-post blockquote{margin:1.4rem 0;padding:1rem 1.3rem;border-left:4px solid #E8A33D;background:#E9F3FA;border-radius:0 6px 6px 0}',
+    '.smg-post hr{border:0;border-top:1px solid #DCE7EF;margin:2.2rem 0}',
+    '.smg-post-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem;margin:0 0 2rem}',
+    '.smg-post-gallery:has(figure:nth-child(9)){grid-template-columns:repeat(4,1fr)}',
+    '.smg-post-gallery figure{margin:0;aspect-ratio:4/3;overflow:hidden;border-radius:6px}',
+    '.smg-post-gallery figure:first-child:nth-last-child(n+4){grid-column:1/-1;aspect-ratio:16/9}',
+    '.smg-post-gallery img{width:100%;height:100%;object-fit:cover;display:block}',
+    '@media (max-width:620px){.smg-post-gallery,.smg-post-gallery:has(figure:nth-child(9)){grid-template-columns:1fr 1fr}}',
+    '.smg-post a.smg-post-btn{display:inline-block;font-family:Anton,sans-serif;text-transform:uppercase;letter-spacing:.08em;text-decoration:none;padding:.65rem 1.4rem;border:2px solid #1F5D8C;border-radius:6px;color:#1F5D8C}',
+    '.smg-post a.smg-post-btn:hover,.smg-post a.smg-post-btn:focus{background:#1F5D8C;color:#fff}',
+    '.smg-posts .elementor-post__card{transition:transform .25s ease,box-shadow .25s ease}',
+    '.smg-posts .elementor-post__card:hover{transform:translateY(-5px);box-shadow:0 20px 44px rgba(18,34,47,.16)}',
     '@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.smg-lift,.smg-fb,.smg-gallery img{transition:none}.smg-lift:hover,.smg-fb:hover,.smg-fb:focus,.smg-gallery .elementor-widget-image:hover img{transform:none}}',
   ].join('\n'),
 };
@@ -535,7 +555,7 @@ function homePage() {
         const feature = i === 0;
         const img = q('img', a);
         return container(merge({
-          html_tag: 'a', link: { url: a.getAttribute('href') }, flex_direction: 'column', flex_gap: gap(0), background_background: 'classic', background_color: COL.white,
+          html_tag: 'a', link: { url: link(a.getAttribute('href')) }, flex_direction: 'column', flex_gap: gap(0), background_background: 'classic', background_color: COL.white,
           border_border: 'solid', border_width: box(1), border_color: COL.line, border_radius: box(8), overflow: 'hidden', css_classes: 'smg-lift',
         }, feature ? { grid_row: '2', grid_row_tablet: '1', grid_column_tablet: '2', grid_row_mobile: '1', grid_column_mobile: '1' } : {}), [
           container(merge(bgImage(img.getAttribute('src'), null), feature ? res('min_height', px(360), px(300), px(220)) : res('min_height', px(190), px(200), px(200)))),
@@ -648,7 +668,7 @@ function inquireSection(t) {
             gearLink(t.gear),
             ...(t.gear.alt ? [gearLink(t.gear.alt)] : []),
             { _id: 'rtr', text: 'Training for Mt. Shasta (PDF)', selected_icon: { value: 'fas fa-chart-line', library: 'fa-solid' }, link: { url: media('assets/downloads/smg-training-for-mount-shasta.pdf').url, is_external: 'on' } },
-            { _id: 'rar', text: t.article.title, selected_icon: { value: 'fas fa-book-open', library: 'fa-solid' }, link: { url: t.article.href } },
+            { _id: 'rar', text: t.article.title, selected_icon: { value: 'fas fa-book-open', library: 'fa-solid' }, link: { url: `${HOME}/${t.article.href}` } },
             { _id: 'rtd', text: 'Trip details: meeting times, lodging, food, weather and tipping', selected_icon: { value: 'fas fa-info-circle', library: 'fa-solid' }, link: { url: `${HOME}/tripdetails` } },
           ],
           space_between: px(14), icon_color: COL.glacier, icon_size: px(18), text_color: COL.ink, text_color_hover: COL.glacier, text_indent: px(10),
@@ -1028,6 +1048,99 @@ function legalPage(p) {
 
 const infoPage = (slug) => mainWrap(INFO_PAGES[slug](INFO[slug]));
 
+// ---------------- Articles (from tools/articles.json, same layout as tools/build-articles.js) ----------------
+// Articles are real WordPress posts at /articles/<slug> (plain HTML content, editable in the normal post editor),
+// shown through a Theme Builder single-post template; the Articles page lists them with the Posts widget.
+const ARTICLES = require('../articles.json');
+const ART_SLUGS = new Set(ARTICLES.map(a => a.slug));
+const articleLinks = (h) => localize(h.replace(/href="(?:https?:\/\/(?:www\.)?shastaguides\.com)?\/articles\/([a-z0-9-]+)\/?"/g, (m, s) => (ART_SLUGS.has(s) ? `href="${HOME}/articles/${s}"` : m)))
+  .replace(/<a href="http/g, '<a target="_blank" rel="noopener" href="http');
+const postContent = (a) => a.blocks.map(b => {
+  if (b.gallery) return `<div class="smg-post-gallery">${b.gallery.map(g => `<figure><img src="${media(g.src).url}" alt="${esc(g.alt)}" loading="lazy"></figure>`).join('')}</div>`;
+  if (b.button) return `<p><a class="smg-post-btn" ${articleLinks(`href="${b.button.href}"`)}>${esc(b.button.label)}</a></p>`;
+  if (b.hr) return '<hr>';
+  return articleLinks(b.html);
+}).join('\n');
+const POST_CATEGORY = (c) => ({ guides: 'Guides' }[c] || c);
+const postsWidget = (count, extra = {}) => widget('posts', merge({
+  _skin: 'cards', posts_post_type: 'post', posts_orderby: 'post_date', posts_order: 'desc',
+  cards_columns: '3', cards_columns_tablet: '2', cards_columns_mobile: '1', cards_posts_per_page: count,
+  cards_thumbnail: 'top', cards_thumbnail_size_size: 'medium_large', cards_item_ratio: px(0.62), cards_title_tag: 'h3',
+  cards_show_excerpt: 'yes', cards_excerpt_length: 24, cards_meta_data: ['date'], cards_show_read_more: 'yes', cards_read_more_text: 'Read »',
+  cards_show_badge: 'yes', cards_badge_taxonomy: 'category', cards_show_avatar: '', cards_card_hover_effect: 'none',
+  cards_column_gap: px(19), cards_row_gap: px(19), cards_card_bg_color: COL.white, cards_card_border_color: COL.line, cards_card_border_width: px(1), cards_card_border_radius: px(8),
+  cards_card_padding: px(24), cards_card_vertical_padding: px(22), cards_box_shadow_box_shadow_type: '',
+  cards_badge_bg_color: COL.sun, cards_badge_color: COL.sunInk, cards_badge_radius: px(4), cards_badge_size: px(11), cards_badge_position: 'left',
+  cards_title_color: COL.ink, ...type('cards_title_typography', { ...DISPLAY, size: px(21), line: px(1.12, 'em') }),
+  cards_meta_color: COL.glacier, ...type('cards_meta_typography', { family: 'Inter', weight: '700', size: px(11), transform: 'uppercase', spacing: px(0.14, 'em') }),
+  cards_excerpt_color: COL.gray, ...type('cards_excerpt_typography', { family: 'Inter', size: px(14.8), line: px(1.6, 'em') }),
+  cards_read_more_color: COL.sun, ...type('cards_read_more_typography', { family: 'Inter', weight: '700', size: px(12.5), transform: 'uppercase', spacing: px(0.1, 'em') }),
+  cards_meta_border_color: COL.line, css_classes: 'smg-posts',
+}, extra));
+
+function articlesPage() {
+  const latest = ARTICLES[0];
+  return mainWrap([
+    pageHero(latest.hero.src, [['Home', `${HOME}/`], ['Articles']], 'Learn before you climb', 'Articles',
+      'Route advice, training, gear and conditions, written by the guides who climb Mt. Shasta every week.', [], 'short'),
+    section({ background_background: 'classic', background_color: COL.paper }, {}, [postsWidget(12, { pagination_type: 'numbers', pagination_page_limit: 5 })]),
+    ctaBand('Ready to put it into practice?', 'Plan your climb'),
+  ]);
+}
+
+// Theme Builder single-post template: featured-image hero, title, date and author, the post content, more articles
+function singlePostTemplate() {
+  const tag = (name, settings = {}) => `[elementor-tag id="${E.id()}" name="${name}" settings="${encodeURIComponent(JSON.stringify(settings))}"]`;
+  return mainWrap([
+    container(merge(bgImage(latestHero(), 'up'), {
+      content_width: 'full', ...res('min_height', px(48, 'vh'), px(44, 'vh'), px(50, 'vh')), flex_direction: 'column', flex_justify_content: 'flex-end',
+      __dynamic__: { background_image: tag('post-featured-image') },
+    }), [
+      container({ content_width: 'boxed', boxed_width: px(1280), flex_direction: 'column', flex_gap: gap(10), padding: boxC('clamp(2.6rem, 5vw, 4rem)', GUTTER, 'clamp(2.6rem, 5vw, 4rem)', GUTTER) }, [
+        text(`<p><a href="${HOME}/" style="color:#BFDDF2">Home</a> <span style="opacity:.6">/</span> <a href="${HOME}/articles" style="color:#BFDDF2">Articles</a></p>`, merge({ text_color: COL.ice }, type('typography', { family: 'Inter', size: px(12.5), spacing: px(0.5) }))),
+        // Date from the post, author from the smg_author field (the guides don't have WordPress accounts)
+        row([
+          heading('', 'span', merge({ title_color: COL.ice, _element_width: 'auto', _flex_size: 'none', __dynamic__: { title: tag('post-date', { type: 'post_date_gmt', format: 'custom', custom_format: 'F j, Y' }) } },
+            type('typography', { family: 'Inter', weight: '700', size: cl('0.78rem'), transform: 'uppercase', spacing: px(0.22, 'em') }))),
+          heading('', 'span', merge({ title_color: COL.ice, _element_width: 'auto', _flex_size: 'none', __dynamic__: { title: tag('post-custom-field', { key: 'smg_author', before: '· By ' }) } },
+            type('typography', { family: 'Inter', weight: '700', size: cl('0.78rem'), transform: 'uppercase', spacing: px(0.22, 'em') }))),
+        ], { flex_gap: gap(10), flex_align_items: 'center' }),
+        widget('theme-post-title', merge({ header_size: 'h1', title_color: COL.white, __dynamic__: { title: tag('post-title') } }, type('typography', { ...DISPLAY, size: cl('clamp(2.1rem, 5vw, 3.8rem)'), line: px(1.06, 'em') }),
+          { _element_width: 'initial', _element_custom_width: cl('min(100%, calc(clamp(2.1rem, 5vw, 3.8rem) * 14))') })),
+      ]),
+    ], false),
+    section({ background_background: 'classic', background_color: COL.white }, { flex_align_items: 'center' }, [
+      widget('theme-post-content', merge({ _css_classes: 'smg-post', text_color: COL.body, _element_width: 'initial', _element_custom_width: cl('min(46rem, 100%)') },
+        type('typography', { family: 'Inter', size: px(16.6), line: px(1.75, 'em') }))),
+    ]),
+    section({ background_background: 'classic', background_color: COL.paper }, {}, [
+      sectionHead('Keep Reading', 'More from our guides.', null, false),
+      postsWidget(3, { posts_exclude: ['current_post'] }),
+    ]),
+    ctaBand('Ready to put it into practice?', 'Plan your climb'),
+  ]);
+}
+const latestHero = () => ARTICLES[0].hero.src;
+
+// Theme Builder archive template: category and tag listings (/articles/category/<name>) in the Articles page layout
+function archiveTemplate() {
+  const tag = (name, settings = {}) => `[elementor-tag id="${E.id()}" name="${name}" settings="${encodeURIComponent(JSON.stringify(settings))}"]`;
+  const cards = postsWidget(12, { pagination_type: 'numbers', pagination_page_limit: 5 }).settings;
+  const archive = Object.fromEntries(Object.entries(cards)
+    .filter(([k]) => !/^posts_/.test(k))
+    .map(([k, v]) => [k === '_skin' ? k : k.replace(/^cards_/, 'archive_cards_'), k === '_skin' ? 'archive_cards' : v]));
+  return mainWrap([
+    container(merge(bgImage(latestHero(), 'up'), { content_width: 'full', ...res('min_height', px(40, 'vh'), px(38, 'vh'), px(44, 'vh')), flex_direction: 'column', flex_justify_content: 'flex-end' }), [
+      container({ content_width: 'boxed', boxed_width: px(1280), flex_direction: 'column', flex_gap: gap(10), padding: boxC('clamp(2.6rem, 5vw, 4rem)', GUTTER, 'clamp(2.6rem, 5vw, 4rem)', GUTTER) }, [
+        text(`<p><a href="${HOME}/" style="color:#BFDDF2">Home</a> <span style="opacity:.6">/</span> <a href="${HOME}/articles" style="color:#BFDDF2">Articles</a></p>`, merge({ text_color: COL.ice }, type('typography', { family: 'Inter', size: px(12.5), spacing: px(0.5) }))),
+        heading('', 'h1', merge(type('typography', { ...DISPLAY, size: cl('clamp(2.1rem, 5vw, 3.8rem)'), line: px(1.06, 'em') }), { title_color: COL.white, __dynamic__: { title: tag('archive-title', { include_context: '' }) } })),
+      ]),
+    ], false),
+    section({ background_background: 'classic', background_color: COL.paper }, {}, [widget('archive-posts', archive)]),
+    ctaBand('Ready to put it into practice?', 'Plan your climb'),
+  ]);
+}
+
 // ---------------- Menus ----------------
 const menus = [
   { name: 'main', items: [
@@ -1040,7 +1153,7 @@ const menus = [
   { name: 'footer', items: [
     ['About Us', `${HOME}/about`], ['About Mt. Shasta', `${HOME}/aboutshasta`], ['Routes & Seasons', `${HOME}/routesandseasons`],
     ['Trip Details', `${HOME}/tripdetails`], ['Gear', `${HOME}/gear`], ['Training', `${HOME}/training`], ['FAQ', `${HOME}/faq`],
-    ['Articles', 'https://shastaguides.com/articles'], ['Policies', `${HOME}/policies`], ['Essentials of Eligibility', media('assets/downloads/smg-essential-eligibility-criteria.pdf').url],
+    ['Articles', `${HOME}/articles`], ['Policies', `${HOME}/policies`], ['Essentials of Eligibility', media('assets/downloads/smg-essential-eligibility-criteria.pdf').url],
     ['Privacy Policy', `${HOME}/privacypolicy`], ['Terms of Use', `${HOME}/terms-of-service`], ['Contact', `${HOME}/contact`],
   ].map(([title, url]) => ({ title, url })) },
 ];
@@ -1068,7 +1181,21 @@ Object.keys(INFO).forEach((slug, i) => {
   pages.push({ key: `info-${slug}`, slug, title: p.h1, order: 200 + i, excerpt: p.lede || '', elements: infoPage(slug) });
 });
 
+E.resetIds(300);
+pages.push({ key: 'articles', slug: 'articles', title: 'Articles', order: 300, excerpt: 'Route advice, training, gear and conditions from Shasta Mountain Guides.', elements: articlesPage() });
+E.resetIds(4);
+const single = singlePostTemplate();
+E.resetIds(5);
+const archive = archiveTemplate();
+const posts = ARTICLES.map(a => ({
+  key: `article-${a.slug}`, slug: a.slug, title: a.title, date: `${a.date} 09:00:00`, excerpt: a.excerpt, content: postContent(a),
+  featured: media(a.hero.src).id, categories: (a.categories.length ? a.categories : ['Mt. Shasta']).map(POST_CATEGORY), tags: a.tags, author: a.author,
+}));
+// Live blog listing URLs (categories, tags) → the Articles page
+const LIVE_LISTINGS = fs.readFileSync(path.join(__dirname, 'live-article-listings.txt'), 'utf8').split('\n').map(l => l.trim()).filter(Boolean);
+
 const redirects = {
+  ...Object.fromEntries(LIVE_LISTINGS.map(l => [`articles/${l}`, '/articles'])),
   ...Object.fromEntries(Object.entries(DETAILS.redirects).map(([from, to]) => [from, `/${to}`])),
   ...Object.fromEntries(Object.entries(OLD_SLUG).map(([mock, live]) => [mock, `/${live}`])),
   ...Object.fromEntries(Object.entries(LIVE_PDFS).map(([live, local]) => [`s/${live}`, media(`assets/downloads/${local}`).url.replace(/^.*(?=\/wp-content\/)/, '')])),
@@ -1080,12 +1207,15 @@ const bundle = {
   templates: [
     { key: 'header', type: 'header', title: 'Site Header', elements: header, conditions: [['include', 'general']] },
     { key: 'footer', type: 'footer', title: 'Site Footer', elements: footer, conditions: [['include', 'general']] },
+    { key: 'single-post', type: 'single-post', title: 'Article', elements: single, conditions: [['include', 'singular', 'post']] },
+    { key: 'archive', type: 'archive', title: 'Article Listings', elements: archive, conditions: [['include', 'archive']] },
   ],
   pages,
+  posts,
   permalinks: '/articles/%postname%',
   redirects,
 };
 
 fs.writeFileSync(process.argv[2], JSON.stringify(bundle));
 const count = (els) => els.reduce((n, e) => n + 1 + count(e.elements || []), 0);
-console.log(`bundle: kit + ${menus.length} menus + 2 templates + ${pages.length} pages + ${Object.keys(redirects).length} redirects (${pages.map(p => `${p.slug}:${count(p.elements)}`).join(', ')})`);
+console.log(`bundle: kit + ${menus.length} menus + 4 templates + ${pages.length} pages + ${posts.length} posts + ${Object.keys(redirects).length} redirects (${pages.map(p => `${p.slug}:${count(p.elements)}`).join(', ')})`);

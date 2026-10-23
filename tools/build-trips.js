@@ -46,7 +46,7 @@ function nav(current, contact = '#inquire') {
 const FOOTER_LINKS = [
   ['About Us', 'about.html'], ['About Mt. Shasta', 'aboutshasta.html'], ['Routes & Seasons', 'routesandseasons.html'],
   ['Trip Details', 'tripdetails.html'], ['Gear', 'gear.html'], ['Training', 'training.html'], ['FAQ', 'faq.html'],
-  ['Articles', `${LIVE}/articles`], ['Policies', 'policies.html'], ['Essentials of Eligibility', 'assets/downloads/smg-essential-eligibility-criteria.pdf'],
+  ['Articles', 'articles.html'], ['Policies', 'policies.html'], ['Essentials of Eligibility', 'assets/downloads/smg-essential-eligibility-criteria.pdf'],
   ['Privacy Policy', 'privacypolicy.html'], ['Terms of Use', 'terms-of-service.html'], ['Contact', 'contact.html'],
 ];
 
@@ -155,7 +155,7 @@ function inquire(p) {
             <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 20V10M12 20V4M18 20v-7"/><path d="M3 20h18"/></svg></span>
             <div><b>Training for Mt. Shasta (PDF)</b><span>Our 24-page fitness guide</span></div>
           </a>
-          <a class="cl" href="${p.article.href}">
+          <a class="cl" href="${p.article.href}.html">
             <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h12l4 4v12H4z"/><path d="M8 12h8M8 16h8"/></svg></span>
             <div><b>${esc(p.article.title)}</b><span>Read the article</span></div>
           </a>
@@ -280,13 +280,13 @@ function docShell({ title, description, current, body, contact, head = '' }) {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>${esc(title)} | Shasta Mountain Guides</title>
+${head}<title>${esc(title)} | Shasta Mountain Guides</title>
 <meta name="description" content="${esc(description)}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/site.css">
-${head}</head>
+</head>
 <body id="top">
 
 ${nav(current, contact)}

@@ -38,6 +38,10 @@ for (const p of Object.values(info)) {
   for (const g of [p.hero, p.map, ...(p.gallery || [])].filter(Boolean)) { seen.add(g.src); if (!alts[g.src] && g.alt) alts[g.src] = g.alt; }
   for (const m of p.team || []) if (m.photo) { seen.add(m.photo); if (!alts[m.photo]) alts[m.photo] = m.name; }
 }
+// Articles: hero and gallery photos
+for (const a of require('../articles.json')) {
+  for (const g of [a.hero, ...a.blocks.flatMap(b => b.gallery || [])]) { seen.add(g.src); if (!alts[g.src] && g.alt) alts[g.src] = g.alt; }
+}
 
 const manifest = [...seen]
   .filter(p => !/\.(css|js)$/.test(p))

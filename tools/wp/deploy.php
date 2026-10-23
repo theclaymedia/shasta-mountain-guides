@@ -131,6 +131,51 @@ foreach ( $bundle['pages'] ?? array() as $p ) {
 	WP_CLI::log( "Page {$p['slug']} → #$id " . get_permalink( $id ) );
 }
 
+// ---- 4b. Posts (articles): plain HTML content so they stay editable in the normal post editor ----
+if ( ! empty( $bundle['posts'] ) ) {
+	// Posts without a category land in "Mt. Shasta" rather than "Uncategorized".
+	$default_cat = (int) get_option( 'default_category' );
+	$default     = get_term( $default_cat, 'category' );
+	if ( $default && 'uncategorized' === $default->slug ) {
+		wp_update_term( $default_cat, 'category', array( 'name' => 'Mt. Shasta', 'slug' => 'mt-shasta' ) );
+	}
+}
+foreach ( $bundle['posts'] ?? array() as $p ) {
+	$cats = array();
+	foreach ( $p['categories'] as $name ) {
+		$term   = term_exists( $name, 'category' );
+		$term   = $term ? $term : wp_insert_term( $name, 'category' );
+		$cats[] = (int) ( is_array( $term ) ? $term['term_id'] : $term );
+	}
+	$data = array(
+		'post_type'     => 'post',
+		'post_status'   => 'publish',
+		'post_title'    => $p['title'],
+		'post_name'     => $p['slug'],
+		'post_content'  => $p['content'],
+		'post_excerpt'  => $p['excerpt'],
+		'post_date'     => $p['date'],
+		'post_category' => $cats,
+		'tags_input'    => $p['tags'],
+	);
+	$id = smg_find( $p['key'], 'post' );
+	if ( $id ) {
+		$data['ID'] = $id;
+		wp_update_post( wp_slash( $data ) );
+	} else {
+		$id = wp_insert_post( wp_slash( $data ), true );
+		if ( is_wp_error( $id ) ) {
+			WP_CLI::error( "Post {$p['key']}: " . $id->get_error_message() );
+		}
+		update_post_meta( $id, '_smg_key', $p['key'] );
+	}
+	if ( ! empty( $p['featured'] ) ) {
+		set_post_thumbnail( $id, (int) $p['featured'] );
+	}
+	update_post_meta( $id, 'smg_author', $p['author'] ?? '' );
+	WP_CLI::log( "Post {$p['slug']} → #$id " . get_permalink( $id ) );
+}
+
 // ---- 5. URLs: live-site permalinks and redirects ----
 // '/articles/%postname%' gives pages Squarespace's slash-less URLs (/climbmtshasta) and posts /articles/<slug>.
 if ( ! empty( $bundle['permalinks'] ) && get_option( 'permalink_structure' ) !== $bundle['permalinks'] ) {

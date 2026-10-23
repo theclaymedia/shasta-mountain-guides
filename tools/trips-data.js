@@ -88,7 +88,7 @@ module.exports = [
     ], note: 'Other routes run on their own calendars. Ask and we will send the dates that fit.' },
     includes: OVERNIGHT_INCLUDES, notIncluded: NOT_INCLUDED,
     gear: { label: 'Summit Climb Gear List', href: 'assets/downloads/smg-summit-climb-gear-list.pdf' },
-    article: { title: 'Which route is right for you?', href: LIVE + '/articles/choosingaroute' },
+    article: { title: 'Which route is right for you?', href: 'articles/choosingaroute' },
     strip: ['assets/images/headlamps-alpine-start.jpg', 'assets/images/avalanche-gulch-climbers.jpg', 'assets/images/misery-hill.jpg', 'assets/images/glissade-fun.jpg', 'assets/images/clear-creek-sunrise-hike.jpg', 'assets/images/team-summit-four.jpg'],
   },
 
@@ -154,7 +154,7 @@ module.exports = [
     ],
     includes: OVERNIGHT_INCLUDES, notIncluded: 'Multi-day trips only. Skis, boots and avalanche safety gear can be rented in town at The Fifth Season.',
     gear: { label: 'Ski & Snowboard Mountaineering Gear List', href: 'assets/downloads/smg-ski-snowboard-mountaineering-gear-list.pdf' },
-    article: { title: "Women's Ski Mountaineering Seminar on Mt. Shasta", href: LIVE + '/articles/womens-ski-mountaineering-seminar-on-mt-shasta' },
+    article: { title: "Women's Ski Mountaineering Seminar on Mt. Shasta", href: 'articles/womens-ski-mountaineering-seminar-on-mt-shasta' },
     strip: ['assets/images/powder-ski-trees.jpg', 'assets/images/green-butte-ski.jpg', 'assets/images/skintrack.jpg', 'assets/images/uptrack-south-side.jpg', 'assets/images/shasta-south-side.jpg', 'assets/images/ski-gulch-powder.jpg'],
   },
 
@@ -205,7 +205,7 @@ module.exports = [
     ],
     includes: OVERNIGHT_INCLUDES, notIncluded: NOT_INCLUDED,
     gear: { label: 'Summit Climb Gear List (seminars) · Mountaineering Class & Day Hike Gear List (day class)', href: 'assets/downloads/smg-summit-climb-gear-list.pdf', alt: { label: 'Day Class gear list', href: 'assets/downloads/smg-mountaineering-class-day-hike-gear-list.pdf' } },
-    article: { title: 'Climb a glacier on Mt. Shasta', href: LIVE + '/articles/climb-a-glacier-on-mt-shasta' },
+    article: { title: 'Climb a glacier on Mt. Shasta', href: 'articles/climb-a-glacier-on-mt-shasta' },
     strip: ['assets/images/guide-teaching-crampons.jpg', 'assets/images/putting-crampons-on.jpg', 'assets/images/hotlum-guides-climb.jpg', 'assets/images/camp-water-bottles.jpg', 'assets/images/basecamp-dinner.jpg', 'assets/images/north-side-sunrise-climb.jpg'],
   },
 
@@ -244,7 +244,7 @@ module.exports = [
     ],
     includes: OVERNIGHT_INCLUDES, notIncluded: NOT_INCLUDED,
     gear: { label: 'Summit Climb Gear List', href: 'assets/downloads/smg-summit-climb-gear-list.pdf' },
-    article: { title: 'Why climb Shasta with a guide?', href: LIVE + '/articles/climbingshastawithaguide' },
+    article: { title: 'Why climb Shasta with a guide?', href: 'articles/climbingshastawithaguide' },
     strip: ['assets/images/team-summit-four.jpg', 'assets/images/hotlum-guides-climb.jpg', 'assets/images/casaval-ridge-line.jpg', 'assets/images/basecamp-dinner.jpg', 'assets/images/shasta-northeast-side.jpg', 'assets/images/red-banks-fisheye.jpg'],
   },
 
@@ -280,7 +280,7 @@ module.exports = [
     ],
     extra: { title: 'Groups, clubs and organizations', text: 'We run private AIARE courses, single-day trainings, avalanche awareness presentations and beacon clinics for ski patrols, outing clubs, schools and companies. Tell us your group size and dates.' },
     gear: { label: 'Backcountry Ski Tour & Avalanche Course Gear List', href: 'assets/downloads/smg-backcountry-ski-avalanche-gear-list.pdf' },
-    article: { title: 'Mt. Shasta winter update and seasonal outlook', href: LIVE + '/articles/mt-shasta-winter-update-and-seasonal-outlook' },
+    article: { title: 'Mt. Shasta winter update and seasonal outlook', href: 'articles/mt-shasta-winter-update-and-seasonal-outlook' },
     strip: ['assets/images/skintrack.jpg', 'assets/images/powder-ski-trees.jpg', 'assets/images/uptrack-south-side.jpg', 'assets/images/green-butte-ski.jpg', 'assets/images/shasta-south-side.jpg', 'assets/images/lenticular-over-town.jpg'],
   },
 
@@ -321,7 +321,7 @@ module.exports = [
     ],
     includes: ['Professional guiding and wilderness skills instruction', 'Breakfast and dinner in the backcountry', 'Group camping equipment: tents, stoves and kitchen gear', 'Permits'], notIncluded: 'Personal gear, lunches and snacks. Packs, sleeping bags and pads can be rented in town at The Fifth Season.',
     gear: { label: 'PCT Backpacking Gear List', href: 'assets/downloads/smg-pct-backpacking-gear-list.pdf' },
-    article: { title: 'Altitude: your guide for performing at elevation', href: LIVE + '/articles/altitude-your-guide-for-performing-at-elevation' },
+    article: { title: 'Altitude: your guide for performing at elevation', href: 'articles/altitude-your-guide-for-performing-at-elevation' },
     strip: ['assets/images/northside-basecamp-stream.jpg', 'assets/images/camp-water-bottles.jpg', 'assets/images/basecamp-dinner.jpg', 'assets/images/camp-tents-evening.jpg', 'assets/images/approach-hike.jpg', 'assets/images/sunset-from-camp.jpg'],
   },
 
@@ -356,7 +356,7 @@ module.exports = [
     ],
     extra: { title: 'Want to learn to lead?', text: 'We teach trad, sport and multi-pitch skills on custom technical days. Ask about a private course.' },
     gear: { label: 'Mountaineering Class & Day Hike Gear List', href: 'assets/downloads/smg-mountaineering-class-day-hike-gear-list.pdf' },
-    article: { title: 'Why climb with a guide?', href: LIVE + '/articles/climbingshastawithaguide' },
+    article: { title: 'Why climb with a guide?', href: 'articles/climbingshastawithaguide' },
     strip: ['assets/images/cosmic-wall-spire.jpg', 'assets/images/cosmic-wall-climber.jpg', 'assets/images/cosmic-wall-racking.jpg', 'assets/images/castle-crags-day-hike.jpg', 'assets/images/lenticular-over-town.jpg', 'assets/images/shasta-northeast-side.jpg'],
   },
 
@@ -400,7 +400,7 @@ module.exports = [
         learn: LIVE + '/vortextours' },
     ],
     gear: { label: 'Mountaineering Class & Day Hike Gear List', href: 'assets/downloads/smg-mountaineering-class-day-hike-gear-list.pdf' },
-    article: { title: 'When is the best time to climb Mt. Shasta?', href: LIVE + '/articles/whenisthebesttimeclimbmtshasta' },
+    article: { title: 'When is the best time to climb Mt. Shasta?', href: 'articles/whenisthebesttimetoclimbmtshasta' },
     strip: ['assets/images/trailhead-group.jpg', 'assets/images/helen-lake-switchbacks.jpg', 'assets/images/powder-ski-trees.jpg', 'assets/images/lenticular-over-town.jpg', 'assets/images/approach-hike.jpg', 'assets/images/glissade-fun.jpg'],
   },
 ];
