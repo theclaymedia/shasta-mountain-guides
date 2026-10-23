@@ -1,0 +1,6 @@
+# Only the site itself deploys to Vercel
+tools/
+docs/
+assets/_raw/
+updated-notes.txt
+.claude/

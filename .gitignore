@@ -1,3 +1,5 @@
 .DS_Store
 .claude/
 node_modules/
+# Client originals: kept locally, never committed or deployed (optimised copies live in assets/)
+assets/_raw/
