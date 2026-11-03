@@ -253,12 +253,12 @@
   @media (max-width:880px){ .contact .cols{ grid-template-columns:1fr; } }
 
   footer{ background:var(--night); color:#8FA6B8; font-size:.85rem; padding-block:2.6rem; }
-  .foot{ display:flex; align-items:flex-start; justify-content:space-between; gap:1.6rem; flex-wrap:wrap; padding-bottom:1.6rem; border-bottom:1px solid var(--line-dk); }
-  .foot .logo{ height:2.4rem; width:auto; object-fit:contain; }
-  .foot ul{ list-style:none; display:flex; gap:1.4rem; flex-wrap:wrap; }
+  .foot{ display:flex; flex-direction:column; align-items:center; gap:1.5rem; padding-bottom:2rem; border-bottom:1px solid var(--line-dk); text-align:center; }
+  .foot .logo{ height:3.2rem; width:auto; object-fit:contain; }
+  .foot ul{ list-style:none; display:flex; justify-content:center; gap:.7rem 1.4rem; flex-wrap:wrap; max-width:46rem; }
   .foot a:hover{ color:var(--ice); }
-  .permit{ margin-top:1.4rem; font-size:.8rem; line-height:1.7; color:#7C94A8; max-width:90ch; }
-  .foot__legal{ padding-top:1.3rem; display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap; font-size:.78rem; align-items:center; }
+  .permit{ margin:1.8rem auto 0; font-size:.76rem; line-height:1.75; color:#7C94A8; max-width:72ch; text-align:center; }
+  .foot__legal{ margin-top:1.8rem; padding-top:1.4rem; border-top:1px solid var(--line-dk); display:flex; justify-content:center; align-items:center; flex-wrap:wrap; gap:.8rem 2rem; font-size:.78rem; text-align:center; }
   .foot__legal .mock{ background:var(--deep); color:var(--ice); border-radius:5px; padding:.35rem .85rem; font-weight:600; letter-spacing:.04em; }
   .foot__legal .clay a{ color:#fff; font-weight:700; }
   .foot__legal .clay a:hover{ color:var(--sun); }
@@ -490,5 +490,6 @@
 @media (min-width:621px){ .post-gallery:has(figure:nth-child(9)){ grid-template-columns:repeat(4,1fr); } }
 /* Footer notice: permit + USDA non-discrimination statement (several paragraphs) */
 .permit p + p{ margin-top:.55rem; }
+.permit p:first-child{ color:#A9BCCB; font-size:.84rem; text-wrap:balance; }
 .permit a{ color:#A9BCCB; text-decoration:underline; word-break:break-word; }
 .permit a:hover{ color:#fff; }

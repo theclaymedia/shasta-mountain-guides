@@ -195,6 +195,7 @@ const KIT = {
     '.smg-posts .elementor-post__card{transition:transform .25s ease,box-shadow .25s ease}',
     '.smg-posts .elementor-post__card:hover{transform:translateY(-5px);box-shadow:0 20px 44px rgba(18,34,47,.16)}',
     '.smg-notice p+p{margin-top:.55rem}',
+    '.smg-notice p:first-child{color:#A9BCCB;font-size:13.4px;text-wrap:balance}',
     '.smg-notice a{color:#A9BCCB;text-decoration:underline;word-break:break-word}',
     '.smg-notice a:hover{color:#fff}',
     '@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.smg-lift,.smg-fb,.smg-gallery img{transition:none}.smg-lift:hover,.smg-fb:hover,.smg-fb:focus,.smg-gallery .elementor-widget-image:hover img{transform:none}}',
@@ -369,22 +370,27 @@ function headerTemplate() {
 function footerTemplate() {
   return [container({ content_width: 'full', background_background: 'classic', background_color: COL.night, padding: boxC('2.6rem', '0', '2.6rem', '0') }, [
     container({ content_width: 'boxed', boxed_width: px(1280), flex_direction: 'column', flex_gap: gap(22), padding: boxC('0', GUTTER, '0', GUTTER) }, [
-      row([
-        image(media('assets/logos/SMG-logo-white.png'), { link_to: 'custom', link: { url: `${HOME}/` }, width: px(66), _element_width: 'auto', _flex_size: 'none' }),
+      // Centered: logo over the links, then the notice, then the legal line (mockup .foot / .permit / .foot__legal)
+      container({ flex_direction: 'column', flex_align_items: 'center', flex_gap: gap(24), padding: box(0, 0, 32, 0), border_border: 'solid', border_width: box(0, 0, 1, 0), border_color: COL.lineDk }, [
+        image(media('assets/logos/SMG-logo-white.png'), { link_to: 'custom', link: { url: `${HOME}/` }, width: px(88), _element_width: 'auto', _flex_size: 'none' }),
         widget('nav-menu', {
-          menu: 'footer', layout: 'horizontal', align_items: 'end', pointer: 'none', dropdown: 'none',
+          menu: 'footer', layout: 'horizontal', align_items: 'center', pointer: 'none', dropdown: 'none',
           color_menu_item: '#8FA6B8', color_menu_item_hover: COL.ice,
           ...type('menu_typography', { family: 'Inter', weight: '400', size: px(13.6) }),
           padding_horizontal_menu_item: px(10), padding_vertical_menu_item: px(4),
+          _element_width: 'initial', _element_custom_width: px(736), ...res('_element_custom_width', px(736), px(100, '%'), px(100, '%')),
         }),
-      ], { flex_justify_content: 'space-between', flex_align_items: 'flex-start', padding: box(0, 0, 22, 0), border_border: 'solid', border_width: box(0, 0, 1, 0), border_color: COL.lineDk }),
+      ]),
       // Permit + USDA non-discrimination statement, same text as the mockup footer (tools/build-trips.js)
-      text(FOOTER_NOTICE.map(t => `<p>${t}</p>`).join(''), merge({ text_color: '#7C94A8', _css_classes: 'smg-notice' }, type('typography', { family: 'Inter', size: px(12.5), line: px(1.7, 'em') }))),
+      text(FOOTER_NOTICE.map(t => `<p>${t}</p>`).join(''), merge({
+        text_color: '#7C94A8', align: 'center', _css_classes: 'smg-notice', _flex_align_self: 'center',
+        _element_width: 'initial', _element_custom_width: px(560), ...res('_element_custom_width', px(560), px(100, '%'), px(100, '%')),
+      }, type('typography', { family: 'Inter', size: px(12.2), line: px(1.75, 'em') }))),
       row([
         small(COPYRIGHT, '#8FA6B8'),
         text('<p><span style="background:#123049;color:#BFDDF2;border-radius:5px;padding:.35rem .85rem;font-weight:600;letter-spacing:.04em">Concept staging site, not live</span></p>', type('typography', { family: 'Inter', size: px(12.5) })),
         text('<p>Site by <a href="https://theclaymedia.com" style="color:#fff;font-weight:700">The Clay Media</a></p>', merge({ text_color: '#8FA6B8' }, type('typography', { family: 'Inter', size: px(12.5) }))),
-      ], { flex_justify_content: 'space-between' }),
+      ], { flex_justify_content: 'center', flex_gap: gap(32), padding: box(22, 0, 0, 0), border_border: 'solid', border_width: box(1, 0, 0, 0), border_color: COL.lineDk }),
       html(`<link rel="stylesheet" href="https://${FB.domain}/content/bootstrapper/flybookbootstrap.css">\n<script src="https://${FB.domain}/custom/bootstrapper/flybookbootstrap.js"></script>`),
     ]),
   ], false)];
