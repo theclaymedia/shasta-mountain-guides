@@ -59,7 +59,7 @@ module.exports = [
         experience: 'Previous mountaineering experience including ice axe and crampon climbing is required, plus time at similar elevations.',
         demand: 'This is an aggressive itinerary for the route. Proper conditioning and preparation are crucial.',
         learn: LIVE + '/northsideclimb' },
-      { name: 'Casaval Ridge Climb', fb: 784, tag: 'Advanced', img: 'assets/images/casaval-above-clouds.jpg', alt: 'A climber on Casaval Ridge above a sea of clouds', length: '3 days', cost: '$1,895 per person', route: 'Casaval Ridge',
+      { name: 'Casaval Ridge Climb', fb: 784, tag: 'Advanced', img: 'assets/images/casaval-above-clouds.jpg', alt: 'A climber on Casaval Ridge above a sea of clouds', length: '3 days', cost: '$1,795 per person', route: 'Casaval Ridge',
         blurb: "Shasta's most aesthetic line: exposed ridge climbing on steep snow that rewards fit, experienced mountaineers. Prime in April and May.",
         experience: 'Prior experience and strong physical ability required, such as a previous Shasta route, any route on Rainier or the Grand Teton, or a technical route on Whitney. Contact us to see if you qualify.',
         demand: "Must be in prime physical condition and training diligently for the challenge. This is Shasta's longest, most demanding route.",
@@ -303,7 +303,7 @@ module.exports = [
     ],
     formOption: 'Backpacking',
     programs: [
-      { name: 'Pacific Crest Trail Backpacking Trip', fb: 36128, img: 'assets/images/porcupine-lake.jpg', alt: 'Porcupine Lake, a clear alpine lake below a granite ridge', length: '3 days', cost: '$1,395 per person',
+      { name: 'Pacific Crest Trail Backpacking Trip', fb: 36128, img: 'assets/images/pct-trail-hikers.jpg', alt: 'Hikers on a rocky ridge of the Pacific Crest Trail with mountains beyond', length: '3 days', cost: '$1,395 per person',
         blurb: 'A taste of the legendary Mexico-to-Canada route on an iconic Mt. Shasta section, with alpine lake camps.',
         experience: 'No previous experience is required.',
         demand: 'Expect high altitudes. Hikers should be in good physical condition.',
