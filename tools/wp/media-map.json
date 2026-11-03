@@ -395,10 +395,6 @@
         "id": 34,
         "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/basecamp-dinner.jpg"
     },
-    "assets/images/basecamp-women-group.jpg": {
-        "id": 35,
-        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/basecamp-women-group.jpg"
-    },
     "assets/images/camp-tents-evening.jpg": {
         "id": 36,
         "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/camp-tents-evening.jpg"
@@ -507,6 +503,10 @@
         "id": 62,
         "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/northside-basecamp-stream.jpg"
     },
+    "assets/images/pct-womens-deadfall-lake.jpg": {
+        "id": 2708,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/11/pct-womens-deadfall-lake.jpg"
+    },
     "assets/images/porcupine-lake.jpg": {
         "id": 63,
         "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/porcupine-lake.jpg"
@@ -578,6 +578,14 @@
     "assets/images/west-face-shastina.jpg": {
         "id": 80,
         "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/west-face-shastina.jpg"
+    },
+    "assets/images/womens-glacier-summit.jpg": {
+        "id": 2709,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/11/womens-glacier-summit.jpg"
+    },
+    "assets/images/womens-ski-team.jpg": {
+        "id": 2710,
+        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/11/womens-ski-team.jpg"
     },
     "assets/info/00fff2-advanced-ski.jpg": {
         "id": 1217,
@@ -887,10 +895,6 @@
         "id": 894,
         "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/5f4900-190519-ckrumholz-0833.jpg"
     },
-    "assets/trips/62d97d-tailer-spinneys-client-skiing-down-the-west-face.jpg": {
-        "id": 895,
-        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/62d97d-tailer-spinneys-client-skiing-down-the-west-face.jpg"
-    },
     "assets/trips/639678-180707-ckrumholz-0200.jpg": {
         "id": 896,
         "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/639678-180707-ckrumholz-0200.jpg"
@@ -1006,10 +1010,6 @@
     "assets/trips/958977-hotlum-bolam.jpg": {
         "id": 924,
         "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/958977-hotlum-bolam.jpg"
-    },
-    "assets/trips/965204-190609-ckrumholz-1799.jpg": {
-        "id": 925,
-        "url": "https://tcmdesign.xyz/shastamountainguides/wp-content/uploads/2026/10/965204-190609-ckrumholz-1799.jpg"
     },
     "assets/trips/96fd32-snapinsta.app-320063021-148246127967787-1361541624230464874-n-1080.jpg": {
         "id": 926,

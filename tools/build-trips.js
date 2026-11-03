@@ -50,6 +50,18 @@ const FOOTER_LINKS = [
   ['Privacy Policy', 'privacypolicy.html'], ['Terms of Use', 'terms-of-service.html'], ['Contact', 'contact.html'],
 ];
 
+// Footer notice: Chris's wording (content sheet, November 2026), including the USDA non-discrimination statement
+// the Forest Service permit requires. Shared by the mockup, index.html and the WordPress footer.
+const FOOTER_NOTICE = [
+  'This business operates under special use permit with the Shasta-Trinity National Forest.',
+  'In accordance with Federal law and U.S. Department of Agriculture (USDA) civil rights regulations and policies, this institution is prohibited from discriminating on the basis of race, color, national origin, sex, age, disability, and reprisal or retaliation for prior civil rights activity. (Not all prohibited bases apply to all programs.)',
+  'Persons with disabilities who require alternative means of communication for program information (e.g., Braille, large print, audiotape, American Sign Language, etc.) should contact the responsible State or local Agency that administers the program or USDA’s TARGET Center at (202) 720-2600 (voice and TTY) or contact USDA through the Federal Relay Service at (800) 877-8339. Additionally, program information is also available in languages other than English.',
+  'To file a complaint alleging discrimination, complete the USDA Program Discrimination Complaint Form, AD-3027, found online at <a href="http://www.ascr.usda.gov/complaint_filing_cust.html">http://www.ascr.usda.gov/complaint_filing_cust.html</a>, or at any USDA office or write a letter addressed to USDA and provided in the letter all of the information requested in the form. To request a copy of the complaint form, call (866) 632-9992. Submit your completed form or letter to USDA by: (1) mail: U.S. Department of Agriculture, Office of the Assistant Secretary for Civil Rights, 1400 Independence Avenue, SW, Washington, D.C. 20250-9410; (2) fax: (202) 690-7442; or (3) email: <a href="mailto:program.intake@usda.gov">program.intake@usda.gov</a>.',
+  'This institution is an equal opportunity provider.',
+];
+const COPYRIGHT = 'Copyright &copy; 2027 Shasta Mountain Guides';
+const footerNotice = () => `<div class="permit">${FOOTER_NOTICE.map(t => `<p>${t}</p>`).join('')}</div>`;
+
 function footer() {
   return `<footer>
   <div class="wrap">
@@ -59,9 +71,9 @@ function footer() {
         ${FOOTER_LINKS.map(([t, h]) => `<li><a href="${h}">${esc(t)}</a></li>`).join('\n        ')}
       </ul>
     </div>
-    <p class="permit">This business operates under special use permit with the Shasta-Trinity National Forest. This institution is an equal opportunity provider.</p>
+    ${footerNotice()}
     <div class="foot__legal">
-      <span>&copy; 2026 Shasta Mountain Guides</span>
+      <span>${COPYRIGHT}</span>
       <span class="mock">Concept mockup, not a live site</span>
       <span class="clay">Site by <a href="https://theclaymedia.com">The Clay Media</a></span>
     </div>
@@ -315,7 +327,7 @@ ${FLYBOOK_ASSETS}
 `;
 }
 
-module.exports = { pages, esc, nav, footer, FOOTER_LINKS, inquire, fbButton, FB, LIVE, ROOT, docShell, detailHref, detailSlug };
+module.exports = { pages, esc, nav, footer, FOOTER_LINKS, FOOTER_NOTICE, COPYRIGHT, footerNotice, inquire, fbButton, FB, LIVE, ROOT, docShell, detailHref, detailSlug };
 
 if (require.main === module) {
   let n = 0;

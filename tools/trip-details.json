@@ -85,17 +85,16 @@
     "Prospective climbers should be in excellent physical condition and train diligently for a big challenge.",
     "Climbing Mt Shasta is strenuous. For the best chances of summiting please train ahead of time. Feel free to contact us for any training recommendations. Check out our training page to get started."
    ],
-   "dates_title": "2026-2027 Dates",
+   "dates_title": "2027 Dates",
    "dates": [
-    "Clear Creek 2026",
-    "August 21-24",
     "2027",
     "April 30-May 2",
     "May 7-9, 14-16, 21-23, 28-30",
     "June 1-, 4-6, 8-10, 11-13, 18-20, 22-24, 25-27",
     "Clear Creek",
     "July 2-4, 9-11, 16-18, 23-25, 30-August 1",
-    "August 6-8, 13-15"
+    "August 13-15",
+    "September 3-5"
    ],
    "cost": [
     "$1595 per person"
@@ -258,12 +257,12 @@
     "All dates are subject to route change in the event of adverse conditions.",
     "May 15-16",
     "May 22-23",
-    "June 29-30",
+    "May 29-30",
     "June 5-6",
     "June 12-13"
    ],
    "cost": [
-    "$1495 per person"
+    "$1395 per person"
    ],
    "includes": [
     "Guide-to-client summit-day ratio of 1:3",
@@ -330,7 +329,7 @@
     }
    ],
    "notes": [
-    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and LOGE Mt. Shasta. They offer a discount to our climbers and guests."
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts. They offer a discount to our climbers and guests."
    ],
    "source": "https://shastaguides.com/aplinestyleclimb"
   },
@@ -493,7 +492,7 @@
     }
    ],
    "notes": [
-    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and LOGE Mt. Shasta. They offer a discount to our climbers and guests."
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts. They offer a discount to our climbers and guests."
    ],
    "source": "https://shastaguides.com/westfaceclimb"
   },
@@ -647,7 +646,7 @@
     }
    ],
    "notes": [
-    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and LOGE Mt. Shasta. They offer a discount to our climbers and guests."
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts. They offer a discount to our climbers and guests."
    ],
    "source": "https://shastaguides.com/northsideclimb"
   },
@@ -705,11 +704,10 @@
     "Must be in excellent physical condition and training diligently for the challenge. Proper conditioning and preparation are crucial to summit success.",
     "Climbing Mt Shasta is strenuous. For the best chances of summiting please train ahead of time. Feel free to contact us for any training recommendations. Check out our training page to get started."
    ],
-   "dates_title": "2026 Dates",
+   "dates_title": "2027 Dates",
    "dates": [
     "All dates are subject to route change in the event of adverse conditions.",
-    "May 8-10, 2026",
-    "Casaval Ridge available by custom booking to experienced parties. Contact us for details"
+    "By custom arrangement. Casaval Ridge is available by custom booking to experienced parties. Contact us for details."
    ],
    "cost": [
     "$1795 per person"
@@ -795,7 +793,7 @@
     }
    ],
    "notes": [
-    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and LOGE Mt. Shasta. They offer a discount to our climbers and guests."
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts. They offer a discount to our climbers and guests."
    ],
    "source": "https://shastaguides.com/cacavalridgeclimb"
   },
@@ -866,15 +864,16 @@
     "Proper conditioning and preparation are crucial to summit success.",
     "Climbing Mt Shasta is strenuous. For the best chances of summiting please train ahead of time. Feel free to contact us for any training recommendations. Check out our training page to get started."
    ],
-   "dates_title": "2026 Dates",
+   "dates_title": "2027 Dates",
    "dates": [
     "All dates are subject to route change in the event of adverse conditions.",
-    "July 3-5",
-    "July 17-19",
-    "July 31-August 2",
-    "August 7-9",
-    "August 21-23",
-    "September 4-6",
+    "July 9-11",
+    "July 16-18",
+    "July 23-25",
+    "July 30-August 1",
+    "August 13-15",
+    "August 27-29",
+    "September 3-5",
     "*Additional dates may be available as a private/custom arrangement"
    ],
    "cost": [
@@ -955,7 +954,7 @@
     }
    ],
    "notes": [
-    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and LOGE Mt. Shasta. They offer a discount to our climbers and guests."
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts. They offer a discount to our climbers and guests."
    ],
    "source": "https://shastaguides.com/clearcreekclimb"
   },
@@ -1147,7 +1146,7 @@
     }
    ],
    "notes": [
-    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and LOGE Mt. Shasta. They offer a discount to our climbers and guests."
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts. They offer a discount to our climbers and guests."
    ],
    "source": "https://shastaguides.com/glacier1"
   },
@@ -1164,8 +1163,8 @@
    "eyebrow": "Mt Shasta, California · 14,179 ft",
    "route_line": "Hotlum-Bolam or a similar route (dependent on the season’s conditions)",
    "hero": {
-    "src": "assets/trips/965204-190609-ckrumholz-1799.jpg",
-    "alt": "4-Day Women's Glacier Seminar on Mt. Shasta"
+    "src": "assets/images/womens-glacier-summit.jpg",
+    "alt": "A women's climbing team celebrates on the snow with Mt. Shasta's summit pinnacles behind"
    },
    "gallery": [
     {
@@ -1324,7 +1323,7 @@
     }
    ],
    "notes": [
-    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and LOGE Mt. Shasta. They offer a discount to our climbers and guests."
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts. They offer a discount to our climbers and guests."
    ],
    "source": "https://shastaguides.com/womensglacier"
   },
@@ -1519,7 +1518,7 @@
     }
    ],
    "notes": [
-    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and LOGE Mt. Shasta. They offer a discount to our climbers and guests."
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts. They offer a discount to our climbers and guests."
    ],
    "source": "https://shastaguides.com/climbandski"
   },
@@ -1605,7 +1604,7 @@
    "itinerary_title": "",
    "itinerary": [],
    "notes": [
-    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and LOGE Mt. Shasta. They offer a discount to our climbers and guests."
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts. They offer a discount to our climbers and guests."
    ],
    "source": "https://shastaguides.com/intoski"
   },
@@ -1830,7 +1829,7 @@
     }
    ],
    "notes": [
-    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and LOGE Mt. Shasta. They offer a discount to our climbers and guests."
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts. They offer a discount to our climbers and guests."
    ],
    "source": "https://shastaguides.com/shasta-ski-descent"
   },
@@ -2142,7 +2141,7 @@
     }
    ],
    "notes": [
-    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and LOGE Mt. Shasta. They offer a discount to our climbers and guests."
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts. They offer a discount to our climbers and guests."
    ],
    "source": "https://shastaguides.com/skimountaineeringseminar"
   },
@@ -2159,8 +2158,8 @@
    "eyebrow": "Mt Shasta, California · 14,179 ft",
    "route_line": "",
    "hero": {
-    "src": "assets/trips/62d97d-tailer-spinneys-client-skiing-down-the-west-face.jpg",
-    "alt": "3-Day Women's Ski Mountaineering Seminar on Mt. Shasta"
+    "src": "assets/images/womens-ski-team.jpg",
+    "alt": "A women's ski mountaineering team on the snow below Mt. Shasta"
    },
    "gallery": [
     {
@@ -2598,7 +2597,7 @@
    "itinerary_title": "",
    "itinerary": [],
    "notes": [
-    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and LOGE Mt. Shasta. They offer a discount to our climbers and guests."
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts. They offer a discount to our climbers and guests."
    ],
    "source": "https://shastaguides.com/dayclass"
   },
@@ -2611,7 +2610,7 @@
    "fb": 795,
    "length": "5 days",
    "route": "",
-   "card_cost": "$1,795 per person",
+   "card_cost": "$1,995 per person",
    "eyebrow": "Mt Shasta, California · 14,179 ft",
    "route_line": "Hotlum Glacier Route",
    "hero": {
@@ -2684,12 +2683,14 @@
     "Must be in very good physical condition.",
     "The Glacier II Seminar is a hands on training seminar and climb that will attempt the Hotlum Glacier route. This is a advanced course that requires previous experience"
    ],
-   "dates_title": "2026 Dates",
+   "dates_title": "2027 Dates",
    "dates": [
-    "All dates are subject to route change in the event of adverse conditions."
+    "All dates are subject to route change in the event of adverse conditions.",
+    "July 8-12",
+    "August 5-9"
    ],
    "cost": [
-    "$1895 per person"
+    "$1995 per person"
    ],
    "includes": [
     "Professional instruction and mountain guiding",
@@ -2790,7 +2791,7 @@
     }
    ],
    "notes": [
-    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and LOGE Mt. Shasta. They offer a discount to our climbers and guests."
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts. They offer a discount to our climbers and guests."
    ],
    "source": "https://shastaguides.com/glacier2"
   },
@@ -2803,7 +2804,7 @@
    "fb": 797,
    "length": "5 days",
    "route": "",
-   "card_cost": "$1,895 per person",
+   "card_cost": "$1,995 per person",
    "eyebrow": "Mt Shasta, California · 5 Days",
    "route_line": "",
    "hero": {
@@ -2885,7 +2886,7 @@
     "April 23-26"
    ],
    "cost": [
-    "$1895 per person"
+    "$1995 per person"
    ],
    "includes": [
     "Professional instruction and mountain guiding with a guide-to-client summit-day ratio of 1:3",
@@ -2987,7 +2988,7 @@
     }
    ],
    "notes": [
-    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and LOGE Mt. Shasta. They offer a discount to our climbers and guests."
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts. They offer a discount to our climbers and guests."
    ],
    "source": "https://shastaguides.com/denali"
   },
@@ -3187,7 +3188,7 @@
    "itinerary_title": "",
    "itinerary": [],
    "notes": [
-    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and LOGE Mt. Shasta. They offer a discount to our climbers and guests."
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts. They offer a discount to our climbers and guests."
    ],
    "source": "https://shastaguides.com/aiareplus"
   },
@@ -3200,7 +3201,7 @@
    "fb": 36128,
    "length": "3 days",
    "route": "",
-   "card_cost": "$1,295 per person",
+   "card_cost": "$1,395 per person",
    "eyebrow": "Mt Shasta, California · 3 Days",
    "route_line": "",
    "hero": {
@@ -3279,7 +3280,7 @@
     "September 4-6"
    ],
    "cost": [
-    "$1295 per person"
+    "$1395 per person"
    ],
    "includes": [
     "Professional instruction and guiding",
@@ -3315,12 +3316,12 @@
    "fb": 36129,
    "length": "3 days",
    "route": "",
-   "card_cost": "$1,295 per person",
+   "card_cost": "$1,395 per person",
    "eyebrow": "Mt Shasta, California · 3 Days",
    "route_line": "",
    "hero": {
-    "src": "assets/trips/547af2-img-2360.jpg",
-    "alt": "Pacific Crest Trail Women's Backpacking on Mt. Shasta"
+    "src": "assets/images/pct-womens-deadfall-lake.jpg",
+    "alt": "Two hikers rest beside Deadfall Lake on the Pacific Crest Trail"
    },
    "gallery": [
     {
@@ -3398,7 +3399,7 @@
     "September 11-13"
    ],
    "cost": [
-    "$1295 per person"
+    "$1395 per person"
    ],
    "includes": [
     "Professional instruction and guiding",
@@ -3424,7 +3425,7 @@
    "itinerary_title": "",
    "itinerary": [],
    "notes": [
-    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and LOGE Mt. Shasta. They offer a discount to our climbers and guests."
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts. They offer a discount to our climbers and guests."
    ],
    "source": "https://shastaguides.com/pacific-crest-trail-womens-backpacking"
   },
@@ -3437,7 +3438,7 @@
    "fb": 41952,
    "length": "3 days",
    "route": "",
-   "card_cost": "$1,295 per person",
+   "card_cost": "$1,395 per person",
    "eyebrow": "Mt Shasta, California · 3 Days",
    "route_line": "",
    "hero": {
@@ -3516,7 +3517,7 @@
     "August 21-23"
    ],
    "cost": [
-    "$1295 per person"
+    "$1395 per person"
    ],
    "includes": [
     "Professional instruction and guiding",
@@ -3602,7 +3603,7 @@
    "itinerary_title": "",
    "itinerary": [],
    "notes": [
-    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and LOGE Mt. Shasta. They offer a discount to our climbers and guests."
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts. They offer a discount to our climbers and guests."
    ],
    "source": "https://shastaguides.com/funclimb"
   },
@@ -3697,7 +3698,7 @@
     }
    ],
    "notes": [
-    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts and LOGE Mt. Shasta. They offer a discount to our climbers and guests."
+    "For lodging in the town of Mount Shasta before and after your trip we recommend our partners at Summit Lofts. They offer a discount to our climbers and guests."
    ],
    "source": "https://shastaguides.com/cosmicwall"
   },

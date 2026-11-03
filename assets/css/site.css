@@ -488,3 +488,7 @@
 .post-gallery figure:first-child:nth-last-child(n+4){ grid-column:1 / -1; aspect-ratio:16/9; }
 @media (max-width:620px){ .post-gallery{ grid-template-columns:1fr 1fr; } }
 @media (min-width:621px){ .post-gallery:has(figure:nth-child(9)){ grid-template-columns:repeat(4,1fr); } }
+/* Footer notice: permit + USDA non-discrimination statement (several paragraphs) */
+.permit p + p{ margin-top:.55rem; }
+.permit a{ color:#A9BCCB; text-decoration:underline; word-break:break-word; }
+.permit a:hover{ color:#fff; }

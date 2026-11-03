@@ -15,6 +15,7 @@ const MEDIA = require('./media-map.json');
 const TRIPS = require('../trips-data.js').filter(t => t.slug);
 const HOME = '{{HOME}}';
 const FB = require('../trips-data.js').FLYBOOK;  // Flybook account + trip IDs (same as shastaguides.com)
+const { FOOTER_NOTICE, COPYRIGHT } = require('../build-trips.js');  // shared footer notice
 // Flybook's native Book Now button. Its script reads the trip from the classes on the *clicked* element,
 // which Elementor's button widget nests inside spans, so this is an HTML widget with Flybook's own markup.
 // Styled by .smg-fb in the kit CSS to match the Elementor buttons.
@@ -193,6 +194,9 @@ const KIT = {
     '.smg-post a.smg-post-btn:hover,.smg-post a.smg-post-btn:focus{background:#1F5D8C;color:#fff}',
     '.smg-posts .elementor-post__card{transition:transform .25s ease,box-shadow .25s ease}',
     '.smg-posts .elementor-post__card:hover{transform:translateY(-5px);box-shadow:0 20px 44px rgba(18,34,47,.16)}',
+    '.smg-notice p+p{margin-top:.55rem}',
+    '.smg-notice a{color:#A9BCCB;text-decoration:underline;word-break:break-word}',
+    '.smg-notice a:hover{color:#fff}',
     '@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.smg-lift,.smg-fb,.smg-gallery img{transition:none}.smg-lift:hover,.smg-fb:hover,.smg-fb:focus,.smg-gallery .elementor-widget-image:hover img{transform:none}}',
   ].join('\n'),
 };
@@ -374,9 +378,10 @@ function footerTemplate() {
           padding_horizontal_menu_item: px(10), padding_vertical_menu_item: px(4),
         }),
       ], { flex_justify_content: 'space-between', flex_align_items: 'flex-start', padding: box(0, 0, 22, 0), border_border: 'solid', border_width: box(0, 0, 1, 0), border_color: COL.lineDk }),
-      small('This business operates under special use permit with the Shasta-Trinity National Forest. This institution is an equal opportunity provider.', '#7C94A8'),
+      // Permit + USDA non-discrimination statement, same text as the mockup footer (tools/build-trips.js)
+      text(FOOTER_NOTICE.map(t => `<p>${t}</p>`).join(''), merge({ text_color: '#7C94A8', _css_classes: 'smg-notice' }, type('typography', { family: 'Inter', size: px(12.5), line: px(1.7, 'em') }))),
       row([
-        small('&copy; 2026 Shasta Mountain Guides', '#8FA6B8'),
+        small(COPYRIGHT, '#8FA6B8'),
         text('<p><span style="background:#123049;color:#BFDDF2;border-radius:5px;padding:.35rem .85rem;font-weight:600;letter-spacing:.04em">Concept staging site, not live</span></p>', type('typography', { family: 'Inter', size: px(12.5) })),
         text('<p>Site by <a href="https://theclaymedia.com" style="color:#fff;font-weight:700">The Clay Media</a></p>', merge({ text_color: '#8FA6B8' }, type('typography', { family: 'Inter', size: px(12.5) }))),
       ], { flex_justify_content: 'space-between' }),
