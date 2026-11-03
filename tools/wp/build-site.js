@@ -376,7 +376,8 @@ function footerTemplate() {
         widget('nav-menu', {
           menu: 'footer', layout: 'horizontal', align_items: 'center', pointer: 'none', dropdown: 'none',
           color_menu_item: '#8FA6B8', color_menu_item_hover: COL.ice,
-          ...type('menu_typography', { family: 'Inter', weight: '400', size: px(13.6) }),
+          // transform/spacing set explicitly, or the kit's uppercase Accent typography fills them in
+          ...type('menu_typography', { family: 'Inter', weight: '400', size: px(13.6), transform: 'none', spacing: px(0) }),
           padding_horizontal_menu_item: px(10), padding_vertical_menu_item: px(4),
           _element_width: 'initial', _element_custom_width: px(736), ...res('_element_custom_width', px(736), px(100, '%'), px(100, '%')),
         }),
