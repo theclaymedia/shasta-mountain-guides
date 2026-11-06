@@ -18,6 +18,7 @@ pages, header, footer, menus and the global kit are updated in place (found agai
 | `deploy.php` | Saves kit, menus, header/footer (sitewide) and pages via Elementor's document API; sets permalinks and the redirect map |
 | `mu-plugins/smg-redirects.php` | Serves the 301s in the `smg_redirects` option (uploaded by `deploy.sh`) |
 | `mu-plugins/smg-head.php` | Prints the favicon and link-preview (Open Graph) tags from the `smg_head` option |
+| `mu-plugins/smg-ghl.php` | Sends form submissions to Chris's GoHighLevel sub-account (contact, tags, note). Inactive until `SMG_GHL_TOKEN` is set in wp-config.php; results in the `smg_ghl_log` option |
 | `deploy.sh` | One command: build, upload, verify, deploy, purge |
 
 ## URLs (SEO)
