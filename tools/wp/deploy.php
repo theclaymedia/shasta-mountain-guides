@@ -184,6 +184,11 @@ if ( ! empty( $bundle['permalinks'] ) && get_option( 'permalink_structure' ) !==
 	WP_CLI::log( "Permalinks → {$bundle['permalinks']}" );
 }
 flush_rewrite_rules( false );
+// Read by the smg-head mu-plugin
+if ( isset( $bundle['head'] ) ) {
+	update_option( 'smg_head', $bundle['head'] );
+}
+
 // Read by the smg-redirects mu-plugin
 if ( isset( $bundle['redirects'] ) ) {
 	update_option( 'smg_redirects', $bundle['redirects'], false );

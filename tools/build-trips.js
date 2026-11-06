@@ -285,6 +285,19 @@ ${programs}${pricing}${includes}${extra}${strip}
 ${inquire(p)}` });
 }
 
+// Favicon + link-preview tags (index.html carries the same block by hand). The mockup's og:image is
+// relative; the WordPress build prints an absolute one (tools/wp/mu-plugins/smg-head.php).
+function shareTags(title, description) {
+  return `<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon.png">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Shasta Mountain Guides">
+<meta property="og:title" content="${esc(title)}">
+<meta property="og:description" content="${esc(description)}">
+<meta property="og:image" content="assets/icons/share.jpg">
+<meta name="twitter:card" content="summary_large_image">`;
+}
+
 // Full HTML document: head, sitewide header and footer, shared scripts, Flybook.
 function docShell({ title, description, current, body, contact, head = '' }) {
   return `<!DOCTYPE html>
@@ -294,6 +307,7 @@ function docShell({ title, description, current, body, contact, head = '' }) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ${head}<title>${esc(title)} | Shasta Mountain Guides</title>
 <meta name="description" content="${esc(description)}">
+${shareTags(`${title} | Shasta Mountain Guides`, description)}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">

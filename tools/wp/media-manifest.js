@@ -11,7 +11,7 @@ const alts = {};
 const seen = new Set();
 for (const page of PAGES) {
   const html = fs.readFileSync(path.join(ROOT, page), 'utf8');
-  for (const m of html.matchAll(/(?:src|href)="(assets\/[^"]+)"/g)) seen.add(m[1]);
+  for (const m of html.matchAll(/(?:src|href|content)="(assets\/[^"]+)"/g)) seen.add(m[1]);  // content: og:image
   for (const m of html.matchAll(/<img[^>]*src="(assets\/[^"]+)"[^>]*alt="([^"]*)"/g)) {
     if (m[2] && !alts[m[1]]) alts[m[1]] = m[2].replace(/&amp;/g, '&').replace(/&#39;/g, "'");
   }

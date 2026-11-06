@@ -17,6 +17,7 @@ pages, header, footer, menus and the global kit are updated in place (found agai
 | `build-site.js` | Turns `index.html`, `tools/trips-data.js`, `tools/trip-details.json` and `tools/info-pages.json` into `bundle.json` |
 | `deploy.php` | Saves kit, menus, header/footer (sitewide) and pages via Elementor's document API; sets permalinks and the redirect map |
 | `mu-plugins/smg-redirects.php` | Serves the 301s in the `smg_redirects` option (uploaded by `deploy.sh`) |
+| `mu-plugins/smg-head.php` | Prints the favicon and link-preview (Open Graph) tags from the `smg_head` option |
 | `deploy.sh` | One command: build, upload, verify, deploy, purge |
 
 ## URLs (SEO)

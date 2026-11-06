@@ -1195,6 +1195,15 @@ Object.keys(INFO).forEach((slug, i) => {
 
 E.resetIds(300);
 pages.push({ key: 'articles', slug: 'articles', title: 'Articles', order: 300, excerpt: 'Route advice, training, gear and conditions from Shasta Mountain Guides.', elements: articlesPage() });
+
+// The theme prints each page's excerpt as its meta description, so use the mockup page's own description
+// (home → index.html, trip-/detail-/info-<slug> → <slug>.html).
+for (const p of pages) {
+  const file = p.key === 'home' ? 'index.html' : `${p.key.replace(/^(trip|detail|info)-/, '')}.html`;
+  const src = path.join(ROOT, file);
+  const m = fs.existsSync(src) && fs.readFileSync(src, 'utf8').match(/<meta name="description" content="([^"]*)"/);
+  if (m) p.excerpt = m[1].replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, "'");
+}
 E.resetIds(4);
 const single = singlePostTemplate();
 E.resetIds(5);
@@ -1226,6 +1235,8 @@ const bundle = {
   posts,
   permalinks: '/articles/%postname%',
   redirects,
+  // Favicon + default link-preview image, printed by the smg-head mu-plugin
+  head: { icon: media('assets/icons/favicon.png').url, touch: media('assets/icons/apple-touch-icon.png').url, share: media('assets/icons/share.jpg').url },
 };
 
 fs.writeFileSync(process.argv[2], JSON.stringify(bundle));
