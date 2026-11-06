@@ -43,5 +43,7 @@ click **Purge Cache** in the WordPress admin bar, or check pages with `?v=1` add
 New images: re-run `media-manifest.js` + `import-media.php` first (existing uploads are reused).
 
 ## Staging-only settings to change at launch
-- Form emails go to team@theclaymedia.com (`FORM_EMAIL` in build-site.js) → switch to info@shastaguides.com
+- Forms send no email themselves: entries are saved in WordPress and handed to GoHighLevel (`smg-ghl.php`), whose
+  "Website Inquiry" workflow emails the team and the inquirer. At launch: a new Private Integration token for the live
+  server (`SMG_GHL_TOKEN` in wp-config.php), the workflow published, and Chris's domain set up for sending in GoHighLevel
 - Footer badge says "Concept staging site, not live"

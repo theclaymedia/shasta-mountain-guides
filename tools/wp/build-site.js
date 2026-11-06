@@ -23,7 +23,6 @@ const fbButton = (label, entity, size = 'lg') => widget('html', {
   html: `<button type="button" class="smg-fb smg-fb--${size} flybook-book-now-button fb-widget-type-frontend fb-default-category-id-0 fb-account-id-${FB.account} fb-entity-config-id-${entity} fb-domain-${FB.domain} fb-protocol-https">${label}</button>`,
   _element_width: 'auto', _flex_size: 'none',
 });
-const FORM_EMAIL = 'team@theclaymedia.com';   // staging: leads come to us; switch to info@shastaguides.com at launch
 
 const media = (p) => {
   const m = MEDIA[p];
@@ -266,9 +265,8 @@ function planForm(preselect, extra = {}) {
     ],
     show_labels: 'yes', input_size: 'md', column_gap: px(14), row_gap: px(14),
     button_text: 'Send my request', button_size: 'md', button_width: '100', button_align: 'start',
-    submit_actions: ['save-to-database', 'email'],
-    email_to: FORM_EMAIL, email_subject: `New trip inquiry from the website${extra.page ? ` (${extra.page})` : ''}`,
-    email_content: '[all-fields]', email_from_name: 'Shasta Mountain Guides website',
+    // No email action: the smg-ghl mu-plugin hands each entry to GoHighLevel, whose workflow sends the team alert and reply
+    submit_actions: ['save-to-database'],
     success_message: "Thanks, we've got it. A guide will reply within one business day with a recommended trip and dates. Keep an eye on your inbox.",
     button_background_color: COL.sun, button_text_color: COL.sunInk, button_background_hover_color: COL.sunHover, button_hover_color: COL.sunInk, button_border_border: 'solid', button_border_width: box(2), button_border_color: COL.sun, button_hover_border_color: COL.sunHover,
     __globals__: { button_typography_typography: T('accent') },
@@ -595,8 +593,7 @@ function homePage() {
   const leadForm = (name, fields, buttonText, redirect, success) => widget('form', {
     form_name: name, form_fields: fields, show_labels: 'yes', input_size: 'sm', row_gap: px(10), column_gap: px(10),
     button_text: buttonText, button_size: 'sm', button_width: '100',
-    submit_actions: ['save-to-database', 'email', 'redirect'], email_to: FORM_EMAIL, email_subject: `New download: ${name}`, email_content: '[all-fields]',
-    email_from_name: 'Shasta Mountain Guides website', redirect_to: redirect, success_message: success,
+    submit_actions: ['save-to-database', 'redirect'], redirect_to: redirect, success_message: success,  // emails via GoHighLevel, as planForm
     button_background_color: COL.glacier, button_text_color: COL.white, button_background_hover_color: COL.deep, button_hover_color: COL.white, button_border_border: 'solid', button_border_width: box(2), button_border_color: COL.glacier, button_hover_border_color: COL.deep,
     button_text_padding: boxC('0.65rem', '1.4rem', '0.65rem', '1.4rem'), ...type('button_typography', { family: 'Anton', weight: '400', size: cl('0.9rem'), line: px(1.4, 'em'), transform: 'uppercase', spacing: px(0.08, 'em') }),
   });
